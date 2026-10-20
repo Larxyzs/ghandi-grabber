@@ -1,9 +1,8 @@
 {
- "version": "3.7.1",
- "commit": "1c622586641891fdd7d7d2c4cfd7942df6f320c0",
+ "version": "3.7.2",
+ "commit": "bb6eb40433ddad91e21068fe23fd6882f426cda4",
  "notes": [
-  "LG pictures fixed: only the product's slideshow (no more awards, feature banners or lifestyle photos), in the right order.",
-  "Copy problem report now makes a fresh report of the page, to send to Claude."
+  "Whirlpool air conditioners: the extension now finds the products on the 'Air conditionné' pages of whirlpool.ma."
  ],
  "files": [
   {
@@ -69,7 +68,7 @@
   {
    "path": "manifest.json",
    "size": 1010,
-   "sha256": "6566bbd3c789b72efed37f419524f555728552ab1a54f2be93f2ea47e16bb6ad"
+   "sha256": "57d8d0e8a99d7b242a042a7a0f94feaae21f2225f47e5d5a1bae8575cb2f1b42"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -133,8 +132,8 @@
   },
   {
    "path": "scraper/recipes/whirlpool.js",
-   "size": 5693,
-   "sha256": "df23b195032a5ed7e113b4f7a77f9e627fb62a6d21677661658a54d8aa44634e"
+   "size": 6059,
+   "sha256": "0cdc2886df69306d638ea5e332eb189642d931fb7bb821434792a7c0e3aee4de"
   },
   {
    "path": "sheets/engine.js",
