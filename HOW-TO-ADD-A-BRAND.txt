@@ -1,0 +1,86 @@
+HOW TO ADD A NEW BRAND
+======================
+
+The idea
+--------
+Each brand has its own "recipe". A recipe is a small file that tells the
+extension where to look on that brand's pages:
+  "the name is here, the price is there, the pictures are in that box,
+   the table is down there."
+
+The extension reads the website address, sees the brand word
+(like "whirlpool"), and picks the right recipe by itself.
+
+Already included: Whirlpool, LG, Candy, TCL, Samsung, Haier, Bosch.
+Look in the folder  scraper / recipes  to see them. They are good examples!
+
+Not working well for one of these? Use the problem report (Part 5 of
+READ-ME-FIRST.txt) and send it to Claude. Fixing a recipe is quick.
+
+You have 2 ways to add a NEW brand.
+
+
+WAY 1 (easiest): ask Claude
+---------------------------
+1. Open the green dashboard (click the extension icon).
+2. Put 2 product links of the new brand in the "Product links" tab and
+   press "Add links". Leave the recipe on "General method".
+3. Click the product in the list. At the bottom of the window click
+   "Copy problem report".
+4. For a category page too: press "Find products" with its link, then click
+   "Copy list report".
+5. Paste them in the chat with Claude and write:
+      "Please make a recipe for this brand."
+   Also paste 1 or 2 product links of that brand.
+6. Claude gives you a new file, like  haier.js.
+7. Do the 3 steps in "Putting a new recipe file in" below.
+   The new brand shows up by itself in the "Brand recipe" menu.
+
+
+WAY 2: do it yourself with the template
+---------------------------------------
+1. Open the folder:  ghandi-product-grabber / scraper / recipes
+2. Copy the file  _template.js  and paste it in the same folder.
+3. Rename the copy to the brand name, for example  lg.js
+4. Open it with Notepad (Windows) or TextEdit (Mac).
+5. Change the lines marked "<<< CHANGE ME":
+     id:     'lg'
+     brand:  'LG'
+     match:  ['lg.com']      <- a word that is in the brand's website address
+6. Save the file.
+7. The lists (nameSelectors, priceSelectors, imageSelectors, ...) can
+   start empty. The extension then guesses. Test it. If something is
+   missing, ask Claude to fill the lists (Way 1, step 4 and 5).
+
+
+Putting a new recipe file in (3 steps)
+--------------------------------------
+1. Put the file (for example lg.js) inside:
+      ghandi-product-grabber / scraper / recipes
+2. Open the file  recipe-list.js  (it's in the main folder).
+   Find the line for your brand and remove the two slashes // at the start:
+      'scraper/recipes/lg.js',
+   If there is no such line, add one. Keep the quotes and the comma.
+3. Go to  chrome://extensions  and click the round Reload arrow on
+   "Ghandi Product Grabber".
+
+Now test it with a real product link.
+
+
+What the words in a recipe mean
+-------------------------------
+match                words in the website address that choose this recipe
+nameSelectors        where the product name is
+priceSelectors       where the price is
+imageSelectors       where the slideshow pictures are
+specContainerSelectors   where the "Caractéristiques" table is
+expandText           names of buttons to click to open a hidden table
+productLinks         how to spot a PRODUCT link on a category page (used by
+                     "Find products"). Example: products end with /p, or
+                     the last part of the link has a number in it.
+home                 the brand's website (it becomes a brand button)
+noPrice              true when the website shows no real price
+
+"Selectors" are just little addresses inside a web page.
+You do not need to know how to write them. Claude can find them for you.
+That is what the problem report is for.

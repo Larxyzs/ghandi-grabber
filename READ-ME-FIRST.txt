@@ -1,0 +1,292 @@
+GHANDI PRODUCT GRABBER  (version 3.6)
+===================================
+
+What is this?
+-------------
+A helper that lives inside Chrome. It does 3 jobs:
+
+  1. FIND   - you give it a category page ("All fridges"). It finds every
+              product link on it, even behind "Voir plus" and page 2, 3, 4.
+  2. GRAB   - it opens each product by itself and reads: the name, the price,
+              the main picture, all the other pictures, and ALL the
+              specification sections (Caractéristiques, Dimensions, ...).
+  3. SEND   - it makes ONE file (.json) with everything.
+              You give that file to your website. Your website adds all the
+              products for you. (The file LOVABLE-PROMPT.md has the words
+              to give to Lovable so it builds that "importer" page.)
+
+Recipes included: Whirlpool, LG, Candy, TCL, Samsung, Haier, Bosch.
+Each one knows how its brand's website is built.
+
+HOW SURE ARE WE?
+Each brand was studied on its real Morocco website (the text of real pages:
+links, buttons, section names, picture addresses). Then a copy of each site
+was built and the whole thing (find -> grab -> download) was tested 7 times
+in a real Chrome: 7 out of 7 passed, for all 7 brands.
+
+UPDATES WITHOUT UNINSTALLING (new in 3.6)
+Install this version ONE last time, from a folder that stays put
+(for example Documents\ghandi-product-grabber), not from Downloads or a zip.
+After that, new versions come by themselves:
+  - When there is a new version, a blue box appears at the top of the side tab:
+    "New version X is ready" with what changed. Nothing changes until you click.
+  - Click "Install update". The first time only, Chrome asks you to pick the
+    extension folder (the one you loaded in chrome://extensions) and to allow it
+    to edit the files. Pick that folder and click "Allow" / "Edit files".
+  - It downloads the new files, checks them, keeps a copy of the old ones in
+    "backup-previous", and restarts. Your products and settings stay.
+  - If the side tab does not come back by itself: open chrome://extensions and
+    press the round arrow (reload) on Ghandi Product Grabber.
+  - Changed your mind? "Speed & limits" -> "Undo last update".
+  - "Speed & limits" -> "Check for updates" looks right now.
+Do not delete or move the extension folder, or the next update will ask for it again.
+
+AIR CONDITIONERS & FANS: SLIDESHOW MODE (new in 3.5)
+On an air conditioner or fan page (the address or the name says climatiseur,
+climatisation, air conditioner, ventilateur, BTU...) the helper reads ONLY:
+  - the pictures of the product's slideshow (the first slide = main picture),
+  - the lines inside the specifications box.
+Nothing from the rest of the page (feature blocks, videos, other products).
+Lines that say "N/A" are skipped. These products show "❄ slideshow mode".
+You choose how it works in the side tab, under "Air conditioners & fans":
+  - Slideshow + specs box        (normal)
+  - Slideshow only, no specs
+  - Slideshow for every product
+  - Off (read the whole page)
+
+NOT ONLY FRIDGES (new in 3.4)
+Every recipe was tested on many kinds of products, about 10 per brand
+(73 products in total, all passed): TVs, soundbars, monitors, washing
+machines, dryers, dishwashers, ovens, hobs, hoods, cookers, microwaves,
+air conditioners, air purifiers, vacuums, water heaters, freezers, coffee
+machines, kettles, air fryers, kitchen machines...
+"Produits similaires", "Produit recommandé", "Vous aimerez peut-être aussi",
+"Récemment consultés", "Achetez ces produits également", "À découvrir"...
+are all skipped: no pictures, specs or prices of OTHER products.
+Real websites can still differ in small ways. Test 3 products per brand the
+first time. If something is missing, use "Copy problem report" (Part 5).
+
+The websites used (Morocco):
+  Whirlpool  whirlpool.ma          (no prices on the site)
+  LG         lg.com/ma             (no prices on the site)
+  Candy      candy-home.com/fr_MA  (no prices on the site)
+  Haier      haier-europe.com/fr_MA(no prices on the site)
+  TCL        tcl.com/ma/fr         (no prices on the site)
+  Samsung    samsung.com/n_africa  (the prices shown there are fake £/$
+                                    leftovers, so they are skipped on purpose)
+  Bosch      bosch-home.ma         (real prices in MAD)
+When a site has no price, the price stays empty. Fill it in on your site.
+
+
+PART 1 - INSTALL IT (one time only, about 3 minutes)
+----------------------------------------------------
+Think of it like putting a new toy into your toy box.
+
+1. Find the file  ghandi-product-grabber.zip  that you downloaded.
+2. Open it so the folder comes out:
+     - Windows: right-click the zip, click "Extract All...", then "Extract".
+     - Mac: double-click the zip.
+3. You now have a folder called  ghandi-product-grabber.
+   Put it somewhere it can STAY FOREVER, like Documents.
+   (If you delete or move this folder later, the extension stops working.)
+4. Open Google Chrome.
+5. Click the address bar (where you type website names).
+   Type this and press Enter:
+        chrome://extensions
+6. In the top-right corner, turn ON the switch "Developer mode".
+7. Click  "Load unpacked"  (top-left).
+8. Click the folder  ghandi-product-grabber  (the one with manifest.json
+   inside). Then click "Select Folder".
+9. You will see a card: "Ghandi Product Grabber".
+10. Click the puzzle-piece icon at the top-right of Chrome.
+    Click the PIN next to "Ghandi Product Grabber".
+
+Done! Chrome may say the extension "can read websites". That is normal.
+It reads a page only when YOU ask. Nothing is sent anywhere.
+Everything stays on your computer.
+
+ALREADY HAD AN OLDER VERSION?  Unzip the new zip, copy everything into your old
+folder (say "Replace" for all files), then go to chrome://extensions and
+click the round Reload arrow on the card. That is all.
+
+
+PART 2 - USE IT (the little side tab)
+-------------------------------------
+Click the green icon on the toolbar. A little tab opens on the RIGHT side of
+Chrome (it is called the "side panel"). It stays open while you look at
+other pages. It remembers everything.
+  - Pull its left edge to make it wider or thinner.
+  - The "Full page" button at the top opens the same thing in a big tab.
+  - Needs Chrome version 116 or newer (Chrome updates by itself).
+In the little tab, the first box ("Where are the products?") folds away
+by itself when products appear. Press "Show" to open it again.
+Each product is a small card. Tap the card to see and fix everything.
+
+AT THE TOP
+  Brand recipe         Leave it on "Auto". It reads the website name and
+                       picks the right brand. Or choose a brand yourself.
+                       The grey line under it tells you what Auto will use.
+  Category on my site  Type the category name you use on your website,
+                       for example "Réfrigérateurs". Every product you add
+                       gets it. (You can change it later, one by one or
+                       for many at once.)
+  Speed & limits       How many small windows at once (4 is normal, 6 is
+                       fast) and how many pages to follow on a category.
+                       "Do not download pictures while reading" is ON: the
+                       small windows skip pictures, videos and ad trackers.
+                       You still get every picture LINK. This is much faster.
+                       If a website starts to fail, use fewer windows.
+
+STEP 1 - WHERE ARE THE PRODUCTS?  (the easy way)
+  1. Click a brand button (Whirlpool, LG, Candy ...). Its Morocco website
+     opens in a new tab.
+  2. On that website, go to a LIST of products, like "Lave-linge".
+  3. Look at the side tab: the box "The page you are on" shows the page,
+     the brand it found, and if it is a list or a single product.
+  4. Press "Find all products here". It clicks "Voir plus" and goes to the
+     next pages by itself, and then GRABS them all by itself
+     (untick "After finding them, grab them right away" if you only want
+     the links). On a single product page, press "Grab this product".
+     If the page is already in your list, the box says so (green line).
+  The other way: press "or paste a link" and paste a category link or
+  product links (one per line).
+  Bosch tip: the first Bosch pages show only 4 products and a link
+  "Voir tous les produits". The extension follows that link by itself.
+
+EVEN FASTER: RIGHT-CLICK
+  On any brand page, right-click and choose:
+     "Ghandi: find all products on this page"
+     "Ghandi: grab this product"
+  On a product LINK, right-click: "Ghandi: grab this product link".
+  Select a part of a page with many links, right-click:
+     "Ghandi: grab all products in my selection".
+  The side tab opens by itself so you can watch.
+
+CATEGORY
+  Leave "Category on my site" EMPTY and each product gets the name of the
+  list page it came from (for example "Lave-linge pose libre").
+  Or type your own. Names you used before are suggested as you type.
+
+STEP 2 - PRODUCTS (the list on the right)
+  Every product is a row with its picture, name, brand, price and a label:
+     Not grabbed   I have only the link so far.
+     In line / Working   It is being read right now.
+     Done          All good.
+     Check me      I read it, but something may be missing. Click the row
+                   to see what. (Example: no picture found.)
+     Failed        The page could not be read. Press the round arrow to try
+                   again. I also try twice by myself.
+  Click a row to open the details. You can FIX anything there (name, model,
+  price, pictures, every specification line) and press "Save changes".
+  The buttons at the top of the list (All / Done / Check me / ...) filter
+  the list. The box on the right searches.
+  Tick the little boxes to select many rows. A yellow bar appears:
+  grab them, try again, set their category, or remove them.
+
+THE DARK BAR AT THE BOTTOM (the control panel)
+  The little lights: ONE LIGHT PER PRODUCT.
+     green = done, yellow = check me, red = failed, blue = working now.
+  Big green "Grab"   Starts reading products. If you ticked some rows it
+                     reads those; if not, it reads all that are "Not grabbed".
+  "Stop"             Stops after the products being read right now.
+  "Try the failed ones again"  appears when some products failed.
+  "Send to my site"  Choose what goes in the file. The first choice,
+                     "New since my last download", gives you only the
+                     products you have NOT downloaded yet. So you can grab
+                     fridges today, washing machines tomorrow, and each file
+                     has only the new ones. Then:
+     "Download .json"  saves the file on your computer.
+     "Copy"            copies the same text so you can paste it.
+
+IMPORTANT
+  - Keep Chrome open while it works. You can use other tabs.
+  - The green icon shows how many products are left. At the end it shows
+    a green tick (or a red number if some failed). For long jobs, a small
+    message pops up on your computer when it is finished.
+  - In the details window (click a product): click a picture to make it
+    the MAIN picture, click x to remove a picture. Little "copy" buttons
+    copy the name, the picture links, or the specifications as text
+    (handy to paste into your admin page by hand).
+  - A page that no longer exists (404) is marked Failed at once.
+  - Do NOT close the small windows yourself.
+  - Everything is saved after every product. If Chrome closes, open the
+    dashboard again and press "Grab" again: it continues where it stopped.
+  - QUICK READ (new, the fastest way): for most products the extension does
+    not open any window at all. It downloads the page as plain text and reads
+    it in a fraction of a second (like a robot reading the page's source).
+    Whirlpool, Candy and Haier pages work like this; LG and Samsung too when
+    their page text has everything. If anything is missing (a part that only
+    appears after a click, pictures added later), it automatically uses the
+    small window instead, so the result is never worse.
+    Rows read this way show "⚡ quick read". You can switch it off in
+    "Speed & limits" if a brand ever gives strange results.
+    Category pages are read the same way (no window) when possible.
+  - Faster than before: each little window is reused from product to
+    product, and it stops waiting as soon as everything is read. On real
+    websites expect about 2 to 6 seconds per product with 4 windows
+    (it depends on how fast the brand's website and your internet are).
+    The bottom bar shows the speed and the time left while it works.
+  - Always check the PRICE on the first products of each brand.
+    Shops can show an old price, a sale price and extra fees.
+
+
+PART 3A - SEND STRAIGHT TO YOUR SITE (no file)
+---------------------------------------------
+One time: follow "What YOU do" in LOVABLE-PROMPT-CONNECT.md.
+Then: in the side tab click "My site", paste the address and the key from
+your site's admin page "Extension Chrome", click "Save and test".
+Every day:
+  1. Grab products. Click "Select all" (or tick some rows).
+  2. Click "Import to site" (bottom). Choose which products, type a section
+     to suggest if you want, click "Send".
+  3. On your site's admin a notification appears:
+     "Annuler" = wipe them.  "Ajouter au site" = choose products and the
+     section for each, then add them.
+Rows that were sent show "✓ sent to site".
+
+
+PART 3 - GIVE THE FILE TO YOUR WEBSITE
+--------------------------------------
+1. Open the file LOVABLE-PROMPT.md (in this folder) with Notepad.
+2. Copy the text inside the box and paste it in Lovable's chat.
+   Lovable builds a page on your site:  /admin/import
+3. On that page, drop the .json file. It shows a preview first.
+   Press "Import". Done.
+Start with 3 or 4 products to see if it looks right.
+
+
+PART 4 - ONE HAPPY EXAMPLE
+--------------------------
+ 1. Brand recipe: Auto.   Category on my site: Réfrigérateurs
+ 2. Paste the LG "combined fridges" page link, press "Find products".
+ 3. 30 products appear. Press "Grab".
+ 4. Go for a coffee.
+ 5. Click the yellow "Check me" labels, fix what is missing.
+ 6. Press "Download .json". Give it to your website.
+
+
+PART 5 - IF SOMETHING LOOKS WRONG
+---------------------------------
+For one product:
+  Click its row. At the bottom of the window press "Copy problem report".
+For a category page that finds no products (or too few):
+  Left box, under the message: press "Copy list report".
+Paste the report in the chat with Claude and say what is wrong
+("the price is wrong", "pictures missing", "it only found 12 of 40").
+The report tells Claude exactly what the page looked like.
+
+
+PART 6 - AFTER YOU CHANGE ANY FILE (or get a new zip from Claude)
+-----------------------------------------------------------------
+New zip: unzip it, copy everything into your old folder ("Replace" all).
+Then:
+1. Go to  chrome://extensions
+2. Find "Ghandi Product Grabber".
+3. Click the little round arrow (Reload).
+4. Close the side tab and click the green icon again.
+Nothing else needed. Your list of products is kept.
+
+
+PART 7 - ADD A NEW BRAND
+------------------------
+See the file  HOW-TO-ADD-A-BRAND.txt  (same folder).

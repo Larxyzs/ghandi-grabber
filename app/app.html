@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ghandi Product Grabber</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+
+<header class="top">
+  <div class="brandmark">
+    <span class="plate" aria-hidden="true"><i></i><i></i><i></i></span>
+    <div>
+      <h1>Ghandi Product Grabber</h1>
+      <p>Find products. Grab their data. Send one file to your site.</p>
+    </div>
+  </div>
+
+  <div class="top-controls">
+    <label class="field">
+      <span>Brand recipe</span>
+      <select id="recipe"></select>
+    </label>
+    <label class="field">
+      <span>Category on my site</span>
+      <input id="category" type="text" list="catList" placeholder="Empty = the page's own name" autocomplete="off" />
+      <datalist id="catList"></datalist>
+    </label>
+    <label class="field">
+      <span>Air conditioners &amp; fans</span>
+      <select id="slideshowMode" title="On air conditioner and fan pages, take only the slideshow pictures, so nothing from the rest of the page gets in">
+        <option value="ac-specs">Slideshow + specs box</option>
+        <option value="ac-nospecs">Slideshow only, no specs</option>
+        <option value="all-specs">Slideshow for every product</option>
+        <option value="off">Off (read the whole page)</option>
+      </select>
+    </label>
+    <details class="settings" id="settingsBox">
+      <summary>Speed &amp; limits</summary>
+      <div class="settings-pop">
+        <label class="field">
+          <span>Windows at once</span>
+          <select id="workers">
+            <option value="1">1 — slow and safe</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4 — normal</option>
+            <option value="6">6 — fast</option>
+            <option value="8">8 — very fast (some websites may block you)</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Pause between products (seconds)</span>
+          <input id="delay" type="number" min="0" max="30" step="0.5" />
+        </label>
+        <label class="field">
+          <span>Most pages to follow on a category</span>
+          <input id="maxPages" type="number" min="1" max="60" step="1" />
+        </label>
+        <label class="check"><input id="quickRead" type="checkbox" /> <span>Quick read: read the page without opening a window when possible (fastest)</span></label>
+        <label class="check"><input id="lightLoad" type="checkbox" /> <span>Do not download pictures while reading (much faster)</span></label>
+        <p class="hint">More windows is faster, but some websites get angry. If pages start to fail, use fewer windows.</p>
+        <div class="verline">
+          <span>Version <b id="verNow"></b></span>
+          <button id="updCheck" class="mini" type="button">Check for updates</button>
+          <button id="updUndo" class="mini" type="button" hidden>Undo last update</button>
+        </div>
+        <p id="updCheckMsg" class="hint" aria-live="polite"></p>
+      </div>
+    </details>
+    <button id="siteBtn" class="ghost" type="button">My site: <span id="siteState">not connected</span></button>
+    <button id="helpBtn" class="ghost" type="button">How it works</button>
+    <button id="fullBtn" class="ghost" type="button" title="Open this in a big tab">Full page</button>
+  </div>
+</header>
+<section id="updBar" class="updbar" hidden aria-live="polite">
+  <div class="upd-text">
+    <h2>New version <span id="updVer"></span> is ready</h2>
+    <ul id="updNotes"></ul>
+    <p id="updMsg" class="upd-msg"></p>
+  </div>
+  <div class="upd-btns">
+    <button id="updInstall" class="primary" type="button">Install update</button>
+    <button id="updLater" class="mini" type="button">Later</button>
+  </div>
+</section>
+<p id="recipeHint" class="recipe-hint" aria-live="polite"></p>
+
+<main class="layout">
+
+  <!-- ===================== 1. SOURCE ===================== -->
+  <details class="source" id="sourceBox" open>
+    <summary class="step-title"><span class="n">1</span><h2>Where are the products?</h2></summary>
+
+    <div class="here" id="hereCard" aria-live="polite">
+      <div class="here-top"><span class="here-label">The page you are on</span><span id="hereBrand" class="brandchip" hidden></span></div>
+      <p id="hereUrl" class="here-url">Open a brand website in Chrome. I will see it here.</p>
+      <div class="btn-row">
+        <button id="hereFind" class="primary" type="button" disabled>Find all products here</button>
+        <button id="hereGrab" class="ghost" type="button" disabled>Grab this product</button>
+      </div>
+      <label class="check small"><input id="autoGrab" type="checkbox" checked /> <span>After finding them, grab them right away</span></label>
+      <p id="hereHave" class="here-have" hidden></p>
+    </div>
+
+    <div class="sites">
+      <span class="sites-label">Brand websites (Morocco)</span>
+      <div id="siteChips" class="sitechips"></div>
+    </div>
+
+    <details class="paste" id="pasteBox">
+    <summary class="or"><span>or paste a link</span></summary>
+
+    <div class="tabs" role="tablist">
+      <button role="tab" id="tabCat" aria-selected="true" aria-controls="paneCat">A category page</button>
+      <button role="tab" id="tabLinks" aria-selected="false" aria-controls="paneLinks">Product links</button>
+    </div>
+
+    <section id="paneCat" role="tabpanel" aria-labelledby="tabCat">
+      <p class="hint">A page that shows many products, like “All fridges”. I find every product link on it, even behind “Voir plus” and page 2, 3, 4…</p>
+      <label class="field">
+        <span>Category page link</span>
+        <input id="catUrl" type="url" placeholder="https://www.lg.com/ma/refrigerateurs/combines/" autocomplete="off" />
+      </label>
+      <label class="check"><input id="catAuto" type="checkbox" /> <span>Grab the products right away</span></label>
+      <div class="btn-row">
+        <button id="findBtn" class="primary" type="button">Find products</button>
+        <button id="findTabBtn" class="ghost" type="button" title="Use the category page you have open in another Chrome tab">Use the tab I have open</button>
+      </div>
+    </section>
+
+    <section id="paneLinks" role="tabpanel" aria-labelledby="tabLinks" hidden>
+      <p class="hint">Paste product links, one on each line. You can mix brands.</p>
+      <label class="field">
+        <span>Product links</span>
+        <textarea id="linksBox" rows="7" placeholder="https://…&#10;https://…"></textarea>
+      </label>
+      <label class="check"><input id="linksAuto" type="checkbox" checked /> <span>Grab them right away</span></label>
+      <div class="btn-row">
+        <button id="addBtn" class="primary" type="button">Add links</button>
+        <button id="grabTabBtn" class="ghost" type="button" title="Use the product page you have open in another Chrome tab">Grab the tab I have open</button>
+      </div>
+    </section>
+    </details>
+
+    <div id="crawlBox" class="crawl" aria-live="polite" hidden>
+      <div class="crawl-line"><span class="led" id="crawlLed"></span><span id="crawlMsg"></span></div>
+      <div class="btn-row small">
+        <button id="crawlStop" class="ghost" type="button" hidden>Stop</button>
+        <button id="crawlReport" class="link" type="button" hidden>Copy list report</button>
+      </div>
+    </div>
+  </details>
+
+  <!-- ===================== 2. PRODUCTS ===================== -->
+  <section class="products" aria-label="Products">
+    <div class="step-title"><span class="n">2</span><h2>Products</h2></div>
+
+    <div class="toolbar">
+      <div id="chips" class="chips" role="group" aria-label="Show"></div>
+      <div class="tb-right"><button id="selAll" class="mini" type="button">Select all</button><input id="search" type="search" placeholder="Search name, brand, link…" aria-label="Search" /><button id="clearAll" class="link" type="button">Clear the list</button></div>
+    </div>
+
+    <div id="bulkBar" class="bulk" hidden>
+      <strong id="bulkCount"></strong>
+      <button id="bulkGrab" class="mini" type="button">Grab</button>
+      <button id="bulkRetry" class="mini" type="button">Try again</button>
+      <label class="inline">Category <input id="bulkCat" type="text" list="catList" placeholder="category…" /></label>
+      <button id="bulkSetCat" class="mini" type="button">Set</button>
+      <button id="bulkRemove" class="mini danger" type="button">Remove</button>
+      <button id="bulkNone" class="link" type="button">Clear selection</button>
+    </div>
+
+    <div class="tablewrap">
+      <table id="table">
+        <thead>
+          <tr>
+            <th class="c-check"><input id="checkAll" type="checkbox" aria-label="Select all shown" /></th>
+            <th class="c-pic"></th>
+            <th>Product</th>
+            <th class="c-brand">Brand</th>
+            <th class="c-price">Price</th>
+            <th class="c-num" title="Pictures">Pics</th>
+            <th class="c-num" title="Specification rows">Specs</th>
+            <th class="c-status">Status</th>
+            <th class="c-act"></th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <div id="empty" class="empty" hidden>
+        <h3>Nothing here yet</h3>
+        <ol>
+          <li>Click a brand button on the left (or above). Its website opens.</li>
+          <li>Go to a list of products, like “Lave-linge”, and press <b>Find all products here</b>. They are grabbed by themselves.</li>
+          <li>Press <b>Download .json</b> at the bottom and give the file to your site.</li>
+        </ol>
+        <p class="hint">Tip: you can also right-click on any brand page or product link and choose “Ghandi: …”.</p>
+        <p class="hint">Everything is saved in Chrome while you work. You can close this page and come back.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== 3. THE DOCK ===================== -->
+<footer class="dock" aria-label="Controls">
+  <div class="dock-inner">
+    <div class="display">
+      <div class="leds" id="leds" role="img" aria-label="One light per product"></div>
+      <div class="readout">
+        <output id="runMsg" aria-live="polite">Ready.</output>
+        <div class="counts" id="counts"></div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="grabBtn" class="knob go" type="button">Grab</button>
+      <button id="stopBtn" class="knob stop" type="button" disabled>Stop</button>
+      <button id="retryFailed" class="link light" type="button" hidden>Try the failed ones again</button>
+    </div>
+
+    <div class="export">
+      <label class="field dark">
+        <span>Send to my site</span>
+        <select id="exportWhat">
+          <option value="new">New since my last download</option>
+          <option value="all">Everything grabbed</option>
+          <option value="done">Only the ones marked done</option>
+          <option value="selected">Only selected rows</option>
+        </select>
+      </label>
+      <button id="downloadBtn" class="knob out" type="button">Download .json</button>
+      <button id="copyBtn" class="knob out soft" type="button">Copy</button>
+      <button id="toSiteBtn" class="knob site" type="button" hidden>Import to site</button>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== DRAWER ===================== -->
+<div id="scrim" class="scrim" hidden></div>
+<aside id="drawer" class="drawer" aria-hidden="true" aria-label="Product details">
+  <div class="drawer-head">
+    <div>
+      <h2 id="dTitle">Product</h2>
+      <a id="dLink" href="#" target="_blank" rel="noreferrer">Open the original page</a>
+    </div>
+    <button id="dClose" class="ghost" type="button" aria-label="Close">Close</button>
+  </div>
+  <div class="drawer-body">
+    <div id="dWarn" class="warn" hidden></div>
+
+    <div class="grid2">
+      <label class="field"><span>Name <button class="copylink" type="button" data-copy="fName">copy</button></span><input id="fName" type="text" /></label>
+      <label class="field"><span>Model</span><input id="fModel" type="text" /></label>
+      <label class="field"><span>Brand</span><input id="fBrand" type="text" /></label>
+      <label class="field"><span>Category on my site</span><input id="fCat" type="text" list="catList" /></label>
+      <label class="field"><span>Price (as written)</span><input id="fPrice" type="text" /></label>
+      <label class="field"><span>Price (number)</span><input id="fPriceNum" type="number" step="0.01" /></label>
+    </div>
+
+    <label class="field">
+      <span>Main picture link <button class="copylink" type="button" data-copy="fMain">copy</button> <button class="copylink" type="button" data-copy="allPics">copy all picture links</button></span>
+      <input id="fMain" type="text" />
+    </label>
+    <div class="pics" id="dPics"></div>
+    <p class="hint">Click a picture to make it the main one. Click × to remove it.</p>
+    <label class="field">
+      <span>Other pictures (one link per line)</span>
+      <textarea id="fOthers" rows="4"></textarea>
+    </label>
+
+    <div class="spec-head">
+      <h3>Specifications</h3>
+      <span><button class="copylink" type="button" data-copy="specText">copy as text</button> <button id="addSection" class="mini" type="button">Add a section</button></span>
+    </div>
+    <div id="dSpecs"></div>
+  </div>
+  <div class="drawer-foot">
+    <button id="dSave" class="primary" type="button">Save changes</button>
+    <button id="dRetry" class="ghost" type="button">Grab again</button>
+    <button id="dReport" class="link" type="button">Copy problem report</button>
+  </div>
+</aside>
+
+<!-- ===================== HELP ===================== -->
+<!-- ===================== CONNECT MY SITE ===================== -->
+<dialog id="siteDlg">
+  <h2>Connect my site</h2>
+  <p class="hint">On your site, open the admin page <b>“Extension Chrome”</b>. Copy the two lines it shows and paste them here.</p>
+  <label class="field"><span>Import address</span><input id="siteUrl" type="url" placeholder="https://xxxx.supabase.co/functions/v1/ghandi-import" autocomplete="off" /></label>
+  <label class="field"><span>Secret key</span><input id="siteKey" type="password" placeholder="gk_…" autocomplete="off" /></label>
+  <label class="check small"><input id="siteShowKey" type="checkbox" /> <span>Show the key</span></label>
+  <p id="siteMsg" class="site-msg" aria-live="polite"></p>
+  <div class="btn-row">
+    <button id="siteTest" class="primary" type="button">Save and test</button>
+    <button id="siteForget" class="ghost" type="button">Disconnect</button>
+    <button class="link dlg-close" type="button">Close</button>
+  </div>
+</dialog>
+
+<!-- ===================== SEND TO MY SITE ===================== -->
+<dialog id="sendDlg">
+  <h2>Import to my site</h2>
+  <p class="hint">The products go to your site's <b>inbox</b>. On the site you will see a notification: you choose there to add them (and where) or to cancel.</p>
+  <fieldset class="which">
+    <legend>Which products?</legend>
+    <label class="check"><input type="radio" name="sendWhich" value="selected" /> <span id="sendSelLbl">The ones I selected</span></label>
+    <label class="check"><input type="radio" name="sendWhich" value="new" /> <span id="sendNewLbl">Not sent yet</span></label>
+    <label class="check"><input type="radio" name="sendWhich" value="all" /> <span id="sendAllLbl">Everything grabbed</span></label>
+  </fieldset>
+  <label class="field"><span>Suggest a section on my site (you can change it on the site)</span>
+    <input id="sendSection" type="text" list="sectionList" placeholder="Type to search: lave, froid, combiné…" autocomplete="off" />
+    <datalist id="sectionList"></datalist>
+  </label>
+  <label class="field"><span>Note (optional)</span><input id="sendNote" type="text" placeholder="e.g. Whirlpool combinés – 10 octobre" /></label>
+  <div class="sendbar" id="sendBar" hidden><i id="sendFill"></i></div>
+  <p id="sendMsg" class="site-msg" aria-live="polite"></p>
+  <div class="btn-row">
+    <button id="sendGo" class="primary" type="button">Send</button>
+    <button class="link dlg-close" type="button">Close</button>
+  </div>
+</dialog>
+
+<dialog id="help">
+  <h2>How it works</h2>
+  <ol>
+    <li><b>Pick a brand recipe</b> at the top, or leave it on <i>Auto</i>. Auto looks at the website name and picks the right one.</li>
+    <li><b>Find products.</b> Open a brand website (the brand buttons open the Morocco sites) and go to a list, like “Lave-linge”. Press <i>Find all products here</i>. On a single product page, press <i>Grab this product</i>. You can also paste links.</li>
+    <li><b>Grab.</b> Press the green button at the bottom. A small window opens for each product, reads it, and closes.</li>
+    <li><b>Check.</b> Products with an amber label need a quick look. Click a row to see and fix anything.</li>
+    <li><b>Send.</b> Press <i>Download .json</i>. Then give that file to the importer page on your site.</li>
+  </ol>
+  <p>Leave Chrome open while it works. Everything is saved after every product.</p>
+  <form method="dialog"><button class="primary">Got it</button></form>
+</dialog>
+
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="shim.js"></script>
+<script src="../recipe-list.js"></script>
+<script src="../updater/updater.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
