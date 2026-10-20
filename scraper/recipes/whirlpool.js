@@ -130,10 +130,13 @@ GHANDI.register({
   // ---- category / list pages: how to spot a product link ----
   // whirlpool.fr (VTEX): product addresses end in /p
   // whirlpool.ma: /ma-fr/produits/<category>/<name-with-model>
+  // whirlpool.ma also still has OLDER pages (air conditioners live there):
+  //   product   /w/climatisation-whirlpool-spicr-312w1/859991663390   (name + 12-digit code)
+  //   category  /produits/air-conditionne/air-conditionne--split--ab12   ("--ab12", "--cc02": a category code, not a product)
   productLinks: {
     sameSection: 3, // only products from the same category as the list page
-    pattern: [/\/p\/?$/i, /\/produits\/[^/]+\/[^/]*\d[^/]*\/?$/i],
-    exclude: [/\/(support|service|contact|blog|manuel|assistance|pieces|accessoires)(\/|$)/i],
+    pattern: [/\/p\/?$/i, /\/produits\/[^/]+\/[^/]*\d[^/]*\/?$/i, /\/w\/[^/]+\/\d{9,14}\/?$/i],
+    exclude: [/\/(support|service|contact|blog|manuel|assistance|pieces|accessoires)(\/|$)/i, /--[a-z]{2}\d{2}([a-z]{2}\d{2})*\/?$/i],
     loadMore: /^(charger|voir|afficher)\s+plus/i,
   },
 });
