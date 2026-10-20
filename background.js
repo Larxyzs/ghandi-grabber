@@ -450,14 +450,14 @@ function withTimeout(promise, ms, message) {
 
 const recipeArg = (recipeId) => (recipeId && recipeId !== 'auto' ? recipeId : undefined);
 
-async function scrapeTab(tabId, recipeId) {
+async function scrapeTab(tabId, recipeId, extra) {
   const slideshowMode = (await getSettings()).slideshowMode || 'ac-specs';
   await chrome.scripting.executeScript({ target: { tabId }, files: SCRAPE_FILES });
   const results = await withTimeout(
     chrome.scripting.executeScript({
       target: { tabId },
       func: (o) => window.GHANDI.run(o),
-      args: [{ timeoutMs: PAGE_TIMEOUT_MS, recipeId: recipeArg(recipeId), slideshowMode }],
+      args: [Object.assign({ timeoutMs: PAGE_TIMEOUT_MS, recipeId: recipeArg(recipeId), slideshowMode }, extra || {})],
     }),
     PAGE_TIMEOUT_MS + 25000,
     'The page took too long. Try again later.'
@@ -529,6 +529,31 @@ function compact(r) {
     slideshowMode: r.slideshowMode || '',
     warnings: r.warnings || [],
   };
+}
+
+// a few lines that say where the pictures and the specifications came from (kept for every product)
+function smallDebug(d) {
+  if (!d) return null;
+  const keep = ['recipe', 'slideshowMode', 'imagesFrom', 'galleryWhere', 'imageCounts', 'slideshow', 'droppedPictures', 'specsFrom', 'specSections', 'specCount', 'clicks', 'timeline', 'secondsTaken'];
+  const out = {};
+  keep.forEach((k) => {
+    if (d[k] != null) out[k] = d[k];
+  });
+  return out;
+}
+
+// "Copy problem report": open the page again in a small window and make an X-ray of it
+async function xrayItem(id) {
+  const it = await getItem(id);
+  if (!it) throw new Error('This product is not in the list any more.');
+  const settings = await getSettings();
+  const r = await withPage(it.url, (tabId) => scrapeTab(tabId, settings.recipeId, { xray: true }), null);
+  await updateItem(id, (x) => {
+    x.debug = (r && r.debug) || x.debug || null;
+    x.xrayAt = Date.now();
+    return x;
+  });
+  return { ok: true, found: r ? { name: r.name, pictures: r.mainImage ? 1 + (r.otherImages || []).length : 0, specRows: (r.specs || []).length } : null };
 }
 
 // THE ELECTROPLANET-STYLE SHEET (sheets/): the type you chose, or the one I detect
@@ -620,7 +645,7 @@ async function processItem(id, settings, getSlot) {
       }
       await updateItem(id, (it) => {
         it.result = c;
-        it.debug = c.warnings.length ? r.debug || null : null;
+        it.debug = c.warnings.length ? r.debug || null : smallDebug(r.debug);
         it.title = c.name || it.title;
         if (!it.image && c.mainImage) it.image = c.mainImage;
         if (it.sheet && it.sheet.edited) it.sheet.edited = false; // grabbed again: a fresh sheet
@@ -878,7 +903,7 @@ async function grabOpenTab(opts) {
     const c = compact(r);
     await updateItem(id, (it) => {
       it.result = c;
-      it.debug = c.warnings.length ? r.debug || null : null;
+      it.debug = c.warnings.length ? r.debug || null : smallDebug(r.debug);
       it.title = c.name || it.title;
       it.image = c.mainImage || it.image;
       if (it.sheet) it.sheet.edited = false;
@@ -1003,6 +1028,8 @@ async function handle(msg) {
       }
       return { ok: true, changed: ids.length };
     }
+    case 'xray':
+      return await xrayItem(msg.id);
     case 'edit-sheet':
       await updateItem(msg.id, (it) => {
         if (!it.sheet) it.sheet = { type: it.ptype || 'other', label: '', groups: [], extra: [] };

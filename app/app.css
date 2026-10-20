@@ -447,3 +447,7 @@ dialog { width: min(520px, 94vw); }
 .seg button { padding: 7px 10px; border: 0; background: #fff; font: 600 13px var(--body); cursor: pointer; }
 .seg button[aria-pressed=true] { background: var(--ink); color: #fff; }
 .bulk select { max-width: 150px; }
+
+/* ---------- problem report ---------- */
+.reportdlg { width: min(560px, calc(100vw - 32px)); }
+.reportdlg textarea { width: 100%; font: 12px/1.35 var(--mono); }

@@ -303,6 +303,14 @@
 </aside>
 
 <!-- ===================== HELP ===================== -->
+<!-- ===================== PROBLEM REPORT ===================== -->
+<dialog id="reportDlg" class="reportdlg" aria-labelledby="reportTitle">
+  <h2 id="reportTitle">Problem report</h2>
+  <p class="hint" id="reportHint">Click Copy, then paste it to Claude.</p>
+  <textarea id="reportText" rows="12" readonly></textarea>
+  <div class="btn-row"><button id="reportCopy" class="primary" type="button">Copy</button><button class="link dlg-close" type="button">Close</button></div>
+</dialog>
+
 <!-- ===================== WHAT ARE YOU GRABBING? ===================== -->
 <dialog id="typeDlg" class="typedlg" aria-labelledby="typeTitle">
   <h2 id="typeTitle">What are you grabbing?</h2>

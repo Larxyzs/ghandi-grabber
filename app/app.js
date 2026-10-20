@@ -766,8 +766,34 @@
       brand: r.brand || '',
       found: { name: r.name || '', price: r.price || '', pictures: r.mainImage ? 1 + (r.otherImages || []).length : 0, specRows: (r.specs || []).length, sections: (r.specGroups || []).map((g) => g.title + ' (' + g.rows.length + ')') },
       warnings: r.warnings || [],
-      debug: it.debug || '(none saved — this product looked fine; press "Grab again" to make a fresh report)',
+      productType: typeOf(it) || '',
+      sheet: it.sheet ? { type: it.sheet.type, lines: it.sheet.filled, sections: (it.sheet.groups || []).map((g) => g.title + ' (' + g.rows.length + ')'), brandLinesLeftOut: (it.sheet.extra || []).length } : null,
+      debug: it.debug || '(none saved)',
     };
+  }
+  // "Copy problem report": a fresh X-ray of the page (a small window opens a few seconds), then a box to copy it
+  async function showReport(id) {
+    let it = S.items.get(id);
+    if (!it) return;
+    const fresh = it.debug && it.debug.xray && Date.now() - (it.xrayAt || 0) < 30 * 60 * 1000;
+    if (!fresh) {
+      toast('Making a fresh report: a small window opens for a few seconds…');
+      $('dReport').disabled = true;
+      try {
+        const r = await send('xray', { id });
+        if (!r.ok) toast('Could not make a fresh report: ' + (r.error || '') + '. Here is what I have.');
+        for (let i = 0; i < 20; i++) {
+          it = S.items.get(id) || it;
+          if (it.xrayAt && Date.now() - it.xrayAt < 60000) break;
+          await new Promise((res) => setTimeout(res, 150));
+        }
+      } finally {
+        $('dReport').disabled = false;
+      }
+    }
+    $('reportText').value = JSON.stringify(problemReport(S.items.get(id) || it), null, 1);
+    $('reportDlg').showModal();
+    $('reportCopy').focus();
   }
 
   // ------------------------------------------------------------ actions
@@ -1248,9 +1274,9 @@
       toast(r.ok ? 'Grabbing again…' : r.error || 'Could not start.');
     });
     $('dReport').addEventListener('click', () => {
-      const it = S.items.get(S.openId);
-      if (it) copyText(JSON.stringify(problemReport(it), null, 2), 'Problem report copied. Paste it to Claude.');
+      if (S.openId) showReport(S.openId);
     });
+    $('reportCopy').addEventListener('click', () => copyText($('reportText').value, 'Problem report copied. Paste it to Claude.'));
     $('addSection').addEventListener('click', () => {
       if (!$('dSpecs').querySelector('.sgroup')) $('dSpecs').innerHTML = '';
       $('dSpecs').insertAdjacentHTML('beforeend', specGroupHtml({ title: '', rows: [{ label: '', value: '' }] }));

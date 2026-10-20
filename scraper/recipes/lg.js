@@ -41,6 +41,9 @@ GHANDI.register({
   ],
 
   imagePriority: ['gallery', 'jsonld', 'meta'],
+  // every slideshow picture of an LG product lives in a ".../gallery/..." folder
+  // (feature banners, awards and lifestyle photos of the page live elsewhere)
+  slideshowPattern: /\/gallery\//i,
   imageSelectors: [
     // pictures whose web address contains "/gallery/"
     'img[src*="/gallery/"], img[data-src*="/gallery/"], img[srcset*="/gallery/"]',
@@ -59,6 +62,8 @@ GHANDI.register({
     // small "zoom strip" copies: ..._S1.jpg, ...-S-02.jpg (the big ones are ..._DZ1.jpg)
     if (/[_-]S-?\d{1,2}\.(jpe?g|png|webp|avif)(\?|$)/i.test(url)) return false;
     if (/basic--?450|[-_/]450\.(jpe?g|png)|medium\d+\.|\/null(\?|$)/i.test(url)) return false;
+    // the small share copy (".../gallery/450/...-gallery-large.jpg") and the thumbnail folder (".../gallery/350/...")
+    if (/\/gallery\/(450|350|180)\/|-gallery-large\.|gallery-thumbnail/i.test(url)) return false;
     return true;
   },
 

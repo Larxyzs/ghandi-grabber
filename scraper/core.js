@@ -178,7 +178,10 @@
     try {
       const x = new URL(u);
       let p = x.pathname;
-      p = p.replace(/-\d+-(?:\d+|auto)(?=\/|\.|$)/, ''); // sizes like -500-auto
+      // sizes like ".../ids/155234-500-auto/" (VTEX shops) or "photo-1200-800.jpg"
+      // (NOT "…-gallery-2010-01.jpg": "01" is a slide number, not a size — lg.com names its slides like that)
+      p = p.replace(/(\/ids\/\d+)-\d+-(?:\d+|auto)(?=\/|\.|$)/, '$1');
+      p = p.replace(/-\d{3,4}-(?:\d{3,4}|auto)(?=\.[a-z0-9]+$)/i, '');
       p = p.replace(/[_-]\d{2,4}x(?:\d{2,4})?(?=\.)/, ''); // sizes like _300x300 or _540x
       return x.host + p;
     } catch (e) {
@@ -368,7 +371,9 @@
     return Array.from(out).filter((t) => (t.length >= 4 || t.charAt(0) === '/') && !/^\d+(kg|l|w|cm|mm|kw|btu|hz|v)$/.test(t) && !/^(4k|8k|uhd|fhd)/.test(t));
   }
 
-  function galleryImages(cfg) {
+  function galleryImages(cfg, info) {
+    const byAddress = slideshowByAddress(cfg, info);
+    if (byAddress.length >= 2) return { urls: byAddress, how: 'slideshow-address ' + String(cfg.slideshowPattern) };
     for (const sel of toArray(cfg.imageSelectors)) {
       const imgs = [];
       qa(sel).forEach((el) => {
@@ -412,9 +417,99 @@
   }
 
   // SLIDESHOW MODE: only the pictures of the product's own slideshow.
+  // SLIDESHOW BY ADDRESS: some brands name every slideshow picture the same way
+  // (lg.com: ".../<product folder>/gallery/..."). We take every such address on the page —
+  // also the pictures that are still asleep, and addresses only written in the page code —
+  // from the product's OWN folder, in slide order (01, 02, 03...). Feature banners, awards and
+  // lifestyle photos further down the page live in other folders, so they never get in.
+  function slideshowByAddress(cfg, info) {
+    const re = cfg.slideshowPattern;
+    if (!(re instanceof RegExp)) return [];
+    const toks = productTokens(findName(cfg, readJsonLd()).text).filter((t) => t.charAt(0) !== '/');
+    const nrm = (u) => String(u).toLowerCase().replace(/[^a-z0-9]/g, '');
+    const mine = (u) => toks.some((t) => nrm(u).indexOf(t) !== -1);
+    const found = [];
+    const seen = new Set();
+    const add = (raw, el) => {
+      if (!raw) return;
+      String(raw)
+        .split(/,\s+/)
+        .forEach((part) => {
+          const u0 = part.trim().split(/\s+/)[0];
+          if (!u0 || /^data:/i.test(u0)) return;
+          const u = absUrl(u0.replace(/&amp;/g, '&'));
+          if (!u || !re.test(u) || seen.has(u)) return;
+          seen.add(u);
+          found.push({ u, el, other: el ? inOtherProducts(el) && !mine(u) : false, head: !!(el && el.closest && el.closest('head')) });
+        });
+    };
+    const ATTRS = ['src', 'data-src', 'data-lazy-src', 'data-lazy', 'data-original', 'srcset', 'data-srcset', 'data-zoom-image', 'data-large', 'data-full'];
+    qa('img, source').forEach((el) => {
+      const owner = el.tagName === 'SOURCE' ? el.parentElement || el : el;
+      ATTRS.forEach((a) => add(el.getAttribute(a), owner));
+    });
+    qa('[style*="url("]').forEach((el) => {
+      const m = /url\((['"]?)(.*?)\1\)/.exec(el.getAttribute('style') || '');
+      if (m) add(m[2], el);
+    });
+    // addresses only written in the page code (a gallery that builds its pictures later)
+    try {
+      const html = document.documentElement.innerHTML;
+      const rx = /(?:https?:)?\/\/[^"'\s<>()\\]+?\.(?:jpe?g|png|webp|avif)(?:\/jcr:content\/renditions\/[^"'\s<>()\\]+)?(?:\?[^"'\s<>()\\]*)?|\/content\/dam\/[^"'\s<>()\\]+?\.(?:jpe?g|png|webp|avif)(?:\/jcr:content\/renditions\/[^"'\s<>()\\]+)?(?:\?[^"'\s<>()\\]*)?/gi;
+      let m;
+      let n = 0;
+      while ((m = rx.exec(html)) && n++ < 4000) add(m[0], null);
+    } catch (e) {
+      /* fine */
+    }
+    const folderOf = (u) => {
+      const i = u.search(re);
+      return i === -1 ? '' : u.slice(0, i);
+    };
+    const good = found.filter((x) => !x.other && processImages([x.u], cfg).length);
+    if (info) info.slideshow = { pattern: String(re), found: found.length, good: good.length, other: found.filter((x) => x.other).length };
+    if (!good.length) return [];
+    // the product's own folder = the folder of the first slide on the page (not the share picture in <head>)
+    const first = good.find((x) => x.el && !x.head && mine(x.u)) || good.find((x) => x.el && !x.head) || good.find((x) => mine(x.u)) || good[0];
+    const folder = folderOf(first.u);
+    let urls = processImages(good.filter((x) => folderOf(x.u) === folder).map((x) => x.u), cfg);
+    urls = bySlideNumber(urls);
+    if (info) Object.assign(info.slideshow, { folder: folder.slice(-90), kept: urls.length });
+    return urls;
+  }
+  // "...-gallery-2010-01.jpg", "New_DZ2.jpg", "..._z3_020817.jpg": put the slides in their number order
+  function bySlideNumber(urls) {
+    if (urls.length < 2) return urls;
+    const nums = urls.map((u) => {
+      let f = String(u).split('?')[0].replace(/\/jcr:content\/.*$/, '');
+      try {
+        f = decodeURIComponent(f);
+      } catch (e) {
+        /* fine */
+      }
+      f = f.split('/').pop().replace(/\.[a-z0-9]+$/i, '');
+      return (f.match(/\d+/g) || []).map(Number);
+    });
+    const len = Math.min.apply(null, nums.map((g) => g.length));
+    for (let k = 1; k <= len; k++) {
+      const vals = nums.map((g) => g[g.length - k]);
+      const distinct = new Set(vals);
+      if (distinct.size === vals.length && vals.every((v) => v >= 0 && v <= 99)) {
+        return urls
+          .map((u, i) => [u, vals[i], i])
+          .sort((a, b) => a[1] - b[1] || a[2] - b[2])
+          .map((x) => x[0]);
+      }
+      if (distinct.size > 1) break; // the number that changes is not a slide number
+    }
+    return urls;
+  }
+
   // The slideshow = the box around the FIRST good picture, grown bigger until it
   // would swallow a section title, a video or the specifications.
-  function slideshowImages(cfg) {
+  function slideshowImages(cfg, info) {
+    const byAddress = slideshowByAddress(cfg, info);
+    if (byAddress.length >= 2) return { urls: byAddress, how: 'slideshow-address ' + String(cfg.slideshowPattern) };
     const specBoxes = toArray(cfg.specContainerSelectors)
       .map((s) => {
         try {
@@ -1355,7 +1450,7 @@
 
     mark('specs-done');
     // 4. images: wait a little if none are there yet
-    const pickGallery = () => (slideMode ? slideshowImages(cfg) : galleryImages(cfg));
+    const pickGallery = () => (slideMode ? slideshowImages(cfg, debug) : galleryImages(cfg, debug));
     let gallery = pickGallery();
     const enoughPictures = () =>
       (gallery = pickGallery()).urls.length >= 2 ||
@@ -1390,8 +1485,8 @@
     };
     // every recipe gets the smart guess as a safety net, even if it forgot to list it
     // slideshow mode: the slideshow first; the box next to the name and the share picture only if there is no slideshow
-    const order = slideMode ? ['gallery', 'nearName', 'meta'] : toArray(cfg.imagePriority).slice();
-    if (!order.includes('nearName')) order.splice(Math.max(0, order.indexOf('meta')), 0, 'nearName');
+    const order = slideMode ? ['gallery', 'jsonld', 'meta'] : toArray(cfg.imagePriority).slice();
+    if (!slideMode && !order.includes('nearName')) order.splice(Math.max(0, order.indexOf('meta')), 0, 'nearName');
     let chosen = order.find((k) => sets[k] && sets[k].length >= 2);
     if (!chosen) chosen = order.find((k) => sets[k] && sets[k].length >= 1);
     let images = chosen ? sets[chosen] : [];
@@ -1463,9 +1558,103 @@
     mark('end (page ' + (document.visibilityState || '?') + ' ' + window.innerWidth + 'x' + window.innerHeight + ')');
     debug.secondsTaken = Math.round((Date.now() - t0) / 100) / 10;
     debug.page = diagnose(ld);
+    if (options && options.xray) {
+      try {
+        debug.xray = xray(cfg, [result.mainImage].concat(result.otherImages || []));
+      } catch (e) {
+        debug.xray = { error: String(e && e.message) };
+      }
+    }
 
     return JSON.parse(JSON.stringify(result)); // make sure it travels safely
   };
+
+  // ================================================================
+  //  X-RAY: a short map of the page for the helper (me), made by "Copy problem report"
+  //  every picture (where it sits, kept or not), the specifications area, the data the page downloaded
+  // ================================================================
+  function xray(cfg, kept) {
+    const short = (u) => {
+      try {
+        const x = new URL(u, location.href);
+        const p = x.pathname.length > 110 ? '…' + x.pathname.slice(-110) : x.pathname;
+        return p + (x.search ? x.search.slice(0, 24) : '');
+      } catch (e) {
+        return String(u).slice(0, 120);
+      }
+    };
+    const tag = (el) =>
+      el.tagName.toLowerCase() +
+      (el.id ? '#' + el.id : '') +
+      (typeof el.className === 'string' && el.className.trim() ? '.' + el.className.trim().split(/\s+/).slice(0, 3).join('.') : '');
+    const where = (el, n) => {
+      const out = [];
+      let x = el.parentElement;
+      for (let i = 0; i < n && x && x !== document.body; i++, x = x.parentElement) out.push(tag(x));
+      return out.join(' < ');
+    };
+    const keyOf = cfg.imageKey || defaultImageKey;
+    const keptKeys = new Set(kept.filter(Boolean).map((u) => keyOf(u)));
+    const imgs = qa('img')
+      .slice(0, 150)
+      .map((img) => {
+        const u = bestImageUrl(img);
+        const fixed = u ? processImages([u], cfg)[0] : '';
+        return {
+          s: u ? short(u) : '(no address) ' + String(img.getAttribute('src') || '').slice(0, 30),
+          alt: clean(img.getAttribute('alt') || '').slice(0, 40),
+          at: where(img, 4),
+          other: inOtherProducts(img) ? 1 : 0,
+          kept: fixed && keptKeys.has(keyOf(fixed)) ? 1 : 0,
+          skip: u && !fixed ? 1 : 0,
+        };
+      });
+    let calls = [];
+    try {
+      calls = performance
+        .getEntriesByType('resource')
+        .filter((e) => /fetch|xmlhttprequest/.test(e.initiatorType))
+        .map((e) => e.name.slice(0, 220))
+        .filter((u) => !/google|facebook|doubleclick|analytics|hotjar|criteo|clarity|tiktok|bing|adobedtm|demdex|omtrdc/i.test(u))
+        .slice(0, 60);
+    } catch (e) {
+      /* fine */
+    }
+    const snip = (el, max) => {
+      if (!el) return '';
+      const c = el.cloneNode(true);
+      qa('script,style,svg,noscript,path,img,source,video', c).forEach((n) => n.remove());
+      return c.outerHTML
+        .replace(/ (data-[a-z-]+|aria-[a-z-]+|role|tabindex|style)="[^"]*"/gi, '')
+        .replace(/="([^"]{80,})"/g, (m, v) => '="' + v.slice(0, 80) + '…"')
+        .replace(/\s+/g, ' ')
+        .slice(0, max);
+    };
+    // the specifications: the box(es) holding "Toutes les caractéristiques" / the recipe's spec boxes
+    const titles = qa('h1,h2,h3,h4,h5,h6,p,span,div,button,a,strong,dt,th,li').filter(
+      (el) => el.childElementCount === 0 && /^(toutes les caract|caract[ée]ristiques|sp[ée]cifications|fiche technique)/i.test(clean(el.textContent))
+    );
+    const boxes = [];
+    toArray(cfg.specContainerSelectors).forEach((sel) => {
+      try {
+        qa(sel).forEach((el) => boxes.push(el));
+      } catch (e) {
+        /* fine */
+      }
+    });
+    titles.slice(0, 6).forEach((t) => {
+      let x = t;
+      for (let i = 0; i < 4 && x.parentElement && x.parentElement !== document.body; i++) x = x.parentElement;
+      if (!boxes.some((b) => b.contains(x) || x.contains(b))) boxes.push(x);
+    });
+    return {
+      url: location.href,
+      images: imgs,
+      dataCalls: calls,
+      specTitles: titles.slice(0, 12).map((t) => clean(t.textContent).slice(0, 60) + '  @ ' + where(t, 3)),
+      specBoxes: boxes.slice(0, 4).map((b) => ({ at: tag(b) + ' < ' + where(b, 3), rows: qa('tr,li,dt,[class*="row" i]', b).length, html: snip(b, 7000) })),
+    };
+  }
 
   // ================================================================
   //  Shared tools for the other scraper files (links.js)
