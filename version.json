@@ -1,0 +1,146 @@
+{
+ "version": "3.6.0",
+ "commit": "3ca142fb6f5c23f03de86100fd8ec2e67cb85a31",
+ "notes": [
+  "Updates now install themselves when you click: no more uninstalling.",
+  "Air conditioners and fans: only the slideshow pictures and the specs box."
+ ],
+ "files": [
+  {
+   "path": "HOW-TO-ADD-A-BRAND.txt",
+   "size": 3657,
+   "sha256": "40f7d190d58689fd335749ef6aede4cca13a91c1631f368082b9913877f43855"
+  },
+  {
+   "path": "LOVABLE-PROMPT-CONNECT.md",
+   "size": 9569,
+   "sha256": "c428ac23178e2ff6a70799b7922706c0aa6e539f997357a616746c0a3e7e3bae"
+  },
+  {
+   "path": "LOVABLE-PROMPT.md",
+   "size": 27724,
+   "sha256": "2a468d7da69253dc78099e0cab25226d56e7e5f52cb7131ea31ddf87ec57e56c"
+  },
+  {
+   "path": "READ-ME-FIRST.txt",
+   "size": 15242,
+   "sha256": "ba3ea767e1f74c6777b7813adcd85da760c28ccfa9891b00f336c57b807551e2"
+  },
+  {
+   "path": "app/app.css",
+   "size": 24600,
+   "sha256": "d574327c75cc55e8b910525cf50afd0bda2fde11c06293f926800c1285b6ec69"
+  },
+  {
+   "path": "app/app.html",
+   "size": 17457,
+   "sha256": "acb185683f366591aa050b4ce81169723ca2dd7eadd65c61eb0d6fdcf7e28bbd"
+  },
+  {
+   "path": "app/app.js",
+   "size": 54529,
+   "sha256": "1fe85379bf34fc03ecf4378f151abb4ec17e2cc2e66e18589a47205e6c89d7a4"
+  },
+  {
+   "path": "app/shim.js",
+   "size": 485,
+   "sha256": "ca0988ab536e14d9679151bd884df191a0bb524ac20c612a069593896915272b"
+  },
+  {
+   "path": "background.js",
+   "size": 43046,
+   "sha256": "928941b301cc35470f47dd8e4667b1f2fa84391a38a319631271171d02958c1a"
+  },
+  {
+   "path": "icons/icon128.png",
+   "size": 442,
+   "sha256": "a446c80354603f230a01166b7bb9b4fcf47b957a0b76c2bb902e1bf4ad8d019f"
+  },
+  {
+   "path": "icons/icon16.png",
+   "size": 111,
+   "sha256": "05591f7daf1340dd0121a1896cf5d2d27c9c24a7748bc084c0534795eefae9c5"
+  },
+  {
+   "path": "icons/icon48.png",
+   "size": 191,
+   "sha256": "5206976634f18586f5b21bfd04e34f96bc90d704ab52524de4ea4838fb2eed8d"
+  },
+  {
+   "path": "manifest.json",
+   "size": 1010,
+   "sha256": "b5cf6b527210a65093d0d32daead793e9aee7573559f59effae446c4fc6d9da8"
+  },
+  {
+   "path": "offscreen/offscreen.html",
+   "size": 357,
+   "sha256": "ce0ce7d4ba510e775c05dd2ddc5bc179ab68cdc26b6febd82205e89af11a9536"
+  },
+  {
+   "path": "offscreen/offscreen.js",
+   "size": 3606,
+   "sha256": "16e6b563920a5748cfdf93e434fcd6c599537b6f77643b12b9bea868a7a4cd9e"
+  },
+  {
+   "path": "recipe-list.js",
+   "size": 611,
+   "sha256": "93da890c11aa4b5325aa1b1f0902d0c88847ef49d86c12308a10954ac6563ae8"
+  },
+  {
+   "path": "scraper/core.js",
+   "size": 64076,
+   "sha256": "d4b7baaf5511b0e07fcb0419f72536c23dc0e9d49e7b83b1f5e8c2d4603918aa"
+  },
+  {
+   "path": "scraper/links.js",
+   "size": 17984,
+   "sha256": "9782a6d6e6760f35fb841c26ab094430a51f57d4d7d834209232981b255624f1"
+  },
+  {
+   "path": "scraper/recipes/_template.js",
+   "size": 1822,
+   "sha256": "5ca88d0d2aa35e67a5566c55be90f3f3a813698071d790725db95dad2ceaf01b"
+  },
+  {
+   "path": "scraper/recipes/bosch.js",
+   "size": 3684,
+   "sha256": "31759f6e1f8b37379fae35e110e43d0d315e662227882e0714806f07e019addc"
+  },
+  {
+   "path": "scraper/recipes/candy.js",
+   "size": 4771,
+   "sha256": "f6948bf18f65d2ce143d53ed52a28c82bbb945bfbc7b424606c309ee339eca59"
+  },
+  {
+   "path": "scraper/recipes/haier.js",
+   "size": 4737,
+   "sha256": "d7c32244fc93ba920f9640e37e5ec294246735e78299cec5f2af71db16a0307d"
+  },
+  {
+   "path": "scraper/recipes/lg.js",
+   "size": 6511,
+   "sha256": "c59e0370e2beb13d986e655464022450c4b63895b6d8ab236a9a42c8387d67d0"
+  },
+  {
+   "path": "scraper/recipes/samsung.js",
+   "size": 3550,
+   "sha256": "0ddccbc07cf9384e767d25622ef452dec52ed3b64ea206cdf0edfc2147a1e61b"
+  },
+  {
+   "path": "scraper/recipes/tcl.js",
+   "size": 2576,
+   "sha256": "5acb5c2828d4bf6b9575f0abad7ccebe06f5fda8de46c4903cc7a42d0462bce7"
+  },
+  {
+   "path": "scraper/recipes/whirlpool.js",
+   "size": 5693,
+   "sha256": "df23b195032a5ed7e113b4f7a77f9e627fb62a6d21677661658a54d8aa44634e"
+  },
+  {
+   "path": "updater/updater.js",
+   "size": 11294,
+   "sha256": "6d94f623c6b7fd907190d501a4560f74e30d98704a16e30489a139dee5bf0684"
+  }
+ ],
+ "remove": []
+}
