@@ -1,10 +1,9 @@
 {
- "version": "3.7.0",
- "commit": "9e135445892e8d25937796ff372a26d94653cdf7",
+ "version": "3.7.1",
+ "commit": "1c622586641891fdd7d7d2c4cfd7942df6f320c0",
  "notes": [
-  "Spec sheets in Electroplanet style: the same sections and lines for every brand (Minuteur, Capacité de rafraîchissement, Fréquence d'entrée AC...).",
-  "Before finding or grabbing, the side tab asks what you are grabbing (fridge, air conditioner, washing machine, TV, hob, oven, microwave, sink...).",
-  "In the product details you can switch between the Electroplanet style and the brand's original lines."
+  "LG pictures fixed: only the product's slideshow (no more awards, feature banners or lifestyle photos), in the right order.",
+  "Copy problem report now makes a fresh report of the page, to send to Claude."
  ],
  "files": [
   {
@@ -29,18 +28,18 @@
   },
   {
    "path": "app/app.css",
-   "size": 26308,
-   "sha256": "d611849daafc70546f6e61102e1a6bd0f5f012f072414010c86a79e2c8fa53db"
+   "size": 26472,
+   "sha256": "1c5a95c17bbf4c70b749271762cafb26ac1de00d75f4d6fa412fbf8ba6dfdf90"
   },
   {
    "path": "app/app.html",
-   "size": 19643,
-   "sha256": "d60d15b253e8ca41f050342b82a3d1db9421058dd8a17f2433b7fad0e65b58f5"
+   "size": 20127,
+   "sha256": "a9bed082493cdf2a48b73d8c888a9192da3ff4571384fd87bcf2243942e4d4db"
   },
   {
    "path": "app/app.js",
-   "size": 62107,
-   "sha256": "db5a1cf7fded1b48e4c219afc72ded0d68e73acd046358f5587dd1c5674c3747"
+   "size": 63339,
+   "sha256": "b5c19cb2b7cf9f0d5b50df7f88edca2b8df17c80555ef3ab2327a29451d15964"
   },
   {
    "path": "app/shim.js",
@@ -49,8 +48,8 @@
   },
   {
    "path": "background.js",
-   "size": 45757,
-   "sha256": "8274ff160038d2404966650e5cdd62dfbbf583ae0a88fe27e2b0539f2011a8c5"
+   "size": 46983,
+   "sha256": "8eaf644f7895d02306e37b1d545a98ba93023924cb6303a04cba803ab668fefa"
   },
   {
    "path": "icons/icon128.png",
@@ -70,7 +69,7 @@
   {
    "path": "manifest.json",
    "size": 1010,
-   "sha256": "ab77fe32665abd536e9f207ada418679d9e943766c45e08fefe4d081b4d183f2"
+   "sha256": "6566bbd3c789b72efed37f419524f555728552ab1a54f2be93f2ea47e16bb6ad"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -89,8 +88,8 @@
   },
   {
    "path": "scraper/core.js",
-   "size": 64076,
-   "sha256": "d4b7baaf5511b0e07fcb0419f72536c23dc0e9d49e7b83b1f5e8c2d4603918aa"
+   "size": 73097,
+   "sha256": "0446981c88f83a3eafc81ae073b8395f4d497c9a79562113fa9d840118f64ae4"
   },
   {
    "path": "scraper/links.js",
@@ -119,8 +118,8 @@
   },
   {
    "path": "scraper/recipes/lg.js",
-   "size": 6511,
-   "sha256": "c59e0370e2beb13d986e655464022450c4b63895b6d8ab236a9a42c8387d67d0"
+   "size": 6925,
+   "sha256": "2da1abcb0f632c87847b36ce9fb8f694a1450621e466a7a03f2a0a597ff52573"
   },
   {
    "path": "scraper/recipes/samsung.js",
