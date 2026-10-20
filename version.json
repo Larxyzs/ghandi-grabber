@@ -1,9 +1,10 @@
 {
- "version": "3.6.0",
- "commit": "3ca142fb6f5c23f03de86100fd8ec2e67cb85a31",
+ "version": "3.7.0",
+ "commit": "9e135445892e8d25937796ff372a26d94653cdf7",
  "notes": [
-  "Updates now install themselves when you click: no more uninstalling.",
-  "Air conditioners and fans: only the slideshow pictures and the specs box."
+  "Spec sheets in Electroplanet style: the same sections and lines for every brand (Minuteur, Capacité de rafraîchissement, Fréquence d'entrée AC...).",
+  "Before finding or grabbing, the side tab asks what you are grabbing (fridge, air conditioner, washing machine, TV, hob, oven, microwave, sink...).",
+  "In the product details you can switch between the Electroplanet style and the brand's original lines."
  ],
  "files": [
   {
@@ -23,23 +24,23 @@
   },
   {
    "path": "READ-ME-FIRST.txt",
-   "size": 15242,
-   "sha256": "ba3ea767e1f74c6777b7813adcd85da760c28ccfa9891b00f336c57b807551e2"
+   "size": 16616,
+   "sha256": "4a34ad506050a3bb6c48f60ee8293e01f05cd635ba250576afb5ba52167e4f52"
   },
   {
    "path": "app/app.css",
-   "size": 24600,
-   "sha256": "d574327c75cc55e8b910525cf50afd0bda2fde11c06293f926800c1285b6ec69"
+   "size": 26308,
+   "sha256": "d611849daafc70546f6e61102e1a6bd0f5f012f072414010c86a79e2c8fa53db"
   },
   {
    "path": "app/app.html",
-   "size": 17457,
-   "sha256": "acb185683f366591aa050b4ce81169723ca2dd7eadd65c61eb0d6fdcf7e28bbd"
+   "size": 19643,
+   "sha256": "d60d15b253e8ca41f050342b82a3d1db9421058dd8a17f2433b7fad0e65b58f5"
   },
   {
    "path": "app/app.js",
-   "size": 54529,
-   "sha256": "1fe85379bf34fc03ecf4378f151abb4ec17e2cc2e66e18589a47205e6c89d7a4"
+   "size": 62107,
+   "sha256": "db5a1cf7fded1b48e4c219afc72ded0d68e73acd046358f5587dd1c5674c3747"
   },
   {
    "path": "app/shim.js",
@@ -48,8 +49,8 @@
   },
   {
    "path": "background.js",
-   "size": 43046,
-   "sha256": "928941b301cc35470f47dd8e4667b1f2fa84391a38a319631271171d02958c1a"
+   "size": 45757,
+   "sha256": "8274ff160038d2404966650e5cdd62dfbbf583ae0a88fe27e2b0539f2011a8c5"
   },
   {
    "path": "icons/icon128.png",
@@ -69,7 +70,7 @@
   {
    "path": "manifest.json",
    "size": 1010,
-   "sha256": "b5cf6b527210a65093d0d32daead793e9aee7573559f59effae446c4fc6d9da8"
+   "sha256": "ab77fe32665abd536e9f207ada418679d9e943766c45e08fefe4d081b4d183f2"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -135,6 +136,16 @@
    "path": "scraper/recipes/whirlpool.js",
    "size": 5693,
    "sha256": "df23b195032a5ed7e113b4f7a77f9e627fb62a6d21677661658a54d8aa44634e"
+  },
+  {
+   "path": "sheets/engine.js",
+   "size": 14849,
+   "sha256": "46345313e6313f27cbcf76ff675a10856bee6e0fcb345eec32df8e14aa97fb0f"
+  },
+  {
+   "path": "sheets/templates.js",
+   "size": 74128,
+   "sha256": "9b1239eaa1105a9ce8987671307071787e71d72aa769889d029085e9683f743e"
   },
   {
    "path": "updater/updater.js",
