@@ -1,4 +1,4 @@
-GHANDI PRODUCT GRABBER  (version 3.6)
+GHANDI PRODUCT GRABBER  (version 3.7)
 ===================================
 
 What is this?
@@ -23,6 +23,25 @@ Each brand was studied on its real Morocco website (the text of real pages:
 links, buttons, section names, picture addresses). Then a copy of each site
 was built and the whole thing (find -> grab -> download) was tested 7 times
 in a real Chrome: 7 out of 7 passed, for all 7 brands.
+
+ELECTROPLANET-STYLE SPEC SHEETS + "WHAT ARE YOU GRABBING?" (new in 3.7)
+Every brand writes the same facts in its own words (LG: "Réservation marche/arrêt
+(24 heures)", Samsung: "Minuterie 24 heures"...). Now every product also gets ONE
+clean sheet, with the same sections and lines as Electroplanet, whatever the brand:
+  Autre Caractéristique (Marque, Code produit), Caractéristiques, Puissance,
+  Poids Et Dimensions, Contenu De L'emballage, Réseau...
+  e.g. "Minuteur = Oui", "Capacité de rafraîchissement (nominale) = 24000 BTU/h",
+  "Fréquence d'entrée AC = 50 Hz", "Taille de l'écran = 139,7 cm (55")".
+Nothing is invented: a line is shown only when the brand page (or the name) says it.
+  - Before finding / grabbing, the side tab asks: "What are you grabbing?"
+    (Réfrigérateur, Climatiseur, Lave-linge, TV, Table de cuisson, Four encastrable,
+    Micro-ondes encastrable, Évier, Lave-vaisselle, Ventilateur, or "Mixed").
+    Its guess is already marked. You can turn the question off in "Speed & limits".
+  - Change the type of one product in its details, or of many with the
+    selection bar ("Type ... Set").
+  - In the product details: "Electroplanet style" / "Brand's original" to see both.
+  - "Spec sheet" at the top: what goes into the file and to your site.
+    The brand's original lines are always kept too (brandSpecGroups in the file).
 
 UPDATES WITHOUT UNINSTALLING (new in 3.6)
 Install this version ONE last time, from a folder that stays put

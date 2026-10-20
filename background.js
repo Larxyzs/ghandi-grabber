@@ -20,6 +20,7 @@
 
 importScripts('recipe-list.js'); // gives us RECIPE_FILES
 importScripts('updater/updater.js'); // gives us GHANDI_UPDATER (updates without uninstalling)
+importScripts('sheets/engine.js', 'sheets/templates.js'); // GHANDI_SHEETS: the Electroplanet-style spec sheet
 
 const CORE_FILE = 'scraper/core.js';
 const LINKS_FILE = 'scraper/links.js';
@@ -148,6 +149,7 @@ function addItems(links, opts) {
     const batch = {};
     let added = 0;
     let skipped = 0;
+    const retype = [];
     const settings = await getSettings();
     for (const l of links) {
       const url = normalizeUrl(l && l.url);
@@ -159,6 +161,7 @@ function addItems(links, opts) {
       const id = hash(key);
       if (have.has(id)) {
         skipped++;
+        if (opts.ptype && opts.ptype !== 'auto') retype.push(id); // you told me the type: use it for this one too
         continue;
       }
       have.add(id);
@@ -174,6 +177,8 @@ function addItems(links, opts) {
         category: (opts.category != null && opts.category !== '' ? opts.category : settings.category) || opts.listingTitle || '',
         status: opts.queue ? 'queued' : 'found',
         message: '',
+        ptype: opts.ptype && opts.ptype !== 'auto' ? opts.ptype : '',
+        ptypeBy: opts.ptype && opts.ptype !== 'auto' ? 'you' : '',
         attempts: 0,
         result: null,
         addedAt: Date.now(),
@@ -182,8 +187,19 @@ function addItems(links, opts) {
       added++;
     }
     batch.ids = ids;
+    if (retype.length) {
+      const old = await store.get(retype.map((i) => 'it:' + i));
+      retype.forEach((i) => {
+        const it = old['it:' + i];
+        if (!it) return;
+        it.ptype = opts.ptype;
+        it.ptypeBy = 'you';
+        applySheet(it);
+        batch['it:' + i] = it;
+      });
+    }
     await store.set(batch);
-    return { added, skipped, ids: Object.keys(batch).filter((k) => k.startsWith('it:')).map((k) => k.slice(3)) };
+    return { added, skipped, ids: Object.keys(batch).filter((k) => k.startsWith('it:') && retype.indexOf(k.slice(3)) === -1).map((k) => k.slice(3)) };
   });
 }
 
@@ -515,6 +531,26 @@ function compact(r) {
   };
 }
 
+// THE ELECTROPLANET-STYLE SHEET (sheets/): the type you chose, or the one I detect
+function applySheet(it) {
+  if (!it || !it.result) return it;
+  try {
+    let type = it.ptype;
+    if (!type) {
+      const d = GHANDI_SHEETS.detect(it.result, it.url);
+      type = d.id;
+      it.ptypeAuto = d.id;
+      it.ptypeSure = !!d.sure;
+    }
+    if (it.sheet && it.sheet.edited && it.sheet.type === type) return it; // your own edits stay
+    const sh = GHANDI_SHEETS.build(it.result, type, { url: it.url, model: it.result.model || '' });
+    it.sheet = { type: sh.type, label: sh.label, groups: sh.groups, extra: sh.extra, filled: sh.filled, model: sh.model, at: Date.now() };
+  } catch (e) {
+    it.sheet = null;
+  }
+  return it;
+}
+
 // an item that did not get its turn goes back to what it was: grabbed already, or just a link
 function restState(it, message) {
   if (it.result && it.result.name) {
@@ -587,6 +623,8 @@ async function processItem(id, settings, getSlot) {
         it.debug = c.warnings.length ? r.debug || null : null;
         it.title = c.name || it.title;
         if (!it.image && c.mainImage) it.image = c.mainImage;
+        if (it.sheet && it.sheet.edited) it.sheet.edited = false; // grabbed again: a fresh sheet
+        applySheet(it);
         it.seconds = seconds;
         it.mode = mode;
         it.status = c.warnings.length ? 'check' : 'done';
@@ -779,6 +817,7 @@ async function crawlList(opts) {
         listingTitle: r.title || '',
         category: opts.category != null ? opts.category : undefined,
         queue: !!opts.autoStart,
+        ptype: opts.ptype,
       });
       newIds.push(...res.ids);
       found += r.links.length;
@@ -829,7 +868,7 @@ async function grabOpenTab(opts) {
   const tab = await pickUserTab(opts.tabId);
   if (!tab) throw new Error('Open a product page in a normal Chrome tab first.');
   const url = normalizeUrl(tab.url);
-  const added = await addItems([{ url, title: tab.title || '' }], { category: opts.category });
+  const added = await addItems([{ url, title: tab.title || '' }], { category: opts.category, ptype: opts.ptype });
   const id = hash(keyOf(url));
   await updateItem(id, (it) => Object.assign(it, { status: 'working', message: 'Reading the tab you have open…' }));
   try {
@@ -842,6 +881,8 @@ async function grabOpenTab(opts) {
       it.debug = c.warnings.length ? r.debug || null : null;
       it.title = c.name || it.title;
       it.image = c.mainImage || it.image;
+      if (it.sheet) it.sheet.edited = false;
+      applySheet(it);
       it.status = c.warnings.length ? 'check' : 'done';
       it.message = c.warnings[0] || '';
       it.finishedAt = Date.now();
@@ -868,6 +909,8 @@ function editItem(id, patch) {
         if (Object.prototype.hasOwnProperty.call(body, k)) it.result[k] = body[k];
       });
       it.edited = true;
+      // you changed the brand's lines (or the name / model): the clean sheet follows, unless you edited the sheet itself
+      if (!(it.sheet && it.sheet.edited) && (body.specGroups || body.name || body.model || body.brand)) applySheet(it);
       if (it.status === 'check' && it.result.name) {
         it.status = 'done'; // the person looked at it and fixed it
         it.message = 'Checked by you.';
@@ -901,7 +944,7 @@ async function handle(msg) {
   switch (msg.type) {
     case 'add-links': {
       const links = (msg.urls || []).map((u) => ({ url: u })).concat(msg.links || []);
-      const res = await addItems(links, { category: msg.category, queue: !!msg.queue });
+      const res = await addItems(links, { category: msg.category, queue: !!msg.queue, ptype: msg.ptype });
       if (msg.queue && res.ids.length) {
         pending.push(...res.ids.filter((i) => !pending.includes(i)));
         if (running) stats.total += res.ids.length;
@@ -910,13 +953,13 @@ async function handle(msg) {
       return { ok: true, added: res.added, skipped: res.skipped };
     }
     case 'crawl':
-      crawlList({ url: msg.url, maxPages: msg.maxPages, recipeId: msg.recipeId, category: msg.category, autoStart: !!msg.autoStart });
+      crawlList({ url: msg.url, maxPages: msg.maxPages, recipeId: msg.recipeId, category: msg.category, autoStart: !!msg.autoStart, ptype: msg.ptype });
       return { ok: true };
     case 'crawl-tab':
-      crawlList({ tab: true, tabId: msg.tabId, recipeId: msg.recipeId, category: msg.category, autoStart: !!msg.autoStart });
+      crawlList({ tab: true, tabId: msg.tabId, recipeId: msg.recipeId, category: msg.category, autoStart: !!msg.autoStart, ptype: msg.ptype });
       return { ok: true };
     case 'grab-tab':
-      return Object.assign({ ok: true }, await grabOpenTab({ tabId: msg.tabId, recipeId: msg.recipeId, category: msg.category }));
+      return Object.assign({ ok: true }, await grabOpenTab({ tabId: msg.tabId, recipeId: msg.recipeId, category: msg.category, ptype: msg.ptype }));
     case 'start':
       return { ok: true, queued: await queueItems(msg.ids, ['found', 'queued']) };
     case 'retry':
@@ -947,6 +990,26 @@ async function handle(msg) {
       return { ok: true };
     case 'clear-all':
       await clearAll();
+      return { ok: true };
+    case 'set-type': {
+      const ids = msg.ids || [];
+      for (const id of ids) {
+        await updateItem(id, (it) => {
+          it.ptype = msg.ptype === 'auto' ? '' : msg.ptype || '';
+          it.ptypeBy = msg.ptype === 'auto' ? '' : 'you';
+          if (it.sheet) it.sheet.edited = false;
+          return applySheet(it);
+        });
+      }
+      return { ok: true, changed: ids.length };
+    }
+    case 'edit-sheet':
+      await updateItem(msg.id, (it) => {
+        if (!it.sheet) it.sheet = { type: it.ptype || 'other', label: '', groups: [], extra: [] };
+        it.sheet.groups = msg.groups || [];
+        it.sheet.edited = true;
+        return it;
+      });
       return { ok: true };
     case 'check-update':
       return { ok: true, update: await checkForUpdate(true) };

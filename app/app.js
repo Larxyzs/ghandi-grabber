@@ -7,7 +7,7 @@
   'use strict';
 
   const $ = (id) => document.getElementById(id);
-  const DEFAULTS = { quickRead: true, autoGrab: true, v: 2, recipeId: 'auto', category: '', maxPages: 10, delayMs: 300, workers: 4, lightLoad: true, slideshowMode: 'ac-specs' };
+  const DEFAULTS = { quickRead: true, autoGrab: true, v: 2, recipeId: 'auto', category: '', maxPages: 10, delayMs: 300, workers: 4, lightLoad: true, slideshowMode: 'ac-specs', askType: true, sheetStyle: 'electroplanet', keepExtra: false };
   const S = {
     items: new Map(),
     order: [],
@@ -228,6 +228,9 @@
     S.settings.workers = Number($('workers').value) || 4;
     S.settings.lightLoad = $('lightLoad').checked;
     S.settings.slideshowMode = $('slideshowMode').value || 'ac-specs';
+    S.settings.sheetStyle = $('sheetStyle').value || 'electroplanet';
+    S.settings.askType = $('askType').checked;
+    S.settings.keepExtra = $('keepExtra').checked;
     S.settings.autoGrab = $('autoGrab').checked;
     S.settings.quickRead = $('quickRead').checked;
     S.settings.v = 2;
@@ -241,6 +244,9 @@
     $('workers').value = String(st.workers);
     $('lightLoad').checked = st.lightLoad !== false;
     $('slideshowMode').value = st.slideshowMode || 'ac-specs';
+    $('sheetStyle').value = st.sheetStyle || 'electroplanet';
+    $('askType').checked = st.askType !== false;
+    $('keepExtra').checked = !!st.keepExtra;
     $('autoGrab').checked = st.autoGrab !== false;
     $('quickRead').checked = st.quickRead !== false;
     if (force || document.activeElement !== $('delay')) $('delay').value = String(st.delayMs / 1000);
@@ -300,9 +306,27 @@
   }
 
   // ------------------------------------------------------------ the export file
+  // the specifications to send: the Electroplanet-style sheet (default) or the brand's own lines
+  const TYPE_NAMES = {};
+  try {
+    GHANDI_SHEETS.types().forEach((t) => (TYPE_NAMES[t.id] = t));
+  } catch (e) {
+    /* no sheets */
+  }
+  const typeOf = (it) => (it.sheet && it.sheet.type) || it.ptype || it.ptypeAuto || '';
+  const typeLabel = (id) => (TYPE_NAMES[id] ? TYPE_NAMES[id].label : id === 'other' ? 'Autre' : '');
+  function sheetGroupsOf(it) {
+    if (S.settings.sheetStyle === 'brand' || !it.sheet || !(it.sheet.groups || []).length) return null;
+    let groups = it.sheet.groups;
+    if (S.settings.keepExtra && !it.sheet.edited && (it.sheet.extra || []).length) groups = groups.concat([{ title: 'Autres Caractéristiques', rows: it.sheet.extra }]);
+    return groups;
+  }
   function productOf(it) {
     const r = it.result;
-    const groups = groupsOf(r).map((g) => ({ title: g.title || '', rows: (g.rows || []).map((x) => ({ label: x.label, value: x.value })) }));
+    const clean = (gs) => gs.map((g) => ({ title: g.title || '', rows: (g.rows || []).map((x) => ({ label: x.label, value: x.value })) }));
+    const brandGroups = clean(groupsOf(r));
+    const sheet = sheetGroupsOf(it);
+    const groups = sheet ? clean(sheet) : brandGroups;
     const main = r.mainImage || '';
     const others = (r.otherImages || []).filter((u) => u && u !== main);
     return {
@@ -311,7 +335,7 @@
       category: it.category || '',
       sourceCategory: it.listingTitle || '',
       name: r.name || '',
-      model: guessModel(it),
+      model: guessModel(it) || (it.sheet && it.sheet.model) || '',
       price: r.price || '',
       priceValue: r.priceValue == null || r.priceValue === '' ? null : Number(r.priceValue),
       currency: currencyOf(r.price || ''),
@@ -320,6 +344,10 @@
       images: main ? [main].concat(others) : others,
       specs: flatSpecs(groups),
       specGroups: groups,
+      specStyle: sheet ? 'electroplanet' : 'brand',
+      productType: typeOf(it),
+      productTypeLabel: typeLabel(typeOf(it)),
+      brandSpecGroups: sheet ? brandGroups : undefined,
       needsReview: it.status === 'check',
       warnings: it.status === 'check' ? r.warnings || [] : [],
       scrapedAt: it.finishedAt ? new Date(it.finishedAt).toISOString() : '',
@@ -335,7 +363,7 @@
     return {
       schema: 'ghandi-products/v1',
       generatedAt: new Date().toISOString(),
-      generator: 'Ghandi Product Grabber 3.6',
+      generator: 'Ghandi Product Grabber 3.7',
       count: items.length,
       ids: items.map((it) => it.id),
       products: items.map(productOf),
@@ -434,6 +462,8 @@
     const nSpecs = (r.specs || []).length;
     const sub = [host(it.url)];
     if (it.category) sub.unshift('<span class="cat">' + esc(it.category) + '</span>');
+    const tid = typeOf(it);
+    if (tid && tid !== 'other') sub.push('<span class="ptag' + (it.ptypeBy === 'you' ? '' : ' auto') + '" title="' + (it.ptypeBy === 'you' ? 'Type chosen by you' : 'Type guessed by the extension') + '">' + esc(((TYPE_NAMES[tid] || {}).icon || '') + ' ' + typeLabel(tid)) + '</span>');
     if (guessModel(it)) sub.push(esc(guessModel(it)));
     if (it.sentAt) sub.push('<span class="sent-tag">✓ sent to site</span>');
     return (
@@ -586,7 +616,7 @@
       const it = S.items.get(S.openId);
       if (!it) closeDrawer();
       else {
-        const stamp = it.status + '|' + it.finishedAt;
+        const stamp = stampOf(it);
         if (stamp !== S.stamp && !S.dirty) fillDrawer(it);
         else if (stamp !== S.stamp) S.stamp = stamp;
       }
@@ -594,6 +624,7 @@
   }
 
   // ------------------------------------------------------------ drawer
+  const stampOf = (it) => it.status + '|' + it.finishedAt + '|' + (it.ptype || '') + '|' + ((it.sheet && it.sheet.at) || '') + '|' + ((it.sheet && it.sheet.edited) || '');
   function specGroupHtml(g) {
     return (
       '<div class="sgroup"><div class="sgroup-head"><input type="text" data-gt placeholder="Section title" value="' + esc(g.title || '') + '">' +
@@ -608,7 +639,7 @@
 
   function fillDrawer(it) {
     const r = it.result || { name: '', brand: '', price: '', priceValue: null, mainImage: '', otherImages: [], specs: [], specGroups: [], warnings: [] };
-    S.stamp = it.status + '|' + it.finishedAt;
+    S.stamp = stampOf(it);
     S.dirty = false;
     $('dTitle').textContent = nameOf(it) || 'Product';
     $('dLink').href = it.url;
@@ -628,7 +659,32 @@
     const uniq = Array.from(new Set(notes.filter(Boolean)));
     $('dWarn').hidden = !uniq.length;
     $('dWarn').innerHTML = uniq.length ? '<b>Please look at this:</b><ul>' + uniq.map((w) => '<li>' + esc(w) + '</li>').join('') + '</ul>' : '';
-    $('dSpecs').innerHTML = groupsOf(r).map(specGroupHtml).join('') || '<p class="hint">No specifications yet.</p>';
+    fillTypeSelect($('fType'), it.ptype ? it.ptype : 'auto', it.ptypeAuto);
+    if (S.viewFor !== it.id || !S.view) {
+      S.view = it.sheet && (it.sheet.groups || []).length && S.settings.sheetStyle !== 'brand' ? 'sheet' : 'brand';
+      S.viewFor = it.id;
+    }
+    showSpecs(it);
+  }
+  function fillTypeSelect(sel, value, auto) {
+    const opts = [['auto', 'Detect by itself' + (auto && TYPE_NAMES[auto] ? ' (' + TYPE_NAMES[auto].label + ')' : '')]]
+      .concat(Object.keys(TYPE_NAMES).map((id) => [id, TYPE_NAMES[id].icon + ' ' + TYPE_NAMES[id].label]))
+      .concat([['other', 'Something else (brand lines)']]);
+    sel.innerHTML = opts.map(([v, l]) => '<option value="' + v + '"' + (v === value ? ' selected' : '') + '>' + esc(l) + '</option>').join('');
+  }
+  function showSpecs(it) {
+    const r = it.result || {};
+    const sheetOn = S.view === 'sheet' && it.sheet;
+    $('viewSheet').setAttribute('aria-pressed', String(!!sheetOn));
+    $('viewBrand').setAttribute('aria-pressed', String(!sheetOn));
+    $('viewSheet').disabled = !it.sheet;
+    const groups = sheetOn ? it.sheet.groups || [] : groupsOf(r);
+    $('dSpecs').innerHTML = groups.map(specGroupHtml).join('') || '<p class="hint">No specifications yet.</p>';
+    let note = '';
+    if (sheetOn) {
+      note = 'The same lines as on Electroplanet for a ' + (typeLabel(it.sheet.type) || 'product').toLowerCase() + '. ' + (it.sheet.edited ? 'You edited this sheet.' : 'Made from the ' + (r.brand || 'brand') + ' page' + ((it.sheet.extra || []).length ? ' (' + it.sheet.extra.length + ' other brand lines are kept apart)' : '') + '.');
+    } else if (it.sheet) note = "The brand's own lines, as written on its website.";
+    $('sheetNote').textContent = note;
   }
   function renderPics() {
     const main = $('fMain').value.trim();
@@ -655,6 +711,7 @@
   }
   function closeDrawer() {
     S.openId = null;
+    S.viewFor = null;
     $('drawer').classList.remove('open');
     $('drawer').setAttribute('aria-hidden', 'true');
     $('scrim').hidden = true;
@@ -686,6 +743,12 @@
       specGroups: groups,
       specs: flatSpecs(groups),
     };
+    if (S.view === 'sheet' && it.sheet) {
+      // the Electroplanet-style lines are yours now; the brand's lines stay as they were
+      delete patch.specGroups;
+      delete patch.specs;
+      await send('edit-sheet', { id: it.id, groups });
+    }
     const res = await send('edit-item', { id: it.id, patch });
     if (res.ok) {
       S.dirty = false;
@@ -695,7 +758,7 @@
   function problemReport(it) {
     const r = it.result || {};
     return {
-      tool: 'Ghandi Product Grabber 3.6 — problem report',
+      tool: 'Ghandi Product Grabber 3.7 — problem report',
       page: it.url,
       status: it.status,
       message: it.message,
@@ -711,23 +774,74 @@
   function parseLinks(text) {
     return Array.from(new Set((text.match(/https?:\/\/[^\s"'<>]+/g) || []).map((u) => u.replace(/[),.;]+$/, ''))));
   }
+  // ------------------------------------------------------------ "What are you grabbing?"
+  function askType(url, name) {
+    if (S.settings.askType === false) return Promise.resolve('auto');
+    let guess = '';
+    try {
+      const d = GHANDI_SHEETS.detect({ name: name || '' }, url || '');
+      if (d.id !== 'other') guess = d.id;
+    } catch (e) {
+      /* no guess */
+    }
+    const dlg = $('typeDlg');
+    $('typeGrid').innerHTML = Object.keys(TYPE_NAMES)
+      .map((id) => '<button type="button" data-ptype="' + id + '"' + (id === guess ? ' class="guess"' : '') + '><span class="ti" aria-hidden="true">' + esc(TYPE_NAMES[id].icon) + '</span>' + esc(TYPE_NAMES[id].label) + '</button>')
+      .join('');
+    $('typeGuess').textContent = guess ? 'It looks like: ' + TYPE_NAMES[guess].label + '. Click it, or pick another type.' : 'Pick the type: it decides how the specifications are written (the same lines as on Electroplanet).';
+    $('typeAskOff').checked = false;
+    return new Promise((resolve) => {
+      const done = (v) => {
+        dlg.removeEventListener('click', onClick);
+        dlg.removeEventListener('cancel', onCancel);
+        if (dlg.open) dlg.close();
+        if (v && $('typeAskOff').checked) {
+          S.settings.askType = false;
+          $('askType').checked = false;
+          chrome.storage.local.set({ settings: S.settings });
+        }
+        resolve(v);
+      };
+      const onClick = (e) => {
+        const b = e.target.closest('[data-ptype]');
+        if (b) return done(b.dataset.ptype);
+        if (e.target.id === 'typeCancel') return done(null);
+      };
+      const onCancel = (e) => {
+        e.preventDefault();
+        done(null);
+      };
+      dlg.addEventListener('click', onClick);
+      dlg.addEventListener('cancel', onCancel);
+      dlg.showModal();
+      const first = dlg.querySelector('.guess') || dlg.querySelector('[data-ptype]');
+      if (first) first.focus();
+    });
+  }
+
   async function actFind() {
     const url = $('catUrl').value.trim();
     if (!/^https?:\/\//i.test(url)) return toast('Paste the category page link first. It starts with https://');
     saveSettings();
-    const res = await send('crawl', { url, maxPages: S.settings.maxPages, recipeId: S.settings.recipeId, category: S.settings.category, autoStart: $('catAuto').checked });
+    const ptype = await askType(url, '');
+    if (!ptype) return;
+    const res = await send('crawl', { url, maxPages: S.settings.maxPages, recipeId: S.settings.recipeId, category: S.settings.category, autoStart: $('catAuto').checked, ptype });
     if (!res.ok) toast(res.error || 'Could not start.');
   }
   async function actFindTab() {
     saveSettings();
-    const res = await send('crawl-tab', { tabId: S.tab && S.tab.id, recipeId: S.settings.recipeId, category: S.settings.category, autoStart: $('autoGrab').checked });
+    const ptype = await askType(S.tab && S.tab.url, S.tab && S.tab.title);
+    if (!ptype) return;
+    const res = await send('crawl-tab', { tabId: S.tab && S.tab.id, recipeId: S.settings.recipeId, category: S.settings.category, autoStart: $('autoGrab').checked, ptype });
     if (!res.ok) toast(res.error || 'Could not start.');
   }
   async function actAdd() {
     const urls = parseLinks($('linksBox').value);
     if (!urls.length) return toast('Paste at least one product link first.');
     saveSettings();
-    const res = await send('add-links', { urls, category: S.settings.category, queue: $('linksAuto').checked });
+    const ptype = await askType(urls.length === 1 ? urls[0] : '', '');
+    if (!ptype) return;
+    const res = await send('add-links', { urls, category: S.settings.category, queue: $('linksAuto').checked, ptype });
     if (res.ok) {
       $('linksBox').value = '';
       toast('Added ' + res.added + (res.skipped ? ', skipped ' + res.skipped + ' already in the list' : '') + '.');
@@ -735,8 +849,10 @@
   }
   async function actGrabTab() {
     saveSettings();
+    const ptype = await askType(S.tab && S.tab.url, S.tab && S.tab.title);
+    if (!ptype) return;
     toast('Reading the tab you have open…');
-    const res = await send('grab-tab', { tabId: S.tab && S.tab.id, recipeId: S.settings.recipeId, category: S.settings.category });
+    const res = await send('grab-tab', { tabId: S.tab && S.tab.id, recipeId: S.settings.recipeId, category: S.settings.category, ptype });
     toast(res.ok ? 'Done. Check the list.' : res.error || 'Could not read that tab.');
   }
   async function actGrab() {
@@ -758,7 +874,7 @@
       res = await fetch(S.settings.siteUrl, {
         method: 'POST',
         headers: { 'content-type': 'application/json', 'x-ghandi-key': S.settings.siteKey },
-        body: JSON.stringify(Object.assign({ source: 'Ghandi Product Grabber 3.6' }, body)),
+        body: JSON.stringify(Object.assign({ source: 'Ghandi Product Grabber 3.7' }, body)),
         signal: ctl.signal,
       });
     } catch (e) {
@@ -928,7 +1044,7 @@
   function wire() {
     $('recipe').addEventListener('change', () => (saveSettings(), updateHint(), renderHere()));
     $('category').addEventListener('input', () => saveSettings());
-    ['workers', 'delay', 'maxPages', 'lightLoad', 'autoGrab', 'quickRead', 'slideshowMode'].forEach((id) => $(id).addEventListener('change', saveSettings));
+    ['workers', 'delay', 'maxPages', 'lightLoad', 'autoGrab', 'quickRead', 'slideshowMode', 'sheetStyle', 'askType', 'keepExtra'].forEach((id) => $(id).addEventListener('change', saveSettings));
     $('catUrl').addEventListener('input', updateHint);
     $('linksBox').addEventListener('input', updateHint);
     $('helpBtn').addEventListener('click', () => $('help').showModal());
@@ -1042,6 +1158,34 @@
     $('bulkSetCat').addEventListener('click', async () => {
       await send('set-category', { ids: Array.from(S.sel), category: $('bulkCat').value.trim() });
       toast('Category set for ' + S.sel.size + ' products.');
+    });
+    fillTypeSelect($('bulkType'), 'auto');
+    $('bulkSetType').addEventListener('click', async () => {
+      const ptype = $('bulkType').value;
+      await send('set-type', { ids: Array.from(S.sel), ptype });
+      toast('Type set for ' + S.sel.size + ' products: ' + (ptype === 'auto' ? 'detected by itself' : typeLabel(ptype)) + '.');
+    });
+    $('fType').addEventListener('change', async () => {
+      const it = S.items.get(S.openId);
+      if (!it) return;
+      if (it.sheet && it.sheet.edited && !confirm('Changing the type makes a new sheet. Your edits of this sheet will be replaced. Continue?')) return fillTypeSelect($('fType'), it.ptype || 'auto', it.ptypeAuto);
+      S.view = 'sheet';
+      S.dirty = false;
+      await send('set-type', { ids: [it.id], ptype: $('fType').value });
+    });
+    $('viewSheet').addEventListener('click', () => {
+      const it = S.items.get(S.openId);
+      if (!it || (S.dirty && !confirm('You have changes that are not saved. Switch anyway?'))) return;
+      S.view = 'sheet';
+      S.dirty = false;
+      showSpecs(it);
+    });
+    $('viewBrand').addEventListener('click', () => {
+      const it = S.items.get(S.openId);
+      if (!it || (S.dirty && !confirm('You have changes that are not saved. Switch anyway?'))) return;
+      S.view = 'brand';
+      S.dirty = false;
+      showSpecs(it);
     });
     $('bulkRemove').addEventListener('click', async () => {
       const n = S.sel.size;

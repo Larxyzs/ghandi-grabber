@@ -428,3 +428,22 @@ dialog { width: min(520px, 94vw); }
 @keyframes updflash { 50% { box-shadow: 0 0 0 4px rgba(10,61,107,.25); } }
 @media (prefers-reduced-motion: reduce) { .updbar.flash { animation: none; } }
 .verline { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); font-size: 13px; }
+
+/* ---------- product type ---------- */
+.typedlg { max-width: 560px; }
+.typegrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; margin: 12px 0; }
+.typegrid button { display: flex; align-items: center; gap: 8px; min-height: 48px; padding: 8px 10px; border: 1px solid var(--ink); border-radius: 6px; background: #fff; font: 600 14px/1.2 var(--body); text-align: left; cursor: pointer; }
+.typegrid button .ti { font-size: 20px; width: 26px; text-align: center; }
+.typegrid button:hover, .typegrid button:focus-visible { background: var(--line-soft); }
+.typegrid button.guess { border-width: 2px; border-color: var(--blue); box-shadow: inset 4px 0 0 var(--blue); }
+.typegrid button.guess::after { content: "my guess"; margin-left: auto; font: 600 11px var(--body); color: var(--blue); }
+.typemore { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.typedlg .btn-row { justify-content: space-between; align-items: center; }
+.ptag { display: inline-block; padding: 0 6px; border-radius: 3px; background: var(--line-soft); color: var(--ink); font-size: 12px; font-weight: 600; }
+.ptag.auto { background: transparent; border: 1px dashed var(--line); color: var(--muted); font-weight: 500; }
+.ptype-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; margin: 6px 0 4px; }
+.ptype-row .field { flex: 1 1 180px; margin: 0; }
+.seg { display: inline-flex; border: 1px solid var(--ink); border-radius: 4px; overflow: hidden; }
+.seg button { padding: 7px 10px; border: 0; background: #fff; font: 600 13px var(--body); cursor: pointer; }
+.seg button[aria-pressed=true] { background: var(--ink); color: #fff; }
+.bulk select { max-width: 150px; }
