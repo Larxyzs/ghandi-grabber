@@ -256,11 +256,11 @@ Then: in the side tab click "My site", paste the address and the key from
 your site's admin page "Extension Chrome", click "Save and test".
 Every day:
   1. Grab products. Click "Select all" (or tick some rows).
-  2. Click "Import to site" (bottom). Choose which products, type a section
-     to suggest if you want, click "Send".
-  3. On your site's admin a notification appears:
-     "Annuler" = wipe them.  "Ajouter au site" = choose products and the
-     section for each, then add them.
+  2. Click "Import to site" (bottom). Choose which products and click "Send".
+     Leave the section empty: each product goes to its own section (fridges,
+     washing machines, TVs...). Or type one section for all of them.
+  3. That's it: they are in your shop. Products already on the site are
+     updated (new pictures and details) and keep the price you set.
 Rows that were sent show "✓ sent to site".
 
 

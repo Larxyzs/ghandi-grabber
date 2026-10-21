@@ -341,15 +341,15 @@
 <!-- ===================== SEND TO MY SITE ===================== -->
 <dialog id="sendDlg">
   <h2>Import to my site</h2>
-  <p class="hint">The products go to your site's <b>inbox</b>. On the site you will see a notification: you choose there to add them (and where) or to cancel.</p>
+  <p class="hint">The products go <b>straight into your shop</b>. Products already on your site are updated with the new pictures and details (their price stays as you set it).</p>
   <fieldset class="which">
     <legend>Which products?</legend>
     <label class="check"><input type="radio" name="sendWhich" value="selected" /> <span id="sendSelLbl">The ones I selected</span></label>
     <label class="check"><input type="radio" name="sendWhich" value="new" /> <span id="sendNewLbl">Not sent yet</span></label>
     <label class="check"><input type="radio" name="sendWhich" value="all" /> <span id="sendAllLbl">Everything grabbed</span></label>
   </fieldset>
-  <label class="field"><span>Suggest a section on my site (you can change it on the site)</span>
-    <input id="sendSection" type="text" list="sectionList" placeholder="Type to search: lave, froid, combiné…" autocomplete="off" />
+  <label class="field"><span>Section on my site (leave it empty: each product goes to its own section)</span>
+    <input id="sendSection" type="text" list="sectionList" placeholder="Empty = automatic. Or type: lave, froid, combiné…" autocomplete="off" />
     <datalist id="sectionList"></datalist>
   </label>
   <label class="field"><span>Note (optional)</span><input id="sendNote" type="text" placeholder="e.g. Whirlpool combinés – 10 octobre" /></label>

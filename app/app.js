@@ -1042,6 +1042,18 @@
     [/four encastrable/, 'four'],
     [/micro onde/, 'micro onde'],
   ];
+  const TYPE_SECTION = {
+    fridge: 'refrigerateur congelateur',
+    ac: 'climatiseur',
+    fan: 'ventilateur',
+    washer: 'lave linge',
+    dishwasher: 'lave vaisselle',
+    tv: 'television',
+    hob: 'plaque cuisson',
+    oven: 'four',
+    microwave: 'micro onde',
+    sink: 'evier',
+  };
   function findSection(typed) {
     const list = S.sections || [];
     const t = foldText(typed);
@@ -1059,9 +1071,20 @@
       });
     };
     let hits = fits(t);
+    let q = t;
     if (!hits.length) {
       const alt = WORDS_FOR.find(([re]) => re.test(t));
-      if (alt) hits = fits(alt[1]);
+      if (alt) {
+        q = alt[1];
+        hits = fits(q);
+      }
+    }
+    hits.q = q;
+    // "réfrigérateur" -> « Réfrigérateurs » rather than « Réfrigérateurs - Congélateurs »: a section with no extra words wins
+    if (hits.length > 1) {
+      const n = wordsOf(hits.q || t).length;
+      const tight = hits.filter((x) => wordsOf(x.name).length === n);
+      if (tight.length === 1) hits = tight;
     }
     // the narrowest section wins (" > " deeper in the tree), when only one is that deep
     if (hits.length > 1) {
@@ -1086,71 +1109,83 @@
       return;
     }
     const typed = $('sendSection').value.trim();
-    // the section must really exist on the site: otherwise the site keeps the products waiting
-    // (its bell says "importés", but they are not in the shop until you pick a section there)
-    let sec = null;
-    if (typed) {
-      const f = findSection(typed);
-      if (f.exact) sec = f.exact;
-      else if (f.guess) {
-        $('sendSection').value = f.guess.path || f.guess.name;
-        msg.className = 'site-msg bad';
-        msg.textContent = '« ' + typed + ' » is not the exact name of a section of your site. Did you mean « ' + (f.guess.path || f.guess.name) + ' »? I put it in the box: press Send again.';
-        return;
-      } else {
-        msg.className = 'site-msg bad';
-        msg.textContent = '« ' + typed + ' » is not a section of your site' + (f.choices.length ? '. Sections that look close: ' + f.choices.map((x) => '« ' + (x.path || x.name) + ' »').join(', ') : '') + '. Click the box and pick one from the list.';
-        return;
+    // every product goes to a section that really exists on the site, with no question asked:
+    // the section you typed (or the closest one), else the product's own category, else its type
+    const typedSec = typed ? (findSection(typed).exact || findSection(typed).guess || null) : null;
+    const sectionFor = (it) => {
+      if (typedSec) return typedSec;
+      const c = findSection(it.category || '');
+      if (c.exact || c.guess) return c.exact || c.guess;
+      let words = TYPE_SECTION[typeOf(it)];
+      if (typeOf(it) === 'fridge') {
+        // a combined fridge (freezer below / above) or a plain fridge?
+        const kind = ((it.sheet && it.sheet.groups) || []).flatMap((g) => g.rows || []).find((r) => /^type$/i.test(r.label || ''));
+        const k = (kind && kind.value) || (it.result && it.result.name) || '';
+        words = /combin|cong[ée]lateur en (bas|haut)|r[ée]frig[ée]rateur[- ]cong[ée]lateur|double porte/i.test(k) ? 'refrigerateur congelateur' : 'refrigerateur';
       }
-    } else if ((S.sections || []).length) {
-      const lost = items.filter((it) => !findSection(it.category || '').exact);
-      if (lost.length) {
-        msg.className = 'site-msg bad';
-        msg.textContent = 'Choose the section of your site first (click the box and pick it from the list). Without it, your site keeps these products waiting.';
-        return;
+      if (words) {
+        const t = findSection(words);
+        if (t.exact || t.guess) return t.exact || t.guess;
       }
+      return null;
+    };
+    const groups = new Map();
+    items.forEach((it) => {
+      const sec = sectionFor(it);
+      const k = sec ? sec.id : '';
+      if (!groups.has(k)) groups.set(k, { sec, items: [] });
+      groups.get(k).items.push(it);
+    });
+    if (groups.has('') && (S.sections || []).length) {
+      const lost = groups.get('').items;
+      msg.className = 'site-msg bad';
+      msg.textContent = 'I do not know which section of your site ' + (lost.length === 1 ? 'this product goes' : 'these ' + lost.length + ' products go') + ' in (' + lost.slice(0, 3).map((it) => (it.result && it.result.name) || it.url).join(', ').slice(0, 140) + '). Type a section in the box, then press Send.';
+      return;
     }
-    const batchId = 'b' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
     const note = $('sendNote').value.trim();
-    const brands = Array.from(new Set(items.map((it) => (it.result && it.result.brand) || ''))).filter(Boolean);
-    const label = note || items.length + ' produits' + (brands.length ? ' – ' + brands.join(', ') : '');
     const CHUNK = 20;
     $('sendGo').disabled = true;
     $('sendBar').hidden = false;
     let sent = 0;
     let added = 0;
     let known = true;
+    const where = [];
     try {
-      for (let i = 0; i < items.length; i += CHUNK) {
-        const part = items.slice(i, i + CHUNK);
-        const last = i + CHUNK >= items.length;
-        msg.className = 'site-msg';
-        msg.textContent = 'Sending ' + Math.min(i + CHUNK, items.length) + ' of ' + items.length + '…';
-        const answer = await api({
-          action: 'push',
-          batchId,
-          label,
-          note,
-          total: items.length,
-          final: last,
-          suggestedSectionId: sec ? sec.id : null,
-          suggestedSectionPath: sec ? sec.path || sec.name : typed,
-          products: part.map(productOf),
-        });
-        sent += part.length;
-        if (answer && typeof answer.added === 'number') added += answer.added;
-        else known = false;
-        await send('mark-sent', { ids: part.map((it) => it.id), batchId });
-        $('sendFill').style.width = Math.round((sent / items.length) * 100) + '%';
+      for (const { sec, items: list } of groups.values()) {
+        const batchId = 'b' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+        const brands = Array.from(new Set(list.map((it) => (it.result && it.result.brand) || ''))).filter(Boolean);
+        const label = note || list.length + ' produits' + (brands.length ? ' – ' + brands.join(', ') : '');
+        for (let i = 0; i < list.length; i += CHUNK) {
+          const part = list.slice(i, i + CHUNK);
+          msg.className = 'site-msg';
+          msg.textContent = 'Sending ' + Math.min(sent + part.length, items.length) + ' of ' + items.length + '…';
+          const answer = await api({
+            action: 'push',
+            batchId,
+            label,
+            note,
+            total: list.length,
+            final: i + CHUNK >= list.length,
+            suggestedSectionId: sec ? sec.id : null,
+            suggestedSectionPath: sec ? sec.path || sec.name : typed,
+            products: part.map(productOf),
+          });
+          sent += part.length;
+          if (answer && typeof answer.added === 'number') added += answer.added;
+          else known = false;
+          await send('mark-sent', { ids: part.map((it) => it.id), batchId });
+          $('sendFill').style.width = Math.round((sent / items.length) * 100) + '%';
+        }
+        if (sec) where.push('« ' + sec.name + ' » (' + list.length + ')');
       }
       if (known && added < sent) {
         msg.className = 'site-msg bad';
-        msg.textContent = sent + ' products sent, but only ' + added + ' are in your shop now. The other ' + (sent - added) + ' are waiting on your site: click the bell there, press « Ajouter au site » and choose the section.';
-        toast((sent - added) + ' products are waiting on your site (no section).');
+        msg.textContent = sent + ' products sent, but only ' + added + ' are in your shop. Your site did not accept the other ' + (sent - added) + '.';
+        toast((sent - added) + ' products did not go into your shop.');
       } else {
         msg.className = 'site-msg good';
-        msg.textContent = '✓ ' + sent + ' products sent' + (sec ? ' to « ' + (sec.path || sec.name) + ' »' : '') + '. They are in your shop now.';
-        toast(sent + ' products sent to your site.');
+        msg.textContent = '✓ ' + sent + ' products are on your site' + (where.length ? ': ' + where.join(', ') : '') + '.';
+        toast(sent + ' products are on your site.');
       }
     } catch (e) {
       msg.className = 'site-msg bad';
