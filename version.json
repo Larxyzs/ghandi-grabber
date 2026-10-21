@@ -1,10 +1,8 @@
 {
- "version": "3.7.6",
- "commit": "2a538a7607d48f0e5f98858e92ddf7656ace5d6b",
+ "version": "3.7.7",
+ "commit": "2f5888dc96908f2b58b4d1e5d25d0b6693c485dc",
  "notes": [
-  "Send now puts the products straight into your shop: no notification to confirm.",
-  "Leave the section empty and each product goes to its own section (fridges, washing machines, TVs...).",
-  "Products already on your site are updated with the new pictures and details, and keep your price."
+  "Send always uses your site's current sections (also after you delete a section and create it again)."
  ],
  "files": [
   {
@@ -39,8 +37,8 @@
   },
   {
    "path": "app/app.js",
-   "size": 69127,
-   "sha256": "96d41b49b7d8bac5305a3ac37bc2972546182a47c02d744baee44f2106628f49"
+   "size": 69489,
+   "sha256": "93796b7315142402c77e153c3fc468d7b369b8715b41803827bec4f5b56bfc8f"
   },
   {
    "path": "app/shim.js",
@@ -70,7 +68,7 @@
   {
    "path": "manifest.json",
    "size": 1010,
-   "sha256": "5c319ea20118088d598431026327585674fc5724295c67e44f120c32bf76ddd3"
+   "sha256": "6a1d66d0d3d27115aff8b894247522d8f94fe3320d2bd55e61c06a6fdb4551a5"
   },
   {
    "path": "offscreen/offscreen.html",
