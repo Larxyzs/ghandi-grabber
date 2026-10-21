@@ -259,8 +259,9 @@ Every day:
   2. Click "Import to site" (bottom). Choose which products and click "Send".
      Leave the section empty: each product goes to its own section (fridges,
      washing machines, TVs...). Or type one section for all of them.
-  3. That's it: they are in your shop. Products already on the site are
-     updated (new pictures and details) and keep the price you set.
+  3. That's it: they are in your shop. A product already on the site is
+     replaced by the new version (never two copies). Your price stays only
+     if the brand page shows no price.
 Rows that were sent show "✓ sent to site".
 
 
