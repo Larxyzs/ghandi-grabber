@@ -1,8 +1,8 @@
 {
- "version": "3.7.7",
- "commit": "2f5888dc96908f2b58b4d1e5d25d0b6693c485dc",
+ "version": "3.7.8",
+ "commit": "0265e66ce78735ee9e27aaf2e6244b7025cf5679",
  "notes": [
-  "Send always uses your site's current sections (also after you delete a section and create it again)."
+  "A product you send again replaces the old one on your site: never two copies."
  ],
  "files": [
   {
@@ -22,8 +22,8 @@
   },
   {
    "path": "READ-ME-FIRST.txt",
-   "size": 16700,
-   "sha256": "fb1e35c8957d05dde3e857b6af013137ff96997c3d2f8cc213175e1b003fabab"
+   "size": 16746,
+   "sha256": "26daa1e8a81e4be74de98754611a2873d49bfbf865ebb9da310b98bd8292a491"
   },
   {
    "path": "app/app.css",
@@ -32,8 +32,8 @@
   },
   {
    "path": "app/app.html",
-   "size": 20204,
-   "sha256": "b8b779215933f081bc07f681cc33735057695aa90e200b76129b572ea492a4cf"
+   "size": 20222,
+   "sha256": "c01d54e29061941459192335ca6cc34fb7e77da67c1d75271dbb762435415155"
   },
   {
    "path": "app/app.js",
@@ -68,7 +68,7 @@
   {
    "path": "manifest.json",
    "size": 1010,
-   "sha256": "6a1d66d0d3d27115aff8b894247522d8f94fe3320d2bd55e61c06a6fdb4551a5"
+   "sha256": "86e105c6f1b0f6e9335e57f27f90c7ff4f0701f40a31d80060b9b8846452a285"
   },
   {
    "path": "offscreen/offscreen.html",
