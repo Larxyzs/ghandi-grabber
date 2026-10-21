@@ -1,9 +1,10 @@
 {
- "version": "3.7.5",
- "commit": "2aad7658d4e0a1c85b613af99f4fcf56024c7715",
+ "version": "3.7.6",
+ "commit": "2a538a7607d48f0e5f98858e92ddf7656ace5d6b",
  "notes": [
-  "Send to my site: the section must be one that exists on your site. If you type « combinés », I suggest « Réfrigérateurs - Congélateurs ».",
-  "After sending, I tell you if some products are still waiting on your site."
+  "Send now puts the products straight into your shop: no notification to confirm.",
+  "Leave the section empty and each product goes to its own section (fridges, washing machines, TVs...).",
+  "Products already on your site are updated with the new pictures and details, and keep your price."
  ],
  "files": [
   {
@@ -23,8 +24,8 @@
   },
   {
    "path": "READ-ME-FIRST.txt",
-   "size": 16616,
-   "sha256": "4a34ad506050a3bb6c48f60ee8293e01f05cd635ba250576afb5ba52167e4f52"
+   "size": 16700,
+   "sha256": "fb1e35c8957d05dde3e857b6af013137ff96997c3d2f8cc213175e1b003fabab"
   },
   {
    "path": "app/app.css",
@@ -33,13 +34,13 @@
   },
   {
    "path": "app/app.html",
-   "size": 20161,
-   "sha256": "d27342ad5f2bb0ecfe7b1865a9bdeac0fa222d329d54c2bcc2d66c106ffca70b"
+   "size": 20204,
+   "sha256": "b8b779215933f081bc07f681cc33735057695aa90e200b76129b572ea492a4cf"
   },
   {
    "path": "app/app.js",
-   "size": 67859,
-   "sha256": "59b75fd015029cd910119643962338681f79b9e94e90f1e550165b70fba5e333"
+   "size": 69127,
+   "sha256": "96d41b49b7d8bac5305a3ac37bc2972546182a47c02d744baee44f2106628f49"
   },
   {
    "path": "app/shim.js",
@@ -69,7 +70,7 @@
   {
    "path": "manifest.json",
    "size": 1010,
-   "sha256": "5c555357ccdecbb3bb58f71893219fd63bb206c957f1843f5901400e24ea3cd9"
+   "sha256": "5c319ea20118088d598431026327585674fc5724295c67e44f120c32bf76ddd3"
   },
   {
    "path": "offscreen/offscreen.html",
