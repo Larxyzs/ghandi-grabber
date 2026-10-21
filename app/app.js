@@ -1108,6 +1108,16 @@
       msg.textContent = 'Nothing to send.';
       return;
     }
+    // fresh list of the site's sections (a section deleted and created again has a new id)
+    try {
+      const r = await api({ action: 'ping' }, 15000);
+      if (r && Array.isArray(r.sections)) {
+        S.sections = r.sections;
+        chrome.storage.local.set({ siteSections: r.sections });
+      }
+    } catch (e) {
+      /* use the list we have */
+    }
     const typed = $('sendSection').value.trim();
     // every product goes to a section that really exists on the site, with no question asked:
     // the section you typed (or the closest one), else the product's own category, else its type
