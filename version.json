@@ -1,9 +1,9 @@
 {
- "version": "3.7.4",
- "commit": "ffcdcc044d6f6b2989b0c7dfc7d4eace4bb9e0a1",
+ "version": "3.7.5",
+ "commit": "2aad7658d4e0a1c85b613af99f4fcf56024c7715",
  "notes": [
-  "The category link box is empty now (the grey LG 'combinés' link was only an example, never a real choice).",
-  "If you press Find products with the box empty, I use the brand page you have open."
+  "Send to my site: the section must be one that exists on your site. If you type « combinés », I suggest « Réfrigérateurs - Congélateurs ».",
+  "After sending, I tell you if some products are still waiting on your site."
  ],
  "files": [
   {
@@ -38,8 +38,8 @@
   },
   {
    "path": "app/app.js",
-   "size": 63740,
-   "sha256": "2674834b36085b8330f189114d3d2b98757d9ab9ca0d0f192a0f6c76b72c4745"
+   "size": 67859,
+   "sha256": "59b75fd015029cd910119643962338681f79b9e94e90f1e550165b70fba5e333"
   },
   {
    "path": "app/shim.js",
@@ -69,7 +69,7 @@
   {
    "path": "manifest.json",
    "size": 1010,
-   "sha256": "b57fd538ec27894089a184df671ad7a0d03c8b238970e8d18a0d529d4427a914"
+   "sha256": "5c555357ccdecbb3bb58f71893219fd63bb206c957f1843f5901400e24ea3cd9"
   },
   {
    "path": "offscreen/offscreen.html",
