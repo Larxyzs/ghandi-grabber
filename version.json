@@ -1,11 +1,9 @@
 {
- "version": "3.7.3",
- "commit": "ce8badf6107873859be269726f1e614e75badd72",
+ "version": "3.7.4",
+ "commit": "ffcdcc044d6f6b2989b0c7dfc7d4eace4bb9e0a1",
  "notes": [
-  "LG fridges and other LG products: the specifications are read again on LG's new pages, so the Electroplanet sheet fills up.",
-  "LG Morocco prices are read now: the price you pay, never the crossed-out old price.",
-  "LG pictures: every slideshow picture, in order, without doubles.",
-  "LG products open a small window each to read the price, so they take a few seconds more."
+  "The category link box is empty now (the grey LG 'combinés' link was only an example, never a real choice).",
+  "If you press Find products with the box empty, I use the brand page you have open."
  ],
  "files": [
   {
@@ -35,13 +33,13 @@
   },
   {
    "path": "app/app.html",
-   "size": 20127,
-   "sha256": "a9bed082493cdf2a48b73d8c888a9192da3ff4571384fd87bcf2243942e4d4db"
+   "size": 20161,
+   "sha256": "d27342ad5f2bb0ecfe7b1865a9bdeac0fa222d329d54c2bcc2d66c106ffca70b"
   },
   {
    "path": "app/app.js",
-   "size": 63339,
-   "sha256": "b5c19cb2b7cf9f0d5b50df7f88edca2b8df17c80555ef3ab2327a29451d15964"
+   "size": 63740,
+   "sha256": "2674834b36085b8330f189114d3d2b98757d9ab9ca0d0f192a0f6c76b72c4745"
   },
   {
    "path": "app/shim.js",
@@ -71,7 +69,7 @@
   {
    "path": "manifest.json",
    "size": 1010,
-   "sha256": "134f301f1a9a4a5d9523ab2f93120e5e2ed74b2ef27f85160e816d2575997cd2"
+   "sha256": "b57fd538ec27894089a184df671ad7a0d03c8b238970e8d18a0d529d4427a914"
   },
   {
    "path": "offscreen/offscreen.html",
