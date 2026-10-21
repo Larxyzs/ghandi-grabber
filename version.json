@@ -1,8 +1,8 @@
 {
- "version": "3.7.8",
- "commit": "0265e66ce78735ee9e27aaf2e6244b7025cf5679",
+ "version": "3.7.9",
+ "commit": "d680952e9840d2647bf01b9a3c731f0ec83aa87c",
  "notes": [
-  "A product you send again replaces the old one on your site: never two copies."
+  "Pictures: the main picture is the first slide of the slideshow again, not the last one."
  ],
  "files": [
   {
@@ -68,7 +68,7 @@
   {
    "path": "manifest.json",
    "size": 1010,
-   "sha256": "86e105c6f1b0f6e9335e57f27f90c7ff4f0701f40a31d80060b9b8846452a285"
+   "sha256": "bd3a9b24bbf4a98c14ab1020f160009b6b428d9f31b1ecf32c92324c6278f15b"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -87,8 +87,8 @@
   },
   {
    "path": "scraper/core.js",
-   "size": 87280,
-   "sha256": "a6fe70f9f00200ae006b1db7739ed56c4d56c500a97aa48b436d824368e56481"
+   "size": 89923,
+   "sha256": "fe0432f8a9a91056ad01c01f6ca4e01ad98bd6bae4fdf357326accd50a36fa00"
   },
   {
    "path": "scraper/links.js",
