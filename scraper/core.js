@@ -304,10 +304,41 @@
       return false;
     }
   }
+  // A box whose class says "related / similar / compare..." lists OTHER products — except
+  //  - a box that holds the product's own title (h1): that is the product's own area
+  //    (lg.com wraps its whole product area in a "compare" box, for its "Comparer" checkbox)
+  //  - a box with no link to any other product page: it lists no products
+  const NOT_PRODUCT_LINK = /\.(pdf|docx?|xlsx?|zip)(\?|#|$)|\/(support|manuels?|downloads?|t[ée]l[ée]chargements?|contact|faq|compare|comparer|comparateur|compare-products)(\/|\?|#|$)|^(https?:)?\/\/[^/]*(facebook|twitter|x|instagram|youtube|whatsapp|linkedin|pinterest|tiktok)\.(com|me)/i;
+  const otherBoxMemo = new WeakMap();
+  function isOtherBox(box) {
+    const now = Date.now();
+    const m = otherBoxMemo.get(box);
+    if (m && now - m.t < 1500) return m.v; // pages change (cards arrive late): remember only briefly
+    let v = !box.querySelector('h1');
+    if (v) {
+      v = false;
+      for (const a of qa('a[href]', box)) {
+        if (linksElsewhere(a) && !NOT_PRODUCT_LINK.test(a.getAttribute('href') || '')) {
+          v = true;
+          break;
+        }
+      }
+    }
+    otherBoxMemo.set(box, { t: now, v });
+    return v;
+  }
+  function inOtherBox(el, sel) {
+    let box = el.closest(sel);
+    for (let i = 0; box && i < 15; i++) {
+      if (isOtherBox(box)) return true;
+      box = box.parentElement ? box.parentElement.closest(sel) : null;
+    }
+    return false;
+  }
   function inOtherProducts(el) {
     if (!el || !el.closest) return false;
     try {
-      if (el.closest(OTHER_PRODUCTS)) return true;
+      if (inOtherBox(el, OTHER_PRODUCTS)) return true;
       if (EXTRA_OTHER && el.closest(EXTRA_OTHER)) return true;
       // a line sitting in a small box that also holds a picture linking to ANOTHER product = a card
       const box = el.parentElement;
@@ -338,7 +369,8 @@
       // only a box that STARTS with that title (and does not hold the product's own title)
       const first = node.firstElementChild;
       if (!first || node.querySelector('h1')) continue;
-      const h = /^H[2-4]$/.test(first.tagName) ? first : first.querySelector('h2,h3,h4');
+      // the title itself, or a small title bar holding it (not a whole section of the page that holds a title somewhere)
+      const h = /^H[2-4]$/.test(first.tagName) ? first : clean(first.textContent).length <= 150 ? first.querySelector('h2,h3,h4') : null;
       if (h && OTHER_TITLES.test(clean(h.textContent))) return true;
     }
     return false;
@@ -599,7 +631,7 @@
     const out = [];
     qa('tr', root).forEach((tr) => {
       const cells = Array.from(tr.children).filter((c) => /^(TD|TH)$/.test(c.tagName));
-      const txt = cells.map((c) => clean(c.textContent));
+      const txt = cells.map((c) => readText(c)); // (help texts like "Plus d'informations" left out)
       if (cells.length === 2) {
         out.push(withEl({ label: txt[0], value: txt[1] }, tr));
       } else if (cells.length === 3) {
@@ -617,7 +649,7 @@
     qa('dt', root).forEach((dt) => {
       let dd = dt.nextElementSibling;
       while (dd && dd.tagName !== 'DD' && dd.tagName !== 'DT') dd = dd.nextElementSibling;
-      if (dd && dd.tagName === 'DD') out.push(withEl({ label: dt.textContent, value: dd.textContent }, dt));
+      if (dd && dd.tagName === 'DD') out.push(withEl({ label: readText(dt), value: readText(dd) }, dt));
     });
     return out;
   }
@@ -626,7 +658,7 @@
     const out = [];
     qa('li', root).forEach((li) => {
       if (li.querySelector('li')) return;
-      const t = clean(li.textContent);
+      const t = readText(li);
       const m = t.match(/^(.{2,90}?)\s*:\s+(.+)$/) || t.match(/^(.{2,90}?)\s*:\s*(\S.*)$/);
       if (m) out.push(withEl({ label: m[1], value: m[2] }, li));
     });
@@ -642,8 +674,8 @@
       const a = el.children[0];
       const b = el.children[1];
       if (!leafish(a) || !leafish(b)) return;
-      const l = clean(a.textContent);
-      const v = clean(b.textContent);
+      const l = readText(a);
+      const v = readText(b);
       if (!l || !v || l.length > 90 || v.length > 200) return;
       if (!el.parentElement) return;
       rows.push({ el, l, v, s: sig(el), p: el.parentElement });
@@ -657,6 +689,104 @@
       byParent.set(r.p, (byParent.get(r.p) || 0) + 1);
     });
     return rows.filter((r) => bySig.get(r.s) >= 3 || byParent.get(r.p) >= 3).map((r) => withEl({ label: r.l, value: r.v }, r.el));
+  }
+
+  // ROWS MADE OF TWO PIECES OF TEXT (label, value), however deep the boxes around them are:
+  //   <li><div><p>Volume du congélateur</p></div><div><p>113</p></div></li>
+  //   <li><div class="row"><div><strong>Bac à légumes</strong></div><div><span>Oui (2)</span></div></div></li>
+  // Help texts for blind readers or in tooltip buttons ("Plus d'informations") are not counted.
+  const BLOCK_TAG = /^(DIV|P|LI|UL|OL|DL|DT|DD|TABLE|TBODY|THEAD|TFOOT|TR|TD|TH|H[1-6]|SECTION|ARTICLE|HEADER|FOOTER|ASIDE|FIGURE|FIGCAPTION|BLOCKQUOTE|PRE|FORM|FIELDSET|DETAILS|SUMMARY|LABEL|MAIN|NAV)$/;
+  const BLOCK_SEL = 'div,p,li,ul,ol,dl,dt,dd,table,tr,td,th,h1,h2,h3,h4,h5,h6,section,article,header,footer,aside,figure,figcaption,blockquote,pre,form,fieldset,details,summary,label,main,nav';
+  const HELPER_TOKEN = /^(blind|sr-only|sr-text|visually-?hidden|visuallyhidden|screen-reader-text|screen-reader-only|a11y|a11y-hidden|hidden-text|hide-text|offscreen|tooltip|tooltip-(content|text|layer|box|body|popup|inner|wrap)|tip-(content|text|layer|box))$/i;
+  function skipText(n) {
+    if (/^(SCRIPT|STYLE|NOSCRIPT|TEMPLATE|SVG|BUTTON|SELECT|OPTION|INPUT|TEXTAREA|IMG|PICTURE|VIDEO|AUDIO|IFRAME|CANVAS|OBJECT)$/i.test(n.tagName)) return true;
+    const c = typeof n.className === 'string' ? n.className : '';
+    return !!c && c.split(/\s+/).some((t) => HELPER_TOKEN.test(t));
+  }
+  // the text of a box without help texts; if that leaves nothing (the label itself sits in a
+  // button or a "tooltip" box), the whole text
+  function readText(node) {
+    const run = (strict) => {
+      let s = '';
+      const walk = (n) => {
+        if (n.nodeType === 3) s += n.nodeValue;
+        else if (n.nodeType === 1 && (strict ? !skipText(n) : !/^(SCRIPT|STYLE|NOSCRIPT|TEMPLATE|SVG)$/i.test(n.tagName))) {
+          const gap = BLOCK_TAG.test(n.tagName) || n.tagName === 'BR';
+          if (gap) s += ' ';
+          n.childNodes.forEach(walk);
+          if (gap) s += ' ';
+        }
+      };
+      walk(node);
+      return clean(s);
+    };
+    return run(true) || run(false);
+  }
+  // the pieces of text of a box (more than `max` pieces: stop counting)
+  function textUnits(el, max) {
+    const out = [];
+    const ownText = Array.prototype.some.call(el.childNodes, (n) => n.nodeType === 3 && /\S/.test(n.nodeValue));
+    if (ownText) {
+      // words mixed with small tags ("Volume <sup>1</sup>"): one piece per real box
+      let buf = '';
+      const flush = () => {
+        const t = clean(buf);
+        if (t) out.push(t);
+        buf = '';
+      };
+      const walk = (n) => {
+        if (out.length > max) return;
+        if (n.nodeType === 3) buf += n.nodeValue;
+        else if (n.nodeType === 1 && !skipText(n)) {
+          const block = BLOCK_TAG.test(n.tagName);
+          if (block) flush();
+          else if (n.tagName === 'BR') buf += ' ';
+          n.childNodes.forEach(walk);
+          if (block) flush();
+        }
+      };
+      el.childNodes.forEach(walk);
+      flush();
+      return out;
+    }
+    for (const c of Array.from(el.children)) {
+      if (out.length > max) break;
+      if (skipText(c)) continue;
+      if (!c.querySelector(BLOCK_SEL)) {
+        const t = readText(c);
+        if (t) out.push(t);
+      } else out.push(...textUnits(c, max - out.length));
+    }
+    return out;
+  }
+  function pairsFromTextUnits(root) {
+    const cand = [];
+    for (const el of qa('li,tr,dl,div', root)) {
+      const u = textUnits(el, 2);
+      if (u.length !== 2) continue;
+      const [l, v] = u;
+      if (l.length > 90 || v.length > 200 || l === v || !/[a-zà-ÿ]/i.test(l)) continue;
+      cand.push({ el, l, v });
+    }
+    // the BIGGEST box holding exactly the two texts is the row (not the small boxes inside it)
+    const set = new Set(cand.map((c) => c.el));
+    const rows = cand.filter((c) => {
+      for (let x = c.el.parentElement; x; x = x.parentElement) {
+        if (set.has(x)) return false;
+        if (x === root) break;
+      }
+      return !!c.el.parentElement;
+    });
+    // a real spec row looks like its neighbours: 3+ rows with the same shape, or 3+ rows in the same box
+    const sig = (el) => el.tagName + '.' + String(el.className || '') + '>' + (el.firstElementChild ? el.firstElementChild.tagName + '.' + String(el.firstElementChild.className || '') : '');
+    const bySig = new Map();
+    const byParent = new Map();
+    rows.forEach((r) => {
+      r.s = sig(r.el);
+      bySig.set(r.s, (bySig.get(r.s) || 0) + 1);
+      byParent.set(r.el.parentElement, (byParent.get(r.el.parentElement) || 0) + 1);
+    });
+    return rows.filter((r) => bySig.get(r.s) >= 3 || byParent.get(r.el.parentElement) >= 3).map((r) => withEl({ label: r.l, value: r.v }, r.el));
   }
 
   function pairsWithRecipeRows(root, cfg) {
@@ -679,7 +809,7 @@
     return out;
   }
 
-  function pairsFrom(root, cfg) {
+  function pairsFrom(root, cfg, noText) {
     const strategies = [
       ['recipe-rows', () => pairsWithRecipeRows(root, cfg)],
       ['table', () => pairsFromTables(root)],
@@ -691,8 +821,20 @@
     for (const [how, fn] of strategies) {
       const raw = fn().filter((p) => !p.el || !inOtherProducts(p.el));
       const pairs = dedupePairs(raw);
-      if (pairs.length >= 3) return { pairs, how, raw };
+      if (pairs.length >= 3) {
+        best = { pairs, how, raw };
+        break;
+      }
       if (pairs.length > best.pairs.length) best = { pairs, how, raw };
+    }
+    // rows made of two texts in deeper boxes: when the simple ways found (almost) nothing,
+    // or — if the recipe asks ("textRows: 'compare'") — when they found clearly fewer lines
+    const compare = cfg.textRows === 'compare';
+    if (cfg.textRows !== false && (compare || (!noText && best.pairs.length < 3))) {
+      const raw = pairsFromTextUnits(root).filter((p) => !p.el || !inOtherProducts(p.el));
+      const pairs = dedupePairs(raw);
+      const better = best.pairs.length < 3 ? pairs.length > best.pairs.length : pairs.length >= best.pairs.length * 1.5 + 2;
+      if (better) best = { pairs, how: 'text-rows', raw };
     }
     return best;
   }
@@ -700,14 +842,18 @@
   const HEADING_RE = /^(caract[ée]ristiques( techniques)?|sp[ée]cifications?( techniques?)?|fiche technique|informations? techniques?|donn[ée]es techniques|d[ée]tails techniques|(toutes les )?sp[ée]cifications( du produit)?|toutes les caract[ée]ristiques|technical specifications?|specifications?|specs)$/i;
   const CLICKABLE =
     'button,[role="tab"],[role="button"],summary,[aria-expanded],h2,h3,h4,li,a[href^="#"],a[href^="javascript"],a[role="tab"],div[class*="tab" i],div[class*="accordion" i],div[class*="collaps" i],span[class*="tab" i]';
-  const stripArrows = (t) => clean(t).replace(/[\s+\-−–▼▲▾▴›»>⌄⌃^]+$/g, '');
+  const stripArrows = (t) => clean(t).replace(/[\s+\-−–▼▲▾▴▿▵▸▹›‹»>⌄⌃^˅˄ˇ∨∧⋁⋀︾︽❯❮〉⏷⏶]+$/g, '');
 
-  function headingCandidates() {
+  // titles above a specifications area ("Caractéristiques", "Fiche technique"...) + the recipe's own
+  // (lg.com: "Caractéristiques principales", "Voir toutes les caractéristiques")
+  function headingCandidates(cfg) {
+    const extra = toArray(cfg && cfg.specHeadings);
     return qa('h1,h2,h3,h4,h5,h6,button,summary,[role="tab"],legend,strong,span,p,div,a,li').filter((el) => {
       if (el.childElementCount > 3) return false;
       const t = el.textContent || '';
       if (t.length > 60) return false;
-      return HEADING_RE.test(stripArrows(t));
+      const s = stripArrows(t);
+      return HEADING_RE.test(s) || extra.some((re) => re.test(s));
     });
   }
 
@@ -789,6 +935,9 @@
       return t && t.length <= 80 && !h.querySelector('table,ul,ol,li,dl,tr') && !h.closest('table,dl,li');
     });
     heads = heads.filter((h) => !heads.some((o) => o !== h && o.contains(h))); // a button inside an h3: keep the h3
+    // "Voir toutes les caractéristiques", "Afficher plus"... are buttons, not section titles
+    heads = heads.filter((h) => !/^(voir|afficher|masquer|cacher|r[ée]duire|plus d|moins d|show|hide|view|see|read|lire|tout voir|fermer|close)\b/i.test(stripArrows(h.textContent || '')));
+    heads.sort((a, b) => (a.compareDocumentPosition(b) & 4 ? -1 : 1)); // page order
     if (heads.length < 2) return null;
     const groups = [];
     const byHead = new Map();
@@ -847,6 +996,11 @@
       const gs = groupsFromContainers(tables, cfg);
       if (totalRows(gs) >= r.pairs.length * 0.8) return gs;
     }
+    // the recipe says the box has its section titles inside (lg.com: "CAPACITÉ", "DIMENSIONS ET POIDS"...)
+    if (cfg.splitUnderHeading) {
+      const split = splitByHeadings(node, cfg, r.raw || r.pairs);
+      if (split && totalRows(split) >= r.pairs.length * 0.8) return split;
+    }
     return [{ title: '', header: null, rows: r.pairs, how: r.how }];
   }
 
@@ -870,23 +1024,32 @@
     }
 
     // 2) find the "Caractéristiques" heading and climb up until we see rows
-    for (const h of headingCandidates()) {
-      let node = h.parentElement;
-      for (let i = 0; i < 7 && node; i++, node = node.parentElement) {
-        const r = pairsFrom(node, cfg);
-        if (r.pairs.length >= 3) {
-          consider(groupsFor(node, cfg, r), 'under-heading → ' + r.how);
-          break;
+    //    (first with tables / lists / simple rows only; rows in deeper boxes only if that finds nothing)
+    const heads = headingCandidates(cfg);
+    for (const pass of [true, false]) {
+      if (!pass && totalRows(best.groups) >= 3) break;
+      for (const h of heads) {
+        let node = h.parentElement;
+        for (let i = 0; i < 7 && node; i++, node = node.parentElement) {
+          const r = pairsFrom(node, cfg, pass);
+          if (r.pairs.length >= 3) {
+            consider(groupsFor(node, cfg, r), 'under-heading → ' + r.how);
+            break;
+          }
+          if (node === document.body) break;
         }
-        if (node === document.body) break;
       }
     }
     if (totalRows(best.groups) >= 3 || cfg.specsBoxOnly) return finish(best);
 
     // 3) boxes whose class name talks about specs / properties / technical / caractéristiques
-    for (const box of qa('[class*="spec" i],[class*="propert" i],[class*="techn" i],[class*="caract" i]').slice(0, 60)) {
-      const r = pairsFrom(box, cfg);
-      if (r.pairs.length) consider(groupsFor(box, cfg, r), 'class-name-guess → ' + r.how);
+    const boxes = qa('[class*="spec" i],[class*="propert" i],[class*="techn" i],[class*="caract" i]').slice(0, 60);
+    for (const pass of [true, false]) {
+      if (!pass && totalRows(best.groups) >= 3) break;
+      for (const box of boxes) {
+        const r = pairsFrom(box, cfg, pass);
+        if (r.pairs.length) consider(groupsFor(box, cfg, r), 'class-name-guess → ' + r.how);
+      }
     }
     if (totalRows(best.groups) >= 3) return finish(best);
 
@@ -1030,9 +1193,13 @@
 
   // Click EVERY button/tab/box the recipe lists, even if some specs are already
   // visible (for pages that show only a few specs until you click "see all").
-  async function clickAll(cfg, clicker, harvest) {
+  async function clickAll(cfg, clicker, harvest, count, left) {
     const res = toArray(cfg.alwaysClick);
     if (!res.length) return 0;
+    // some pages build the full list a moment AFTER the click (they download it first):
+    // with a recipe that asks for it, wait a little while we still have only a few lines
+    const waitMs = typeof cfg.alwaysClickWait === 'number' ? cfg.alwaysClickWait : 0;
+    const enough = cfg.fullListMin || 12;
     let n = 0;
     const matches = innermost(
       qa(CLICKABLE + ',div,span,p,h5,h6').filter((el) => {
@@ -1042,9 +1209,19 @@
       })
     );
     for (const el of matches) {
+      const before = count ? count() : 0;
       if (await clicker.click(el, 500)) {
         n++;
         harvest();
+        if (waitMs && count && count() < enough) {
+          const t1 = Date.now();
+          const until = Math.min(waitMs, left ? left() : waitMs);
+          while (Date.now() - t1 < until) {
+            await sleep(250);
+            harvest();
+            if (count() >= before + 3) break;
+          }
+        }
       }
     }
     return n;
@@ -1109,6 +1286,64 @@
     return { text: '', how: '' };
   }
 
+  // ---- prices that are NOT the price to pay: crossed out, "old price", "you save 200 DH", per month...
+  // ("regular" is not in the list: some shops call their normal price "price--regular")
+  const BAD_PRICE_PART = /^(old|was|before|original|strike|striked|strikethrough|crossed|barre|barree|ancien|ancienne|saving|savings|save|installment|installments|monthly|mensuel|mensualite|through)$/i;
+  function badPriceClass(el) {
+    const c = typeof el.className === 'string' ? el.className : '';
+    if (!c) return false;
+    return c.split(/\s+/).some((tok) => {
+      const parts = tok
+        .split(/[-_]+|(?=[A-Z][a-z])/)
+        .map((x) => x.toLowerCase())
+        .filter(Boolean);
+      return parts.some((x) => BAD_PRICE_PART.test(x)) || (parts.indexOf('list') !== -1 && parts.indexOf('price') !== -1);
+    });
+  }
+  function crossedOut(x) {
+    if (/^(S|DEL|STRIKE)$/i.test(x.tagName)) return true;
+    try {
+      const view = (x.ownerDocument && x.ownerDocument.defaultView) || null;
+      if (!view) return false; // a page read as text: no styles
+      const cs = view.getComputedStyle(x);
+      return !!cs && /line-through/.test((cs.textDecorationLine || '') + ' ' + (cs.textDecoration || ''));
+    } catch (e) {
+      return false;
+    }
+  }
+  const NOT_TO_PAY = /[ée]conomi[sz]|\bsave\b|\bsaving|vous gagnez|\/\s*mois|par mois|x\s*\d+\s*fois|[ée]co-?(part|taxe|participation)|\bdeee\b|participation|[àa] partir de\s*\d+[.,]?\d*\s*(dh|mad|€)?\s*\/|mensualit/i;
+  // the first price to PAY inside a box: every small piece holding a price is judged on its own
+  // (a box "6.599,00DH 6.399,00DH Économiser 200,00DH" gives 6.399,00DH when 6.599 is crossed out)
+  function priceToPayIn(box) {
+    if (crossedOut(box) || badPriceClass(box)) return null;
+    for (let x = box.parentElement, i = 0; x && i < 2; x = x.parentElement, i++) if (crossedOut(x)) return null;
+    const pieces = [box].concat(qa('*', box)).filter((x) => {
+      if (/^(SCRIPT|STYLE|NOSCRIPT|TEMPLATE|SVG|OPTION|SELECT)$/i.test(x.tagName)) return false;
+      const t = readText(x);
+      return t && t.length <= 60 && firstPrice(t);
+    });
+    const leaves = pieces.filter((x) => !pieces.some((y) => y !== x && x.contains(y)));
+    for (const leaf of leaves) {
+      let bad = false;
+      for (let x = leaf; x && x !== box; x = x.parentElement) {
+        if (crossedOut(x) || badPriceClass(x)) {
+          bad = true;
+          break;
+        }
+      }
+      if (bad) continue;
+      const own = readText(leaf);
+      // the words around it ("Économiser" in a box next to it): only when that box holds no other price
+      const par = leaf.parentElement && leaf !== box ? readText(leaf.parentElement) : '';
+      const around = par && (par.match(new RegExp(PRICE_RE.source, 'gi')) || []).filter((m) => firstPrice(m)).length <= 1 ? par : own;
+      if (NOT_TO_PAY.test(own) || NOT_TO_PAY.test(around)) continue;
+      const text = firstPrice(own);
+      const value = text ? toNumber(text) : NaN;
+      if (text && value > 0) return { text, value };
+    }
+    return null;
+  }
+
   // Smart guess: the first "123,45 €" next to the product name that is not
   // crossed out, not a monthly price and not an eco-fee.
   function nearNamePrice(cfg) {
@@ -1118,7 +1353,7 @@
       if (nameEl) break;
     }
     if (!nameEl) return null;
-    const BAD_CLASS = /old|regular|was|before|strike|crossed|list-?price|original|savings|discount|installment|monthly/i;
+    const BAD_CLASS = /(^|[\s_-])(old|regular|was|before)([\s_-]|$)|old-?price|price-?old|strike|crossed|list-?price|original|savings|discount|installment|monthly/i;
     let node = nameEl;
     for (let i = 0; i < 7 && node && node !== document.body; i++, node = node.parentElement) {
       for (const el of qa('*', node)) {
@@ -1126,10 +1361,11 @@
         const own = clean(el.textContent);
         if (!own || own.length > 25) continue;
         if (el.closest('s,del,strike')) continue;
+        if (crossedOut(el) || (el.parentElement && crossedOut(el.parentElement))) continue; // crossed out by the page's style
         if (inOtherProducts(el)) continue; // the price of a "similar product" card
-        if (typeof el.className === 'string' && BAD_CLASS.test(el.className)) continue;
+        if (typeof el.className === 'string' && (BAD_CLASS.test(el.className) || badPriceClass(el))) continue;
         const around = clean(el.parentElement ? el.parentElement.textContent : '').slice(0, 80);
-        if (/\/\s*mois|par mois|x\s*\d+\s*fois|[ée]co|deee|participation|economisez|économisez/i.test(around)) continue;
+        if (/\/\s*mois|par mois|x\s*\d+\s*fois|[ée]co|deee|participation|economis|économis|\bsave\b/i.test(around)) continue;
         const text = firstPrice(own);
         const value = text ? toNumber(text) : NaN;
         if (text && value > 0 && /[€$£]|EUR|MAD|DH/i.test(text)) return { text, value, how: 'near-name level ' + i };
@@ -1150,11 +1386,16 @@
       if (source === 'dom') {
         for (const sel of toArray(cfg.priceSelectors)) {
           for (const el of qa(sel)) {
-            if (el.tagName !== 'META' && inOtherProducts(el)) continue; // price of another product
-            const raw = el.getAttribute('content') || el.textContent;
-            const text = firstPrice(raw);
-            const value = text ? toNumber(text) : NaN;
-            if (text && value > 0) return { text, value, how: sel };
+            if (el.getAttribute('content')) {
+              // <meta itemprop="price" content="6399.00">
+              const text = firstPrice(el.getAttribute('content')) || (/^\d+([.,]\d+)?$/.test(el.getAttribute('content').trim()) ? el.getAttribute('content').trim() : '');
+              const value = text ? toNumber(text) : NaN;
+              if (text && value > 0 && (el.tagName === 'META' || !inOtherProducts(el))) return { text, value, how: sel };
+              continue;
+            }
+            if (inOtherProducts(el)) continue; // price of another product
+            const hit = priceToPayIn(el); // not a crossed-out "old price", not "Économiser 200 DH"
+            if (hit) return { text: hit.text, value: hit.value, how: sel };
           }
         }
       } else if (source === 'jsonld' && ld.price) {
@@ -1350,8 +1591,12 @@
     if (setting === 'all-specs') slideMode = 'specs';
     else if (setting === 'all-nospecs') slideMode = 'nospecs';
     else if (setting !== 'off') {
+      // you chose the type (fridge, air conditioner...) -> that decides; otherwise the page's words do
+      const told = String((options && options.productType) || '');
       const nm = findName(cfg, readJsonLd()).text;
-      if (isCooling(nm) || (cfg.slideshowFor && cfg.slideshowFor.test(location.pathname))) slideMode = setting === 'ac-nospecs' ? 'nospecs' : 'specs';
+      const cooling = told ? /^(ac|fan)$/.test(told) : isCooling(nm) || (cfg.slideshowFor && cfg.slideshowFor.test(location.pathname));
+      if (cooling) slideMode = setting === 'ac-nospecs' ? 'nospecs' : 'specs';
+      debug.toldType = told || 'no';
     }
     if (slideMode) cfg.specsBoxOnly = true;
     debug.slideshowMode = slideMode || 'off';
@@ -1387,7 +1632,7 @@
     mark('first-read');
     debug.clickedBoxes = 0;
     const wantSpecs = slideMode !== 'nospecs';
-    if (wantSpecs && toArray(cfg.alwaysClick).length) debug.clickedBoxes += await clickAll(cfg, clicker, harvest);
+    if (wantSpecs && toArray(cfg.alwaysClick).length) debug.clickedBoxes += await clickAll(cfg, clicker, harvest, () => acc.count(), left);
     mark('buttons');
     if (wantSpecs && cfg.openAccordions !== false) {
       await openAccordions(clicker, harvest);
@@ -1474,7 +1719,15 @@
     const ld = readJsonLd();
     const name = findName(cfg, ld);
     const noPrice = typeof cfg.noPrice === 'function' ? !!cfg.noPrice(location.hostname.replace(/\.localhost$/, ''), location.pathname) : !!cfg.noPrice;
-    const price = noPrice ? { text: '', value: null, how: 'this website shows no real price' } : findPrice(cfg, ld);
+    let price = noPrice ? { text: '', value: null, how: 'this website shows no real price' } : findPrice(cfg, ld);
+    // some pages add the price a moment after they open (lg.com/ma asks its shop for it): wait a little
+    if (!noPrice && !price.value && !fast && cfg.waitForPrice) {
+      const ms = typeof cfg.waitForPrice === 'function' ? cfg.waitForPrice(location.hostname.replace(/\.localhost$/, ''), location.pathname) : cfg.waitForPrice;
+      if (ms > 0) {
+        await waitUntil(() => (price = findPrice(cfg, readJsonLd())).value, Math.min(ms, left()), 250);
+        debug.waitedForPrice = ms;
+      }
+    }
 
     const near = nearNameImages(cfg);
     const sets = {
@@ -1632,8 +1885,14 @@
     };
     // the specifications: the box(es) holding "Toutes les caractéristiques" / the recipe's spec boxes
     const titles = qa('h1,h2,h3,h4,h5,h6,p,span,div,button,a,strong,dt,th,li').filter(
-      (el) => el.childElementCount === 0 && /^(toutes les caract|caract[ée]ristiques|sp[ée]cifications|fiche technique)/i.test(clean(el.textContent))
+      (el) => el.childElementCount === 0 && /^((voir )?toutes les caract|caract[ée]ristiques|sp[ée]cifications|fiche technique)/i.test(clean(el.textContent))
     );
+    // every small piece of the page that shows a price (to see which one is the price to pay)
+    const prices = qa('body *')
+      .filter((el) => el.childElementCount <= 2 && /\d/.test(el.textContent || '') && clean(el.textContent).length <= 40 && /[€$£]|EUR|MAD|\bDHS?\b|\dDH/i.test(el.textContent || ''))
+      .filter((el, i, all) => !all.some((o) => o !== el && el.contains(o)))
+      .slice(0, 14)
+      .map((el) => clean(el.textContent) + '  @ ' + tag(el) + ' < ' + where(el, 3) + (crossedOut(el) ? '  [crossed out]' : '') + (inOtherProducts(el) ? '  [other product]' : ''));
     const boxes = [];
     toArray(cfg.specContainerSelectors).forEach((sel) => {
       try {
@@ -1652,6 +1911,7 @@
       images: imgs,
       dataCalls: calls,
       specTitles: titles.slice(0, 12).map((t) => clean(t.textContent).slice(0, 60) + '  @ ' + where(t, 3)),
+      prices,
       specBoxes: boxes.slice(0, 4).map((b) => ({ at: tag(b) + ' < ' + where(b, 3), rows: qa('tr,li,dt,[class*="row" i]', b).length, html: snip(b, 7000) })),
     };
   }

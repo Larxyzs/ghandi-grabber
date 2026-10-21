@@ -334,7 +334,12 @@ function ensureOffscreen() {
   return offscreenReady;
 }
 
-async function quickRead(url, recipeId) {
+// the product type YOU chose (fridge, air conditioner...): the page reader then knows for sure
+// whether "slideshow mode" (air conditioners & fans) applies — a fridge called "Door Cooling+" is not one
+function toldType(it) {
+  return it && it.ptype && it.ptypeBy === 'you' ? it.ptype : '';
+}
+async function quickRead(url, recipeId, productType) {
   const ctl = new AbortController();
   const timer = setTimeout(() => ctl.abort(), 15000);
   let res;
@@ -352,7 +357,7 @@ async function quickRead(url, recipeId) {
   if (html.length < 500) return { good: false, why: 'page almost empty' };
   await ensureOffscreen();
   const answer = await withTimeout(
-    chrome.runtime.sendMessage({ target: 'offscreen', type: 'quick-read', html, url: res.url || url, recipeId: recipeArg(recipeId), slideshowMode: (await getSettings()).slideshowMode || 'ac-specs' }),
+    chrome.runtime.sendMessage({ target: 'offscreen', type: 'quick-read', html, url: res.url || url, recipeId: recipeArg(recipeId), slideshowMode: (await getSettings()).slideshowMode || 'ac-specs', productType: productType || '' }),
     15000,
     'quick read too slow'
   );
@@ -547,7 +552,7 @@ async function xrayItem(id) {
   const it = await getItem(id);
   if (!it) throw new Error('This product is not in the list any more.');
   const settings = await getSettings();
-  const r = await withPage(it.url, (tabId) => scrapeTab(tabId, settings.recipeId, { xray: true }), null);
+  const r = await withPage(it.url, (tabId) => scrapeTab(tabId, settings.recipeId, { xray: true, productType: toldType(it) }), null);
   await updateItem(id, (x) => {
     x.debug = (r && r.debug) || x.debug || null;
     x.xrayAt = Date.now();
@@ -615,7 +620,7 @@ async function processItem(id, settings, getSlot) {
     // 1) quick read: download + read, no window
     if (settings.quickRead !== false) {
       try {
-        const q = await quickRead(started.url, settings.recipeId);
+        const q = await quickRead(started.url, settings.recipeId, toldType(started));
         if (q && q.good && q.result) {
           r = q.result;
           mode = 'quick';
@@ -627,7 +632,7 @@ async function processItem(id, settings, getSlot) {
     // 2) the normal way: a small window that really opens the page
     if (!r) {
       await say('opening the page…');
-      const read = (tabId) => scrapeTab(tabId, settings.recipeId);
+      const read = (tabId) => scrapeTab(tabId, settings.recipeId, { productType: toldType(started) });
       // 2nd try: a brand-new window (a fresh window loads lazy pictures more reliably)
       const slot = getSlot && started.attempts < 2 ? await getSlot() : null;
       r = slot ? await readInSlot(slot, started.url, read, say) : await withPage(started.url, read, say);

@@ -26,11 +26,22 @@
     }
   })();
 
-  function judge(r, recipe) {
+  function judge(r, recipe, url) {
     const q = (recipe && recipe.quickRead) || {};
     if (recipe && recipe.quickRead === false) return 'this brand needs a real window';
     if (!r || !r.ok) return 'nothing found';
     if (!r.name) return 'no name';
+    // some pages add their price only after they open (lg.com/ma): the text alone is not enough
+    if (q.needPrice && !r.price) {
+      let need = q.needPrice === true;
+      try {
+        const u = new URL(url);
+        if (typeof q.needPrice === 'function') need = !!q.needPrice(u.hostname.replace(/\.localhost$/, ''), u.pathname);
+      } catch (e) {
+        /* keep the plain answer */
+      }
+      if (need) return 'the price appears only in a real window';
+    }
     const pics = (r.mainImage ? 1 : 0) + (r.otherImages || []).length;
     if (pics < (q.minPictures || 2)) return 'only ' + pics + ' picture(s)';
     const min = r.slideshowMode === 'nospecs' ? 0 : q.minSpecs || (recipe ? 8 : 12);
@@ -66,9 +77,9 @@
       base.href = msg.url;
       (doc.head || doc.documentElement).prepend(base);
       const G2 = window.GHANDI.forDocument(doc, msg.url);
-      const r = await G2.run({ static: true, recipeId: msg.recipeId, timeoutMs: 5000, slideshowMode: msg.slideshowMode });
+      const r = await G2.run({ static: true, recipeId: msg.recipeId, timeoutMs: 5000, slideshowMode: msg.slideshowMode, productType: msg.productType || '' });
       const recipe = G2.pickRecipeFor(new URL(msg.url).hostname, msg.recipeId);
-      const why = judge(r, recipe);
+      const why = judge(r, recipe, msg.url);
       sendResponse({ ok: true, good: !why, why, result: r });
     })().catch((e) => sendResponse({ ok: false, good: false, why: String((e && e.message) || e) }));
     return true;
