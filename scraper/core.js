@@ -403,6 +403,52 @@
     return Array.from(out).filter((t) => (t.length >= 4 || t.charAt(0) === '/') && !/^\d+(kg|l|w|cm|mm|kw|btu|hz|v)$/.test(t) && !/^(4k|8k|uhd|fhd)/.test(t));
   }
 
+  // LOOPING SLIDESHOWS: they put a COPY of the last slide before the first one (swiper "duplicate",
+  // slick "cloned"...), or move the last slide to the front (Swiper 9+). Copies are left out and the
+  // slides are put back in their real order (data-swiper-slide-index / data-slick-index...), so the
+  // main picture is slide 1, not the last one.
+  const CLONE_SEL =
+    '.swiper-slide-duplicate,.slick-cloned,.owl-item.cloned,.glide__slide--clone,.splide__slide--clone,.flickity-clone,.carousel-clone,.slide-clone,[data-clone="true"],[data-cloned="true"],[class~="clone"],[class~="cloned"],[class*="slide--clone" i],[class*="slide-duplicate" i]';
+  const SLIDE_INDEX_SEL = '[data-swiper-slide-index],[data-slick-index],[data-slide-index],[data-slide-number],[data-slide],[aria-label*=" / "][role="group"]';
+  function slideIndexOf(el) {
+    const s = el && el.closest ? el.closest(SLIDE_INDEX_SEL) : null;
+    if (!s) return null;
+    let v = null;
+    for (const a of ['data-swiper-slide-index', 'data-slick-index', 'data-slide-index', 'data-slide-number', 'data-slide']) {
+      if (s.hasAttribute(a)) {
+        v = parseInt(s.getAttribute(a), 10);
+        break;
+      }
+    }
+    if (v === null) {
+      const m = /^(\d+)\s*\/\s*\d+$/.exec(clean(s.getAttribute('aria-label') || '')); // "3 / 13"
+      v = m ? parseInt(m[1], 10) : null;
+    }
+    return v === null || isNaN(v) || v < 0 ? null : { v, box: s.parentElement };
+  }
+  const isCloneSlide = (el) => !!(el && el.closest && el.closest(CLONE_SEL));
+  // list = pictures (or {el}); get = how to reach the picture element
+  function inSlideOrder(list, get) {
+    const elOf = get || ((x) => x);
+    const real = list.filter((x) => !isCloneSlide(elOf(x)));
+    const out = (real.length ? real : list).slice();
+    // inside each slideshow, the slides that know their number go back in number order
+    const groups = new Map();
+    out.forEach((x, i) => {
+      const s = slideIndexOf(elOf(x));
+      if (!s) return;
+      if (!groups.has(s.box)) groups.set(s.box, []);
+      groups.get(s.box).push({ x, i, v: s.v });
+    });
+    groups.forEach((g) => {
+      if (g.length < 2) return;
+      const places = g.map((e) => e.i);
+      const sorted = g.slice().sort((a, b) => a.v - b.v || a.i - b.i);
+      places.forEach((p, k) => (out[p] = sorted[k].x));
+    });
+    return out;
+  }
+
   function galleryImages(cfg, info) {
     const byAddress = slideshowByAddress(cfg, info);
     if (byAddress.length >= 2) return { urls: byAddress, how: 'slideshow-address ' + String(cfg.slideshowPattern) };
@@ -412,7 +458,7 @@
         if (el.tagName === 'IMG') imgs.push(el);
         else qa('img', el).forEach((i) => imgs.push(i));
       });
-      const urls = processImages(imgs.filter((i) => !inOtherProducts(i)).map(bestImageUrl), cfg);
+      const urls = processImages(inSlideOrder(imgs.filter((i) => !inOtherProducts(i))).map(bestImageUrl), cfg);
       if (urls.length) return { urls, how: sel };
     }
     return { urls: [], how: '' };
@@ -437,7 +483,7 @@
     if (!nameEl) return { urls: [], how: '' };
     let node = nameEl;
     for (let i = 0; i < 10 && node && node !== document.body; i++, node = node.parentElement) {
-      const raw = qa('img', node).filter((i) => !inOtherProducts(i)).map(bestImageUrl);
+      const raw = inSlideOrder(qa('img', node).filter((i) => !inOtherProducts(i))).map(bestImageUrl);
       qa('[style*="background-image"]', node).forEach((el) => {
         const m = /url\((['"]?)(.*?)\1\)/.exec(el.style.backgroundImage || '');
         if (m && m[2]) raw.push(m[2]);
@@ -476,7 +522,10 @@
         });
     };
     const ATTRS = ['src', 'data-src', 'data-lazy-src', 'data-lazy', 'data-original', 'srcset', 'data-srcset', 'data-zoom-image', 'data-large', 'data-full'];
-    qa('img, source').forEach((el) => {
+    // copies made by a looping slideshow come last: the real slide keeps its place
+    const imgEls = qa('img, source');
+    const loopCopies = imgEls.filter((el) => isCloneSlide(el));
+    imgEls.filter((el) => !isCloneSlide(el)).concat(loopCopies).forEach((el) => {
       const owner = el.tagName === 'SOURCE' ? el.parentElement || el : el;
       ATTRS.forEach((a) => add(el.getAttribute(a), owner));
     });
@@ -498,7 +547,7 @@
       const i = u.search(re);
       return i === -1 ? '' : u.slice(0, i);
     };
-    const good = found.filter((x) => !x.other && processImages([x.u], cfg).length);
+    const good = inSlideOrder(found.filter((x) => !x.other && processImages([x.u], cfg).length), (x) => x.el);
     if (info) info.slideshow = { pattern: String(re), found: found.length, good: good.length, other: found.filter((x) => x.other).length };
     if (!good.length) return [];
     // the product's own folder = the folder of the first slide on the page (not the share picture in <head>)
@@ -557,7 +606,7 @@
         if (el.tagName === 'IMG') imgs.push(el);
         else qa('img', el).forEach((i) => imgs.push(i));
       });
-      const cand = imgs.filter((i) => !inOtherProducts(i) && bestImageUrl(i) && processImages([bestImageUrl(i)], cfg).length);
+      const cand = inSlideOrder(imgs.filter((i) => !inOtherProducts(i) && bestImageUrl(i) && processImages([bestImageUrl(i)], cfg).length));
       if (!cand.length) continue;
       let box = cand[0];
       const count = (n) => cand.filter((i) => n.contains(i)).length;
