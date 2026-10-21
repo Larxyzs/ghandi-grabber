@@ -847,7 +847,15 @@
 
   async function actFind() {
     const url = $('catUrl').value.trim();
-    if (!/^https?:\/\//i.test(url)) return toast('Paste the category page link first. It starts with https://');
+    if (!url) {
+      // nothing pasted: use the brand page you have open, if there is one
+      if (S.tab && /^https?:\/\//i.test(S.tab.url || '')) {
+        toast('The link box is empty, so I use the page you have open.');
+        return actFindTab();
+      }
+      return toast('The link box is empty. Paste the list page link in it first (copy it from the address bar).');
+    }
+    if (!/^https?:\/\//i.test(url)) return toast('That is not a web link. Copy it from the address bar: it starts with https://');
     saveSettings();
     const ptype = await askType(url, '');
     if (!ptype) return;
