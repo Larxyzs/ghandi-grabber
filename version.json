@@ -1,8 +1,8 @@
 {
- "version": "3.7.10",
- "commit": "bc8f8760dcefb0a149cfed6b8505045670d8337b",
+ "version": "3.7.11",
+ "commit": "86b25557762f6b5d27c453e359df64492c5ef2aa",
  "notes": [
-  "Import to site: the cursor is already in the section box, and Enter sends. The note box is gone."
+  "After Import to site, the products that went into your shop are removed from the list."
  ],
  "files": [
   {
@@ -37,8 +37,8 @@
   },
   {
    "path": "app/app.js",
-   "size": 69799,
-   "sha256": "856c95fc30f72e6494938b8ddd78becea3184229b90e578d4b17ab2eac7bfc61"
+   "size": 70205,
+   "sha256": "37b447c408769fbc45493e486ba5b9d3b22b25f930f60c10261c9abe75d01d12"
   },
   {
    "path": "app/shim.js",
@@ -68,7 +68,7 @@
   {
    "path": "manifest.json",
    "size": 1011,
-   "sha256": "f070c862fefeddc6195eea5392b44a1fea0a6b11f20f8df02de4ee92850cb746"
+   "sha256": "6c8810c7607dbe35adf6fa71a42d95aad1373a89265843b0b4b9b6df810d67f7"
   },
   {
    "path": "offscreen/offscreen.html",
