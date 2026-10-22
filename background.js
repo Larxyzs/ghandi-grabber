@@ -1193,8 +1193,9 @@ async function checkForUpdate(fromPanel) {
   return u;
 }
 try {
+  // look for a new version every 30 seconds (the fastest Chrome allows)
   chrome.alarms.get('ghandi-update-check', (a) => {
-    if (!a) chrome.alarms.create('ghandi-update-check', { delayInMinutes: 1, periodInMinutes: 360 });
+    if (!a || a.periodInMinutes !== 0.5) chrome.alarms.create('ghandi-update-check', { delayInMinutes: 0.5, periodInMinutes: 0.5 });
   });
   chrome.alarms.onAlarm.addListener((a) => {
     if (a.name === 'ghandi-update-check') checkForUpdate(false);

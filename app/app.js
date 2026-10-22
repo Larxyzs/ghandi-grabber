@@ -1165,6 +1165,7 @@
     let known = true;
     const where = [];
     const done = [];
+    let closeAfter = false;
     try {
       for (const { sec, items: list } of groups.values()) {
         const batchId = 'b' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
@@ -1202,7 +1203,8 @@
       } else {
         msg.className = 'site-msg good';
         msg.textContent = '✓ ' + sent + ' products are on your site' + (where.length ? ': ' + where.join(', ') : '') + '. I removed them from the list.';
-        toast(sent + ' products are on your site.');
+        toast('✓ ' + sent + ' products are on your site' + (where.length ? ': ' + where.join(', ') : '') + '.');
+        closeAfter = true; // all good: the window closes by itself
       }
     } catch (e) {
       msg.className = 'site-msg bad';
@@ -1213,6 +1215,7 @@
       done.forEach((id) => S.sel.delete(id));
     }
     $('sendGo').disabled = false;
+    if (closeAfter) $('sendDlg').close();
   }
 
   // ------------------------------------------------------------ wiring
