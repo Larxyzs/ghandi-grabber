@@ -1,9 +1,8 @@
 {
- "version": "3.7.12",
- "commit": "b8bd18aaa409d0bab51e5f2e7f604af80a055455",
+ "version": "3.7.13",
+ "commit": "300a03c8aa61f4fb136b739c89a380e259f3d912",
  "notes": [
-  "Import to site: after Enter, the window closes by itself when everything went into your shop.",
-  "New versions are looked for every 30 seconds."
+  "Import to site with the box empty: freezers go to Congélateurs (vertical or bahut), fridges to Combinés, 2 portes, Side by Side, Multi-portes, Table Top or 1 porte."
  ],
  "files": [
   {
@@ -38,8 +37,8 @@
   },
   {
    "path": "app/app.js",
-   "size": 70405,
-   "sha256": "f86d1a377345602d42a8a2dab3feccc2d5402ef367c3332db6f9051d839a2e34"
+   "size": 72147,
+   "sha256": "e13bc33f0b511e143783464c2155702391d578ea73c3472d9dc1132000290636"
   },
   {
    "path": "app/shim.js",
@@ -69,7 +68,7 @@
   {
    "path": "manifest.json",
    "size": 1011,
-   "sha256": "a885aefa6b663d62f37e963104a1bb29dcaee610885339a0ba9f7ee98551e5b8"
+   "sha256": "353714cbeb322c1669bfba4c51173f08feaca2dfb817eff3cb919050cabcafc5"
   },
   {
    "path": "offscreen/offscreen.html",
