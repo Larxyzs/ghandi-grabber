@@ -1012,6 +1012,10 @@
       if (m) $('sendSection').value = m.path || m.name;
     }
     $('sendDlg').showModal();
+    // the cursor is already in the section box: type, then Enter sends
+    const box = $('sendSection');
+    box.focus();
+    box.select();
     // refresh the list of sections in the background
     api({ action: 'ping' }, 15000)
       .then((r) => {
@@ -1152,7 +1156,7 @@
       msg.textContent = 'I do not know which section of your site ' + (lost.length === 1 ? 'this product goes' : 'these ' + lost.length + ' products go') + ' in (' + lost.slice(0, 3).map((it) => (it.result && it.result.name) || it.url).join(', ').slice(0, 140) + '). Type a section in the box, then press Send.';
       return;
     }
-    const note = $('sendNote').value.trim();
+    const note = '';
     const CHUNK = 20;
     $('sendGo').disabled = true;
     $('sendBar').hidden = false;
@@ -1218,6 +1222,11 @@
     $('siteShowKey').addEventListener('change', (e) => ($('siteKey').type = e.target.checked ? 'text' : 'password'));
     $('toSiteBtn').addEventListener('click', openSendDlg);
     $('sendGo').addEventListener('click', sendToSite);
+    $('sendSection').addEventListener('keydown', (e) => {
+      if (e.key !== 'Enter' || e.isComposing) return;
+      e.preventDefault();
+      if (!$('sendGo').disabled) sendToSite();
+    });
     document.querySelectorAll('.dlg-close').forEach((b) => b.addEventListener('click', () => b.closest('dialog').close()));
     $('selAll').addEventListener('click', () => {
       const shown = visibleItems();
