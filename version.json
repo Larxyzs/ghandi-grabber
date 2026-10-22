@@ -1,8 +1,9 @@
 {
- "version": "3.7.11",
- "commit": "86b25557762f6b5d27c453e359df64492c5ef2aa",
+ "version": "3.7.12",
+ "commit": "b8bd18aaa409d0bab51e5f2e7f604af80a055455",
  "notes": [
-  "After Import to site, the products that went into your shop are removed from the list."
+  "Import to site: after Enter, the window closes by itself when everything went into your shop.",
+  "New versions are looked for every 30 seconds."
  ],
  "files": [
   {
@@ -37,8 +38,8 @@
   },
   {
    "path": "app/app.js",
-   "size": 70205,
-   "sha256": "37b447c408769fbc45493e486ba5b9d3b22b25f930f60c10261c9abe75d01d12"
+   "size": 70405,
+   "sha256": "f86d1a377345602d42a8a2dab3feccc2d5402ef367c3332db6f9051d839a2e34"
   },
   {
    "path": "app/shim.js",
@@ -47,8 +48,8 @@
   },
   {
    "path": "background.js",
-   "size": 47406,
-   "sha256": "2f588edfded66ca365c42a75585a97e417cee6bd800d0cc263ff29ef01dce70a"
+   "size": 47510,
+   "sha256": "e61524c40321478e9bb7753fb5f39a7e84c3380fb456eb2047173f51e70d0c35"
   },
   {
    "path": "icons/icon128.png",
@@ -68,7 +69,7 @@
   {
    "path": "manifest.json",
    "size": 1011,
-   "sha256": "6c8810c7607dbe35adf6fa71a42d95aad1373a89265843b0b4b9b6df810d67f7"
+   "sha256": "a885aefa6b663d62f37e963104a1bb29dcaee610885339a0ba9f7ee98551e5b8"
   },
   {
    "path": "offscreen/offscreen.html",
