@@ -1058,6 +1058,28 @@
     microwave: 'micro onde',
     sink: 'evier',
   };
+  // a fridge or a freezer: which kind of section (precise first, then wider)
+  function fridgeSections(it) {
+    const name = foldText((it.result && it.result.name) || it.title || '');
+    const rows = ((it.sheet && it.sheet.groups) || []).flatMap((g) => g.rows || []);
+    const type = foldText((rows.find((r) => /^type$/i.test(r.label || '')) || {}).value || '');
+    const all = name + ' ' + type + ' ' + foldText(((it.result && it.result.specs) || []).map((r) => r.label + ' ' + r.value).join(' ')).slice(0, 3000);
+    const model = foldText((it.sheet && it.sheet.model) || '');
+    // a freezer alone (not a fridge-freezer)
+    if (/congelateur/.test(name) && !/refrigerateur/.test(name)) {
+      if (/\b(droit|vertical|armoire|upright)\b/.test(all)) return ['congelateurs vertical', 'congelateurs'];
+      if (/\b(coffre|poitrine|horizontal|bahut|chest)\b/.test(all) || /^(wcf|cf\d|cmch)/.test(model.replace(/ /g, ''))) return ['congelateurs horizontal', 'congelateurs'];
+      return ['congelateurs'];
+    }
+    const k = type + ' ' + name;
+    if (/side by side|americain|\bsbs\b/.test(k)) return ['refrigerateurs side by side', 'refrigerateur congelateur'];
+    if (/multi portes|[34] portes|[34] door|french door|cross door|multi door|\bcube\b|quatre portes|quatres portes|trois portes/.test(k)) return ['refrigerateurs multi portes', 'refrigerateur congelateur'];
+    if (/combine|congelateur en bas|congelateur inferieur|bottom/.test(k)) return ['refrigerateurs combines', 'refrigerateur congelateur'];
+    if (/congelateur en haut|double porte|double door|2 portes|deux portes|top freezer|top mount|monte sur le dessus/.test(k)) return ['refrigerateurs 2 portes', 'refrigerateur congelateur'];
+    if (/table top|sous plan|top table|mini bar/.test(k)) return ['refrigerateurs table top', 'refrigerateur'];
+    if (/une porte|1 porte|monoporte|one door|single door/.test(k)) return ['refrigerateurs 1 porte', 'refrigerateur'];
+    return ['refrigerateur'];
+  }
   function findSection(typed) {
     const list = S.sections || [];
     const t = foldText(typed);
@@ -1065,7 +1087,7 @@
     const exact = list.find((x) => foldText(x.path) === t || foldText(x.name) === t);
     if (exact) return { exact, choices: [] };
     const stem = (w) => w.replace(/(aux|eaux|s|x)$/, '');
-    const wordsOf = (q) => foldText(q).split(' ').filter((w) => w.length > 2 && !/^(les|des|pour|avec|and)$/.test(w)).map(stem);
+    const wordsOf = (q) => foldText(q).split(' ').filter((w) => (w.length > 2 || /^\d+$/.test(w)) && !/^(les|des|pour|avec|and)$/.test(w)).map(stem);
     const fits = (q) => {
       const ws = wordsOf(q);
       if (!ws.length) return [];
@@ -1130,14 +1152,10 @@
       if (typedSec) return typedSec;
       const c = findSection(it.category || '');
       if (c.exact || c.guess) return c.exact || c.guess;
-      let words = TYPE_SECTION[typeOf(it)];
-      if (typeOf(it) === 'fridge') {
-        // a combined fridge (freezer below / above) or a plain fridge?
-        const kind = ((it.sheet && it.sheet.groups) || []).flatMap((g) => g.rows || []).find((r) => /^type$/i.test(r.label || ''));
-        const k = (kind && kind.value) || (it.result && it.result.name) || '';
-        words = /combin|cong[ée]lateur en (bas|haut)|r[ée]frig[ée]rateur[- ]cong[ée]lateur|double porte/i.test(k) ? 'refrigerateur congelateur' : 'refrigerateur';
-      }
-      if (words) {
+      // the most precise section first, then its parent: "Réfrigérateurs Combinés" before "Réfrigérateurs - Congélateurs"
+      let tries = TYPE_SECTION[typeOf(it)] ? [TYPE_SECTION[typeOf(it)]] : [];
+      if (typeOf(it) === 'fridge') tries = fridgeSections(it);
+      for (const words of tries) {
         const t = findSection(words);
         if (t.exact || t.guess) return t.exact || t.guess;
       }
