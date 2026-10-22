@@ -1,8 +1,8 @@
 {
- "version": "3.7.9",
- "commit": "d680952e9840d2647bf01b9a3c731f0ec83aa87c",
+ "version": "3.7.10",
+ "commit": "bc8f8760dcefb0a149cfed6b8505045670d8337b",
  "notes": [
-  "Pictures: the main picture is the first slide of the slideshow again, not the last one."
+  "Import to site: the cursor is already in the section box, and Enter sends. The note box is gone."
  ],
  "files": [
   {
@@ -32,13 +32,13 @@
   },
   {
    "path": "app/app.html",
-   "size": 20222,
-   "sha256": "c01d54e29061941459192335ca6cc34fb7e77da67c1d75271dbb762435415155"
+   "size": 20084,
+   "sha256": "4e71c58c0b79247be5bf1398ec77d516dfb7230896be2b13ba24b27dc00da713"
   },
   {
    "path": "app/app.js",
-   "size": 69489,
-   "sha256": "93796b7315142402c77e153c3fc468d7b369b8715b41803827bec4f5b56bfc8f"
+   "size": 69799,
+   "sha256": "856c95fc30f72e6494938b8ddd78becea3184229b90e578d4b17ab2eac7bfc61"
   },
   {
    "path": "app/shim.js",
@@ -67,8 +67,8 @@
   },
   {
    "path": "manifest.json",
-   "size": 1010,
-   "sha256": "bd3a9b24bbf4a98c14ab1020f160009b6b428d9f31b1ecf32c92324c6278f15b"
+   "size": 1011,
+   "sha256": "f070c862fefeddc6195eea5392b44a1fea0a6b11f20f8df02de4ee92850cb746"
   },
   {
    "path": "offscreen/offscreen.html",
