@@ -1164,6 +1164,7 @@
     let added = 0;
     let known = true;
     const where = [];
+    const done = [];
     try {
       for (const { sec, items: list } of groups.values()) {
         const batchId = 'b' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
@@ -1188,6 +1189,8 @@
           if (answer && typeof answer.added === 'number') added += answer.added;
           else known = false;
           await send('mark-sent', { ids: part.map((it) => it.id), batchId });
+          // in the shop now: they leave the list (a part the site did not fully take stays, to send again)
+          if (!answer || typeof answer.added !== 'number' || answer.added >= part.length) done.push(...part.map((it) => it.id));
           $('sendFill').style.width = Math.round((sent / items.length) * 100) + '%';
         }
         if (sec) where.push('« ' + sec.name + ' » (' + list.length + ')');
@@ -1198,12 +1201,16 @@
         toast((sent - added) + ' products did not go into your shop.');
       } else {
         msg.className = 'site-msg good';
-        msg.textContent = '✓ ' + sent + ' products are on your site' + (where.length ? ': ' + where.join(', ') : '') + '.';
+        msg.textContent = '✓ ' + sent + ' products are on your site' + (where.length ? ': ' + where.join(', ') : '') + '. I removed them from the list.';
         toast(sent + ' products are on your site.');
       }
     } catch (e) {
       msg.className = 'site-msg bad';
       msg.textContent = (sent ? sent + ' products were sent, then: ' : '') + e.message;
+    }
+    if (done.length) {
+      await send('remove', { ids: done });
+      done.forEach((id) => S.sel.delete(id));
     }
     $('sendGo').disabled = false;
   }
