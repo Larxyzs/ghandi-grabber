@@ -1,9 +1,8 @@
 {
- "version": "3.7.16",
- "commit": "8e106004d9318224ab518444bce1facfd171d682",
+ "version": "3.7.17",
+ "commit": "208c29f7f3cd0662852e0d9a2d385631a22a6545",
  "notes": [
-  "Les prix ne sont plus pris ni envoyés : ils se tapent sur le site.",
-  "Un peu plus rapide sur LG (plus d'attente du prix)."
+  "Envoi au site : les produits vont dans les nouvelles sections du site (Réfrigérateur avec congélateur en bas, Congélateur armoire, Machine à laver à hublot, Téléviseur, Four encastrable…), la case vide suffit."
  ],
  "files": [
   {
@@ -38,8 +37,8 @@
   },
   {
    "path": "app/app.js",
-   "size": 72224,
-   "sha256": "8cf65c561e07b3d76b19aeb606eb371407a7233cf7139c11530350be501e9d6d"
+   "size": 73063,
+   "sha256": "7fb26bf9e23d28192c05bb5ad47fc9405a836dc426de6880ad225a592bb2528b"
   },
   {
    "path": "app/shim.js",
@@ -69,7 +68,7 @@
   {
    "path": "manifest.json",
    "size": 1011,
-   "sha256": "82385e2916b1b57c09058d3782c1e9e5d093e216a7eeec68ed91f9006cc6b157"
+   "sha256": "c20272324614f5cabcd5e0b2872d698709ce4cdf8e9f7772480297856916125c"
   },
   {
    "path": "offscreen/offscreen.html",
