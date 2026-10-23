@@ -1,14 +1,15 @@
 {
- "version": "3.7.17",
- "commit": "208c29f7f3cd0662852e0d9a2d385631a22a6545",
+ "version": "3.7.18",
+ "commit": "ee59d122bad036e5c08b7df699dc04ead1ddd8dc",
  "notes": [
-  "Envoi au site : les produits vont dans les nouvelles sections du site (Réfrigérateur avec congélateur en bas, Congélateur armoire, Machine à laver à hublot, Téléviseur, Four encastrable…), la case vide suffit."
+  "Nouveau : Electrobousfiha. C'est un magasin, pas une marque : la marque de chaque produit est trouvée sur sa page (LG, Samsung, Arthur Martin…).",
+  "Find products marche sur leurs listes (toutes les pages) et c'est rapide."
  ],
  "files": [
   {
    "path": "HOW-TO-ADD-A-BRAND.txt",
-   "size": 3657,
-   "sha256": "40f7d190d58689fd335749ef6aede4cca13a91c1631f368082b9913877f43855"
+   "size": 3741,
+   "sha256": "d15ce7000d15d10c58c6dafa1761803b87d33acf6c304afcf34f729ac5170fcb"
   },
   {
    "path": "LOVABLE-PROMPT-CONNECT.md",
@@ -22,8 +23,8 @@
   },
   {
    "path": "READ-ME-FIRST.txt",
-   "size": 16746,
-   "sha256": "26daa1e8a81e4be74de98754611a2873d49bfbf865ebb9da310b98bd8292a491"
+   "size": 16837,
+   "sha256": "06dccd59be983f2599205b758bd3896a17c169003a992b893a988d50c245c07d"
   },
   {
    "path": "app/app.css",
@@ -47,8 +48,8 @@
   },
   {
    "path": "background.js",
-   "size": 47536,
-   "sha256": "9c2c126d4478c1cca214360da414b91342c3e03741f67692ece1d4e3d1863fa0"
+   "size": 47876,
+   "sha256": "0567f575ca632776752a178b79fd3aea0782666ec99b5c8fd6b04cae672032e7"
   },
   {
    "path": "icons/icon128.png",
@@ -68,7 +69,7 @@
   {
    "path": "manifest.json",
    "size": 1011,
-   "sha256": "c20272324614f5cabcd5e0b2872d698709ce4cdf8e9f7772480297856916125c"
+   "sha256": "a52eddbd47e44e8a715296d19672b114053e5031c0cefaf4a88f3e63af40f0f5"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -77,13 +78,13 @@
   },
   {
    "path": "offscreen/offscreen.js",
-   "size": 4816,
-   "sha256": "dca014a98d59fc3372121ee3a2530a0eb830b500bd7fdd904697e75a35c3e8ff"
+   "size": 5378,
+   "sha256": "b7766be9c2d6750f0ab87a91d846459d7f3ddb8abbf5c5837a62efb0ff9bd455"
   },
   {
    "path": "recipe-list.js",
-   "size": 611,
-   "sha256": "93da890c11aa4b5325aa1b1f0902d0c88847ef49d86c12308a10954ac6563ae8"
+   "size": 708,
+   "sha256": "a6051ce8e1e3ee8e18b1fb72859c6878e221e0124c37452cb4d332e0ad06f258"
   },
   {
    "path": "scraper/core.js",
@@ -92,8 +93,8 @@
   },
   {
    "path": "scraper/links.js",
-   "size": 20692,
-   "sha256": "aaf008d6699e13f82c0c37ae8f07add2d4f8332ac2a0bfda5edb6911ede432d7"
+   "size": 20768,
+   "sha256": "7c5d4d99aa910964649d3d8942c2a3071d90c817c31efc88eee4481dd8f7244f"
   },
   {
    "path": "scraper/recipes/_template.js",
@@ -109,6 +110,11 @@
    "path": "scraper/recipes/candy.js",
    "size": 4771,
    "sha256": "f6948bf18f65d2ce143d53ed52a28c82bbb945bfbc7b424606c309ee339eca59"
+  },
+  {
+   "path": "scraper/recipes/electrobousfiha.js",
+   "size": 13477,
+   "sha256": "53abbb8779d9283e637627d14c842bb9883553cf003ceffe0b154627013ea2d0"
   },
   {
    "path": "scraper/recipes/haier.js",
