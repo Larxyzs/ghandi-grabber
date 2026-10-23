@@ -1,9 +1,9 @@
 {
- "version": "3.7.14",
- "commit": "719828eed3e1f84254de9546e8a5b4bca06f8c94",
+ "version": "3.7.15",
+ "commit": "d1d957cdc7250e74f13ca0acb7ddfae4ac04d839",
  "notes": [
-  "Find products now takes only the products the page really shows: hidden menus and products hidden by a filter (like TCL 'Téléviseurs pour le jeu') are skipped.",
-  "When a page says '3 Résultats', only those 3 are taken."
+  "Samsung: the model code is now taken (for example RB34C600ES9/MA), from the page or from the link.",
+  "The model code is kept with every product and sent to your site. For Samsung products you already grabbed, click Grab again."
  ],
  "files": [
   {
@@ -38,8 +38,8 @@
   },
   {
    "path": "app/app.js",
-   "size": 72147,
-   "sha256": "e13bc33f0b511e143783464c2155702391d578ea73c3472d9dc1132000290636"
+   "size": 72322,
+   "sha256": "90e555a532cdb046c22748d4d76d9689d71656a92a470f55ce18eb4953a896f5"
   },
   {
    "path": "app/shim.js",
@@ -48,8 +48,8 @@
   },
   {
    "path": "background.js",
-   "size": 47510,
-   "sha256": "e61524c40321478e9bb7753fb5f39a7e84c3380fb456eb2047173f51e70d0c35"
+   "size": 47536,
+   "sha256": "9c2c126d4478c1cca214360da414b91342c3e03741f67692ece1d4e3d1863fa0"
   },
   {
    "path": "icons/icon128.png",
@@ -69,7 +69,7 @@
   {
    "path": "manifest.json",
    "size": 1011,
-   "sha256": "78025e275436c87e658a34ee4673584fe93ec3b1018a36c43d801dafcf9f5bfd"
+   "sha256": "475e30047796d6d018b01af394eccca1d57522e555066c60c454ac345fb2c4ae"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -88,8 +88,8 @@
   },
   {
    "path": "scraper/core.js",
-   "size": 89923,
-   "sha256": "fe0432f8a9a91056ad01c01f6ca4e01ad98bd6bae4fdf357326accd50a36fa00"
+   "size": 92349,
+   "sha256": "85b757a140e029eba8bfc02c9bfb00251b67a047d06f7f492e61ec5f100e7d5d"
   },
   {
    "path": "scraper/links.js",
@@ -123,8 +123,8 @@
   },
   {
    "path": "scraper/recipes/samsung.js",
-   "size": 3550,
-   "sha256": "0ddccbc07cf9384e767d25622ef452dec52ed3b64ea206cdf0edfc2147a1e61b"
+   "size": 5528,
+   "sha256": "5f666342ffd0e76467eed6f101f5f43878694cfa20ce6ea61975144245571ea1"
   },
   {
    "path": "scraper/recipes/tcl.js",
