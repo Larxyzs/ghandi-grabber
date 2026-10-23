@@ -15,7 +15,8 @@ A helper that lives inside Chrome. It does 3 jobs:
               products for you. (The file LOVABLE-PROMPT.md has the words
               to give to Lovable so it builds that "importer" page.)
 
-Recipes included: Whirlpool, LG, Candy, TCL, Samsung, Haier, Bosch.
+Recipes included: Whirlpool, LG, Candy, TCL, Samsung, Haier, Bosch,
+and the shop Electrobousfiha (many brands: the brand of each product is read on its page).
 Each one knows how its brand's website is built.
 
 HOW SURE ARE WE?

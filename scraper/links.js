@@ -467,8 +467,9 @@
     }
 
     const links = Array.from(found.values());
+    const nextPage = findNextPage(here);
     if (!links.length) warnings.push('I could not find any product links on this page. Is it a category / list page?');
-    else if (expected && links.length < expected) warnings.push('The page says ' + expected + ' products but I found ' + links.length + '.');
+    else if (expected && links.length < expected && !nextPage) warnings.push('The page says ' + expected + ' products but I found ' + links.length + '.');
 
     const h1 = qa('h1').map((e) => clean(e.textContent)).find(Boolean) || '';
     return JSON.parse(
@@ -478,7 +479,7 @@
         title: h1,
         brand: recipe ? recipe.brand : '',
         links,
-        next: findNextPage(here) || (links.length <= 12 ? fullListLink(lc, here) : ''),
+        next: nextPage || (links.length <= 12 ? fullListLink(lc, here) : ''),
         expected,
         hasLoadMore: fast ? hasLoadMore : false,
         how,

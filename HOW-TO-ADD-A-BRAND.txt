@@ -11,7 +11,8 @@ extension where to look on that brand's pages:
 The extension reads the website address, sees the brand word
 (like "whirlpool"), and picks the right recipe by itself.
 
-Already included: Whirlpool, LG, Candy, TCL, Samsung, Haier, Bosch.
+Already included: Whirlpool, LG, Candy, TCL, Samsung, Haier, Bosch,
+and the shop Electrobousfiha (a shop recipe: it finds each product's brand itself).
 Look in the folder  scraper / recipes  to see them. They are good examples!
 
 Not working well for one of these? Use the problem report (Part 5 of

@@ -17,4 +17,5 @@ var RECIPE_FILES = [
   'scraper/recipes/samsung.js',
   'scraper/recipes/haier.js',
   'scraper/recipes/bosch.js',
+  'scraper/recipes/electrobousfiha.js', // a SHOP: the brand of each product is read on its page
 ];

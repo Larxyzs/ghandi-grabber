@@ -74,7 +74,7 @@
         let why = '';
         if (!r.ok || r.links.length < 2) why = 'no product links in the page text';
         else if (r.hasLoadMore) why = 'has a "show more" button';
-        else if (r.expected && r.links.length < r.expected) why = 'only ' + r.links.length + ' of ' + r.expected;
+        else if (r.expected && r.links.length < r.expected && !r.next) why = 'only ' + r.links.length + ' of ' + r.expected;
         else if (r.expected && r.links.length > r.expected) why = 'more links (' + r.links.length + ') than the page says (' + r.expected + ')';
         else if (filtersInAddress(msg.url)) why = 'filters in the address (the page applies them with its scripts)';
         sendResponse({ ok: true, good: !why, why, result: r });
