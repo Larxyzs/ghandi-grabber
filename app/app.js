@@ -338,9 +338,10 @@
       sourceCategory: it.listingTitle || '',
       name: r.name || '',
       model: guessModel(it) || (it.sheet && it.sheet.model) || '',
-      price: r.price || '',
-      priceValue: r.priceValue == null || r.priceValue === '' ? null : Number(r.priceValue),
-      currency: currencyOf(r.price || ''),
+      // prices are never sent: they are typed on the site (the site saves 0 + "Rupture de stock")
+      price: '',
+      priceValue: null,
+      currency: '',
       mainImage: main,
       otherImages: others,
       images: main ? [main].concat(others) : others,
@@ -732,14 +733,13 @@
     const it = S.items.get(S.openId);
     if (!it) return;
     const groups = readGroups();
-    const num = $('fPriceNum').value.trim();
     const patch = {
       name: $('fName').value.trim(),
       model: $('fModel').value.trim(),
       brand: $('fBrand').value.trim(),
       category: $('fCat').value.trim(),
-      price: $('fPrice').value.trim(),
-      priceValue: num === '' ? null : Number(num),
+      price: '',
+      priceValue: null,
       mainImage: $('fMain').value.trim(),
       otherImages: $('fOthers').value.split('\n').map((x) => x.trim()).filter(Boolean),
       specGroups: groups,

@@ -32,7 +32,7 @@
     if (!r || !r.ok) return 'nothing found';
     if (!r.name) return 'no name';
     // some pages add their price only after they open (lg.com/ma): the text alone is not enough
-    if (q.needPrice && !r.price) {
+    if (q.needPrice && !r.price && false /* prices are off since 3.7.16 */) {
       let need = q.needPrice === true;
       try {
         const u = new URL(url);

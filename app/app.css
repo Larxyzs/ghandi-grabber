@@ -451,3 +451,6 @@ dialog { width: min(520px, 94vw); }
 /* ---------- problem report ---------- */
 .reportdlg { width: min(560px, calc(100vw - 32px)); }
 .reportdlg textarea { width: 100%; font: 12px/1.35 var(--mono); }
+
+/* prices are off since 3.7.16 (typed on the site) */
+.c-price, td.c-price, th.c-price { display: none !important; }

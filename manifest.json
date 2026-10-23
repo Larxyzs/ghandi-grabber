@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Ghandi Product Grabber",
-  "version": "3.7.15",
+  "version": "3.7.16",
   "description": "Find every product on a category page, grab each one's name, price, pictures and specifications, and download one JSON file for your site.",
   "action": {
     "default_title": "Ghandi Product Grabber",

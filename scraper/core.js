@@ -1812,8 +1812,11 @@
     // 5. read everything
     const ld = readJsonLd();
     const name = findName(cfg, ld);
-    const noPrice = typeof cfg.noPrice === 'function' ? !!cfg.noPrice(location.hostname.replace(/\.localhost$/, ''), location.pathname) : !!cfg.noPrice;
-    let price = noPrice ? { text: '', value: null, how: 'this website shows no real price' } : findPrice(cfg, ld);
+    // PRICES ARE OFF (3.7.16): the shop owner types every price himself on the site.
+    // (Set PRICES_ON to true to read the brands' prices again.)
+    const PRICES_ON = false;
+    const noPrice = !PRICES_ON || (typeof cfg.noPrice === 'function' ? !!cfg.noPrice(location.hostname.replace(/\.localhost$/, ''), location.pathname) : !!cfg.noPrice);
+    let price = noPrice ? { text: '', value: null, how: PRICES_ON ? 'this website shows no real price' : 'prices are off (typed on the site)' } : findPrice(cfg, ld);
     // some pages add the price a moment after they open (lg.com/ma asks its shop for it): wait a little
     if (!noPrice && !price.value && !fast && cfg.waitForPrice) {
       const ms = typeof cfg.waitForPrice === 'function' ? cfg.waitForPrice(location.hostname.replace(/\.localhost$/, ''), location.pathname) : cfg.waitForPrice;

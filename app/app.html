@@ -266,8 +266,8 @@
       <label class="field"><span>Model</span><input id="fModel" type="text" /></label>
       <label class="field"><span>Brand</span><input id="fBrand" type="text" /></label>
       <label class="field"><span>Category on my site</span><input id="fCat" type="text" list="catList" /></label>
-      <label class="field"><span>Price (as written)</span><input id="fPrice" type="text" /></label>
-      <label class="field"><span>Price (number)</span><input id="fPriceNum" type="number" step="0.01" /></label>
+      <label class="field" hidden><span>Price (as written)</span><input id="fPrice" type="text" /></label>
+      <label class="field" hidden><span>Price (number)</span><input id="fPriceNum" type="number" step="0.01" /></label>
     </div>
 
     <label class="field">
@@ -341,7 +341,7 @@
 <!-- ===================== SEND TO MY SITE ===================== -->
 <dialog id="sendDlg">
   <h2>Import to my site</h2>
-  <p class="hint">The products go <b>straight into your shop</b>. A product already on your site is <b>replaced</b> by the new version (no double). Your price stays only if the brand shows none.</p>
+  <p class="hint">The products go <b>straight into your shop</b>. A product already on your site is <b>replaced</b> by the new version (no double). Prices are never sent: they are typed on the site (a new product arrives at 0 DH, out of stock).</p>
   <fieldset class="which">
     <legend>Which products?</legend>
     <label class="check"><input type="radio" name="sendWhich" value="selected" /> <span id="sendSelLbl">The ones I selected</span></label>
