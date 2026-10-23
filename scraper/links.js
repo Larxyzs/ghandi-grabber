@@ -469,7 +469,7 @@
     const links = Array.from(found.values());
     const nextPage = findNextPage(here);
     if (!links.length) warnings.push('I could not find any product links on this page. Is it a category / list page?');
-    else if (expected && links.length < expected && !nextPage) warnings.push('The page says ' + expected + ' products but I found ' + links.length + '.');
+    else if (expected && links.length < expected && !nextPage && currentPageNumber(here) <= 1) warnings.push('The page says ' + expected + ' products but I found ' + links.length + '.');
 
     const h1 = qa('h1').map((e) => clean(e.textContent)).find(Boolean) || '';
     return JSON.parse(
