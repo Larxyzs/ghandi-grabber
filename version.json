@@ -1,9 +1,9 @@
 {
- "version": "3.7.15",
- "commit": "d1d957cdc7250e74f13ca0acb7ddfae4ac04d839",
+ "version": "3.7.16",
+ "commit": "8e106004d9318224ab518444bce1facfd171d682",
  "notes": [
-  "Samsung: the model code is now taken (for example RB34C600ES9/MA), from the page or from the link.",
-  "The model code is kept with every product and sent to your site. For Samsung products you already grabbed, click Grab again."
+  "Les prix ne sont plus pris ni envoyés : ils se tapent sur le site.",
+  "Un peu plus rapide sur LG (plus d'attente du prix)."
  ],
  "files": [
   {
@@ -28,18 +28,18 @@
   },
   {
    "path": "app/app.css",
-   "size": 26472,
-   "sha256": "1c5a95c17bbf4c70b749271762cafb26ac1de00d75f4d6fa412fbf8ba6dfdf90"
+   "size": 26590,
+   "sha256": "002157fe4aa8af8c933ab8d64704655923023d16cf80b7d59bbba60161be6076"
   },
   {
    "path": "app/app.html",
-   "size": 20084,
-   "sha256": "4e71c58c0b79247be5bf1398ec77d516dfb7230896be2b13ba24b27dc00da713"
+   "size": 20148,
+   "sha256": "637cdffd44abef5652f07a5f3c3abb68dbf2952c690bd9066e5be2b9f9105d7e"
   },
   {
    "path": "app/app.js",
-   "size": 72322,
-   "sha256": "90e555a532cdb046c22748d4d76d9689d71656a92a470f55ce18eb4953a896f5"
+   "size": 72224,
+   "sha256": "8cf65c561e07b3d76b19aeb606eb371407a7233cf7139c11530350be501e9d6d"
   },
   {
    "path": "app/shim.js",
@@ -69,7 +69,7 @@
   {
    "path": "manifest.json",
    "size": 1011,
-   "sha256": "475e30047796d6d018b01af394eccca1d57522e555066c60c454ac345fb2c4ae"
+   "sha256": "82385e2916b1b57c09058d3782c1e9e5d093e216a7eeec68ed91f9006cc6b157"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -78,8 +78,8 @@
   },
   {
    "path": "offscreen/offscreen.js",
-   "size": 4773,
-   "sha256": "503e413349bb990eb6a27a5c0c2e00efd8071c2c8375ff861423d2453aee77bf"
+   "size": 4816,
+   "sha256": "dca014a98d59fc3372121ee3a2530a0eb830b500bd7fdd904697e75a35c3e8ff"
   },
   {
    "path": "recipe-list.js",
@@ -88,8 +88,8 @@
   },
   {
    "path": "scraper/core.js",
-   "size": 92349,
-   "sha256": "85b757a140e029eba8bfc02c9bfb00251b67a047d06f7f492e61ec5f100e7d5d"
+   "size": 92596,
+   "sha256": "a235998b4ade412de2033b7f66cb44bf0c541de36ee4b12db49f7356ea8359c2"
   },
   {
    "path": "scraper/links.js",
