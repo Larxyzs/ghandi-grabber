@@ -44,9 +44,10 @@
     }
     const pics = (r.mainImage ? 1 : 0) + (r.otherImages || []).length;
     if (pics < (q.minPictures || 2)) return 'only ' + pics + ' picture(s)';
-    const min = r.slideshowMode === 'nospecs' ? 0 : q.minSpecs || (recipe ? 8 : 12);
+    const min = r.slideshowMode === 'nospecs' ? 0 : q.minSpecs != null ? q.minSpecs : recipe ? 8 : 12;
     if ((r.specs || []).length < min) return 'only ' + (r.specs || []).length + ' spec rows';
-    if ((r.warnings || []).length) return 'warning: ' + r.warnings[0];
+    const warns = (r.warnings || []).filter((w) => !(q.okWarnings instanceof RegExp && q.okWarnings.test(w)));
+    if (warns.length) return 'warning: ' + warns[0];
     return '';
   }
 

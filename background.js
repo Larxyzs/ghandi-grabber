@@ -836,7 +836,16 @@ async function crawlList(opts) {
             /* use the window */
           }
         }
-        if (!r) r = await withPage(url, (tabId) => collectTab(tabId, recipeId), (m) => say(m));
+        if (!r) {
+          try {
+            r = await withPage(url, (tabId) => collectTab(tabId, recipeId), (m) => say(m));
+          } catch (e) {
+            // Chrome sometimes drops a page in a brand-new window: one more try in a fresh window
+            await say('trying again…');
+            await sleep(1500);
+            r = await withPage(url, (tabId) => collectTab(tabId, recipeId), (m) => say(m));
+          }
+        }
       }
       lastReport = { url, brand: r.brand, how: r.how, expected: r.expected, warnings: r.warnings, diag: r.diag, linksFound: r.links.length };
       if (!r.ok) {

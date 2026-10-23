@@ -70,7 +70,9 @@
     match: ['electrobousfiha'],
     home: 'https://electrobousfiha.com/',
     shop: true, // the brand of each product is read on its page
-    quickRead: { minSpecs: 3, minPictures: 1 }, // PrestaShop pages come complete: no need to open a window
+    // PrestaShop pages come complete in the downloaded page: no need to open a window,
+    // even for a product the shop sells with no specifications at all
+    quickRead: { minSpecs: 0, minPictures: 1, okWarnings: /specification/i },
 
     nameSelectors: ['h1[itemprop="name"]', '.product-information h1', 'h1.productpage_title', '#main h1', 'h1'],
 
