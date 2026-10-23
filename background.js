@@ -525,6 +525,7 @@ function compact(r) {
     brand: r.brand || '',
     url: r.url || '',
     name: r.name || '',
+    model: r.model || '',
     price: r.price || '',
     priceValue: r.priceValue == null ? null : r.priceValue,
     mainImage: r.mainImage || '',

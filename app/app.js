@@ -263,6 +263,8 @@
   function guessModel(it) {
     const r = it.result || {};
     if (r.model) return r.model;
+    // the clean sheet also works it out (page lines like "Référence commerciale", long addresses like Samsung's)
+    if (it.sheet && it.sheet.model) return it.sheet.model;
     const name = r.name || '';
     let m = name.match(/^([A-Z0-9][A-Za-z0-9 \-\/.]{3,28}?)\s*[:|–-]\s/);
     if (m && /\d/.test(m[1]) && /[A-Za-z]/.test(m[1])) return m[1].trim();

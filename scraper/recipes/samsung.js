@@ -25,6 +25,46 @@ GHANDI.register({
     return /^\/(n_africa|africa_fr|ma|ma_fr|dz|tn)\//i.test(path);
   },
 
+  // MODEL CODE ("RB34C600ES9/MA") — Samsung writes it in many places of the page.
+  // The address always ends with it: .../rb34c600es9-340l-silver-rb34c600es9-ma/  ->  RB34C600ES9/MA
+  model: function (ctx) {
+    var squash = function (s) {
+      return String(s || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+    };
+    // 1) from the address
+    var fromUrl = '';
+    try {
+      var segs = new URL(ctx.url).pathname.split('/').filter(Boolean);
+      var parts = (segs[segs.length - 1] || '').toLowerCase().split('-');
+      for (var i = parts.length - 1; i >= 0; i--) {
+        var p = parts[i];
+        if (p.length >= 6 && /[a-z]/.test(p) && /\d/.test(p) && !/^\d+(k|hz|inch|kg|l|w|cm|mm|gb|tb|btu)$/.test(p)) {
+          var next = parts[i + 1];
+          fromUrl = p.toUpperCase() + (next && /^[a-z]{2,3}$/.test(next) ? '/' + next.toUpperCase() : '');
+          break;
+        }
+      }
+    } catch (e) {
+      /* no address */
+    }
+    // 2) the code written on the page (only if it is THIS product: it must match the address when we have one)
+    var fits = function (v) {
+      return ctx.looksLikeModel(v) && (!fromUrl || squash(v).indexOf(squash(fromUrl.split('/')[0])) === 0);
+    };
+    var els = ctx.qa('[class*="sku-code" i], [class*="model-code" i], [class*="modelCode" i], [class*="pd-info__sku" i], [class*="product-code" i]');
+    for (var j = 0; j < els.length; j++) {
+      var t = ctx.clean(els[j].textContent).replace(/^(code (du )?mod[eè]le|mod[eè]le|model|sku|code)\s*[:.]?\s*/i, '');
+      if (fits(t)) return t;
+    }
+    var attrs = ctx.qa('[data-modelcode], [data-model-code], [data-model_code]');
+    for (var k = 0; k < attrs.length; k++) {
+      var v = attrs[k].getAttribute('data-modelcode') || attrs[k].getAttribute('data-model-code') || attrs[k].getAttribute('data-model_code');
+      if (fromUrl && fits(v)) return ctx.clean(v);
+    }
+    if (ctx.jsonld && fits(ctx.jsonld.model)) return ctx.jsonld.model;
+    return fromUrl;
+  },
+
   nameSelectors: [
     '[class*="product-details" i] h1',
     '[class*="pd-buying-tool" i] h1',

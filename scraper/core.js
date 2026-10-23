@@ -130,8 +130,46 @@
   // ================================================================
   //  JSON-LD ("hidden data card" most shops put in their pages)
   // ================================================================
+  // "RB34C600ES9/MA", "WBMF 606374 XNA", "GR-B499NQLM": letters AND digits, short
+  function looksLikeModel(v) {
+    if (v == null) return false;
+    const s = clean(String(v));
+    return s.length >= 4 && s.length <= 32 && /\d/.test(s) && /[a-z]/i.test(s) && s.split(' ').length <= 4 && !/^https?:/i.test(s);
+  }
+
+  // The model code of the product ("Code produit"): the recipe's own way first, then the page.
+  function readModel(cfg, ld) {
+    const ctx = { qa, clean, url: location.href, looksLikeModel, jsonld: ld };
+    if (typeof cfg.model === 'function') {
+      try {
+        const v = cfg.model(ctx);
+        if (looksLikeModel(v)) return { text: clean(String(v)), how: 'recipe' };
+      } catch (e) {
+        /* fall back to the page */
+      }
+    }
+    for (const sel of toArray(cfg.modelSelectors)) {
+      for (const el of qa(sel)) {
+        if (isNoise(el)) continue;
+        const v = el.getAttribute('content') || el.value || clean(el.textContent).replace(/^(code|r[ée]f[ée]rence|mod[eè]le|model|sku)\s*(produit|commerciale)?\s*[:.]?\s*/i, '');
+        if (looksLikeModel(v)) return { text: clean(v), how: 'selector ' + sel };
+      }
+    }
+    // the page's hidden data: only when the same code is also in the name or the address
+    // (some shops put an internal code there, e.g. "GR-B499NQLM.ASLQMEA")
+    const squash = (s) => String(s || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+    const seen = squash(document.title + ' ' + qa('h1').map((h) => h.textContent).join(' ') + ' ' + decodeURIComponent(location.pathname));
+    const confirmed = (v) => looksLikeModel(v) && squash(v).length >= 5 && seen.indexOf(squash(v)) !== -1;
+    if (ld && confirmed(ld.model)) return { text: ld.model, how: 'jsonld' };
+    for (const el of qa('[itemprop="model"],[itemprop="mpn"],[itemprop="sku"]')) {
+      const v = el.getAttribute('content') || clean(el.textContent);
+      if (confirmed(v) && !isNoise(el)) return { text: clean(v), how: 'itemprop' };
+    }
+    return { text: '', how: '' };
+  }
+
   function readJsonLd() {
-    const out = { has: false, name: '', images: [], price: '', currency: '' };
+    const out = { has: false, name: '', images: [], price: '', currency: '', model: '' };
     const nodes = [];
     const collect = (d) => {
       if (!d) return;
@@ -152,6 +190,13 @@
 
     out.has = true;
     out.name = clean(prod.name || '');
+    for (const k of ['model', 'mpn', 'sku', 'productID']) {
+      const v = prod[k] && typeof prod[k] === 'object' ? prod[k].name || prod[k]['@id'] || '' : prod[k];
+      if (looksLikeModel(v)) {
+        out.model = clean(String(v));
+        break;
+      }
+    }
     out.images = toArray(prod.image)
       .map((i) => (typeof i === 'string' ? i : i && (i.url || i.contentUrl)))
       .filter((i) => typeof i === 'string' && i);
@@ -1807,11 +1852,13 @@
       debug.modelTokens = toks;
     }
 
+    const model = readModel(cfg, ld);
     const result = {
       ok: false,
       brand: picked ? picked.brand : '',
       url: location.href,
       name: name.text,
+      model: model.text,
       price: price.text,
       priceValue: price.value,
       mainImage: images[0] || '',
@@ -1849,6 +1896,7 @@
     if (!result.ok) result.error = 'I could not find a product on this page. Is this a product page link?';
 
     debug.nameFrom = name.how;
+    debug.modelFrom = model.how + (model.text ? ': ' + model.text : '');
     debug.priceFrom = price.how;
     debug.imagesFrom = chosen || 'none';
     debug.imageCounts = { gallery: sets.gallery.length, jsonld: sets.jsonld.length, nearName: sets.nearName.length, meta: sets.meta.length };
