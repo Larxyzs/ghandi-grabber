@@ -1,8 +1,9 @@
 {
- "version": "3.7.13",
- "commit": "300a03c8aa61f4fb136b739c89a380e259f3d912",
+ "version": "3.7.14",
+ "commit": "719828eed3e1f84254de9546e8a5b4bca06f8c94",
  "notes": [
-  "Import to site with the box empty: freezers go to Congélateurs (vertical or bahut), fridges to Combinés, 2 portes, Side by Side, Multi-portes, Table Top or 1 porte."
+  "Find products now takes only the products the page really shows: hidden menus and products hidden by a filter (like TCL 'Téléviseurs pour le jeu') are skipped.",
+  "When a page says '3 Résultats', only those 3 are taken."
  ],
  "files": [
   {
@@ -68,7 +69,7 @@
   {
    "path": "manifest.json",
    "size": 1011,
-   "sha256": "353714cbeb322c1669bfba4c51173f08feaca2dfb817eff3cb919050cabcafc5"
+   "sha256": "78025e275436c87e658a34ee4673584fe93ec3b1018a36c43d801dafcf9f5bfd"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -77,8 +78,8 @@
   },
   {
    "path": "offscreen/offscreen.js",
-   "size": 4128,
-   "sha256": "1f29a9acb47f076cfa89a038c72deb345ab4d359d7e346cbb577d140977a0148"
+   "size": 4773,
+   "sha256": "503e413349bb990eb6a27a5c0c2e00efd8071c2c8375ff861423d2453aee77bf"
   },
   {
    "path": "recipe-list.js",
@@ -92,8 +93,8 @@
   },
   {
    "path": "scraper/links.js",
-   "size": 17984,
-   "sha256": "9782a6d6e6760f35fb841c26ab094430a51f57d4d7d834209232981b255624f1"
+   "size": 20692,
+   "sha256": "aaf008d6699e13f82c0c37ae8f07add2d4f8332ac2a0bfda5edb6911ede432d7"
   },
   {
    "path": "scraper/recipes/_template.js",
