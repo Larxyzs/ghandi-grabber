@@ -76,8 +76,47 @@
     return p.startsWith(base + '/') && segments(p).length === segments(base).length + 1;
   }
 
+  // A real open page (not a page that was only downloaded): we can see what is hidden.
+  const live = !!document.defaultView;
+
+  // Hidden links are not products of this list: a closed menu, cards hidden by a filter
+  // ("Téléviseurs pour le jeu" on tcl.com hides the other TVs), a closed tab.
+  function isShown(a) {
+    if (!live) return !a.closest('[hidden],[style*="display:none" i],[style*="display: none" i],[style*="visibility:hidden" i],[style*="visibility: hidden" i]');
+    try {
+      if (a.getClientRects().length === 0 && !Array.from(a.children).some((c) => c.getClientRects().length > 0)) return false;
+      return window.getComputedStyle(a).visibility !== 'hidden';
+    } catch (e) {
+      return true;
+    }
+  }
+
   function allAnchors() {
-    return qa('a[href]').filter((a) => !isNoise(a) && !/^(mailto:|tel:|javascript:)/i.test(a.getAttribute('href') || ''));
+    return qa('a[href]').filter((a) => !isNoise(a) && !/^(mailto:|tel:|javascript:)/i.test(a.getAttribute('href') || '') && isShown(a));
+  }
+
+  // The page says "3 Résultats" but other links to products are around (banner, menu, "en vedette"):
+  // keep only the box that holds exactly that many different products.
+  function trimToExpected(anchors, exp) {
+    if (!exp || !exp.n || !exp.results) return anchors;
+    const uniq = (list) => new Set(list.map((a) => keyOf(a.href))).size;
+    if (uniq(anchors) <= exp.n) return anchors;
+    const boxes = [];
+    anchors.forEach((a) => {
+      for (let n = a.parentElement; n && n !== document.body && n !== document.documentElement; n = n.parentElement) {
+        const inside = anchors.filter((b) => n.contains(b));
+        const u = uniq(inside);
+        if (u > exp.n) break;
+        if (u === exp.n) {
+          if (!boxes.some((x) => x.box === n)) boxes.push({ box: n, inside });
+          break;
+        }
+      }
+    });
+    if (!boxes.length) return anchors;
+    // several boxes: the one right after the "3 Résultats" text wins
+    const after = exp.el ? boxes.find((x) => exp.el.compareDocumentPosition(x.box) & 4) : null;
+    return (after || boxes[0]).inside;
   }
 
   // Cards: many links with a picture, same folder, same depth.
@@ -101,12 +140,18 @@
     return best ? best.list : [];
   }
 
-  function findProductAnchors(lc, here, recipeless) {
+  function findProductAnchors(lc, here, exp) {
+    const r = findProductAnchorsRaw(lc, here);
+    const kept = trimToExpected(r.anchors, exp);
+    return kept === r.anchors ? r : { anchors: kept, how: r.how + ' + only the ' + exp.n + ' results' };
+  }
+
+  function findProductAnchorsRaw(lc, here) {
     const anchors = allAnchors();
 
     // 1) the recipe names the cards / links exactly
     for (const sel of toArray(lc.selectors)) {
-      const list = qa(sel).flatMap((el) => (el.tagName === 'A' ? [el] : qa('a[href]', el))).filter((a) => !isCookie(a));
+      const list = qa(sel).flatMap((el) => (el.tagName === 'A' ? [el] : qa('a[href]', el))).filter((a) => !isCookie(a) && isShown(a));
       if (list.length) return { anchors: list, how: 'recipe-selector ' + sel };
     }
     // 2) the recipe describes the product address
@@ -223,19 +268,22 @@
 
   // "résultats (22)", "22 produits" ...
   function expectedCount() {
-    const texts = qa('h1,h2,h3,h4,p,span,div,strong')
-      .filter((el) => el.childElementCount <= 2)
-      .map((el) => clean(el.textContent))
-      .filter((t) => t.length > 0 && t.length <= 40);
-    for (const t of texts) {
+    return expectedInfo().n;
+  }
+  function expectedInfo() {
+    const els = qa('h1,h2,h3,h4,p,span,div,strong')
+      .filter((el) => el.childElementCount <= 2 && !isNoise(el) && isShown(el))
+      .map((el) => ({ el, t: clean(el.textContent) }))
+      .filter((x) => x.t.length > 0 && x.t.length <= 40);
+    for (const { el, t } of els) {
       // "résultats (7)", "Produits correspondants (10)", "24 produits", "12 De 12 Produits", "Afficher 6 De 6 Résultats"
       let m =
         t.match(/\b(\d{1,4})\s+(?:de|sur|of)\s+(\d{1,4})\s+(?:r[ée]sultats?|results?|produits?|products?|articles?)\b/i) ||
         t.match(/(?:r[ée]sultats?|results?|produits?|products?|articles?)(?:\s+correspondants?)?\s*[:(]?\s*(\d{1,4})\b/i) ||
         t.match(/\b(\d{1,4})\s*(?:r[ée]sultats?|results?|produits?|products?|articles?)\b/i);
-      if (m) return parseInt(m[2] || m[1], 10);
+      if (m) return { n: parseInt(m[2] || m[1], 10), el, results: /r[ée]sultats?|results?/i.test(t) };
     }
-    return 0;
+    return { n: 0, el: null, results: false };
   }
 
   // ---------- "next page" ----------
@@ -342,13 +390,23 @@
         return !!findLoadMore(lc, null) || Date.now() - firstSeen > 1500;
       }, Math.min(10000, budget), 300);
       await sleep(300);
+      // filters and sorting are often applied a moment AFTER the cards appear: wait until the list stops changing
+      let last = '';
+      let same = 0;
+      await waitUntil(() => {
+        const now = findProductAnchorsRaw(lc, here).anchors.map((a) => a.href).join('|');
+        same = now === last ? same + 1 : 0;
+        last = now;
+        return same >= 2;
+      }, 3000, 400);
     }
+    const exp = expectedInfo();
 
     const found = new Map(); // address -> { url, title, image }
     let how = '';
     let lastAnchor = null;
     const harvest = () => {
-      const r = findProductAnchors(lc, here);
+      const r = findProductAnchors(lc, here, exp);
       how = r.how;
       if (r.anchors.length) lastAnchor = r.anchors[r.anchors.length - 1];
       r.anchors.forEach((a) => {
@@ -368,7 +426,7 @@
     };
 
     harvest();
-    const expected = expectedCount();
+    const expected = exp.n;
 
     // load everything that hides behind "Charger plus" or infinite scrolling
     let still = 0;

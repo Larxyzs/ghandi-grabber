@@ -52,6 +52,16 @@
 
   chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
     if (!msg || msg.target !== 'offscreen' || (msg.type !== 'quick-read' && msg.type !== 'quick-list')) return;
+    // "?tvs-for-gaming", "?brand=lg&sort=price" ... but not page numbers or tracking
+    function filtersInAddress(url) {
+      try {
+        const u = new URL(url);
+        const keys = Array.from(u.searchParams.keys()).filter((k) => !/^(p|page|pg|pagenumber|utm_.*|gclid|fbclid)$/i.test(k));
+        return keys.length > 0;
+      } catch (e) {
+        return false;
+      }
+    }
     if (msg.type === 'quick-list') {
       (async () => {
         await ready;
@@ -65,6 +75,8 @@
         if (!r.ok || r.links.length < 2) why = 'no product links in the page text';
         else if (r.hasLoadMore) why = 'has a "show more" button';
         else if (r.expected && r.links.length < r.expected) why = 'only ' + r.links.length + ' of ' + r.expected;
+        else if (r.expected && r.links.length > r.expected) why = 'more links (' + r.links.length + ') than the page says (' + r.expected + ')';
+        else if (filtersInAddress(msg.url)) why = 'filters in the address (the page applies them with its scripts)';
         sendResponse({ ok: true, good: !why, why, result: r });
       })().catch((e) => sendResponse({ ok: false, good: false, why: String((e && e.message) || e) }));
       return true;
