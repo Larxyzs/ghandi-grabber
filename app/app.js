@@ -1048,17 +1048,18 @@
     [/four encastrable/, 'four'],
     [/micro onde/, 'micro onde'],
   ];
+  // the site's sections (new Electroplanet-style names first, the old names after)
   const TYPE_SECTION = {
-    fridge: 'refrigerateur congelateur',
-    ac: 'climatiseur',
-    fan: 'ventilateur',
-    washer: 'lave linge',
-    dishwasher: 'lave vaisselle',
-    tv: 'television',
-    hob: 'plaque cuisson',
-    oven: 'four',
-    microwave: 'micro onde',
-    sink: 'evier',
+    fridge: ['refrigerateur', 'refrigerateur congelateur'],
+    ac: ['climatiseur'],
+    fan: ['ventilateur'],
+    washer: ['machine a laver a hublot', 'machine a laver', 'lave linge'],
+    dishwasher: ['lave vaisselle'],
+    tv: ['televiseur', 'television'],
+    hob: ['plaque de cuisson', 'plaque cuisson'],
+    oven: ['four encastrable', 'four'],
+    microwave: ['micro ondes encastrable', 'micro ondes', 'micro onde'],
+    sink: ['evier'],
   };
   // a fridge or a freezer: which kind of section (precise first, then wider)
   function fridgeSections(it) {
@@ -1069,17 +1070,17 @@
     const model = foldText((it.sheet && it.sheet.model) || '');
     // a freezer alone (not a fridge-freezer)
     if (/congelateur/.test(name) && !/refrigerateur/.test(name)) {
-      if (/\b(droit|vertical|armoire|upright)\b/.test(all)) return ['congelateurs vertical', 'congelateurs'];
-      if (/\b(coffre|poitrine|horizontal|bahut|chest)\b/.test(all) || /^(wcf|cf\d|cmch)/.test(model.replace(/ /g, ''))) return ['congelateurs horizontal', 'congelateurs'];
-      return ['congelateurs'];
+      if (/\b(droit|vertical|armoire|upright)\b/.test(all)) return ['congelateur armoire', 'congelateurs vertical', 'congelateur', 'congelateurs'];
+      if (/\b(coffre|poitrine|horizontal|bahut|chest)\b/.test(all) || /^(wcf|cf\d|cmch)/.test(model.replace(/ /g, ''))) return ['congelateur coffre', 'congelateurs horizontal', 'congelateur', 'congelateurs'];
+      return ['congelateur', 'congelateurs'];
     }
     const k = type + ' ' + name;
-    if (/side by side|americain|\bsbs\b/.test(k)) return ['refrigerateurs side by side', 'refrigerateur congelateur'];
-    if (/multi portes|[34] portes|[34] door|french door|cross door|multi door|\bcube\b|quatre portes|quatres portes|trois portes/.test(k)) return ['refrigerateurs multi portes', 'refrigerateur congelateur'];
-    if (/combine|congelateur en bas|congelateur inferieur|bottom/.test(k)) return ['refrigerateurs combines', 'refrigerateur congelateur'];
-    if (/congelateur en haut|double porte|double door|2 portes|deux portes|top freezer|top mount|monte sur le dessus/.test(k)) return ['refrigerateurs 2 portes', 'refrigerateur congelateur'];
-    if (/table top|sous plan|top table|mini bar/.test(k)) return ['refrigerateurs table top', 'refrigerateur'];
-    if (/une porte|1 porte|monoporte|one door|single door/.test(k)) return ['refrigerateurs 1 porte', 'refrigerateur'];
+    if (/side by side|americain|\bsbs\b/.test(k)) return ['refrigerateur americain side by side', 'refrigerateurs side by side', 'refrigerateur', 'refrigerateur congelateur'];
+    if (/multi portes|[34] portes|[34] door|french door|cross door|multi door|\bcube\b|quatre portes|quatres portes|trois portes/.test(k)) return ['refrigerateur multi portes', 'refrigerateurs multi portes', 'refrigerateur', 'refrigerateur congelateur'];
+    if (/combine|congelateur en bas|congelateur inferieur|bottom/.test(k)) return ['refrigerateur avec congelateur en bas', 'refrigerateurs combines', 'refrigerateur', 'refrigerateur congelateur'];
+    if (/congelateur en haut|double porte|double door|2 portes|deux portes|top freezer|top mount|monte sur le dessus/.test(k)) return ['refrigerateur avec congelateur en haut', 'refrigerateurs 2 portes', 'refrigerateur', 'refrigerateur congelateur'];
+    if (/table top|sous plan|top table|mini bar/.test(k)) return ['mini bar et table top', 'refrigerateurs table top', 'refrigerateur'];
+    if (/une porte|1 porte|monoporte|one door|single door/.test(k)) return ['refrigerateur 1 porte', 'refrigerateurs 1 porte', 'refrigerateur'];
     return ['refrigerateur'];
   }
   function findSection(typed) {
@@ -1155,8 +1156,10 @@
       const c = findSection(it.category || '');
       if (c.exact || c.guess) return c.exact || c.guess;
       // the most precise section first, then its parent: "Réfrigérateurs Combinés" before "Réfrigérateurs - Congélateurs"
-      let tries = TYPE_SECTION[typeOf(it)] ? [TYPE_SECTION[typeOf(it)]] : [];
+      let tries = (TYPE_SECTION[typeOf(it)] || []).slice();
       if (typeOf(it) === 'fridge') tries = fridgeSections(it);
+      // washing machine that also dries
+      if (typeOf(it) === 'washer' && /sechant|lavante sechante|washer dryer|lave linge sechant/.test(foldText(nameOf(it)))) tries.unshift('machine a laver sechante', 'lave linge sechants');
       for (const words of tries) {
         const t = findSection(words);
         if (t.exact || t.guess) return t.exact || t.guess;
