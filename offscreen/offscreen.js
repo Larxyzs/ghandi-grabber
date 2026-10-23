@@ -52,6 +52,16 @@
 
   chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
     if (!msg || msg.target !== 'offscreen' || (msg.type !== 'quick-read' && msg.type !== 'quick-list')) return;
+    // "?page=3", "?p=3", ".../page/3": the last page of a list has fewer products, that is normal
+    function pageNumber(url) {
+      try {
+        const u = new URL(url);
+        const q = u.searchParams.get('page') || u.searchParams.get('p') || u.searchParams.get('pg') || (u.pathname.match(/\/page\/(\d+)/) || [])[1];
+        return parseInt(q, 10) || 1;
+      } catch (e) {
+        return 1;
+      }
+    }
     // "?tvs-for-gaming", "?brand=lg&sort=price" ... but not page numbers or tracking
     function filtersInAddress(url) {
       try {
@@ -74,7 +84,7 @@
         let why = '';
         if (!r.ok || r.links.length < 2) why = 'no product links in the page text';
         else if (r.hasLoadMore) why = 'has a "show more" button';
-        else if (r.expected && r.links.length < r.expected && !r.next) why = 'only ' + r.links.length + ' of ' + r.expected;
+        else if (r.expected && r.links.length < r.expected && !r.next && pageNumber(msg.url) <= 1) why = 'only ' + r.links.length + ' of ' + r.expected;
         else if (r.expected && r.links.length > r.expected) why = 'more links (' + r.links.length + ') than the page says (' + r.expected + ')';
         else if (filtersInAddress(msg.url)) why = 'filters in the address (the page applies them with its scripts)';
         sendResponse({ ok: true, good: !why, why, result: r });
