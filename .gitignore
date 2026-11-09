@@ -1,1 +1,5 @@
 backup-previous/
+__pycache__/
+*.pyc
+node_modules/
+training/tmp/

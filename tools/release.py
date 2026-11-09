@@ -12,8 +12,8 @@ and checks each fingerprint (sha256) before changing anything.
 import hashlib, json, os, subprocess, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SKIP_DIRS = {'.git', 'tools', 'backup-previous', '.github'}
-SKIP_FILES = {'version.json', 'RELEASING.md', '.gitattributes', '.gitignore', 'README.md'}
+SKIP_DIRS = {'.git', 'tools', 'backup-previous', '.github', 'tests', 'training', '.claude', 'docs', 'node_modules'}
+SKIP_FILES = {'version.json', 'RELEASING.md', '.gitattributes', '.gitignore', 'README.md', 'CLAUDE.md', 'AGENTS.md', 'package.json', 'package-lock.json'}
 
 def main():
     if len(sys.argv) < 2:

@@ -1,7 +1,7 @@
 # Releasing an update (for Claude / whoever changes the code)
 
 The installed extension checks `https://raw.githubusercontent.com/Larxyzs/ghandi-grabber/main/version.json`
-when Chrome starts and every 6 hours. If `version` there is higher than its own, the side tab shows
+every 30 seconds while Chrome is open. If `version` there is higher than its own, the side tab shows
 "New version X is ready" and the owner clicks **Install update**. The extension then downloads each
 file from `https://raw.githubusercontent.com/Larxyzs/ghandi-grabber/<commit>/<path>`, checks the sha256,
 backs up the old files into `backup-previous/`, writes the new files into the folder Chrome loaded,
@@ -9,7 +9,7 @@ and reloads itself (`updater/updater.js`).
 
 Steps for a new version:
 1. Change the code. Bump `"version"` in `manifest.json` (and the "Ghandi Product Grabber X.Y" strings in `app/app.js`).
-2. Test it (the e2e tests live outside this repo, in the session scratchpad).
+2. Test it: `python tests/run_all.py` (and `--window` before a big release). Never release with a failing test.
 3. `git add -A && git commit -m "X.Y.Z: what changed"`
 4. `python3 tools/release.py $(git rev-parse HEAD) "Plain sentence 1 for the owner" "Plain sentence 2"`
 5. `git add version.json && git commit -m "version.json X.Y.Z" && git push origin main`
