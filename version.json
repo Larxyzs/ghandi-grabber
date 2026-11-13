@@ -1,8 +1,8 @@
 {
- "version": "3.7.24",
- "commit": "ce6f85f5df7a66211d9223fbfcc4bd2840ce97de",
+ "version": "3.7.25",
+ "commit": "8de9960128a017955c70eef46eade65c6c56be58",
  "notes": [
-  "Climatiseurs TCL : la référence (ex. TAC-09CHSA/XA73I) est maintenant lue, et le nom commence par « Climatiseur TCL »."
+  "TCL : toutes les caractéristiques (tous les onglets) et la référence sur les pages « série »."
  ],
  "files": [
   {
@@ -73,7 +73,7 @@
   {
    "path": "manifest.json",
    "size": 1251,
-   "sha256": "d86543e304979bd5742308fe46c2b957fcb228ffc8e681e63e0de88c9544b782"
+   "sha256": "90f0f7e9ad7c7e84788fed9c3a1b603b7caa1a58715d78c51a04fe123c4572d6"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -147,8 +147,8 @@
   },
   {
    "path": "scraper/recipes/tcl.js",
-   "size": 4243,
-   "sha256": "606d231f49548dc81ac9bbe26cdb56e5f647cf43e2ee09636a84ba9dbaab7edd"
+   "size": 6586,
+   "sha256": "84719ce61b4ff931e9232123bf9a218427c2d93fb0a01d8cfb824e5c9bcff1c7"
   },
   {
    "path": "scraper/recipes/whirlpool.js",
