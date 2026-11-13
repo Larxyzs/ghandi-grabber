@@ -36,14 +36,58 @@ GHANDI.register({
       if (slug && String(ld).toUpperCase().replace(/[^A-Z0-9]/g, '').indexOf(slug) !== -1) return ld;
       return ''; // a code of another product: trust nothing here
     }
+    // a series page (/washing-machine/f6-series): the product header names the model shown (F606FLW)
+    if (!slug && ownCode && ctx.looksLikeModel(ownCode) && /^[A-Z0-9][A-Z0-9\/-]{3,20}$/i.test(ownCode)) return ownCode.toUpperCase();
     return slug;
   },
   defaultGroupTitle: 'Spécifications',
 
   nameSelectors: ['main h1', 'h1', '[class*="product-name" i]', '[class*="productName" i]'],
   // air conditioners: "THE ELITE SERIES" / "Free Standing" alone say nothing -> "Climatiseur TCL THE ELITE SERIES"
-  custom: function (ctx) {
+  custom: async function (ctx) {
     var r = ctx.result;
+    // SPECIFICATIONS: the page shows one tab at a time (FEATURES / TECHNICAL SPECIFICATION / PHYSICAL
+    // PARAMETER / PROGRAM) but downloads them all in one ".../product_spec.<code>.json" file: read that file.
+    try {
+      var specUrl = '';
+      (performance.getEntriesByType('resource') || []).forEach(function (e) {
+        if (!specUrl && /\/product_spec\.[^/]*\.json/i.test(e.name)) specUrl = e.name;
+      });
+      if (!specUrl) {
+        var el = ctx.util.qa('[data-url*="product_spec"], [data-api*="product_spec"], [data-spec-url]')[0];
+        var a = el && (el.getAttribute('data-url') || el.getAttribute('data-api') || el.getAttribute('data-spec-url'));
+        if (a) specUrl = ctx.util.absUrl(a);
+      }
+      if (specUrl) {
+        var res = await fetch(specUrl, { credentials: 'same-origin' });
+        var json = res.ok ? await res.json() : null;
+        var tabs = json && Array.isArray(json.data) ? json.data : [];
+        var groups = tabs
+          .map(function (t) {
+            return {
+              title: ctx.util.clean(t.tab || ''),
+              rows: (t.specItems || [])
+                .map(function (x) {
+                  var v = ctx.util.clean(x.value == null ? '' : String(x.value));
+                  if (/^[√✓✔]$/.test(v)) v = 'Oui';
+                  if (/^[×✗✘-]$/.test(v)) v = 'Non';
+                  return { label: ctx.util.clean(x.name || ''), value: v };
+                })
+                .filter(function (x) { return x.label && x.value; }),
+            };
+          })
+          .filter(function (g) { return g.rows.length; });
+        var n = groups.reduce(function (k, g) { return k + g.rows.length; }, 0);
+        if (n > (r.specs || []).length) {
+          r.specGroups = groups;
+          r.specs = [].concat.apply([], groups.map(function (g) { return g.rows; }));
+          r.warnings = (r.warnings || []).filter(function (w) { return !/specification/i.test(w); });
+          r.debug.specsFrom = 'tcl product_spec json (' + n + ')';
+        }
+      }
+    } catch (e) {
+      r.debug.tclSpecJson = String(e && e.message);
+    }
     if (!/\/air-conditioners\//i.test(String(r.url || location.pathname)) || !r.name) return;
     var name = r.name.replace(/\s*\|\s*[A-Z0-9]+$/, '').trim();
     if (!/climati/i.test(name)) name = 'Climatiseur ' + (/\bTCL\b/i.test(name) ? name : 'TCL ' + name);
