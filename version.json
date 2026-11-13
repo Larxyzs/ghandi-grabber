@@ -1,8 +1,9 @@
 {
- "version": "3.7.20",
- "commit": "2a4a17664de562f9e5c0d4397ebb507cb9d36d78",
+ "version": "4.0.0",
+ "commit": "ebf1e6cb35e8709b838cd1dba18adb893b14e7d8",
  "notes": [
-  "Nouveau : Electroplanet. La marque, la référence (code modèle), le nom, toutes les photos et les caractéristiques de chaque produit sont lus, et « Trouver les produits » marche sur leurs listes."
+  "New, simpler side tab: it sees the page you are on and shows one big button (grab this product / find all products), then big cards with problems written plainly and a fix right there.",
+  "One button sends all ready products to your site; removing has a 10-second Undo; History shows what you sent; settings are behind the gear button."
  ],
  "files": [
   {
@@ -27,18 +28,18 @@
   },
   {
    "path": "app/app.css",
-   "size": 26590,
-   "sha256": "002157fe4aa8af8c933ab8d64704655923023d16cf80b7d59bbba60161be6076"
+   "size": 18632,
+   "sha256": "0725be05485665e2561764635fe6e25f776500cab416c5eb4739f5ea505d8580"
   },
   {
    "path": "app/app.html",
-   "size": 20148,
-   "sha256": "637cdffd44abef5652f07a5f3c3abb68dbf2952c690bd9066e5be2b9f9105d7e"
+   "size": 13522,
+   "sha256": "a583d5ca5f7465493e4c9c08c43bf1fba852f319dd4de900eac58fdaa0924d9b"
   },
   {
    "path": "app/app.js",
-   "size": 73063,
-   "sha256": "7fb26bf9e23d28192c05bb5ad47fc9405a836dc426de6880ad225a592bb2528b"
+   "size": 79769,
+   "sha256": "4115a76473cca25cf5a7c9a50e4e1f7dbf1d84700bb0ec7661275cf31d799fc3"
   },
   {
    "path": "app/shim.js",
@@ -67,8 +68,8 @@
   },
   {
    "path": "manifest.json",
-   "size": 1011,
-   "sha256": "7f10e372919ea8b193191016d72e97f82109fb0459138f144251b829b945ea8a"
+   "size": 1010,
+   "sha256": "9c66906f53ad62df302387d08a82eb14fc35f2b778e40babfd1a0de2961c855f"
   },
   {
    "path": "offscreen/offscreen.html",
