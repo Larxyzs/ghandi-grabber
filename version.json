@@ -1,8 +1,8 @@
 {
- "version": "3.7.21",
- "commit": "4faa02b6f584f5159428b81f3e3d280e237bc30a",
+ "version": "3.7.22",
+ "commit": "1d4cf0e08ce06d68b729d013c29554608304a574",
  "notes": [
-  "Petite mise à jour : votre site peut maintenant demander à l'extension de chercher et d'envoyer des produits (utile quand Claude le fait pour vous). Les tailles comme « 12000BTU » ne sont plus prises pour une référence."
+  "Climatiseurs LG : seulement les vraies photos du produit (avant, chaque photo venait 2 ou 3 fois)."
  ],
  "files": [
   {
@@ -52,8 +52,8 @@
   },
   {
    "path": "bridge/bridge.js",
-   "size": 4070,
-   "sha256": "8ec186f12cd1af95b09363c6805f5d4c18981e8b2539dc2128e9ece22a55f4ab"
+   "size": 4870,
+   "sha256": "a5bc7888f64e98c026e2f04aff3298ff2333bbb845226c702f82226765e6b501"
   },
   {
    "path": "icons/icon128.png",
@@ -73,7 +73,7 @@
   {
    "path": "manifest.json",
    "size": 1251,
-   "sha256": "0f634359281bc90e4a367d6e03208c4f1e85fb75a3882854f1dc6dd0cac7b1df"
+   "sha256": "545fa21c37febf81300bb916bbd5c861dd75d752e6852e5a86a2b8578ed74e35"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -137,8 +137,8 @@
   },
   {
    "path": "scraper/recipes/lg.js",
-   "size": 10374,
-   "sha256": "f2b35df295f9341326046c31fbd822e32be7736373acda73215a7dab3d7a8bbf"
+   "size": 10586,
+   "sha256": "ce3eeb58aab5de6552f1faf52a91e4603e3e705ef016733516bcb0ab2f92ce63"
   },
   {
    "path": "scraper/recipes/samsung.js",
