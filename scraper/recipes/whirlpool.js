@@ -36,6 +36,21 @@ GHANDI.register({
     return /\.ma$/i.test(hostname); // "Ce produit n'est pas disponible chez les vendeurs en ligne"
   },
 
+  // ---------- MODEL CODE ----------
+  // The page title starts with it ("AWE 7650 | Lave-linge…"). Some pages say "N/A" there: then the end of the
+  // address names it (".../congelateur-poitrine-451-l-wcf-620-a-sna" -> "WCF 620 A SNA").
+  model: function (ctx) {
+    var t = String(document.title || '').split('|')[0].trim();
+    if (t.length <= 26 && /^[A-Z0-9][A-Z0-9 \/.-]{3,}$/.test(t) && ctx.looksLikeModel(t)) return t;
+    var last = decodeURIComponent(String(ctx.url).split('?')[0].split('/').filter(Boolean).pop() || '');
+    var m = last.match(/-(?:l|cm|rpm|kg|tr-min|litres?)-((?:[a-z0-9]+-){1,5}[a-z0-9]+)$/i);
+    if (m) {
+      var v = m[1].replace(/-/g, ' ').toUpperCase();
+      if (ctx.looksLikeModel(v) && v.length <= 24) return v;
+    }
+    return '';
+  },
+
   // ---------- PRODUCT NAME ----------
   nameSelectors: [
     'h1[class*="ProductInfo__title"]',

@@ -395,6 +395,44 @@
     return { choices: (hits.length ? hits : close).slice(0, 4) };
   }
 
+  // the most precise sub-section for a product, from its name and address (tried before the type's general section):
+  // TVs by screen family, hobs gas/electric/mixed, built-in or free-standing, dryers by kind, hoods by shape
+  function preciseSections(type, text) {
+    const t = foldText(text);
+    const built = /encastr|integr|built ?in|\bbuiltin\b|semi integr|tout integr/.test(t);
+    if (type === 'tv') {
+      if (/oled evo|oled.*\bevo\b/.test(t)) return ['tv oled evo', 'tv oled'];
+      if (/oled/.test(t)) return ['tv oled'];
+      if (/neo qled/.test(t)) return ['tv neo qled', 'tv qled mini led et qned'];
+      if (/micro ?rgb/.test(t)) return ['tv microrgb'];
+      if (/qled|mini ?led|qned|\bqd ?mini/.test(t)) return ['tv qled mini led et qned'];
+      if (/nanocell|nano cell/.test(t)) return ['tv nanocell'];
+      if (/full hd|\bfhd\b|\bhd ready\b/.test(t)) return ['tv full hd'];
+      return ['tv 4k uhd'];
+    }
+    if (type === 'hob' || /plaque|table de cuisson|\bhob\b/.test(t)) {
+      if (/mixte|mixed|gaz.*(induction|electr|vitro)|(induction|electr|vitro).*gaz/.test(t)) return ['plaque de cuisson mixte'];
+      if (/gaz|gas|bruleur|feux/.test(t)) return ['plaque de cuisson a gaz'];
+      if (type === 'hob' || /induction|vitro|electri/.test(t)) return ['plaque de cuisson electrique vitroceramique induction'];
+    }
+    if (/\bhotte|\bhood/.test(t)) {
+      if (/ilot|island/.test(t)) return ['hotte ilot', 'hotte aspirante'];
+      if (/visiere|telescop|tiroir|escamot|groupe filtrant|integr|encastr|built|slim/.test(t)) return ['hotte visiere', 'hotte aspirante'];
+      return ['hotte decorative murale', 'hotte aspirante'];
+    }
+    if (/seche linge|\bdryer\b/.test(t) && !/lave linge|washer|sechant/.test(t)) {
+      if (/pompe a chaleur|heat pump|thermopompe/.test(t)) return ['seche linge pompe a chaleur', 'seche linge'];
+      if (/evacuation|vented/.test(t)) return ['seche linge a evacuation', 'seche linge'];
+      return ['seche linge a condensation', 'seche linge'];
+    }
+    if (type === 'microwave') return built ? ['micro ondes encastrable'] : ['micro ondes posable', 'micro ondes'];
+    if (type === 'dishwasher') return built ? ['lave vaisselle encastrable'] : ['lave vaisselle pose libre', 'lave vaisselle'];
+    if (type === 'washer' && /chargement par le haut|ouverture en haut|top load|\btop\b|lave linge top/.test(t)) return ['machine a laver ouverture en haut'];
+    if (type === 'fridge' && built) return ['refrigerateur encastrable'];
+    if (/cuisiniere|\bcooker\b/.test(t) && type !== 'oven') return ['cuisiniere'];
+    return [];
+  }
+
   // (end of the section helpers; tests/test_sections.js reads the code above, up to: async function sendToSite())
 
   // ------------------------------------------------------------ which section of the site a product goes to
@@ -406,6 +444,7 @@
     let tries = (TYPE_SECTION[typeOf(it)] || []).slice();
     if (typeOf(it) === 'fridge') tries = fridgeSections(it);
     if (typeOf(it) === 'washer' && /sechant|lavante sechante|washer dryer|lave linge sechant/.test(foldText(nameOf(it)))) tries.unshift('machine a laver sechante', 'lave linge sechants');
+    else tries = preciseSections(typeOf(it), nameOf(it) + ' ' + String(it.url || '').replace(/[-_/]+/g, ' ')).concat(tries);
     for (const words of tries) {
       const t = findSection(words);
       if (t.exact || t.guess) return t.exact || t.guess;
