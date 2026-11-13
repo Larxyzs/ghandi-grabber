@@ -108,6 +108,44 @@ GHANDI.register({
   // (written "CAPACITÉ - Total du volume  333"). Lines already in the full list are removed from it;
   // lines found nowhere else stay. (The short copy may also come without a title.)
   custom: function (ctx) {
+    // PICTURES: when the page has the slideshow box (".c-gallery__display"), its own slides are the
+    // pictures, in order, without the loop copies. The page code also lists small, "zoom", mobile and
+    // share copies of every slide under other names (S-01, New_MZ1, 350-1, 1044-1, B01, large-m01…):
+    // taking addresses from the code gave 26 to 42 pictures instead of 13.
+    var self = this;
+    var disp = ctx.util.qa('.c-gallery__display')[0];
+    if (disp) {
+      var slides = ctx.util.qa('.swiper-slide, [class*="carousel__item"]', disp).filter(function (sl) {
+        return !sl.classList.contains('swiper-slide-duplicate') && sl.querySelector('img');
+      });
+      var at = function (sl) {
+        var v = sl.getAttribute('data-swiper-slide-index');
+        return v == null ? 999 : Number(v);
+      };
+      slides = slides
+        .map(function (sl, n) { return { sl: sl, n: n }; })
+        .sort(function (a, b) { return at(a.sl) - at(b.sl) || a.n - b.n; })
+        .map(function (x) { return x.sl; });
+      var seen = {};
+      var urls = [];
+      slides.forEach(function (sl) {
+        var img = sl.querySelector('img');
+        var raw = img.getAttribute('data-src') || img.getAttribute('src') || img.currentSrc || '';
+        if (!raw || /^data:/.test(raw)) return;
+        var u = self.imageUpgrade(ctx.util.absUrl(raw));
+        if (!self.imageFilter(u)) return;
+        var k = self.imageKey(u);
+        if (seen[k]) return;
+        seen[k] = true;
+        urls.push(u);
+      });
+      if (urls.length >= 2) {
+        ctx.result.mainImage = urls[0];
+        ctx.result.otherImages = urls.slice(1);
+        ctx.result.debug.picturesFrom = 'lg slideshow box (' + urls.length + ')';
+      }
+    }
+
     var r = ctx.result;
     var g = r.specGroups || [];
     if (g.length < 2) return;
