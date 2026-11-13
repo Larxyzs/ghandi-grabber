@@ -5,7 +5,7 @@ import asyncio, re
 from playwright.async_api import async_playwright
 import os
 EXT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-files=['scraper/core.js']+re.findall(r"'(scraper/recipes/[^']+)'",open(EXT+'/recipe-list.js').read())
+files=['scraper/core.js']+re.findall(r"'(scraper/[^']+\.js)'",open(EXT+'/recipe-list.js').read())
 JS='\n;\n'.join(open(EXT+'/'+f).read() for f in files)
 U='https://www.samsung.com/n_africa/refrigerators/bottom-mount-freezer/rb34c600es9-340l-silver-rb34c600es9-ma/'
 def sam(sku=True, attrs=True):

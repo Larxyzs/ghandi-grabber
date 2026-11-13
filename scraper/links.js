@@ -18,7 +18,7 @@
   const { sleep, clean, qa, toArray, waitUntil, bestImageUrl, isNoise, isCookie } = U;
 
   const LOAD_MORE_RE = /^(voir|afficher|charger|montrer|show|view|load|see)\s+(plus|davantage|more|encore)\b|^plus de (produits|r[ée]sultats)\b|^(more|load more)$/i;
-  const NEXT_RE = /^(suivant|page suivante|next|next page|suivante|›|»|>|→)$/i;
+  const NEXT_RE = /^(page\s+)?(suivant|suivante|page suivante|next|next page|›|»|>|→)$/i;
   const TRACKING = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid', 'mc_cid', 'mc_eid'];
 
   function toUrl(href) {
@@ -315,7 +315,7 @@
     }
     const nextNum = currentPageNumber(here) + 1;
     const numbered = anchors.find(
-      (a) => clean(a.textContent) === String(nextNum) && a.closest('[class*="pagin" i],nav[aria-label*="pag" i],[role="navigation"]')
+      (a) => (clean(a.textContent) === String(nextNum) || clean(a.textContent) === 'Page ' + nextNum) && a.closest('[class*="pagin" i],[class*="pages" i],nav[aria-label*="pag" i],[role="navigation"]')
     );
     if (numbered) {
       const n = normalize(numbered.href);

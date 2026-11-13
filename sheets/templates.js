@@ -414,7 +414,7 @@
     id: 'fridge',
     label: 'Réfrigérateur',
     icon: '🧊',
-    detect: [/refrig|frigo|fridge|combine[s]? |side by side|side-by-side|americain|multi[- ]?portes|congelateur en (haut|bas)|\bno ?frost\b.*\d+ ?l\b/],
+    detect: [/refrig|frigo|fridge|combine[s]? |side by side|side-by-side|americain|multi[- ]?portes|congelateurs?\b|freezers?\b|mini[- ]?bars?\b|\bno ?frost\b.*\d+ ?l\b/],
     detectSpecs: [/congelateur|refrigerateur|freezer|bac a legumes|clayette/],
     notIf: [/lave|four\b|micro|climati|cave a vin/],
     groups: [

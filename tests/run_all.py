@@ -6,9 +6,11 @@ runs = [
     [sys.executable, os.path.join(HERE, 'test_model_codes.py')],
     ['node', os.path.join(HERE, 'test_sections.js')],
     [sys.executable, os.path.join(HERE, 'test_shop_e2e.py')],
+    [sys.executable, os.path.join(HERE, 'test_electroplanet_e2e.py')],
 ]
 if '--window' in sys.argv:
     runs.append([sys.executable, os.path.join(HERE, 'test_shop_e2e.py'), '--window', '--headed'])
+    runs.append([sys.executable, os.path.join(HERE, 'test_electroplanet_e2e.py'), '--window', '--headed'])
 failed = []
 for cmd in runs:
     name = ' '.join(os.path.basename(c) for c in cmd[1:])

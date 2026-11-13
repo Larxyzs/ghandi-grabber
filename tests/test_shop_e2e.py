@@ -70,7 +70,7 @@ async def main():
             ctx = await p.chromium.launch_persistent_context(
                 profile, headless=not HEADED, channel=None if HEADED else 'chromium',
                 args=[f'--disable-extensions-except={EXT}', f'--load-extension={EXT}',
-                      f'--host-resolver-rules=MAP electrobousfiha.com:80 127.0.0.1:{PORT}', '--no-proxy-server'])
+                      f'--host-resolver-rules=MAP electrobousfiha.com:80 127.0.0.1:{PORT}', '--no-proxy-server', '--disable-dev-shm-usage', '--disable-gpu'])
             sw = ctx.service_workers[0] if ctx.service_workers else await ctx.wait_for_event('serviceworker')
             eid = sw.url.split('/')[2]
             pg = await ctx.new_page()

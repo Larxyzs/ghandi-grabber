@@ -162,7 +162,7 @@ class Extension:
         from playwright.async_api import async_playwright
         self._pw = await async_playwright().start()
         self.profile = tempfile.mkdtemp(prefix='ghandi-train-')
-        args = [f'--disable-extensions-except={ROOT}', f'--load-extension={ROOT}', '--window-size=1400,950']
+        args = [f'--disable-extensions-except={ROOT}', f'--load-extension={ROOT}', '--window-size=1400,950'] + (['--disable-dev-shm-usage'] if sys.platform.startswith('linux') else [])
         if self.host_rules:
             args.append('--host-resolver-rules=' + self.host_rules)
         if self.live and proxy_server():

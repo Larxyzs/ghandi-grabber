@@ -5,7 +5,7 @@ import asyncio, json, re, sys
 from playwright.async_api import async_playwright
 import os
 EXT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-files=['scraper/core.js']+re.findall(r"'(scraper/recipes/[^']+)'",open(EXT+'/recipe-list.js').read())+['scraper/links.js']
+files=['scraper/core.js']+re.findall(r"'(scraper/[^']+\.js)'",open(EXT+'/recipe-list.js').read())+['scraper/links.js']
 JS='\n;\n'.join(open(EXT+'/'+f).read() for f in files)
 
 def card(slug,title,hidden=False):

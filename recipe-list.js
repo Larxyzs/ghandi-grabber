@@ -10,6 +10,7 @@
   To turn a brand OFF: put two slashes (//) at the start of its line.
 */
 var RECIPE_FILES = [
+  'scraper/brands.js', // shared brand names (used by the shop recipes) — keep it FIRST
   'scraper/recipes/whirlpool.js',
   'scraper/recipes/lg.js',
   'scraper/recipes/candy.js',
@@ -18,4 +19,5 @@ var RECIPE_FILES = [
   'scraper/recipes/haier.js',
   'scraper/recipes/bosch.js',
   'scraper/recipes/electrobousfiha.js', // a SHOP: the brand of each product is read on its page
+  'scraper/recipes/electroplanet.js', // a SHOP (Magento): brand, model code and name read on each page
 ];

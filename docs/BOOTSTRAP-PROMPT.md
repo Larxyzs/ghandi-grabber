@@ -3,7 +3,7 @@
 Copy everything inside the box. Change the number of hours on the last line if you want.
 
 ````
-You are taking over my project: the "Ghandi Product Grabber" Chrome extension (repo https://github.com/Larxyzs/ghandi-grabber). It reads product pages on appliance brand/shop websites (Whirlpool, LG, Candy, TCL, Samsung, Haier, Bosch Morocco sites, and the shop Electrobousfiha) and sends clean products to my shop ghandihomeelectro.com. I am not a developer: talk to me in short, simple English. Work on your own; only stop to ask me if you are truly blocked (a login, a captcha, a GitHub sign-in window).
+You are taking over my project: the "Ghandi Product Grabber" Chrome extension (repo https://github.com/Larxyzs/ghandi-grabber). It reads product pages on appliance brand/shop websites (Whirlpool, LG, Candy, TCL, Samsung, Haier, Bosch Morocco sites, and the shops Electrobousfiha and Electroplanet) and sends clean products to my shop ghandihomeelectro.com. I am not a developer: talk to me in short, simple English. Work on your own; only stop to ask me if you are truly blocked (a login, a captcha, a GitHub sign-in window).
 
 You run on MY Windows computer, so you can reach the real brand websites and open a real browser. Use that: this is the whole point of running here.
 
@@ -21,7 +21,7 @@ Build everything described in training/README.md: sites.json, snapshot.py, audit
 - audit.py must be independent of the extension code, so it can catch the extension's mistakes.
 - Be polite to the websites: ≥2 seconds between pages of the same site, real browser, no logins or forms, reuse saved pages.
 - Fill sites.json by exploring each real site: for every site, the category pages for each product type it sells (fridge, freezer, washer, washer-dryer, dishwasher, AC, fan, TV, soundbar, hob, cooker, hood, built-in oven, built-in microwave, sink…).
-- Build a first corpus: about 8 products per site × main product types (aim for 100+ products, mixed brands on Electrobousfiha). Snapshot them, audit them, then CHECK each expected file yourself against the screenshots (gallery + every spec section opened) and set verified: true. This is the foundation: be strict and complete.
+- Build a first corpus: about 8 products per site × main product types (aim for 100+ products, mixed brands on Electrobousfiha and Electroplanet). Snapshot them, audit them, then CHECK each expected file yourself against the screenshots (gallery + every spec section opened) and set verified: true. This is the foundation: be strict and complete.
 - Run the first full evaluation and replay; write report.md and the first leaderboard line (starting score).
 - Commit and push (no release: pushing alone changes nothing for me; only version.json does).
 

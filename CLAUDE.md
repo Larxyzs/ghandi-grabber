@@ -31,7 +31,7 @@ Read this whole file before doing anything. It is the memory of months of work.
 | `offscreen/offscreen.js` | Quick read: runs the scraper on a downloaded page; `judge()` decides if the quick result is good enough or a window is needed (per-recipe `quickRead: {minSpecs, minPictures, needPrice, okWarnings}`). Also quick list read (rejects filtered addresses, more links than the page says, etc.). |
 | `scraper/core.js` | The brain (2k lines): name, price (currently OFF: `PRICES_ON=false`), model code (`readModel`), pictures (gallery detection, slideshow order `inSlideOrder`, loop-clone removal, size upgrade, de-dupe by `imageKey`, other-products boxes excluded), specs (tables, dl, li, deep label/value pairs, headings → groups, clicks on tabs/accordions/"voir plus"), X-ray, `forDocument()` for quick read. |
 | `scraper/links.js` | "Find products" on category pages: product link rules per recipe, hidden links skipped (closed menus, filtered-out cards), "N Résultats" box trimming, load-more clicking, next page, expected count. |
-| `scraper/recipes/*.js` | One recipe per site: `whirlpool` (whirlpool.ma, Beko AEM platform), `lg` (lg.com/ma), `candy` (candy-home.com/fr_MA), `tcl` (tcl.com/ma/fr), `samsung` (samsung.com/n_africa), `haier` (haier-europe.com/fr_MA), `bosch` (bosch-home.ma), `electrobousfiha` (a **shop**: PrestaShop, brand read per product). Options are documented in `_template.js` and in each file. Recipe list: `recipe-list.js`. |
+| `scraper/recipes/*.js` | One recipe per site: `whirlpool` (whirlpool.ma, Beko AEM platform), `lg` (lg.com/ma), `candy` (candy-home.com/fr_MA), `tcl` (tcl.com/ma/fr), `samsung` (samsung.com/n_africa), `haier` (haier-europe.com/fr_MA), `bosch` (bosch-home.ma), `electrobousfiha` (a **shop**: PrestaShop, brand read per product), `electroplanet` (a **shop**: Magento 2, brand from the "Marque" row, model code from "Code produit"/the short name, readable name = category + brand + short name, pictures from the `x-magento-init` gallery JSON, originals = address without `/cache/<32hex>/`). Shared brand list: `scraper/brands.js` (FIRST in recipe-list.js). Options are documented in `_template.js` and in each file. Recipe list: `recipe-list.js`. |
 | `sheets/engine.js` + `sheets/templates.js` | Turns brand spec rows into **Electroplanet-style sheets** per type: fridge, ac, washer, tv, hob, oven, microwave, sink, fan, dishwasher. Type auto-detected or chosen by the owner. Output `specGroups` (clean) + `brandSpecGroups` (original). |
 | `app/app.html/.css/.js` | The side panel UI (1.6k lines JS). Tabs "Product links" / "Find products", product list (select all, search, statuses), product editor (pictures, specs, type, sheet/brand toggle), type dialog, problem report dialog, **send to site** dialog (section box auto-focused, Enter sends and closes, sent products leave the list, section guessed from type: `TYPE_SECTION`, `fridgeSections`), site connection, update banner. |
 | `updater/updater.js` | Self-update with File System Access (folder handle in IndexedDB), sha256 check, backup + undo. |
@@ -58,7 +58,7 @@ Read this whole file before doing anything. It is the memory of months of work.
 
 ## Tests (run before every commit that touches code)
 - `python tests/run_all.py` → list pages, model codes, section choice, and the full extension end-to-end on a
-  fake PrestaShop shop (30 products). `python tests/run_all.py --window` also tests reading windows (headed).
+  fake PrestaShop shop (30 products) and a fake Electroplanet/Magento shop (32 products, 20 product types). `python tests/run_all.py --window` also tests reading windows (headed).
 - Needs `pip install playwright` + `playwright install chromium`, and Node.
 - **Use Playwright's Chromium, not Google Chrome**: branded Chrome ignores `--load-extension` since v137.
 - Headless Chromium drops pages in the extension's popup windows (`net::ERR_ABORTED`) → test windows headed
@@ -76,6 +76,11 @@ Read this whole file before doing anything. It is the memory of months of work.
 - TCL filtered list ("?tvs-for-gaming") gave hidden mega-menu TVs → hidden links skipped, "N Résultats" box.
 - Whirlpool.ma is Beko's AEM platform, not VTEX (`product-info-image-N`, `PropertyTable` rows, ticks = "Oui").
 - Paginated lists ("Il y a 23 produits", 12 per page) must not count as incomplete.
+- Electroplanet: the h1 brand link can be wrong ("LAV" for a Franke dishwasher) → the "Marque" row wins;
+  "Code produit" is sometimes the whole short name ("MAL 10KG ELX-AWMF-1003 ELEXIA") or a fragment ("E5P") →
+  `modelFrom()` digs the model out of it, then out of the short name. Some products have no model code at all
+  (Taurus "TMAX"): leave it empty so the owner types it. The browser blocks fetching GitHub from electroplanet pages (CSP).
+- On a Linux container, `--window` tests sometimes die with Playwright "Target crashed" (also on old code): rerun.
 
 ## Training environment
 See `.claude/skills/train/SKILL.md` (`/train <hours>`) and `training/README.md`. The training loop measures the
