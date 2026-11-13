@@ -1,290 +1,290 @@
 {
- "id": "tcl-freshin-3-0",
- "site": "tcl",
- "type": "ac",
- "url": "https://www.tcl.com/ma/fr/air-conditioners/freshin-3-0",
- "finalUrl": "https://www.tcl.com/ma/fr/air-conditioners/freshin-3-0",
- "name": "TCL FreshIN Inverter 3.0",
- "brand": "TCL",
- "model": "",
- "pictures": [
-  "https://aws-obg-image-lb-5.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/freshin-3-0/id/1.jpg",
-  "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/freshin-3-0/id/2.jpg",
-  "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/freshin-3-0/id/3.jpg",
-  "https://aws-obg-image-lb-5.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/freshin-3-0/id/4.jpg",
-  "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/freshin-3-0/id/5.jpg",
-  "https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/freshin-3-0/id/6.jpg"
- ],
- "specs": [
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Catégorie(Norme italienne EER>=3.23 COP>=3.71)",
-   "value": "Général"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Type",
-   "value": "Pompe à Chaleur"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Type de commande",
-   "value": "télécommande"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Declared cooling capacity (W)",
-   "value": "3500(150~4200)"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Declared heating capacity (W)",
-   "value": "3600(150~5200)"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Pdesignc (W)",
-   "value": "3500"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "SEER déclaré (W/W)",
-   "value": "8.5"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Classe énergétique",
-   "value": "A+++"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "EER déclaré (W/W)",
-   "value": "3.88"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "COP déclaré (W/W)",
-   "value": "4.44"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Pdesignh moyen (W)",
-   "value": "2500"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "SCOP moyen déclaré (W/W)",
-   "value": "4.6"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Classe énergétique(Average)",
-   "value": "A++"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Consommation énergétique annuelle en refroidissement(kwh/a)",
-   "value": "145"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Consommation énergétique annuelle moyenne(kwh/a)",
-   "value": "761"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Déshumidification (Liters/h)",
-   "value": "1.2"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Puissance acoustique intérieure(S/H/M/L/Mute) (dB(A)",
-   "value": "54/51/46/41/32"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Puissance acoustique extérieure dB(A)",
-   "value": "65"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Pression acoustique intérieure(S/H/M/L/Mute) (dB(A))",
-   "value": "44/41/36/31/22"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Pression acoustique extérieure (dB(A))",
-   "value": "55"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Alimentation électrique",
-   "value": "220-240V~/50Hz/1P"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Côté alimentation",
-   "value": "Intérieure"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Plage de tension(V)",
-   "value": "165~265"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Courant de fonctionnement en mode refroidissement (A)",
-   "value": "4.1(0.5~8.6)"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Courant de fonctionnement en mode chauffage (A)",
-   "value": "3.7(0.5~9.0)"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Consommation électrique en refroidissement (W)",
-   "value": "900(75~1850)"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Consommation électrique en chauffage (W)",
-   "value": "810(75~2000)"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Type de réfrigérant / Charge / PRG / équivalent CO2",
-   "value": "R32/0.63kg/675/0.426 tonnes"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Compresseur",
-   "value": "Rotatif"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Circulation de l’air intérieur — refroidissement/chauffage (m3/h)",
-   "value": "680/680"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Circulation de l’air extérieur (m3/h)",
-   "value": "2200"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Câblage de connexion (nombre de conducteurs × section)",
-   "value": "4×0.75mm²"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Câblage du cordon d'alimentation( Nombre de conducteurs x section)",
-   "value": "3×1.5mm²"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Dispositif d'expansion",
-   "value": "Valve d'expansion électronique"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Tuyau de liaison gaz (pouces)",
-   "value": "3/8\""
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Tuyau de liaison liquide (pouces)",
-   "value": "1/4\""
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Zone d'application (m²)",
-   "value": "14~22"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Longueur standard de tuyauterie (m)",
-   "value": "5"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Charge supplémentaire (g/m)",
-   "value": "15"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Longueur maximale de la tuyauterie frigorifique (m)",
-   "value": "25"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Différence de niveau maximale (m)",
-   "value": "10"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Plage de température de fonctionnement (℃)",
-   "value": "16-31"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Plage de température ambiante intérieure (℃)",
-   "value": "Refroidissement:17-32/Chauffage:0-30"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Plage de température ambiante extérieure (℃)",
-   "value": "Cooling:-15-53/Heating:-25-30"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Dimensions nettes de l’unité intérieure (W x H x D) (mm)",
-   "value": "920×313×208"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Dimensions nettes de l’unité extérieure (W x H x D) (mm)",
-   "value": "795×305×549"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Poids net de l’unité intérieure (kg)",
-   "value": "11"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Poids net de l’unité extérieure (kg)",
-   "value": "23.5"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Dimensions d’emballage de l’unité intérieure (W x H x D) (mm)",
-   "value": "993×389×311"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Dimensions d’emballage de l’unité extérieure (W x H x D) (mm)",
-   "value": "852×358×600"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Poids brut unité intérieure (kg)",
-   "value": "14"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Poids brut unité extérieure (kg)",
-   "value": "26"
-  },
-  {
-   "group": "TCL FreshIN 3.0",
-   "label": "Capacité de Chargement (40'HQ)",
-   "value": "208"
-  }
- ],
- "verified": true,
- "auditedAt": "2026-11-09T17:48:18",
- "auditNotes": [],
- "verifiedAt": "2026-11-09T17:48:23",
- "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+  "id": "tcl-freshin-3-0",
+  "site": "tcl",
+  "type": "ac",
+  "url": "https://www.tcl.com/ma/fr/air-conditioners/freshin-3-0",
+  "finalUrl": "https://www.tcl.com/ma/fr/air-conditioners/freshin-3-0",
+  "name": "Climatiseur TCL FreshIN Inverter 3.0",
+  "brand": "TCL",
+  "model": "TAC-12CHSD/FCI",
+  "pictures": [
+    "https://aws-obg-image-lb-5.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/freshin-3-0/id/1.jpg",
+    "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/freshin-3-0/id/2.jpg",
+    "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/freshin-3-0/id/3.jpg",
+    "https://aws-obg-image-lb-5.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/freshin-3-0/id/4.jpg",
+    "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/freshin-3-0/id/5.jpg",
+    "https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/freshin-3-0/id/6.jpg"
+  ],
+  "specs": [
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Catégorie(Norme italienne EER>=3.23 COP>=3.71)",
+      "value": "Général"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Type",
+      "value": "Pompe à Chaleur"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Type de commande",
+      "value": "télécommande"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Declared cooling capacity (W)",
+      "value": "3500(150~4200)"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Declared heating capacity (W)",
+      "value": "3600(150~5200)"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Pdesignc (W)",
+      "value": "3500"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "SEER déclaré (W/W)",
+      "value": "8.5"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Classe énergétique",
+      "value": "A+++"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "EER déclaré (W/W)",
+      "value": "3.88"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "COP déclaré (W/W)",
+      "value": "4.44"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Pdesignh moyen (W)",
+      "value": "2500"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "SCOP moyen déclaré (W/W)",
+      "value": "4.6"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Classe énergétique(Average)",
+      "value": "A++"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Consommation énergétique annuelle en refroidissement(kwh/a)",
+      "value": "145"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Consommation énergétique annuelle moyenne(kwh/a)",
+      "value": "761"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Déshumidification (Liters/h)",
+      "value": "1.2"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Puissance acoustique intérieure(S/H/M/L/Mute) (dB(A)",
+      "value": "54/51/46/41/32"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Puissance acoustique extérieure dB(A)",
+      "value": "65"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Pression acoustique intérieure(S/H/M/L/Mute) (dB(A))",
+      "value": "44/41/36/31/22"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Pression acoustique extérieure (dB(A))",
+      "value": "55"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Alimentation électrique",
+      "value": "220-240V~/50Hz/1P"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Côté alimentation",
+      "value": "Intérieure"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Plage de tension(V)",
+      "value": "165~265"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Courant de fonctionnement en mode refroidissement (A)",
+      "value": "4.1(0.5~8.6)"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Courant de fonctionnement en mode chauffage (A)",
+      "value": "3.7(0.5~9.0)"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Consommation électrique en refroidissement (W)",
+      "value": "900(75~1850)"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Consommation électrique en chauffage (W)",
+      "value": "810(75~2000)"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Type de réfrigérant / Charge / PRG / équivalent CO2",
+      "value": "R32/0.63kg/675/0.426 tonnes"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Compresseur",
+      "value": "Rotatif"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Circulation de l’air intérieur — refroidissement/chauffage (m3/h)",
+      "value": "680/680"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Circulation de l’air extérieur (m3/h)",
+      "value": "2200"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Câblage de connexion (nombre de conducteurs × section)",
+      "value": "4×0.75mm²"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Câblage du cordon d'alimentation( Nombre de conducteurs x section)",
+      "value": "3×1.5mm²"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Dispositif d'expansion",
+      "value": "Valve d'expansion électronique"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Tuyau de liaison gaz (pouces)",
+      "value": "3/8\""
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Tuyau de liaison liquide (pouces)",
+      "value": "1/4\""
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Zone d'application (m²)",
+      "value": "14~22"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Longueur standard de tuyauterie (m)",
+      "value": "5"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Charge supplémentaire (g/m)",
+      "value": "15"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Longueur maximale de la tuyauterie frigorifique (m)",
+      "value": "25"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Différence de niveau maximale (m)",
+      "value": "10"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Plage de température de fonctionnement (℃)",
+      "value": "16-31"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Plage de température ambiante intérieure (℃)",
+      "value": "Refroidissement:17-32/Chauffage:0-30"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Plage de température ambiante extérieure (℃)",
+      "value": "Cooling:-15-53/Heating:-25-30"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Dimensions nettes de l’unité intérieure (W x H x D) (mm)",
+      "value": "920×313×208"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Dimensions nettes de l’unité extérieure (W x H x D) (mm)",
+      "value": "795×305×549"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Poids net de l’unité intérieure (kg)",
+      "value": "11"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Poids net de l’unité extérieure (kg)",
+      "value": "23.5"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Dimensions d’emballage de l’unité intérieure (W x H x D) (mm)",
+      "value": "993×389×311"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Dimensions d’emballage de l’unité extérieure (W x H x D) (mm)",
+      "value": "852×358×600"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Poids brut unité intérieure (kg)",
+      "value": "14"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Poids brut unité extérieure (kg)",
+      "value": "26"
+    },
+    {
+      "group": "TCL FreshIN 3.0",
+      "label": "Capacité de Chargement (40'HQ)",
+      "value": "208"
+    }
+  ],
+  "verified": true,
+  "auditedAt": "2026-11-09T17:48:18",
+  "auditNotes": [],
+  "verifiedAt": "2026-11-09T17:48:23",
+  "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
 }

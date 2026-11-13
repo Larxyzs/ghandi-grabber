@@ -65,3 +65,13 @@ What each session tried, learned and decided. Newest at the bottom.
 - Iteration 3: Electrobousfiha lost the model on Teka/Franke (codes made of digits only, refused by
   `looksLikeModel`). The shop recipe now keeps a 6–12 digit "Référence" (never a 13-digit EAN). Shop 98.1 → 99.8.
 - Replay is a bit flaky in window mode under load: tcl-50s5k once failed to open ('Chrome could not open that page') in a full run, then scored the same as before twice alone. Baseline restored to 42.64.
+
+## 2026-11-13 — TCL air conditioners get a model code (expected files changed)
+- Each TCL AC "series" page names its own model in the product header (`.relation .head .machine-model`,
+  e.g. `TAC-09CHSD/UG11I TCL VoxIN Inverter AC`; it is in the downloaded page too). The owner needs a model code
+  on every product, so `tcl.js model()` takes it; expected files of tcl-voxin / tcl-free-standing-fhi /
+  tcl-freshin-3-0 now carry it (it is the code TCL shows for the page, the smallest size of the series).
+- AC names: "THE ELITE SERIES" / "Free Standing" alone say nothing on the shop → "Climatiseur TCL …" (expected names updated).
+- LG: pictures now come from the slideshow box `.c-gallery__display` (no loop copies). The page code also lists
+  S-01 / New_MZ1 / 350-1 / 1044-1 / B01 / large-m01 copies of every slide (19–46 pictures before). On the 15
+  saved LG pages the picture counts now equal the expected files.

@@ -1,155 +1,155 @@
 {
- "id": "tcl-voxin",
- "site": "tcl",
- "type": "ac",
- "url": "https://www.tcl.com/ma/fr/air-conditioners/voxin",
- "finalUrl": "https://www.tcl.com/ma/fr/air-conditioners/voxin",
- "name": "TCL VoxIN Inverter AC",
- "brand": "TCL",
- "model": "",
- "pictures": [
-  "https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/voxin-2-0/id/1.jpg",
-  "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/voxin-2-0/id/2.jpg",
-  "https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/voxin-2-0/id/3.jpg",
-  "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/voxin-2-0/id/4.jpg",
-  "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/voxin-2-0/id/5.jpg",
-  "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/voxin-2-0/id/6.jpg"
- ],
- "specs": [
-  {
-   "group": "Capacité",
-   "label": "Type",
-   "value": "Refroidissement et chauffage，Inverter"
-  },
-  {
-   "group": "Capacité",
-   "label": "Climat",
-   "value": "T1"
-  },
-  {
-   "group": "Capacité",
-   "label": "Type de contrôle",
-   "value": "à distance"
-  },
-  {
-   "group": "Capacité",
-   "label": "Alimentation électrique (Ph-V-Hz)",
-   "value": "1Ph-220-240V~50Hz"
-  },
-  {
-   "group": "Capacité",
-   "label": "Plage de tension (V)",
-   "value": "165~265"
-  },
-  {
-   "group": "Capacité",
-   "label": "Performance de refroidissement nominale - Capacité (W)",
-   "value": "2675(940~3800)"
-  },
-  {
-   "group": "Capacité",
-   "label": "Performance de refroidissement nominale - Puissance nominale Entrée (W)",
-   "value": "706(240~1380)"
-  },
-  {
-   "group": "Capacité",
-   "label": "Performance de refroidissement nominale - Courant nominal",
-   "value": "3.3(1.2~8.0)"
-  },
-  {
-   "group": "Capacité",
-   "label": "Performance de chauffage nominale - Capacité (W)",
-   "value": "3630(940~4200)"
-  },
-  {
-   "group": "Capacité",
-   "label": "Performance de chauffage nominale - Puissance nominale Entrée (W)",
-   "value": "960(240~1550)"
-  },
-  {
-   "group": "Capacité",
-   "label": "Performance de chauffage nominale - Courant nominal",
-   "value": "4.4(1.2~9.0)"
-  },
-  {
-   "group": "Capacité",
-   "label": "Elimination de l'humidité (Liters/h)",
-   "value": "1.5"
-  },
-  {
-   "group": "Capacité",
-   "label": "Niveau de bruit intérieur (dB(A))",
-   "value": "42/36/32/27/22"
-  },
-  {
-   "group": "Capacité",
-   "label": "Niveau de bruit extérieur (dB(A))",
-   "value": "51"
-  },
-  {
-   "group": "Capacité",
-   "label": "Type de compresseur",
-   "value": "Rotary"
-  },
-  {
-   "group": "Capacité",
-   "label": "Débit d'air intérieur (Hi) (m3/h)",
-   "value": "560/560"
-  },
-  {
-   "group": "Capacité",
-   "label": "Unité intérieure - Dimensions (L*P*H) (mm)",
-   "value": "808×305×209"
-  },
-  {
-   "group": "Capacité",
-   "label": "Unité intérieure - Emballage (L*P*H) (mm)",
-   "value": "880×375×275"
-  },
-  {
-   "group": "Capacité",
-   "label": "Unité intérieure - Poids net/brut (kg)",
-   "value": "9.7/12"
-  },
-  {
-   "group": "Capacité",
-   "label": "Unité extérieure - Dimension(W*D*H) (mm)",
-   "value": "777×498×290"
-  },
-  {
-   "group": "Capacité",
-   "label": "Unité extérieure - Packing (W*D*H) (mm)",
-   "value": "838×338×540"
-  },
-  {
-   "group": "Capacité",
-   "label": "Unité extérieure - Net/Gross weight (kg)",
-   "value": "22/25"
-  },
-  {
-   "group": "Capacité",
-   "label": "Tuyauterie de fluide frigorigène - Longueur maximale de la conduite de réfrigérant(m)",
-   "value": "15"
-  },
-  {
-   "group": "Capacité",
-   "label": "Tuyauterie de fluide frigorigène - Différence de niveau maximale (m)",
-   "value": "10"
-  },
-  {
-   "group": "Capacité",
-   "label": "Réfrigérant",
-   "value": "R32/0.57kg"
-  },
-  {
-   "group": "Capacité",
-   "label": "Température ambiante(℃)",
-   "value": "-15~56"
-  }
- ],
- "verified": true,
- "auditedAt": "2026-11-09T17:48:18",
- "auditNotes": [],
- "verifiedAt": "2026-11-09T17:48:23",
- "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+  "id": "tcl-voxin",
+  "site": "tcl",
+  "type": "ac",
+  "url": "https://www.tcl.com/ma/fr/air-conditioners/voxin",
+  "finalUrl": "https://www.tcl.com/ma/fr/air-conditioners/voxin",
+  "name": "Climatiseur TCL VoxIN Inverter AC",
+  "brand": "TCL",
+  "model": "TAC-09CHSD/UG11I",
+  "pictures": [
+    "https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/voxin-2-0/id/1.jpg",
+    "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/voxin-2-0/id/2.jpg",
+    "https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/voxin-2-0/id/3.jpg",
+    "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/voxin-2-0/id/4.jpg",
+    "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/voxin-2-0/id/5.jpg",
+    "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/voxin-2-0/id/6.jpg"
+  ],
+  "specs": [
+    {
+      "group": "Capacité",
+      "label": "Type",
+      "value": "Refroidissement et chauffage，Inverter"
+    },
+    {
+      "group": "Capacité",
+      "label": "Climat",
+      "value": "T1"
+    },
+    {
+      "group": "Capacité",
+      "label": "Type de contrôle",
+      "value": "à distance"
+    },
+    {
+      "group": "Capacité",
+      "label": "Alimentation électrique (Ph-V-Hz)",
+      "value": "1Ph-220-240V~50Hz"
+    },
+    {
+      "group": "Capacité",
+      "label": "Plage de tension (V)",
+      "value": "165~265"
+    },
+    {
+      "group": "Capacité",
+      "label": "Performance de refroidissement nominale - Capacité (W)",
+      "value": "2675(940~3800)"
+    },
+    {
+      "group": "Capacité",
+      "label": "Performance de refroidissement nominale - Puissance nominale Entrée (W)",
+      "value": "706(240~1380)"
+    },
+    {
+      "group": "Capacité",
+      "label": "Performance de refroidissement nominale - Courant nominal",
+      "value": "3.3(1.2~8.0)"
+    },
+    {
+      "group": "Capacité",
+      "label": "Performance de chauffage nominale - Capacité (W)",
+      "value": "3630(940~4200)"
+    },
+    {
+      "group": "Capacité",
+      "label": "Performance de chauffage nominale - Puissance nominale Entrée (W)",
+      "value": "960(240~1550)"
+    },
+    {
+      "group": "Capacité",
+      "label": "Performance de chauffage nominale - Courant nominal",
+      "value": "4.4(1.2~9.0)"
+    },
+    {
+      "group": "Capacité",
+      "label": "Elimination de l'humidité (Liters/h)",
+      "value": "1.5"
+    },
+    {
+      "group": "Capacité",
+      "label": "Niveau de bruit intérieur (dB(A))",
+      "value": "42/36/32/27/22"
+    },
+    {
+      "group": "Capacité",
+      "label": "Niveau de bruit extérieur (dB(A))",
+      "value": "51"
+    },
+    {
+      "group": "Capacité",
+      "label": "Type de compresseur",
+      "value": "Rotary"
+    },
+    {
+      "group": "Capacité",
+      "label": "Débit d'air intérieur (Hi) (m3/h)",
+      "value": "560/560"
+    },
+    {
+      "group": "Capacité",
+      "label": "Unité intérieure - Dimensions (L*P*H) (mm)",
+      "value": "808×305×209"
+    },
+    {
+      "group": "Capacité",
+      "label": "Unité intérieure - Emballage (L*P*H) (mm)",
+      "value": "880×375×275"
+    },
+    {
+      "group": "Capacité",
+      "label": "Unité intérieure - Poids net/brut (kg)",
+      "value": "9.7/12"
+    },
+    {
+      "group": "Capacité",
+      "label": "Unité extérieure - Dimension(W*D*H) (mm)",
+      "value": "777×498×290"
+    },
+    {
+      "group": "Capacité",
+      "label": "Unité extérieure - Packing (W*D*H) (mm)",
+      "value": "838×338×540"
+    },
+    {
+      "group": "Capacité",
+      "label": "Unité extérieure - Net/Gross weight (kg)",
+      "value": "22/25"
+    },
+    {
+      "group": "Capacité",
+      "label": "Tuyauterie de fluide frigorigène - Longueur maximale de la conduite de réfrigérant(m)",
+      "value": "15"
+    },
+    {
+      "group": "Capacité",
+      "label": "Tuyauterie de fluide frigorigène - Différence de niveau maximale (m)",
+      "value": "10"
+    },
+    {
+      "group": "Capacité",
+      "label": "Réfrigérant",
+      "value": "R32/0.57kg"
+    },
+    {
+      "group": "Capacité",
+      "label": "Température ambiante(℃)",
+      "value": "-15~56"
+    }
+  ],
+  "verified": true,
+  "auditedAt": "2026-11-09T17:48:18",
+  "auditNotes": [],
+  "verifiedAt": "2026-11-09T17:48:23",
+  "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
 }

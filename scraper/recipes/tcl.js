@@ -24,6 +24,10 @@ GHANDI.register({
   // MODEL CODE: the address ends with it (/ma/fr/tvs/85c8l -> 85C8L). Series pages (air conditioners:
   // /air-conditioners/freshin-3-0) have no single model: then nothing is invented.
   model: function (ctx) {
+    // air conditioner pages (series): the product's own header names its model ("TAC-09CHSA/XA73I THE ELITE SERIES")
+    var own = ctx.qa('.relation .head .machine-model, .relation .machine-model')[0];
+    var ownCode = own ? ctx.clean(own.textContent) : '';
+    if (/^TAC-[A-Z0-9][A-Z0-9\/-]{4,}$/i.test(ownCode)) return ownCode;
     var last = (String(ctx.url).split('?')[0].split('/').filter(Boolean).pop() || '').toLowerCase();
     var slug = /^[a-z0-9]{4,16}$/.test(last) && /[a-z]/.test(last) && /\d/.test(last) ? last.toUpperCase() : '';
     var ld = ctx.jsonld && ctx.jsonld.model;
@@ -37,6 +41,15 @@ GHANDI.register({
   defaultGroupTitle: 'Spécifications',
 
   nameSelectors: ['main h1', 'h1', '[class*="product-name" i]', '[class*="productName" i]'],
+  // air conditioners: "THE ELITE SERIES" / "Free Standing" alone say nothing -> "Climatiseur TCL THE ELITE SERIES"
+  custom: function (ctx) {
+    var r = ctx.result;
+    if (!/\/air-conditioners\//i.test(String(r.url || location.pathname)) || !r.name) return;
+    var name = r.name.replace(/\s*\|\s*[A-Z0-9]+$/, '').trim();
+    if (!/climati/i.test(name)) name = 'Climatiseur ' + (/\bTCL\b/i.test(name) ? name : 'TCL ' + name);
+    else if (!/\bTCL\b/i.test(name)) name = name.replace(/(climatiseurs?)/i, '$1 TCL');
+    r.name = name;
+  },
 
   imagePriority: ['gallery', 'nearName', 'jsonld', 'meta'],
   imageSelectors: [
