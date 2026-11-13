@@ -33,7 +33,7 @@ Read this whole file before doing anything. It is the memory of months of work.
 | `scraper/links.js` | "Find products" on category pages: product link rules per recipe, hidden links skipped (closed menus, filtered-out cards), "N Résultats" box trimming, load-more clicking, next page, expected count. |
 | `scraper/recipes/*.js` | One recipe per site: `whirlpool` (whirlpool.ma, Beko AEM platform), `lg` (lg.com/ma), `candy` (candy-home.com/fr_MA), `tcl` (tcl.com/ma/fr), `samsung` (samsung.com/n_africa), `haier` (haier-europe.com/fr_MA), `bosch` (bosch-home.ma), `electrobousfiha` (a **shop**: PrestaShop, brand read per product), `electroplanet` (a **shop**: Magento 2, brand from the "Marque" row, model code from "Code produit"/the short name, readable name = category + brand + short name, pictures from the `x-magento-init` gallery JSON, originals = address without `/cache/<32hex>/`). Shared brand list: `scraper/brands.js` (FIRST in recipe-list.js). Options are documented in `_template.js` and in each file. Recipe list: `recipe-list.js`. |
 | `sheets/engine.js` + `sheets/templates.js` | Turns brand spec rows into **Electroplanet-style sheets** per type: fridge, ac, washer, tv, hob, oven, microwave, sink, fan, dishwasher. Type auto-detected or chosen by the owner. Output `specGroups` (clean) + `brandSpecGroups` (original). |
-| `app/app.html/.css/.js` | The side panel UI (1.6k lines JS). Tabs "Product links" / "Find products", product list (select all, search, statuses), product editor (pictures, specs, type, sheet/brand toggle), type dialog, problem report dialog, **send to site** dialog (section box auto-focused, Enter sends and closes, sent products leave the list, section guessed from type: `TYPE_SECTION`, `fridgeSections`), site connection, update banner. |
+| `app/app.html/.css/.js` | The side panel (4.0 design, 1.8k lines JS). **Smart start** card reads the open tab (product page → "Grab this product", list → "Find all N products" with a count read by `collectLinks({static:true})`, unknown site → general method), live **progress** (bar, photos, time left), **review** list of big cards (virtual list, fixed card height `--card-h`; filters To check / Ready / Sent / Failed / All; group by brand/type; search; problems in plain words with a fix on the card: type the model, choose type/section, grab again, "It is fine"), selection bar (Grab again, Set type, Set section, Remove, Send), remove = 10 s **Undo** bar (no confirm), big **Send N ready products** (no dialog; each card shows its section chip = `sectionFor(it)`: the card's own `category`, else type → `TYPE_SECTION`/`fridgeSections`; sent products now STAY in the list as "Sent"), **editor** (drag pictures, big preview, spec search, "18/38 Electroplanet lines filled" via `GHANDI_SHEETS.lines()`, autosave), **History** (`sendHistory` storage key), **Settings** drawer (site, speed, recipe, sheet style, theme, updates). Keys: ↑↓ Enter Space Delete Ctrl+A Esc. `tests/test_sections.js` reads the code between `const foldText` and `async function sendToSite()`: keep that marker. |
 | `updater/updater.js` | Self-update with File System Access (folder handle in IndexedDB), sha256 check, backup + undo. |
 | `tools/release.py` | Writes `version.json`. |
 | `tests/` | `run_all.py` runs everything (see below). |
@@ -57,8 +57,10 @@ Read this whole file before doing anything. It is the memory of months of work.
    no hammering. Cache pages you already saved instead of re-downloading.
 
 ## Tests (run before every commit that touches code)
-- `python tests/run_all.py` → list pages, model codes, section choice, and the full extension end-to-end on a
-  fake PrestaShop shop (30 products) and a fake Electroplanet/Magento shop (32 products, 20 product types). `python tests/run_all.py --window` also tests reading windows (headed).
+- `python tests/run_all.py` → list pages, model codes, section choice, the full extension end-to-end on a
+  fake PrestaShop shop (30 products) and a fake Electroplanet/Magento shop (32 products, 20 product types), and the
+  side panel (`test_ui.py`: fake products + fake site, every screen; `--shots` saves screenshots in training/tmp).
+  `python tests/run_all.py --window` also tests reading windows (headed).
 - Needs `pip install playwright` + `playwright install chromium`, and Node.
 - **Use Playwright's Chromium, not Google Chrome**: branded Chrome ignores `--load-extension` since v137.
 - Headless Chromium drops pages in the extension's popup windows (`net::ERR_ABORTED`) → test windows headed
@@ -83,6 +85,14 @@ Read this whole file before doing anything. It is the memory of months of work.
 - On a Linux container, `--window` tests sometimes die with Playwright "Target crashed" (also on old code): rerun.
 
 ## Training environment
+- Built in session 1 (Nov 2026): `training/` (find, snapshot, audit + audit_sites, check, score, evaluate, replay),
+  111 products from 7 sites in `corpus.jsonl`, verified `expected/`, `JOURNAL.md` (what each site looks like, the
+  owner's decisions about the truth), `leaderboard.md`. Replay baseline: `replay_baseline.json`.
+- The owner wants SHORT sessions: he cut /train from 4 h to 30 min. Give time estimates up front, ship fixes early.
+- Cloud sessions: Whirlpool blocks automated visits (Akamai) → not in the corpus, do not work around it; LG refuses
+  plain downloads (quick read gets nothing, windows work); lg.com is HSTS → replay cannot serve LG windows yet
+  (needs a local https server); Samsung list grids need a host the cloud blocks (products picked from its sitemap).
+- "Find products" is wrong on LG and Samsung lists (sub-category links, "Très bien noté" strip) → next training target.
 See `.claude/skills/train/SKILL.md` (`/train <hours>`) and `training/README.md`. The training loop measures the
 scanners on real pages against carefully audited "expected" results, fixes the weakest spots, proves nothing got
 worse (offline replay of saved pages + tests), commits, and repeats until the time is up.

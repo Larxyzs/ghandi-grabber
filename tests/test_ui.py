@@ -94,7 +94,7 @@ async def main():
     errors = []
     try:
         async with async_playwright() as p:
-            ctx = await p.chromium.launch_persistent_context(profile, headless=True, args=[f'--disable-extensions-except={EXT}', f'--load-extension={EXT}', '--no-proxy-server'], viewport={'width': 380, 'height': 820})
+            ctx = await p.chromium.launch_persistent_context(profile, headless=True, channel='chromium', args=[f'--disable-extensions-except={EXT}', f'--load-extension={EXT}', '--no-proxy-server'], viewport={'width': 380, 'height': 820})
             sw = ctx.service_workers[0] if ctx.service_workers else await ctx.wait_for_event('serviceworker')
             eid = sw.url.split('/')[2]
             pg = await ctx.new_page()
@@ -231,6 +231,7 @@ async def main():
             # 4) wide panel
             await pg.set_viewport_size({'width': 560, 'height': 820})
             await pg.select_option('#groupBy', 'brand')
+            await pg.evaluate("()=>document.getElementById('list').scrollTop=0")
             await pg.wait_for_timeout(400)
             check(await pg.locator('.group-head').count() >= 1, 'group by brand')
             await shot('560-grouped')
