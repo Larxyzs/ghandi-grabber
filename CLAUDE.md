@@ -85,6 +85,21 @@ Read this whole file before doing anything. It is the memory of months of work.
   (Taurus "TMAX"): leave it empty so the owner types it. The browser blocks fetching GitHub from electroplanet pages (CSP).
 - On a Linux container, `--window` tests sometimes die with Playwright "Target crashed" (also on old code): rerun.
 
+## Filling the shop through the owner's browser (Nov 2026)
+- Claude drives the owner's Edge (claude-in-chrome) on `ghandihomeelectro.com/admin`: `bridge/bridge.js` commands
+  (`crawl {url, ptype, category}` lets the extension find+grab a whole list; `add`, `retry`, `status`, `send`).
+  The extension's own crawl works on Whirlpool, Candy, Haier, Bosch, TCL, Samsung lists; LG lists need the page-2
+  click (`a.c-page__link`) — check counts against "N Résultats".
+- Before sending, skip products whose model code is already on the site (read `products.model` with the public key)
+  so the owner's hand-sorted copies are not moved.
+- Site folders are created/moved with the site's own admin server functions (called from the admin tab, cookie
+  session): POST `/_serverFn/<id>` with a seroval body; ids are stable per build (`adminCreateNode`,
+  `adminMoveProductToNode`, read them from `.output/server/*server-fn-resolver*.mjs` after `npm run build`).
+- `preciseSections()` in app.js puts products straight into the Electroplanet-style sub-folders.
+- Updates: from 3.7.26 the side panel installs new versions by itself when Chrome already allowed the folder
+  (`installSilently`); the bridge `update` command opens the side panel page to do it.
+- The cloud session cannot reach brand sites or the shop (egress allowlist): all grabbing needs the owner's PC on.
+
 ## Training environment
 - Built in session 1 (Nov 2026): `training/` (find, snapshot, audit + audit_sites, check, score, evaluate, replay),
   111 products from 7 sites in `corpus.jsonl`, verified `expected/`, `JOURNAL.md` (what each site looks like, the
