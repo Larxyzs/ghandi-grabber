@@ -7,6 +7,7 @@ runs = [
     ['node', os.path.join(HERE, 'test_sections.js')],
     [sys.executable, os.path.join(HERE, 'test_shop_e2e.py')],
     [sys.executable, os.path.join(HERE, 'test_electroplanet_e2e.py')],
+    [sys.executable, os.path.join(HERE, 'test_bridge.py')],
     [sys.executable, os.path.join(HERE, 'test_ui.py')],
 ]
 if '--window' in sys.argv:

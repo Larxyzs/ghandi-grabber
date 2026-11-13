@@ -210,7 +210,7 @@ var GHANDI_SHEETS = (function () {
     let m = name.match(/^([A-Z0-9][A-Z0-9 \-\/.]{3,28}?)\s*[:|–-]\s/);
     if (m && /\d/.test(m[1]) && /[A-Z]/.test(m[1])) return m[1].trim();
     // "Lave-Linge EcoBubble 8 kg - WW80TA046AX" (the model last)
-    m = name.match(/[-–|:]\s*([A-Z0-9][A-Z0-9\-\/.]{4,24})\s*$/);
+    m = name.match(/(?:^|\s)[-–|:]\s*([A-Z0-9][A-Z0-9\-\/.]{4,24})\s*$/); // a separator, not the dash inside "S4-Q12JA3AE"
     if (m && /\d/.test(m[1]) && /[A-Z]/.test(m[1])) return m[1].trim();
     try {
       const segs = new URL(url).pathname.split('/').filter(Boolean);
@@ -228,8 +228,10 @@ var GHANDI_SHEETS = (function () {
     } catch (e) {
       /* no address */
     }
-    m = name.match(/\b(?=[A-Z0-9-]*\d)(?=[A-Z0-9-]*[A-Z])[A-Z0-9][A-Z0-9-]{4,}\b/);
-    return m ? m[0] : '';
+    // a word with capitals + digits, but never a size or a number with its unit ("1200T", "12000BTU", "10KG", "55POUCES")
+    const UNIT = /^\d+([.,]\d+)?(KG|T|TR|TRS|TOURS|L|LTR|W|KW|BTU|BTUH|CM|MM|M|V|HZ|DB|M3H?|H|MIN|PO|POUCES|K|PCS|COUVERTS|FEUX|P|G|GHZ|HDMI|USB)$/;
+    for (const w of name.match(/\b(?=[A-Z0-9-]*\d)(?=[A-Z0-9-]*[A-Z])[A-Z0-9][A-Z0-9-]{4,}\b/g) || []) if (!UNIT.test(w)) return w;
+    return '';
   }
 
   // ---------------------------------------------------------------- product type

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Ghandi Product Grabber",
-  "version": "4.0.0",
+  "version": "3.7.21",
   "description": "Find every product on a category page, grab each one's name, price, pictures and specifications, and download one JSON file for your site.",
   "action": {
     "default_title": "Ghandi Product Grabber",
@@ -40,5 +40,17 @@
   "side_panel": {
     "default_path": "app/app.html"
   },
-  "minimum_chrome_version": "116"
+  "minimum_chrome_version": "116",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://ghandihomeelectro.com/*",
+        "https://www.ghandihomeelectro.com/*"
+      ],
+      "js": [
+        "bridge/bridge.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
 }

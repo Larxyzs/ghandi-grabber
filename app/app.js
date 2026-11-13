@@ -1750,6 +1750,7 @@
       else if (k === 'update') showUpdate(nv);
       else if (k === 'run') S.run = nv || {};
       else if (k === 'crawl') S.crawl = nv || {};
+      else if (k === 'autoSend' && nv) setTimeout(() => autoSend(nv), 300);
       else if (k === 'siteSections') S.sections = nv || [];
       else if (k === 'sendHistory') S.history = nv || [];
       else if (k === 'settings') {
@@ -1758,6 +1759,34 @@
       }
     });
     scheduleRender();
+  }
+
+  // ------------------------------------------------------------ "send" asked from the owner's site (bridge/bridge.js)
+  // The site's admin page asks; this page (side panel or tab) does the normal send, then writes the answer.
+  let autoBusy = false;
+  async function autoSend(req) {
+    if (!req || !req.token || autoBusy || Date.now() - (req.at || 0) > 5 * 60 * 1000) return;
+    const mine = Math.random().toString(36).slice(2);
+    const cur = (await chrome.storage.local.get('autoSendClaim')).autoSendClaim;
+    if (cur && cur.token === req.token) return; // another open copy of this page took it
+    await chrome.storage.local.set({ autoSendClaim: { token: req.token, by: mine } });
+    await new Promise((r) => setTimeout(r, 250));
+    const claim = (await chrome.storage.local.get('autoSendClaim')).autoSendClaim;
+    if (!claim || claim.by !== mine) return;
+    autoBusy = true;
+    const before = (S.history || [])[0];
+    try {
+      const all = await chrome.storage.local.get((req.ids || []).map((id) => 'it:' + id));
+      const items = (req.ids || []).map((id) => all['it:' + id]).filter(Boolean);
+      await sendToSite(items);
+      const entry = (S.history || [])[0];
+      await chrome.storage.local.set({ autoSendResult: { token: req.token, at: Date.now(), ok: !!(entry && entry !== before), entry: entry !== before ? entry : null, message: $('footMsg').textContent || $('toast').textContent || '' } });
+    } catch (e) {
+      await chrome.storage.local.set({ autoSendResult: { token: req.token, at: Date.now(), ok: false, message: e.message } });
+    } finally {
+      autoBusy = false;
+      chrome.storage.local.remove('autoSend');
+    }
   }
 
   async function init() {
@@ -1776,6 +1805,7 @@
       if ((S.run || {}).state === 'running') renderProg();
     }, 2000);
     window.GHANDI_APP = { S, render, info, sectionFor }; // for the UI test
+    if (all.autoSend) autoSend(all.autoSend);
   }
   init();
 })();
