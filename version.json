@@ -1,8 +1,8 @@
 {
- "version": "3.7.22",
- "commit": "1d4cf0e08ce06d68b729d013c29554608304a574",
+ "version": "3.7.23",
+ "commit": "a109b5936d239191989147f536d4e66e9d67300a",
  "notes": [
-  "Climatiseurs LG : seulement les vraies photos du produit (avant, chaque photo venait 2 ou 3 fois)."
+  "LG : seulement les vraies photos du produit, dans le bon ordre (avant, chaque photo venait 2 ou 3 fois)."
  ],
  "files": [
   {
@@ -73,7 +73,7 @@
   {
    "path": "manifest.json",
    "size": 1251,
-   "sha256": "545fa21c37febf81300bb916bbd5c861dd75d752e6852e5a86a2b8578ed74e35"
+   "sha256": "acbb62e0b6f68fce241674329facf7a0f3839e648f9b6296f9ed27956c0338b4"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -137,8 +137,8 @@
   },
   {
    "path": "scraper/recipes/lg.js",
-   "size": 10586,
-   "sha256": "ce3eeb58aab5de6552f1faf52a91e4603e3e705ef016733516bcb0ab2f92ce63"
+   "size": 12316,
+   "sha256": "ded1ecf55b8b40085b74a9e7cf620bb16257b79aee251ba4d0dd7b811532a00f"
   },
   {
    "path": "scraper/recipes/samsung.js",
