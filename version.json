@@ -1,9 +1,8 @@
 {
- "version": "4.0.0",
- "commit": "ebf1e6cb35e8709b838cd1dba18adb893b14e7d8",
+ "version": "3.7.21",
+ "commit": "4faa02b6f584f5159428b81f3e3d280e237bc30a",
  "notes": [
-  "New, simpler side tab: it sees the page you are on and shows one big button (grab this product / find all products), then big cards with problems written plainly and a fix right there.",
-  "One button sends all ready products to your site; removing has a 10-second Undo; History shows what you sent; settings are behind the gear button."
+  "Petite mise à jour : votre site peut maintenant demander à l'extension de chercher et d'envoyer des produits (utile quand Claude le fait pour vous). Les tailles comme « 12000BTU » ne sont plus prises pour une référence."
  ],
  "files": [
   {
@@ -38,8 +37,8 @@
   },
   {
    "path": "app/app.js",
-   "size": 79769,
-   "sha256": "4115a76473cca25cf5a7c9a50e4e1f7dbf1d84700bb0ec7661275cf31d799fc3"
+   "size": 81560,
+   "sha256": "790738b78758c8addcf984c4db97ab6df7f1149e657606c1d71e2cd7c249be3e"
   },
   {
    "path": "app/shim.js",
@@ -50,6 +49,11 @@
    "path": "background.js",
    "size": 47876,
    "sha256": "0567f575ca632776752a178b79fd3aea0782666ec99b5c8fd6b04cae672032e7"
+  },
+  {
+   "path": "bridge/bridge.js",
+   "size": 4070,
+   "sha256": "8ec186f12cd1af95b09363c6805f5d4c18981e8b2539dc2128e9ece22a55f4ab"
   },
   {
    "path": "icons/icon128.png",
@@ -68,8 +72,8 @@
   },
   {
    "path": "manifest.json",
-   "size": 1010,
-   "sha256": "9c66906f53ad62df302387d08a82eb14fc35f2b778e40babfd1a0de2961c855f"
+   "size": 1251,
+   "sha256": "0f634359281bc90e4a367d6e03208c4f1e85fb75a3882854f1dc6dd0cac7b1df"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -153,8 +157,8 @@
   },
   {
    "path": "sheets/engine.js",
-   "size": 15086,
-   "sha256": "8d582e58c271b78a1a74071a4b1fb35d83d237c0ddd29413e74358d654d70573"
+   "size": 15453,
+   "sha256": "be266cbe4029415e05662bb6d567a9dd0dc92d643535bf2e0db88c4d6e486628"
   },
   {
    "path": "sheets/templates.js",
