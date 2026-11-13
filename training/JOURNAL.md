@@ -49,3 +49,13 @@ What each session tried, learned and decided. Newest at the bottom.
    strip and support links instead of the grid (seen live; LG grid needs coveo.com which loads late).
 6. **Whirlpool**: quick read downloads the page without a browser → the site answers 403, and right after that
    the site blocks the reading window too ("Access Denied"). On the owner's PC this may also happen.
+
+## 2026-11-13 — /train (owner cut it to 30 min)
+- Start (replay, 102 products): **73.6**. LG scores ~10 in replay only: lg.com is HSTS-preloaded, so the reading
+  window upgrades the local http copy to https, which the replay server does not serve → "no product". To fix in
+  replay.py (local https server + `--ignore-certificate-errors`). Live runs are not affected.
+- Iteration 1 (weakest spot = model code, 15 pts × 44 products): Candy/Haier `custom` now copies the
+  "Référence commerciale" line into the model; TCL `model()` takes the address (`/tvs/85c8l` → 85C8L) or the page
+  data when it names the exact model of a series page (`/tvs/c755` → 55C755, test kept); Candy/Haier `imageKey` = file
+  name without size prefix / date folder / letter; Electrobousfiha title selector first; Bosch drops "Pas applicable".
+  Replay 73.6 → **80.3**, no product lost points; `tests/run_all.py` green.

@@ -50,7 +50,7 @@ def sheet(site, items, out):
         kw = {'proxy': {'server': C.proxy_server()}} if C.proxy_server() else {}
         b = p.chromium.launch(**kw)
         pg = b.new_page(viewport={'width': 1700, 'height': 900})
-        pg.goto('file://' + hp)
+        pg.goto('file://' + hp, wait_until='domcontentloaded')
         try:
             pg.wait_for_load_state('networkidle', timeout=40000)
         except Exception:

@@ -58,6 +58,8 @@ GHANDI.register({
   // Bosch galleries also use pictures named after sister models or with no model at all:
   // do NOT keep only pictures that carry the model code.
   modelFilter: false,
+  // "Pas applicable" lines tell nothing to a customer: they are dropped like "N/A"
+  dropValues: /^(n\/?a|n\.a\.|-+|—|–|pas applicable|non applicable)$/i,
   defaultGroupTitle: 'Caractéristiques',
 
   // The title is glued to the model and to the stars: "Bouilloire Acier inoxydableTWK72031.5 (2)".

@@ -48,10 +48,12 @@ GHANDI.register({
     return /\/h-image\/haier-product\/|\/files\//i.test(url);
   },
   // "640-1_3102...jpg" and "1_3102...jpg" are the same picture in two sizes
+  // the same picture also sits in another date folder (.../17121341/ vs .../17121344/) and with another
+  // letter at the end (-M / -S): the file name without size prefix and letter is the picture
   imageKey: function (u) {
     try {
-      var x = new URL(u);
-      return x.host + x.pathname.replace(/\/\d{2,4}-([^/]+)$/, '/$1');
+      var f = decodeURIComponent(new URL(u).pathname.split('/').pop());
+      return f.replace(/^\d{2,4}-/, '').replace(/-[A-Z]\.(jpe?g|png|webp)$/i, '').toLowerCase();
     } catch (e) {
       return u;
     }
@@ -85,6 +87,8 @@ GHANDI.register({
     var ref = (r.specs || []).filter(function (x) {
       return /^(r[ée]f[ée]rence commerciale|mod[èe]le)$/i.test(x.label);
     })[0];
+    // the MODEL CODE: the page writes it in the line "Référence commerciale"
+    if (ref && ref.value && !r.model) r.model = ref.value.trim();
     if (ref && ref.value && r.name) {
       var m = ref.value.trim();
       var i = r.name.toUpperCase().indexOf(m.toUpperCase());

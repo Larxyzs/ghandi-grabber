@@ -74,7 +74,8 @@
     // even for a product the shop sells with no specifications at all
     quickRead: { minSpecs: 0, minPictures: 1, okWarnings: /specification/i },
 
-    nameSelectors: ['h1[itemprop="name"]', '.product-information h1', 'h1.productpage_title', '#main h1', 'h1'],
+    // the title first: the short description also uses <h1> for lines like "MARQUE : BEKO"
+    nameSelectors: ['h1.productpage_title', 'h1[itemprop="name"]', '#main h1.h1', '.product-information h1', '#main h1', 'h1'],
 
     priceFrom: ['dom', 'jsonld'],
     priceSelectors: ['.current-price [itemprop="price"]', '.current-price .price', '.current-price', '.product-price'],

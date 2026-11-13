@@ -21,6 +21,19 @@ GHANDI.register({
   home: 'https://www.tcl.com/ma/fr', // the brand's Morocco website (button in the side tab)
 
   noPrice: true,
+  // MODEL CODE: the address ends with it (/ma/fr/tvs/85c8l -> 85C8L). Series pages (air conditioners:
+  // /air-conditioners/freshin-3-0) have no single model: then nothing is invented.
+  model: function (ctx) {
+    var last = (String(ctx.url).split('?')[0].split('/').filter(Boolean).pop() || '').toLowerCase();
+    var slug = /^[a-z0-9]{4,16}$/.test(last) && /[a-z]/.test(last) && /\d/.test(last) ? last.toUpperCase() : '';
+    var ld = ctx.jsonld && ctx.jsonld.model;
+    if (ld && ctx.looksLikeModel(ld)) {
+      // a series page (/tvs/c755) whose data names the exact model (55C755): take it
+      if (slug && String(ld).toUpperCase().replace(/[^A-Z0-9]/g, '').indexOf(slug) !== -1) return ld;
+      return ''; // a code of another product: trust nothing here
+    }
+    return slug;
+  },
   defaultGroupTitle: 'Spécifications',
 
   nameSelectors: ['main h1', 'h1', '[class*="product-name" i]', '[class*="productName" i]'],
