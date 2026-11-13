@@ -72,6 +72,8 @@ GHANDI.register({
     url = String(url).replace(/\/jcr:content\/renditions\/[^?#]*/i, '');
     if (/[_-]m\d{1,2}_\d{6}\.(jpe?g|png|webp)/i.test(url)) return false; // mobile copy of a slide (_m1_020817.jpg = _z1_020817.jpg)
     if (/[_-]d\d{1,2}_\d{6}\.(jpe?g|png|webp)/i.test(url)) return false; // share picture copy (_d1_)
+    // AC pages (New_Z1 + New_DZ2..13 = the slideshow): New_MZ1..13 are the mobile copies, New_D1 the share picture
+    if (/\/(new_)?(MZ|D)\d{1,2}\.(jpe?g|png|webp)(\?|$)|mobile-?zoom/i.test(url)) return false;
     // energy labels and drawings (a slide ABOUT saving energy, "...-gallery-enhanced-energy-efficiency-10...", is kept)
     if (/eprel|energy[-_ ]?(label|class|grade|sheet|fiche)|\/energy\/|[-_]energy\.(jpe?g|png)|[-_/]label|\/spec\/|MDI_|icon|badge|logo/i.test(url)) return false;
     if (/\/gallery\/(?:\d+\/)?S-?\d|\/gallery\/S-180|New_S\d|[_-]180x180|mobile\d*[-_.]|_thumb|thumbnail|thum-/i.test(url)) return false;

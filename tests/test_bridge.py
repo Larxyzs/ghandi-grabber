@@ -96,6 +96,23 @@ async def main():
             done = [i for i in items if i['status'] in ('done', 'check')]
             print(f'crawl+grab: {len(done)}/{len(items)} grabbed'); [print('   ', i['status'], i['brand'], repr(i['model']), i['type'], i['name'][:40]) for i in items]
             ok &= len(items) > 0 and len(done) == len(items) and all(i['brand'] and i['type'] == 'washer' for i in done) and not any(i['model'] == '1200T' for i in done)
+            r = await call('add', {'urls': ['https://evil.example.com/x']})
+            ok &= not r['ok']
+            r = await call('add', {'urls': [done[0]['url']]})
+            print('add again:', r.get('data'))
+            ok &= r['ok'] and r['data']['skipped'] == 1
+            r = await call('retry', {'ids': [done[0]['id']]})
+            ok &= r['ok']
+            r = await call('remove', {'ids': [done[-1]['id']]})
+            ok &= r['ok']
+            for _ in range(60):
+                await asyncio.sleep(1)
+                st = (await call('status'))['data']
+                if all(i['status'] in ('done', 'check', 'failed') for i in st['items']):
+                    break
+            print('after retry/remove:', len(st['items']), 'items')
+            ok &= len(st['items']) == len(done) - 1 and all(i['images'] for i in st['items'])
+            done = [i for i in st['items'] if i['status'] in ('done', 'check')]
             r = await call('send', {'ids': [i['id'] for i in done]})
             ok &= r['ok']
             res = None

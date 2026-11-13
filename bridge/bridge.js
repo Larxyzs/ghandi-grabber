@@ -3,7 +3,7 @@
   Runs only on ghandihomeelectro.com. The page sends window.postMessage({ghandi:'bridge', id, cmd, args});
   the answer comes back as {ghandi:'bridge-reply', id, ok, data|error}.
   Commands: hello, crawl {url, ptype, category} (only lists of the known shops/brands),
-            status {since}, send {ids}, sendResult, open.
+            add {urls, ptype, category}, retry {ids}, remove {ids}, status {since}, send {ids}, sendResult.
   The site's secret key never leaves the extension: sending is done by the extension's own page.
 */
 (function () {
@@ -33,6 +33,7 @@
       model: r.model || (it.sheet && it.sheet.model) || '',
       type: (it.sheet && it.sheet.type) || it.ptype || it.ptypeAuto || '',
       pictures: (main ? 1 : 0) + (r.otherImages || []).filter(function (u) { return u && u !== main; }).length,
+      images: (main ? [main] : []).concat((r.otherImages || []).filter(function (u) { return u && u !== main; })),
       specs: (r.specs || []).length,
       sheetRows: it.sheet && it.sheet.groups ? it.sheet.groups.reduce(function (n, g) { return n + (g.rows || []).length; }, 0) : 0,
       warnings: (r.warnings || []).slice(0, 3),
@@ -53,6 +54,20 @@
       }
       if (u.protocol !== 'https:' || !HOSTS.test(u.hostname)) throw new Error('not a known shop or brand site');
       return msg({ type: 'crawl', url: u.href, autoStart: true, ptype: a.ptype || undefined, category: a.category || undefined });
+    },
+    add: function (a) {
+      var urls = (a.urls || []).slice(0, 300).map(function (x) {
+        var u = new URL(String(x));
+        if (u.protocol !== 'https:' || !HOSTS.test(u.hostname)) throw new Error('not a known shop or brand site: ' + u.hostname);
+        return u.href;
+      });
+      return msg({ type: 'add-links', urls: urls, queue: true, ptype: a.ptype || undefined, category: a.category || undefined });
+    },
+    retry: function (a) {
+      return msg({ type: 'retry', ids: (a.ids || []).slice(0, 500) });
+    },
+    remove: function (a) {
+      return msg({ type: 'remove', ids: (a.ids || []).slice(0, 500) });
     },
     status: async function (a) {
       var o = await get(['ids', 'run', 'crawl']);
