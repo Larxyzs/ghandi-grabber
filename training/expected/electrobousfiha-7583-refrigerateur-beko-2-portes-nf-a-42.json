@@ -1,0 +1,72 @@
+{
+ "id": "electrobousfiha-7583-refrigerateur-beko-2-portes-nf-a-42",
+ "site": "electrobousfiha",
+ "type": "fridge",
+ "url": "https://electrobousfiha.com/2-portes/7583-refrigerateur-beko-2-portes-nf-a-420l-silver.html",
+ "finalUrl": "https://electrobousfiha.com/2-portes/7583-refrigerateur-beko-2-portes-nf-a-420l-silver.html",
+ "name": "REFRIGERATEUR BEKO 2 PORTES NF A+ 420L SILVER",
+ "brand": "Beko",
+ "model": "RDNG491M20SXB",
+ "pictures": [
+  "https://electrobousfiha.com/37034-large_default/refrigerateur-beko-2-portes-nf-a-420l-silver.jpg",
+  "https://electrobousfiha.com/37035-large_default/refrigerateur-beko-2-portes-nf-a-420l-silver.jpg",
+  "https://electrobousfiha.com/37036-large_default/refrigerateur-beko-2-portes-nf-a-420l-silver.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Finition",
+   "value": "Silver"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Classe Énergétique",
+   "value": "A+"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Type de Réfrigérateur",
+   "value": "2 Portes"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Volume Net (L)",
+   "value": "420L"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Niveau Sonore (dB)",
+   "value": "38 dB"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Hauteur",
+   "value": "1.72m"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Largeur",
+   "value": "70cm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Profondeur",
+   "value": "66.5cm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Poids (KG)",
+   "value": "60Kg"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Garantie",
+   "value": "1 an"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:20",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

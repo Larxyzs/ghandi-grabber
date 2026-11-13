@@ -1,0 +1,257 @@
+{
+ "id": "tcl-85c8l",
+ "site": "tcl",
+ "type": "tv",
+ "url": "https://www.tcl.com/ma/fr/tvs/85c8l",
+ "finalUrl": "https://www.tcl.com/ma/fr/tvs/85c8l",
+ "name": "TCL C8L SQD-Mini LED TV",
+ "brand": "TCL",
+ "model": "85C8L",
+ "pictures": [
+  "https://aws-obg-image-lb-3.tcl.com/content/dam/brandsite/product/tv/c/c8l/id/65-85/1.png",
+  "https://aws-obg-image-lb-3.tcl.com/content/dam/brandsite/product/tv/c/c8l/id/65-85/2.jpg",
+  "https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/product/tv/c/c8l/id/65-85/3.jpg",
+  "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/product/tv/c/c8l/id/65-85/4.jpg",
+  "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/c8l/id/65-85/5.jpg",
+  "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/c/c8l/id/65-85/6.jpg",
+  "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/product/tv/c/c8l/id/65-85/7.jpg",
+  "https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/product/tv/c/c8l/id/65-85/8.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Propriétés de base",
+   "label": "Catégorie",
+   "value": "TV"
+  },
+  {
+   "group": "Propriétés de base",
+   "label": "Famille",
+   "value": "C"
+  },
+  {
+   "group": "Propriétés de base",
+   "label": "Série",
+   "value": "C8L"
+  },
+  {
+   "group": "Propriétés de base",
+   "label": "Modèle de client",
+   "value": "85C8L"
+  },
+  {
+   "group": "Propriétés de base",
+   "label": "Pays/Région Leader",
+   "value": "EU"
+  },
+  {
+   "group": "Propriétés de base",
+   "label": "Année",
+   "value": "2026"
+  },
+  {
+   "group": "Type de produit",
+   "label": "Plat/Courbé",
+   "value": "Plat"
+  },
+  {
+   "group": "Type de produit",
+   "label": "Type d'écran",
+   "value": "LCD"
+  },
+  {
+   "group": "Type de produit",
+   "label": "Type de technologie",
+   "value": "4K UHD"
+  },
+  {
+   "group": "Type de produit",
+   "label": "Type de panneau",
+   "value": "Panneau CSOT WHVA 2.0"
+  },
+  {
+   "group": "Informations générales",
+   "label": "Système d'exploitation",
+   "value": "Google TV"
+  },
+  {
+   "group": "Informations générales",
+   "label": "Contrôle vocal mains libres",
+   "value": "Oui"
+  },
+  {
+   "group": "Informations générales",
+   "label": "Google Assistant intégré",
+   "value": "Oui"
+  },
+  {
+   "group": "Informations générales",
+   "label": "IMAX Amélioré",
+   "value": "Oui"
+  },
+  {
+   "group": "Audio",
+   "label": "Dolby Atmos",
+   "value": "Oui"
+  },
+  {
+   "group": "Audio",
+   "label": "Son DTS Premium",
+   "value": "Oui"
+  },
+  {
+   "group": "Audio",
+   "label": "Canal sonore",
+   "value": "B&O Audio System"
+  },
+  {
+   "group": "Affichage",
+   "label": "Gamme de couleurs",
+   "value": "100% BT2020"
+  },
+  {
+   "group": "Affichage",
+   "label": "Résolution",
+   "value": "4K UHD"
+  },
+  {
+   "group": "Affichage",
+   "label": "Résolution du panel",
+   "value": "3840*2160"
+  },
+  {
+   "group": "Affichage",
+   "label": "Rapport d'aspect",
+   "value": "16：9"
+  },
+  {
+   "group": "Affichage",
+   "label": "Taux de rafraîchissement",
+   "value": "144Hz（VRR 48-288Hz/DLG 288Hz ）"
+  },
+  {
+   "group": "Affichage",
+   "label": "Dolby Vision",
+   "value": "Dolby Vision IQ"
+  },
+  {
+   "group": "Affichage",
+   "label": "HLG",
+   "value": "Oui"
+  },
+  {
+   "group": "Affichage",
+   "label": "HDR 10+",
+   "value": "Oui"
+  },
+  {
+   "group": "Affichage",
+   "label": "Luminosité du système (cd/m²)",
+   "value": "6000nits(sommet)"
+  },
+  {
+   "group": "Service Intelligent",
+   "label": "Maître de jeu",
+   "value": "Oui"
+  },
+  {
+   "group": "Service Intelligent",
+   "label": "Chat vidéo",
+   "value": "Non"
+  },
+  {
+   "group": "Service Intelligent",
+   "label": "Miracast (Affichage sans fil)",
+   "value": "Oui"
+  },
+  {
+   "group": "Service Intelligent",
+   "label": "Paramètres rapides",
+   "value": "Oui"
+  },
+  {
+   "group": "Connectivité",
+   "label": "BlueTooth",
+   "value": "BT5.4"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Wi-Fi",
+   "value": "WiFi 6"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Version HDMI",
+   "value": "HDMI2.1 *4"
+  },
+  {
+   "group": "Connectivité",
+   "label": "HDMI2. 1 (eARC&ARC)",
+   "value": "Oui"
+  },
+  {
+   "group": "Connectivité",
+   "label": "HDMI CEC",
+   "value": "Oui"
+  },
+  {
+   "group": "Connectivité",
+   "label": "AMD FreeSync",
+   "value": "Oui"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Program Guide(EPG)",
+   "value": "Oui (uniquement pour le programme DTV)"
+  },
+  {
+   "group": "Dimensions & poids",
+   "label": "Montage mural VESA (mm)",
+   "value": "600*500(mm)(WM34-85)"
+  },
+  {
+   "group": "Dimensions & poids",
+   "label": "Montage mural VESA (mm)",
+   "value": "990(mm)(WM54A-85)"
+  },
+  {
+   "group": "Dimensions & poids",
+   "label": "Taille de l'ensemble avec support (LxPxH) (mm)",
+   "value": "1888*379*1112(mm)"
+  },
+  {
+   "group": "Dimensions & poids",
+   "label": "Taille de l'ensemble sans support (LxPxH) (mm)",
+   "value": "1880*53*1073(mm)"
+  },
+  {
+   "group": "Dimensions & poids",
+   "label": "Support (de base) (LxP)",
+   "value": "410*379(mm)"
+  },
+  {
+   "group": "Dimensions & poids",
+   "label": "Dimensions de l'emballage (LxPxH)",
+   "value": "2060*190*1260(sans palette)"
+  },
+  {
+   "group": "Dimensions & poids",
+   "label": "Poids net avec support (Kg)",
+   "value": "41.6Kg"
+  },
+  {
+   "group": "Dimensions & poids",
+   "label": "Poids net sans support (Kg)",
+   "value": "38.9Kg"
+  },
+  {
+   "group": "Dimensions & poids",
+   "label": "Poids brut avec emballage (Kg)",
+   "value": "57.2Kg"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:18",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

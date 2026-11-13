@@ -1,0 +1,82 @@
+{
+ "id": "electrobousfiha-1800-plaque-candy-60cm-vitroceramique-no",
+ "site": "electrobousfiha",
+ "type": "hob",
+ "url": "https://electrobousfiha.com/plaque-vitroceramique-/1800-plaque-candy-60cm-vitroceramique-noir.html",
+ "finalUrl": "https://electrobousfiha.com/plaque-vitroceramique-/1800-plaque-candy-60cm-vitroceramique-noir.html",
+ "name": "PLAQUE CANDY 60CM VITROCERAMIQUE NOIR",
+ "brand": "Candy",
+ "model": "CH64CCB",
+ "pictures": [
+  "https://electrobousfiha.com/45033-large_default/plaque-candy-60cm-vitroceramique-noir.jpg",
+  "https://electrobousfiha.com/45034-large_default/plaque-candy-60cm-vitroceramique-noir.jpg",
+  "https://electrobousfiha.com/45035-large_default/plaque-candy-60cm-vitroceramique-noir.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Finition",
+   "value": "vitrocéramique, Noir"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Type de foyer",
+   "value": "Electrique"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Nombre de foyer(s)",
+   "value": "4"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Sécurité",
+   "value": "oui"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Puissance brûleur Arrière gauche",
+   "value": "2.3 kW"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Puissance brûleur Arrière droit",
+   "value": "1.8 kW"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Puissance Brûleur Avant gauche",
+   "value": "1.2 kW"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Puissance Brûleur Avant droit",
+   "value": "1.2 kW"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Dimensions (l x p x h)",
+   "value": "59 x 52 x 4.65 cm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Poids (KG)",
+   "value": "7,4"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Garantie",
+   "value": "2 ans"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Taille de plaque",
+   "value": "60 cm"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:21",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

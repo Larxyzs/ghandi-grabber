@@ -1,0 +1,155 @@
+{
+ "id": "bosch-bfl520ms0",
+ "site": "bosch",
+ "type": "microwave",
+ "url": "https://www.bosch-home.ma/fr/product/cuisson/micro-ondes/micro-ondes-encastrables/BFL520MS0",
+ "finalUrl": "https://www.bosch-home.ma/fr/product/sda-et-mda1/BFL520MS0",
+ "name": "Série 4 Micro-ondes encastrable 60 x 38 cm Acier inoxydable",
+ "brand": "Bosch",
+ "model": "BFL520MS0",
+ "pictures": [
+  "https://media3.bsh-group.com/Product_Shots/MCSA02018930_BFL520MS0_CompactOven_Bosch_STP_def.webp"
+ ],
+ "specs": [
+  {
+   "group": "Aperçu technique",
+   "label": "Nombre de niveaux de puissance",
+   "value": "5"
+  },
+  {
+   "group": "Aperçu technique",
+   "label": "Type d'installation",
+   "value": "Encastrable dans le meuble"
+  },
+  {
+   "group": "Général",
+   "label": "Couleur de l'appareil",
+   "value": "Acier inoxydable"
+  },
+  {
+   "group": "Général",
+   "label": "Couleur et matériau de la porte",
+   "value": "Acier inox, Noir"
+  },
+  {
+   "group": "Général",
+   "label": "Couleur de panneau de commande",
+   "value": "Acier inoxydable, Noir"
+  },
+  {
+   "group": "Général",
+   "label": "Concept d'affichage",
+   "value": "Bouton de commande"
+  },
+  {
+   "group": "Général",
+   "label": "Niveau de puissance Max. du micro-onde",
+   "value": "800 W"
+  },
+  {
+   "group": "Général",
+   "label": "Niveaux de puissance des micro-ondes (W)",
+   "value": "90, 180, 360, 600, 800 W"
+  },
+  {
+   "group": "Général",
+   "label": "Mode de cuisson",
+   "value": "Micro-ondes"
+  },
+  {
+   "group": "Général",
+   "label": "Plage de température possible (minimum/maximum)",
+   "value": "GENERAL.N_A °C"
+  },
+  {
+   "group": "Général",
+   "label": "Système de nettoyage intégré",
+   "value": "Hydrolyse"
+  },
+  {
+   "group": "Général",
+   "label": "Capacité de la cavité",
+   "value": "20 l"
+  },
+  {
+   "group": "Général",
+   "label": "Accessoires intégrés",
+   "value": "1 x Plateau tournant"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Dimensions du produit",
+   "value": "382x594x317 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Dimensions du produit emballé",
+   "value": "440x390x650 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Hauteur minimum de la niche d'encastrement",
+   "value": "362 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Hauteur maximum de la niche d'encastrement",
+   "value": "365 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Largeur minimum de la niche d'encastrement",
+   "value": "560 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Largeur maximum de la niche d'encastrement",
+   "value": "568 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Profondeur de la niche d'encastrement",
+   "value": "300 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Poids net",
+   "value": "16.4 kg"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Longueur du cordon électrique",
+   "value": "130 cm"
+  },
+  {
+   "group": "Confort",
+   "label": "Préchauffage rapide",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Réglage des pizzas",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Mémoire pour les réglages individuels (1 réglage)",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Démarrage rapide",
+   "value": "Non"
+  },
+  {
+   "group": "Connectivité",
+   "label": "HomeConnect",
+   "value": "Non"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:20",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

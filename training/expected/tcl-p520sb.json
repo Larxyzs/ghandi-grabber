@@ -1,0 +1,81 @@
+{
+ "id": "tcl-p520sb",
+ "site": "tcl",
+ "type": "fridge",
+ "url": "https://www.tcl.com/ma/fr/refrigerators/p520sb",
+ "finalUrl": "https://www.tcl.com/ma/fr/refrigerators/p520sb",
+ "name": "P520SB Réfrigérateur Double porte",
+ "brand": "TCL",
+ "model": "P520SB",
+ "pictures": [
+  "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/region/levant/product/refrigerator/p650sbs/650-3.png",
+  "https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/region/levant/product/refrigerator/p520sbs/520-3.png"
+ ],
+ "specs": [
+  {
+   "group": "Basic Information",
+   "label": "Dimensions(W*H*D mm)",
+   "value": "920*1768*630"
+  },
+  {
+   "group": "Basic Information",
+   "label": "Colour",
+   "value": "Stainless"
+  },
+  {
+   "group": "Basic Information",
+   "label": "Product Model",
+   "value": "P520SB"
+  },
+  {
+   "group": "Basic Information",
+   "label": "Country",
+   "value": "Morocco"
+  },
+  {
+   "group": "Basic Information",
+   "label": "Door Type",
+   "value": "Side By Side"
+  },
+  {
+   "group": "Specifications",
+   "label": "Old European Energy Class",
+   "value": "A+"
+  },
+  {
+   "group": "Specifications",
+   "label": "Fridge Capacity(L)",
+   "value": "324"
+  },
+  {
+   "group": "Specifications",
+   "label": "Net Capacity(L)",
+   "value": "505"
+  },
+  {
+   "group": "Specifications",
+   "label": "Freezer Capacity(L)",
+   "value": "181"
+  },
+  {
+   "group": "Specifications",
+   "label": "Climate Style",
+   "value": "SN/N/ST/T"
+  },
+  {
+   "group": "Specifications",
+   "label": "New European Energy Class",
+   "value": "F/E/D"
+  },
+  {
+   "group": "Specifications",
+   "label": "40' HQ:",
+   "value": "53"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:18",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

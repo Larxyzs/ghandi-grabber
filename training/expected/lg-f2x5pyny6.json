@@ -1,0 +1,598 @@
+{
+ "id": "lg-f2x5pyny6",
+ "site": "lg",
+ "type": "washer",
+ "url": "https://www.lg.com/ma/lave-linge-et-seche-linge/lave-linge-a-chargement-frontal/f2x5pyny6/",
+ "finalUrl": "https://www.lg.com/ma/lave-linge-et-seche-linge/lave-linge-a-chargement-frontal/f2x5pyny6/",
+ "name": "Machine à laver connectée à chargement frontal l 8kg l Noir Mat l AI DD™ l TurboWash™ 360 l Steam™ l Économies d’énergie",
+ "brand": "LG",
+ "model": "F2X5PYNY6",
+ "pictures": [
+  "https://www.lg.com/content/dam/channel/wcms/ma/images/washing_machine/f2x5pyny6/gallery/new-1/front-loading-washing-machine-gvx-2026-f2x5pyny6-f2x5pyny6-ma-essencemattblack-01-8kg-front.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/ma/images/washing_machine/f2x5pyny6/gallery/new-1/front-loading-washing-machine-gvx-2026-f2x5pyny6-f2x5pyny6-ma-essencemattblack-04-8kg-knobdisplaydetail.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/ma/images/washing_machine/f2x5pyny6/gallery/new-1/front-loading-washing-machine-gvx-2026-f2x5pyny6-f2x5pyny6-ma-essencemattblack-05-8kg-detergent.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/ma/images/washing_machine/f2x5pyny6/gallery/new-1/front-loading-washing-machine-gvx-2026-f2x5pyny6-f2x5pyny6-ma-essencemattblack-08-8kg-left.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/ma/images/washing_machine/f2x5pyny6/gallery/new-1/front-loading-washing-machine-gvx-2026-f2x5pyny6-f2x5pyny6-ma-essencemattblack-10-8kg-right.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/ma/images/washing_machine/f2x5pyny6/gallery/new-1/front-loading-washing-machine-gvx-2026-f2x5pyny6-f2x5pyny6-ma-essencemattblack-13-8kg-side.jpg"
+ ],
+ "specs": [
+  {
+   "group": "MATÉRIAU ET FINITION",
+   "label": "Couleur du corps",
+   "value": "Noir Mat"
+  },
+  {
+   "group": "MATÉRIAU ET FINITION",
+   "label": "Type de porte",
+   "value": "Couvercle en verre trempé teinté noir"
+  },
+  {
+   "group": "CAPACITÉ",
+   "label": "Capacité de lavage maximale (kg)",
+   "value": "8"
+  },
+  {
+   "group": "COMMANDE ET ÉCRAN",
+   "label": "Temporisateur",
+   "value": "3 à 19 heures"
+  },
+  {
+   "group": "COMMANDE ET ÉCRAN",
+   "label": "Type d’écran",
+   "value": "Molette + boutons tactiles et affichage LED"
+  },
+  {
+   "group": "COMMANDE ET ÉCRAN",
+   "label": "Indicateur de verrouillage de porte",
+   "value": "Oui"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "AI DD",
+   "value": "Oui"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Type",
+   "value": "Lave-linge à chargement frontal"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Signal de fin de cycle",
+   "value": "Oui"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Centum System",
+   "value": "Non"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Ajouter du linge",
+   "value": "Oui"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "ezDispense",
+   "value": "Non"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Redémarrage automatique",
+   "value": "Oui"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Moteur Inverter DirectDrive",
+   "value": "Oui"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Système de détection de mousse",
+   "value": "Oui"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Détection de la charge",
+   "value": "Oui"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Vapeur",
+   "value": "Oui"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Lampe de tambour",
+   "value": "Oui"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Vapeur+",
+   "value": "Non"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Pieds de nivellement",
+   "value": "Oui"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Tambour en acier inoxydable",
+   "value": "Oui"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "TurboWash360˚",
+   "value": "Oui"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Tambour interne d’embossage",
+   "value": "Oui"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Capteur de vibrations",
+   "value": "Non"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Aube de tambour",
+   "value": "Aube fine en acier inoxydable"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Alimentation en eau (Chaud/Froid)",
+   "value": "Froid uniquement"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Niveau d’eau",
+   "value": "Auto"
+  },
+  {
+   "group": "TECHNOLOGIE INTELLIGENTE",
+   "label": "Smart Diagnosis",
+   "value": "Oui"
+  },
+  {
+   "group": "TECHNOLOGIE INTELLIGENTE",
+   "label": "Téléchargement de cycle",
+   "value": "Oui"
+  },
+  {
+   "group": "TECHNOLOGIE INTELLIGENTE",
+   "label": "Surveillance énergétique",
+   "value": "Oui"
+  },
+  {
+   "group": "TECHNOLOGIE INTELLIGENTE",
+   "label": "Démarrage à distance et contrôle du cycle",
+   "value": "Oui"
+  },
+  {
+   "group": "TECHNOLOGIE INTELLIGENTE",
+   "label": "ThinQ (Wi-Fi)",
+   "value": "Oui"
+  },
+  {
+   "group": "TECHNOLOGIE INTELLIGENTE",
+   "label": "Coach Tub Clean",
+   "value": "Oui"
+  },
+  {
+   "group": "TECHNOLOGIE INTELLIGENTE",
+   "label": "Couplage intelligent",
+   "value": "Oui"
+  },
+  {
+   "group": "CODE À BARRE",
+   "label": "CODE À BARRE",
+   "value": "8806096648964"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Couette",
+   "value": "Oui"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Coton",
+   "value": "Oui"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Baby care vapeur",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Lavage avec IA",
+   "value": "Oui"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Soins Anti-Allergie",
+   "value": "Oui"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Lavage automatique",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Baby care",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Vêtements pour bébé",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Rafraîchissement de la literie",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Draps de lit",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Lavage froid",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Soin des couleurs",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Coton+",
+   "value": "Oui"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Noir éclat",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Délicat",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Double rinçage",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Programme téléchargé",
+   "value": "Oui"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Doudoune",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Chemises",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Séchage uniquement",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Synthétiques",
+   "value": "Oui"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Eco 40-60",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Soins Doux",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Hygiène",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Intensif 60",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Jeans",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Mix 40℃",
+   "value": "Oui"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Une chemise",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Extérieur",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Lavage pour animaux de compagnie",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Rapide 14 (Vitesse 14)",
+   "value": "Oui"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Rapide 30",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Lavage Rapide",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Lavage et séchage rapides",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Jours de pluie",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Rafraîchir",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Rinçage uniquement",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Rinçage+Essorage",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Uniformes scolaires",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Ultra silence",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Vêtements simples",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Soin de la peau",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Ourlets et cols des manches",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Petite charge",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Rinçage intelligent",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Rotation uniquement",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Vêtements de sport",
+   "value": "Oui"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Anti-tâches",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Défroissage vapeur",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Serviettes",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Nettoyage de la cuve",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "TurboWash 39",
+   "value": "Oui"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "TurboWash 49",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "TurboWash 59",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Lavage + Séchage",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Lavage uniquement",
+   "value": "Non"
+  },
+  {
+   "group": "PROGRAMME",
+   "label": "Laine (Main/Laine)",
+   "value": "Oui"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "Wi-Fi",
+   "value": "Oui"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "Ajouter du linge",
+   "value": "Non"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "Sonnerie (activé / désactivé)",
+   "value": "Oui"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "Sécurité enfant",
+   "value": "Oui"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "Fin de la temporisation",
+   "value": "Oui"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "Niveau de détergent",
+   "value": "Non"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "Prélavage",
+   "value": "Oui"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "Démarrage à distance",
+   "value": "Oui"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "Rinçage",
+   "value": "5 fois"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "Rinçage+",
+   "value": "Non"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "Niveau de l’adoucisseur",
+   "value": "Non"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "Essorage",
+   "value": "1200/1000/800/600/400/ Pas de rotation"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "Température",
+   "value": "Froid/20/30/40/60/95℃"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "TurboWash",
+   "value": "Oui"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "Lavage",
+   "value": "Oui"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "Anti-froissage",
+   "value": "Non"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "Lavage à froid",
+   "value": "Non"
+  },
+  {
+   "group": "OPTIONS SUPPLÉMENTAIRES",
+   "label": "Nettoyage de la buse ezDispense",
+   "value": "Non"
+  },
+  {
+   "group": "DIMENSIONS ET POIDS",
+   "label": "Dimensions du produit (LxHxP mm)",
+   "value": "600 x 850 x 475"
+  },
+  {
+   "group": "DIMENSIONS ET POIDS",
+   "label": "Poids (kg)",
+   "value": "59,0"
+  },
+  {
+   "group": "DIMENSIONS ET POIDS",
+   "label": "Profondeur du produit de la couverture arrière à la porte (P' mm)",
+   "value": "535"
+  },
+  {
+   "group": "DIMENSIONS ET POIDS",
+   "label": "Profondeur du produit avec porte ouverte 90 ˚ (P'' mm)",
+   "value": "1 015"
+  },
+  {
+   "group": "OPTIONS/ACCESSOIRES",
+   "label": "Compatible avec LG TWINWash",
+   "value": "Non"
+  }
+ ],
+ "verified": false,
+ "auditedAt": "2026-11-09T17:53:22",
+ "auditNotes": []
+}

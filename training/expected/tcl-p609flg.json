@@ -1,0 +1,68 @@
+{
+ "id": "tcl-p609flg",
+ "site": "tcl",
+ "type": "washer",
+ "url": "https://www.tcl.com/ma/fr/washing-machine/p609flg",
+ "finalUrl": "https://www.tcl.com/ma/fr/washing-machine/p609flg",
+ "name": "P609FLG Lave-linge à chargement frontal",
+ "brand": "TCL",
+ "model": "P609FLG",
+ "pictures": [
+  "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/region/eastafrica/products/washing-machines/f606fls/product/1.png",
+  "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/region/eastafrica/products/washing-machines/f606fls/product/2.png",
+  "https://aws-obg-image-lb-3.tcl.com/content/dam/brandsite/region/eastafrica/products/washing-machines/f606fls/product/3.png",
+  "https://aws-obg-image-lb-3.tcl.com/content/dam/brandsite/region/eastafrica/products/washing-machines/f606fls/product/4.png"
+ ],
+ "specs": [
+  {
+   "group": "Basic Information",
+   "label": "Series",
+   "value": "P6"
+  },
+  {
+   "group": "Basic Information",
+   "label": "Product Model",
+   "value": "P609FLG"
+  },
+  {
+   "group": "Specification",
+   "label": "Max Spain speed(rpm)",
+   "value": "1400"
+  },
+  {
+   "group": "Specification",
+   "label": "Display Type",
+   "value": "LED"
+  },
+  {
+   "group": "Specification",
+   "label": "Washing Capacity(kg)",
+   "value": "9"
+  },
+  {
+   "group": "Specification",
+   "label": "Loading Qty (40HQ)",
+   "value": "171"
+  },
+  {
+   "group": "Specification",
+   "label": "Number of knob programs",
+   "value": "16"
+  },
+  {
+   "group": "Specification",
+   "label": "Colour",
+   "value": "Sliver"
+  },
+  {
+   "group": "Specification",
+   "label": "Product dimensions(W*D*H)(mm)",
+   "value": "595*560*850"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:18",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

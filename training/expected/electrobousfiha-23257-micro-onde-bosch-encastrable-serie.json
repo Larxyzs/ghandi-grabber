@@ -1,0 +1,56 @@
+{
+ "id": "electrobousfiha-23257-micro-onde-bosch-encastrable-serie",
+ "site": "electrobousfiha",
+ "type": "microwave",
+ "url": "https://electrobousfiha.com/micro-onde/23257-micro-onde-bosch-encastrable-serie-6-noir.html",
+ "finalUrl": "https://electrobousfiha.com/micro-onde/23257-micro-onde-bosch-encastrable-serie-6-noir.html",
+ "name": "MICRO ONDE BOSCH ENCASTRABLE SERIE 6 NOIR",
+ "brand": "Bosch",
+ "model": "BEL554MB2",
+ "pictures": [
+  "https://electrobousfiha.com/42884-large_default/micro-onde-bosch-encastrable-serie-6-noir.jpg",
+  "https://electrobousfiha.com/42885-large_default/micro-onde-bosch-encastrable-serie-6-noir.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Finition",
+   "value": "NOIR"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Puissance",
+   "value": "900W"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Capacité en ( L )",
+   "value": "25 l"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Caractéristique Spéciale",
+   "value": "-Niveaux de puissance des micro-ondes (W) 90, 180, 360, 600, 900 W -Système de nettoyage intégré Hydrolyse"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Dimensions du produit (mm)",
+   "value": "382 x 594 x 388 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Accessoires",
+   "value": "Accessoires intégrés: 1 x grille, 1 x Plateau tournant"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Poids (KG)",
+   "value": "20,4 kg"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:22",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

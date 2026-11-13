@@ -1,0 +1,292 @@
+{
+ "id": "bosch-wtn86212me",
+ "site": "bosch",
+ "type": "dryer",
+ "url": "https://www.bosch-home.ma/fr/product//WTN86212ME",
+ "finalUrl": "https://www.bosch-home.ma/fr/product/WTN86212ME",
+ "name": "Série 4 sèche-linge à condensation 8 kg Argent inox.",
+ "brand": "Bosch",
+ "model": "WTN86212ME",
+ "pictures": [
+  "https://media3.bsh-group.com/Product_Shots/25408769_WTN86212ME_STP_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/25409605_WTN86212ME_PGA1_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/28080466_WTN86212ME_PGA2_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/25409606_WTN86212ME_PGA3_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/25409607_WTN86212ME_PGA4_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/25409608_WTN86212ME_PGA12_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/27601516_Cleaning-open-in_T20_silverinox_PGA14_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/21043056_Drum_D_STEEL_silverinox_PGA8_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/25176580_Filter-In_D_silverinox_PGA5_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/25176651_Filter-Out_D_silverinox_PGA6_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/27601523_Cleaning-open-out_T20_silverinox_PGA15_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/22978620_Sidewall_D_L_fullsize_standard_silverinox_PGA9_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/26201160_Cleaning-closed_T20-T21_silverinox_PGA13_def.webp"
+ ],
+ "specs": [
+  {
+   "group": "Aperçu technique",
+   "label": "Couleur",
+   "value": "Graphite"
+  },
+  {
+   "group": "Général",
+   "label": "Type de séchage",
+   "value": "Par condensation"
+  },
+  {
+   "group": "Général",
+   "label": "Pompe à chaleur",
+   "value": "Non"
+  },
+  {
+   "group": "Général",
+   "label": "Capacité maximale en kg (UE 2017/1369)",
+   "value": "8.0 kg"
+  },
+  {
+   "group": "Général",
+   "label": "Couleur de l'appareil",
+   "value": "Argent inox."
+  },
+  {
+   "group": "Général",
+   "label": "Structure du tambour",
+   "value": "Oui"
+  },
+  {
+   "group": "Général",
+   "label": "Charnières de porte",
+   "value": "à droite"
+  },
+  {
+   "group": "Général",
+   "label": "Système de commandes",
+   "value": "Commande rotative, contrôle tactile"
+  },
+  {
+   "group": "Général",
+   "label": "Autres options possibles",
+   "value": "Allergie+/Hygiene, Duvet, Mix, Chemises 15', Express, Vêtements de sport, Finition laine, Minuterie froid, Minuterie chaud"
+  },
+  {
+   "group": "Général",
+   "label": "Émissions de bruit acoustique dans l'air (UE 2017/1369)",
+   "value": "64 dB(A) re 1pW"
+  },
+  {
+   "group": "Général",
+   "label": "Classe d'émissions de bruit acoustique dans l'air (UE 2017/1369)",
+   "value": "B"
+  },
+  {
+   "group": "Général",
+   "label": "Classe d’efficacité énergétique (UE 2017/1369)",
+   "value": "G"
+  },
+  {
+   "group": "Général",
+   "label": "Classe d’efficacité de condensation",
+   "value": "B"
+  },
+  {
+   "group": "Général",
+   "label": "Conduit d'évacuation deau",
+   "value": "Oui"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Dimensions du produit",
+   "value": "842x598x613 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Dimensions du produit emballé",
+   "value": "870x620x675 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Profondeur porte ouverte à 90°",
+   "value": "1105 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Top amovible",
+   "value": "Non"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Tuyau d'évacuation de l'air",
+   "value": "Non"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Réglage maximum de la hauteur des pieds",
+   "value": "15 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Poids net",
+   "value": "41.3 kg"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Longueur du cordon électrique",
+   "value": "145 cm"
+  },
+  {
+   "group": "Confort",
+   "label": "Eclairage intérieur",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Des appareils extrêmement silencieux",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "autoDry",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Smart Dry",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Iron Assist",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "15 Min programme",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Fonction de temporisation",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Rotation alternée du tambour",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "AutoClean",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "selfCleaning Condenser",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Refresher",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Système de contrôle d'humidité",
+   "value": "Auto par détect. humidité"
+  },
+  {
+   "group": "Confort",
+   "label": "Indicateur de déroulement",
+   "value": "Display LED"
+  },
+  {
+   "group": "Confort",
+   "label": "Indicateur de saturation du filtre",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Voyant bac plein",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Sélecteur du temps de séchage",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Température de séchage réglable",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Rajout de linge",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Parois Anti-Vibration",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Empilement",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Filtre à peluches",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Cycle linge délicat",
+   "value": "Délicat"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme \"Allergie plus",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme d'articles de sport",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme de Serviettes",
+   "value": "Non"
+  },
+  {
+   "group": "Programmes",
+   "label": "Laine/Chaussure",
+   "value": "Non"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme Chemises / Chemisiers",
+   "value": "Non"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme Descendant",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Outdoor",
+   "value": "Oui"
+  },
+  {
+   "group": "Connectivité",
+   "label": "HomeConnect",
+   "value": "Non"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:20",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

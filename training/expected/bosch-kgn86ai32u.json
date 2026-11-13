@@ -1,0 +1,225 @@
+{
+ "id": "bosch-kgn86ai32u",
+ "site": "bosch",
+ "type": "fridge",
+ "url": "https://www.bosch-home.ma/fr/product/refrigerateurs-et-congelateurs/refrigerateurs-combines/combines-avec-congelateurs-en-bas-pose-libre/KGN86AI32U",
+ "finalUrl": "https://www.bosch-home.ma/fr/product/KGN86AI32U",
+ "name": "Série 6 Combiné avec congélateur en bas pose-libre 186 x 86 cm Acier Inoxydable (anti traces de doigts)",
+ "brand": "Bosch",
+ "model": "KGN86AI32U",
+ "pictures": [
+  "https://media3.bsh-group.com/Product_Shots/20546057_KGN86AI32U_STP_def.webp"
+ ],
+ "specs": [
+  {
+   "group": "Aperçu technique",
+   "label": "Dimensions du produit avec poignée",
+   "value": "1860 x 860 x 840 mm"
+  },
+  {
+   "group": "Général",
+   "label": "Couleur de l'appareil",
+   "value": "Acier inoxydable"
+  },
+  {
+   "group": "Général",
+   "label": "Charnières de porte",
+   "value": "Réversible à droite"
+  },
+  {
+   "group": "Général",
+   "label": "Porte habillable",
+   "value": "impossible"
+  },
+  {
+   "group": "Général",
+   "label": "Type d'ouverture de porte",
+   "value": "Poignée verticale"
+  },
+  {
+   "group": "Général",
+   "label": "Système de commandes",
+   "value": "Bouton, Bouton"
+  },
+  {
+   "group": "Général",
+   "label": "Classe d'efficacité énergétique",
+   "value": "A++"
+  },
+  {
+   "group": "Général",
+   "label": "Consommation d'énergie - nouveau (2010/30/EC)",
+   "value": "378.00 kWh / an"
+  },
+  {
+   "group": "Général",
+   "label": "Niveau Sonore",
+   "value": "40 dB(A) re 1pW"
+  },
+  {
+   "group": "Général",
+   "label": "Capacité nette totale",
+   "value": "619 l"
+  },
+  {
+   "group": "Général",
+   "label": "Capacité brute totale",
+   "value": "682 l"
+  },
+  {
+   "group": "Général",
+   "label": "Capacité brute du réfrigérateur",
+   "value": "496 l"
+  },
+  {
+   "group": "Général",
+   "label": "Capacité brute du congélateur",
+   "value": "186 l"
+  },
+  {
+   "group": "Général",
+   "label": "Accessoires intégrés",
+   "value": "2 x accumulateur de froid, 3 x casier à oeufs , 2 x bac à glaçons"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Dimensions du produit",
+   "value": "1860x860x810 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Dimensions du produit emballé",
+   "value": "1920x920x880 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Poids net",
+   "value": "113.5 kg"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Longueur du cordon électrique",
+   "value": "240 cm"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "Système de fraîcheur",
+   "value": "VitaFresh"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "Des appareils extrêmement silencieux",
+   "value": "Non"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "Flex Interior",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "Porte Flex",
+   "value": "Non"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "Type de Porte-Bouteilles",
+   "value": "Étagère double"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "Liste des avertissements",
+   "value": "Porte ouverte réfrigérateur, Augmentation de température"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "Total No Frost",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "Type d'affichage",
+   "value": "Display LCD"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "SuperCooling",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "superFreezing",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "VarioZone",
+   "value": "Oui"
+  },
+  {
+   "group": "Réfrigération",
+   "label": "Nombre de clayettes dans le réfrigérateur",
+   "value": "3"
+  },
+  {
+   "group": "Réfrigération",
+   "label": "Nombre de clayettes réglables dans le réfrigérateur",
+   "value": "2"
+  },
+  {
+   "group": "Réfrigération",
+   "label": "Nombre de porte -réfrigérateur",
+   "value": "6"
+  },
+  {
+   "group": "Réfrigération",
+   "label": "Puissance de l'éclairage intérieur en Watt - Réfrigérateur",
+   "value": "LED with soft start"
+  },
+  {
+   "group": "Congélation",
+   "label": "Nombre d'étoiles",
+   "value": "4"
+  },
+  {
+   "group": "Congélation",
+   "label": "Autonomie en cas de coupure de courant (h)",
+   "value": "17 h"
+  },
+  {
+   "group": "Congélation",
+   "label": "Nombre de tiroirs de congélation",
+   "value": "2"
+  },
+  {
+   "group": "Congélation",
+   "label": "Nombre de compartiments de congélation à volet",
+   "value": "0"
+  },
+  {
+   "group": "Congélation",
+   "label": "Nombre de bacs à glaçons",
+   "value": "2"
+  },
+  {
+   "group": "Congélation",
+   "label": "Eclairage LED réfrigérateur et congélateur",
+   "value": "Non"
+  },
+  {
+   "group": "Connectivité",
+   "label": "HomeConnect",
+   "value": "Non"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Caméra",
+   "value": "Non"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:19",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

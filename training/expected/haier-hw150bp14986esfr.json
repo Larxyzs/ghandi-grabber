@@ -1,0 +1,180 @@
+{
+ "id": "haier-hw150bp14986esfr",
+ "site": "haier",
+ "type": "washer",
+ "url": "https://www.haier-europe.com/fr_MA/machines-a-laver-a-chargement-frontal/31019082/hw150bp14986esfr/",
+ "finalUrl": "https://www.haier-europe.com/fr_MA/machines-a-laver-a-chargement-frontal/31019082/hw150bp14986esfr/",
+ "name": "Machines à laver à chargement frontal SuperDrum Series 7 HW150-BP14986ES8",
+ "brand": "Haier",
+ "model": "HW150-BP14986ES8",
+ "pictures": [
+  "https://www.haier-europe.com/h-image/haier-product/2022/3/16472523/28_31019082_09_01_f_hw150bp14986esfr-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2022/3/16472520/28_31019082_09_02_o_hw150bp14986esfr-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2022/3/16472524/28_31019082_09_03_l_hw150bp14986esfr-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2022/3/16472524/28_31019082_09_04_l_hw150bp14986esfr-M.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Caractéristiques principales",
+   "label": "Référence commerciale",
+   "value": "HW150-BP14986ES8"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code EAN",
+   "value": "6921081596227"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Fabricant",
+   "value": "Qingdao Haier Washing Machine Co. Ltd."
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Capacité de chargement (kg)",
+   "value": "15"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Encastrable / Pose-libre",
+   "value": "Pose Libre"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Type de chargement",
+   "value": "Chargement frontal"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Application disponible",
+   "value": "Non"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Vitesse maximum d'essorage (TPM) - NEW (2010/30/EC)",
+   "value": "1400"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Connectivité",
+   "value": "Aucune"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Matériau du tambour",
+   "value": "ACIER INOXYDABLE"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Moteur",
+   "value": "Inverter BPM"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Type de prise",
+   "value": "Schuko"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Tension (V)",
+   "value": "220-240"
+  },
+  {
+   "group": "Programmes et fonctions",
+   "label": "Nombre de programmes",
+   "value": "14"
+  },
+  {
+   "group": "Programmes et fonctions",
+   "label": "Option de fin différée",
+   "value": "Oui (jusqu'à 24h)"
+  },
+  {
+   "group": "Programmes et fonctions",
+   "label": "Fonction vapeur",
+   "value": "Oui"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur",
+   "value": "Anthracite"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur / Matériau de la porte",
+   "value": "Noir"
+  },
+  {
+   "group": "Performance",
+   "label": "Consommation d'énergie annuelle (kWh/an) - NEW (2010/30/EC)",
+   "value": "210"
+  },
+  {
+   "group": "Performance",
+   "label": "Classe d'efficacité énergétique - NOUVEAU (2010/30 / CE)",
+   "value": "A+++"
+  },
+  {
+   "group": "Performance",
+   "label": "Niveau sonore mode essorage EN 60704-3",
+   "value": "75"
+  },
+  {
+   "group": "Performance",
+   "label": "Niveau sonore mode lavage EN 60704-4",
+   "value": "56"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit (mm)",
+   "value": "985"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit (mm)",
+   "value": "701"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit (mm)",
+   "value": "701"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Cabinet depth mm (without pipes and door)",
+   "value": "602"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit emballé (mm)",
+   "value": "1111"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit emballé (mm)",
+   "value": "798"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit emballé (mm)",
+   "value": "782"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids net (kg)",
+   "value": "103"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids brut (kg)",
+   "value": "117"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:19",
+ "auditNotes": [
+  "20 rows come from the site JSON only (not written as text on the page)"
+ ],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

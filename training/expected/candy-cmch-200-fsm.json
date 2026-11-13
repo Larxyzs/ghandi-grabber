@@ -1,0 +1,264 @@
+{
+ "id": "candy-cmch-200-fsm",
+ "site": "candy",
+ "type": "freezer",
+ "url": "https://www.candy-home.com/fr_MA/congelateurs/37001575/cmch-200-fsm/",
+ "finalUrl": "https://www.candy-home.com/fr_MA/congelateurs/37001575/cmch-200-fsm/",
+ "name": "CMCH 200 FSM Congélateurs Artico",
+ "brand": "Candy",
+ "model": "CMCH 200 FSM",
+ "pictures": [
+  "https://www.candy-home.com/h-image/haier-product/2024/9/17272784/1_37001575_14_01_f_cmch200fsm-15455-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2024/9/17272784/1_37001575_14_02_o_cmch200fsm-51208-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2022/12/16716368/1_37001575_14_03_p_cmch200fsm-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2022/12/16716369/1_37001575_14_04_p_cmch200fsm-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2022/12/16717037/1_37001575_14_04_p_cmch200fsm-85890-M.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Caractéristiques principales",
+   "label": "Référence commerciale",
+   "value": "CMCH 200 FSM"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code produit",
+   "value": "37001575"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code EAN",
+   "value": "8059019068428"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Fabricant",
+   "value": "Candy Hoover Group S.r.l."
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Encastrable / Pose libre",
+   "value": "Pose Libre"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Catégorie produit",
+   "value": "Congélateur horizontal"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Processus de dégivrage",
+   "value": "Manuel"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Nombre d'étoiles",
+   "value": "4"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Ecran de contrôle",
+   "value": "Oui"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Technologie froid",
+   "value": "Statique"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Nombre de compresseurs",
+   "value": "1"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Puissance (W)",
+   "value": "65"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Application disponible",
+   "value": "hOn"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Connectivité",
+   "value": "None"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Joint d'étanchéité",
+   "value": "Tirer"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Type de prise",
+   "value": "Schuko"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Courant (A)",
+   "value": "0.7"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Fréquence (Hz)",
+   "value": "50"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Tension (V)",
+   "value": "220-240"
+  },
+  {
+   "group": "Programmes et fonctions",
+   "label": "Position interface de contrôle",
+   "value": "Bandeau de contrôle externe"
+  },
+  {
+   "group": "Programmes et fonctions",
+   "label": "Interface de contrôle",
+   "value": "Touches Smart soft touch plus info LED"
+  },
+  {
+   "group": "Programmes et fonctions",
+   "label": "Serrure",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes et fonctions",
+   "label": "Nombre de pieds réglables",
+   "value": "2"
+  },
+  {
+   "group": "Programmes et fonctions",
+   "label": "Température réglable",
+   "value": "Oui"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Système d'installation d'une double porte",
+   "value": "NC"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Matériau des tiroirs",
+   "value": "NC"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur des poignées",
+   "value": "Argent"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre de bacs à glaçons",
+   "value": "NC"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur",
+   "value": "Blanc"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Charnière de porte",
+   "value": "Arrière"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Eclairage",
+   "value": "NC"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre de tiroirs/paniers",
+   "value": "0"
+  },
+  {
+   "group": "Performance",
+   "label": "Classe climatique",
+   "value": "SN-N-ST-T"
+  },
+  {
+   "group": "Performance",
+   "label": "Consommation énergétique annuelle (kWh)",
+   "value": "219"
+  },
+  {
+   "group": "Performance",
+   "label": "Capacité nette totale (l)",
+   "value": "199"
+  },
+  {
+   "group": "Performance",
+   "label": "Consommation d'énergie (kWh/j)",
+   "value": "0,6"
+  },
+  {
+   "group": "Performance",
+   "label": "Classe efficacité énergétique- NEW (2010/30/EC)",
+   "value": "A+"
+  },
+  {
+   "group": "Performance",
+   "label": "Pouvoir de congélation(kg/24h) - NEW (2010/30/EC)",
+   "value": "9"
+  },
+  {
+   "group": "Performance",
+   "label": "Niveau sonore dB(A)",
+   "value": "45"
+  },
+  {
+   "group": "Performance",
+   "label": "Capacité brute totale (l)",
+   "value": "199"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit (mm)",
+   "value": "835"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit (mm)",
+   "value": "823"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit (mm)",
+   "value": "556"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit emballé (mm)",
+   "value": "882"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit emballé (mm)",
+   "value": "854"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit emballé (mm)",
+   "value": "582"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids net (kg)",
+   "value": "27"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids brut (kg)",
+   "value": "31"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:18",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

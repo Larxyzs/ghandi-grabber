@@ -1,0 +1,257 @@
+{
+ "id": "tcl-115x955",
+ "site": "tcl",
+ "type": "tv",
+ "url": "https://www.tcl.com/ma/fr/tvs/115x955",
+ "finalUrl": "https://www.tcl.com/ma/fr/tvs/115x955",
+ "name": "TCL 115\"X955 Max Premium QD-Mini LED TV",
+ "brand": "TCL",
+ "model": "115X955",
+ "pictures": [
+  "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/product/tv/x/115x955/reddot-update/115-reddot.png",
+  "https://aws-obg-image-lb-3.tcl.com/content/dam/brandsite/product/tv/x/115x955/id-images/2.png",
+  "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/product/tv/x/115x955/id-images/3.png",
+  "https://aws-obg-image-lb-5.tcl.com/content/dam/brandsite/product/tv/x/115x955/id-images/4.png",
+  "https://aws-obg-image-lb-5.tcl.com/content/dam/brandsite/product/tv/x/115x955/id-images/5.png",
+  "https://aws-obg-image-lb-3.tcl.com/content/dam/brandsite/product/tv/x/115x955/id-images/6.png",
+  "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/x/115x955/id-images/7.png",
+  "https://aws-obg-image-lb-5.tcl.com/content/dam/brandsite/product/tv/x/115x955/id-images/8.png"
+ ],
+ "specs": [
+  {
+   "group": "Basic Properties",
+   "label": "Category",
+   "value": "TV"
+  },
+  {
+   "group": "Basic Properties",
+   "label": "Family",
+   "value": "X"
+  },
+  {
+   "group": "Basic Properties",
+   "label": "Series",
+   "value": "X955"
+  },
+  {
+   "group": "Basic Properties",
+   "label": "Customer Model",
+   "value": "115X955 Max"
+  },
+  {
+   "group": "Basic Properties",
+   "label": "Year",
+   "value": "2024"
+  },
+  {
+   "group": "Product Type",
+   "label": "Flat/Curved",
+   "value": "Flat"
+  },
+  {
+   "group": "Product Type",
+   "label": "Screen Type",
+   "value": "LCD"
+  },
+  {
+   "group": "Product Type",
+   "label": "Technology Type",
+   "value": "QD-Mini LED（QLED with Mini LED)"
+  },
+  {
+   "group": "Product Type",
+   "label": "Panel Type",
+   "value": "VA"
+  },
+  {
+   "group": "General Information",
+   "label": "Operation System",
+   "value": "Google TV"
+  },
+  {
+   "group": "General Information",
+   "label": "Google Assistant Built-in",
+   "value": "Yes"
+  },
+  {
+   "group": "General Information",
+   "label": "IMAX Enhanced",
+   "value": "Yes"
+  },
+  {
+   "group": "Audio",
+   "label": "Audio Power",
+   "value": "120W--10W*2(L/R)+10W*4(L/R surround)+10W*2(up to sky)+20W*2(bass) 240 Peak power"
+  },
+  {
+   "group": "Audio",
+   "label": "Dolby Atmos",
+   "value": "Yes"
+  },
+  {
+   "group": "Audio",
+   "label": "DTS Premuim Sound",
+   "value": "DTS-HD"
+  },
+  {
+   "group": "Audio",
+   "label": "Sound Channel",
+   "value": "6.2.2"
+  },
+  {
+   "group": "Display",
+   "label": "Color Gamut",
+   "value": "98% DCI-P3"
+  },
+  {
+   "group": "Display",
+   "label": "Resolution",
+   "value": "4K UHD"
+  },
+  {
+   "group": "Display",
+   "label": "Panel Resolution",
+   "value": "3840×2160"
+  },
+  {
+   "group": "Display",
+   "label": "Aspect Ratio",
+   "value": "16 ：9"
+  },
+  {
+   "group": "Display",
+   "label": "Refresh Rate",
+   "value": "144Hz VRR +240Hz DLG"
+  },
+  {
+   "group": "Display",
+   "label": "Dolby Vision",
+   "value": "Dolby Vision IQ"
+  },
+  {
+   "group": "Display",
+   "label": "HLG",
+   "value": "Yes"
+  },
+  {
+   "group": "Display",
+   "label": "HDR 10+",
+   "value": "Yes, Including HDR10+ Adaptive"
+  },
+  {
+   "group": "Display",
+   "label": "Contrast Ratio",
+   "value": "7000 ：1"
+  },
+  {
+   "group": "Display",
+   "label": "System Brightness (cd/m2)",
+   "value": "Peak Brightness 5000nit"
+  },
+  {
+   "group": "Smart Service",
+   "label": "Hands-free Voice Control",
+   "value": "Yes"
+  },
+  {
+   "group": "Smart Service",
+   "label": "Game Master",
+   "value": "Yes"
+  },
+  {
+   "group": "Smart Service",
+   "label": "Video Chat",
+   "value": "Yes"
+  },
+  {
+   "group": "Smart Service",
+   "label": "Miracast (Wireless Display)",
+   "value": "Yes"
+  },
+  {
+   "group": "Smart Service",
+   "label": "Quick Settings",
+   "value": "Yes"
+  },
+  {
+   "group": "Connectivity",
+   "label": "BlueTooth",
+   "value": "BT5.2"
+  },
+  {
+   "group": "Connectivity",
+   "label": "Wi-Fi",
+   "value": "WiFi 6"
+  },
+  {
+   "group": "Connectivity",
+   "label": "HDMI Input",
+   "value": "2 x HDMI2.1+2 x HDMI2.0"
+  },
+  {
+   "group": "Connectivity",
+   "label": "HDMI CEC",
+   "value": "Yes, with certification"
+  },
+  {
+   "group": "Connectivity",
+   "label": "HDMI2. 1 (eARC&ARC)",
+   "value": "Yes, with certification"
+  },
+  {
+   "group": "Connectivity",
+   "label": "HDMI2. 1 (VRR)",
+   "value": "Yes,4K@144Hz"
+  },
+  {
+   "group": "Connectivity",
+   "label": "HDMI2. 1 (ALLM)",
+   "value": "Yes"
+  },
+  {
+   "group": "Connectivity",
+   "label": "AMD FreeSync",
+   "value": "FreeSync Premium Pro"
+  },
+  {
+   "group": "Dimensions & Weight",
+   "label": "VESA Hole Pattern (mm)",
+   "value": "1000X600"
+  },
+  {
+   "group": "Dimensions & Weight",
+   "label": "Set Size with Stand (mm)",
+   "value": "2565.6*445*1511.4（L）2565.6*445*1541.4（H）"
+  },
+  {
+   "group": "Dimensions & Weight",
+   "label": "Set Size without Stand (mm)",
+   "value": "2565.6*57*1469.7"
+  },
+  {
+   "group": "Dimensions & Weight",
+   "label": "Package Dimensions (mm)",
+   "value": "2830*285*1793"
+  },
+  {
+   "group": "Dimensions & Weight",
+   "label": "Product Weight without Stand (Kg)",
+   "value": "98.3"
+  },
+  {
+   "group": "Dimensions & Weight",
+   "label": "Product Weight with Stand (Kg)",
+   "value": "99.8"
+  },
+  {
+   "group": "Dimensions & Weight",
+   "label": "Gross Weight With Packaging（Kg）",
+   "value": "171.4"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:18",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

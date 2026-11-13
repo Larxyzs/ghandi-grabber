@@ -1,0 +1,37 @@
+{
+ "id": "tcl-voxin",
+ "url": "https://www.tcl.com/ma/fr/air-conditioners/voxin",
+ "savedAt": "2026-11-09T17:29:58",
+ "rawStatus": 200,
+ "rawUrl": "https://www.tcl.com/ma/fr/air-conditioners/voxin",
+ "rawBytes": 536497,
+ "status": 200,
+ "cookies": "",
+ "finalUrl": "https://www.tcl.com/ma/fr/air-conditioners/voxin",
+ "title": "Climatiseur TCL VoxIN - TCL Morocco",
+ "clicked": [
+  "SPECIFICATIONS",
+  "CONFORT INTELLIGENT",
+  "Conception à double volet à large amplitude",
+  "Fonctionnement stable à une température extrême de",
+  "CONCEPTION INTELLIGENTE",
+  "SPÉCIFICATIONS",
+  "Capacité",
+  "Performance de refroidissement nominale - Capacité",
+  "Performance de refroidissement nominale - Capacité",
+  "Performance de refroidissement nominale - Courant ",
+  "Performance de refroidissement nominale - Courant ",
+  "Performance de chauffage nominale - Capacité (W) 3",
+  "Performance de chauffage nominale - Capacité (W)",
+  "Performance de chauffage nominale - Puissance nomi",
+  "Performance de chauffage nominale - Courant nomina",
+  "Performance de chauffage nominale - Courant nomina",
+  "En savoir plus"
+ ],
+ "shots": [
+  "top.jpg"
+ ],
+ "hiddenMarked": 429,
+ "xhr": 4,
+ "renderedBytes": 701735
+}

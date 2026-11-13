@@ -1,0 +1,256 @@
+{
+ "id": "candy-f-cid-x100",
+ "site": "candy",
+ "type": "oven",
+ "url": "https://www.candy-home.com/fr_MA/fours/33704308/f-cid-x100/",
+ "finalUrl": "https://www.candy-home.com/fr_MA/fours/33704308/f-cid-x100/",
+ "name": "F CID X100 Fours Idea",
+ "brand": "Candy",
+ "model": "F CID X100",
+ "pictures": [
+  "https://www.candy-home.com/h-image/haier-product/2025/4/17455090/1_33704308_16_01_f_f%20cid%20x100-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/7/17519665/1_33704308_16_02_o_f%20cid%20x100-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/7/17519667/1_33704308_16_03_l_f%20cid%20x100-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/7/17519665/1_33704308_16_05_o_f%20cid%20x100-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/7/17519680/1_33704308_16_06_l_f%20cid%20x100-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/7/17519667/1_33704308_16_07_l_f%20cid%20x100-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/7/17518961/1_33704308_16_10_p_f%20cid%20x100-99197-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/4/17455087/1_33704308_16_11_p_f%20cid%20x100-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/7/17518966/1_33704308_16_12_p_f%20cid%20x100-34436-M.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Pourcentage de matière recyclée dans le produit",
+   "value": "0"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Recyclabilité du produit",
+   "value": "Majoritairement recyclable"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Métaux précieux dans le produit, contient au moins (mg)",
+   "value": "170"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Terres rares dans le produit, contient au moins (mg)",
+   "value": "0"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Présence de substances extrêmement préoccupantes dans le produit",
+   "value": "Cadmium"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Emballage recyclable",
+   "value": "Non"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Pourcentage de matière recyclée dans l’emballage",
+   "value": "30"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Emballage réemployable",
+   "value": "Non"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Recyclabilité de l’emballage",
+   "value": "Majoritairement recyclable"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Pourcentage de matière recyclée dans le papier imprimé",
+   "value": "0"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Recyclabilité du papier imprimé",
+   "value": "Majoritairement recyclable"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Référence commerciale",
+   "value": "F CID X100"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code produit",
+   "value": "33704308"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code EAN",
+   "value": "8059019056920"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Fabricant",
+   "value": "Candy Hoover Group S.r.l."
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Type d'énergie",
+   "value": "Electricity"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Volume de la cavité (l) - cavité 1",
+   "value": "70"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Type de chaleur",
+   "value": "Conventionnel"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Vapeur",
+   "value": "Non"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Technologie Vapeur",
+   "value": "No steam"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Connectivité",
+   "value": "Aucune"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Application disponible",
+   "value": "Non"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Type de commande",
+   "value": "Mécanique"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Plateau",
+   "value": "1 x 40mm"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Grilles",
+   "value": "1"
+  },
+  {
+   "group": "Programmes et fonctions",
+   "label": "Type de sonde",
+   "value": "Non"
+  },
+  {
+   "group": "Programmes et fonctions",
+   "label": "Nombre de fonctions",
+   "value": "4"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur principale",
+   "value": "Inox"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Matériau de la porte",
+   "value": "Verre"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur manette",
+   "value": "Inox"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur de poignée",
+   "value": "Inox"
+  },
+  {
+   "group": "Performance",
+   "label": "Classe énergétique",
+   "value": "A"
+  },
+  {
+   "group": "Performance",
+   "label": "La consommation d'énergie classique (kWh) - cavité 1",
+   "value": "0,8"
+  },
+  {
+   "group": "Performance",
+   "label": "Consommation électrique en mode arrêt",
+   "value": "0.5"
+  },
+  {
+   "group": "Performance",
+   "label": "Consommation électrique en veille avec réseau",
+   "value": "20"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Dimensions du produit (mm)",
+   "value": "595 x 595 x 568"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Taille requise de la niche d'encastrement",
+   "value": "590 x 560 x 560"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit (mm)",
+   "value": "595"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit (mm)",
+   "value": "595"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit (mm)",
+   "value": "568"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit emballé (mm)",
+   "value": "665"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit emballé (mm)",
+   "value": "620"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit emballé (mm)",
+   "value": "646"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids net (kg)",
+   "value": "22,6"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids brut (kg)",
+   "value": "24,5"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:17",
+ "auditNotes": [
+  "1 technical drawing(s) left out",
+  "11 rows come from the site JSON only (not written as text on the page)"
+ ],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

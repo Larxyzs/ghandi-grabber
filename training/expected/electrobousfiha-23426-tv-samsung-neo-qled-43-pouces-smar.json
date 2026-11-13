@@ -1,0 +1,49 @@
+{
+ "id": "electrobousfiha-23426-tv-samsung-neo-qled-43-pouces-smar",
+ "site": "electrobousfiha",
+ "type": "tv",
+ "url": "https://electrobousfiha.com/neo-qled-/23426-tv-samsung-neo-qled-43-pouces-smart-4k.html",
+ "finalUrl": "https://electrobousfiha.com/neo-qled-/23426-tv-samsung-neo-qled-43-pouces-smart-4k.html",
+ "name": "TV SAMSUNG NEO QLED 43 POUCES SMART 4K",
+ "brand": "Samsung",
+ "model": "QA43QN70HAU",
+ "pictures": [
+  "https://electrobousfiha.com/45042-large_default/tv-samsung-neo-qled-43-pouces-smart-4k.jpg",
+  "https://electrobousfiha.com/45041-large_default/tv-samsung-neo-qled-43-pouces-smart-4k.jpg",
+  "https://electrobousfiha.com/45044-large_default/tv-samsung-neo-qled-43-pouces-smart-4k.jpg",
+  "https://electrobousfiha.com/45045-large_default/tv-samsung-neo-qled-43-pouces-smart-4k.jpg",
+  "https://electrobousfiha.com/45043-large_default/tv-samsung-neo-qled-43-pouces-smart-4k.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Taille d'ecran",
+   "value": "43 Pouces"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Résolution de l'affichage",
+   "value": "3840 x 2160"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Dimensions du produit (mm)",
+   "value": "965.5 x 559.4 x 25.7 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Poids (KG)",
+   "value": "8.4 kg"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Type d'affichage",
+   "value": "Quantum Mini LED"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:21",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

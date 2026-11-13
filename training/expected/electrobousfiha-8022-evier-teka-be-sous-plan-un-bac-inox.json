@@ -1,0 +1,43 @@
+{
+ "id": "electrobousfiha-8022-evier-teka-be-sous-plan-un-bac-inox",
+ "site": "electrobousfiha",
+ "type": "sink",
+ "url": "https://electrobousfiha.com/evier/8022-evier-teka-be-sous-plan-un-bac-inox.html",
+ "finalUrl": "https://electrobousfiha.com/evier/8022-evier-teka-be-sous-plan-un-bac-inox.html",
+ "name": "EVIER TEKA BE SOUS PLAN UN BAC INOX",
+ "brand": "Teka",
+ "model": "10125005",
+ "pictures": [
+  "https://electrobousfiha.com/38823-large_default/evier-teka-be-sous-plan-un-bac-inox.jpg",
+  "https://electrobousfiha.com/38820-large_default/evier-teka-be-sous-plan-un-bac-inox.jpg",
+  "https://electrobousfiha.com/38821-large_default/evier-teka-be-sous-plan-un-bac-inox.jpg",
+  "https://electrobousfiha.com/38822-large_default/evier-teka-be-sous-plan-un-bac-inox.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Finition",
+   "value": "INOX"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Largeur",
+   "value": "435 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Profondeur",
+   "value": "180 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Poids (KG)",
+   "value": "2,08"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:22",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

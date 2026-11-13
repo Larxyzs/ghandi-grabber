@@ -1,0 +1,190 @@
+{
+ "id": "candy-hcu12102drre-1-s",
+ "site": "candy",
+ "type": "washer",
+ "url": "https://www.candy-home.com/fr_MA/lave-linge-hublot/31010550/hcu12102drre-1-s/",
+ "finalUrl": "https://www.candy-home.com/fr_MA/lave-linge-hublot/31010550/hcu12102drre-1-s/",
+ "name": "HCU12102DRRE/1-S Lave-linge hublot Ultra",
+ "brand": "Candy",
+ "model": "HCU12102DRRE/1-S",
+ "pictures": [
+  "https://www.candy-home.com/h-image/haier-product/2020/6/15919651/1_31010550_09_01_f_hcu12102drre1-s-M.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Caractéristiques principales",
+   "label": "Référence commerciale",
+   "value": "HCU12102DRRE/1-S"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code produit",
+   "value": "31010550"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code EAN",
+   "value": "8059019006154"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Fabricant",
+   "value": "Candy Hoover Group S.r.l."
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Capacité de chargement (kg)",
+   "value": "10"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Encastrable / Pose-libre",
+   "value": "Pose Libre"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Type de chargement",
+   "value": "Chargement frontal"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Application disponible",
+   "value": "hOn"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Electronique",
+   "value": "2 digit display with timer"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Vitesse maximum d'essorage (TPM) - NEW (2010/30/EC)",
+   "value": "1200"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Connectivité",
+   "value": "Contenu supplémentaire et contrôle de proximité (NFC)"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Volume du tambour (L)",
+   "value": "62"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Matériau du tambour",
+   "value": "ACIER INOXYDABLE"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Moteur",
+   "value": "AC"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Type de prise",
+   "value": "Schuko"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Tension (V)",
+   "value": "220-240"
+  },
+  {
+   "group": "Programmes et fonctions",
+   "label": "Option de fin différée",
+   "value": "Oui (jusqu'à 24h)"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur",
+   "value": "Anthracite"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur / Matériau de la porte",
+   "value": "Anthracite"
+  },
+  {
+   "group": "Performance",
+   "label": "Consommation d'énergie annuelle (kWh/an) - NEW (2010/30/EC)",
+   "value": "239"
+  },
+  {
+   "group": "Performance",
+   "label": "Consommation d’énergie en kWh/an",
+   "value": "239"
+  },
+  {
+   "group": "Performance",
+   "label": "Classe d'efficacité énergétique - NOUVEAU (2010/30 / CE)",
+   "value": "A+++"
+  },
+  {
+   "group": "Performance",
+   "label": "Niveau sonore mode essorage EN 60704-3",
+   "value": "79"
+  },
+  {
+   "group": "Performance",
+   "label": "Niveau sonore mode lavage EN 60704-4",
+   "value": "60"
+  },
+  {
+   "group": "Performance",
+   "label": "Classe de performance de lavage - NEW (2010/30/EC)",
+   "value": "A"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit (mm)",
+   "value": "850"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit (mm)",
+   "value": "580"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit (mm)",
+   "value": "578"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Cabinet depth mm (without pipes and door)",
+   "value": "510"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit emballé (mm)",
+   "value": "890"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit emballé (mm)",
+   "value": "650"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit emballé (mm)",
+   "value": "600"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids net (kg)",
+   "value": "66"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids brut (kg)",
+   "value": "68"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:17",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

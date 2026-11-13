@@ -1,0 +1,67 @@
+{
+ "id": "electrobousfiha-5822-clim-bosch-9000-inverter-cll5000i-2",
+ "site": "electrobousfiha",
+ "type": "ac",
+ "url": "https://electrobousfiha.com/climatisation-/5822-clim-bosch-9000-inverter-cll5000i-26-ext.html",
+ "finalUrl": "https://electrobousfiha.com/climatisation-/5822-clim-bosch-9000-inverter-cll5000i-26-ext.html",
+ "name": "CLIMATISEUR BOSCH 9000 INVERTER CLL5000I 26 (Sans installation )",
+ "brand": "Bosch",
+ "model": "CSL09-I",
+ "pictures": [
+  "https://electrobousfiha.com/29284-large_default/clim-bosch-9000-inverter-cll5000i-26-ext.jpg",
+  "https://electrobousfiha.com/29282-large_default/clim-bosch-9000-inverter-cll5000i-26-ext.jpg",
+  "https://electrobousfiha.com/29283-large_default/clim-bosch-9000-inverter-cll5000i-26-ext.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Finition",
+   "value": "Blanc"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Type de Climatiseur",
+   "value": "Climatiseur Mural"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Puissance Frigorifique (BTU)",
+   "value": "9000 BTU"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Température (°C)",
+   "value": "maxi en mode chauffage: 24°C maxi en mode refroidissement: 50°C mini en mode chauffage: -15°C mini en mode refroidissement: 0°C"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Hauteur",
+   "value": "495 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Largeur",
+   "value": "790 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Profondeur",
+   "value": "270 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Garantie",
+   "value": "1 an"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Fonctionnalités climatiseur",
+   "value": "Refroidissement / Chauffage"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:21",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

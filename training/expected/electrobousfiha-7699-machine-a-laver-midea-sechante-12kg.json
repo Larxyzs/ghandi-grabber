@@ -1,0 +1,71 @@
+{
+ "id": "electrobousfiha-7699-machine-a-laver-midea-sechante-12kg",
+ "site": "electrobousfiha",
+ "type": "washer-dryer",
+ "url": "https://electrobousfiha.com/lavante-sechante-/7699-machine-a-laver-midea-sechante-12kg8kg-1400t-noir.html",
+ "finalUrl": "https://electrobousfiha.com/lavante-sechante-/7699-machine-a-laver-midea-sechante-12kg8kg-1400t-noir.html",
+ "name": "MACHINE A LAVER SÉCHANTE 12KG/8KG 1400T NOIR",
+ "brand": "Midea",
+ "model": "MF200D120WB/T",
+ "pictures": [
+  "https://electrobousfiha.com/37562-large_default/machine-a-laver-midea-sechante-12kg8kg-1400t-noir.jpg",
+  "https://electrobousfiha.com/37563-large_default/machine-a-laver-midea-sechante-12kg8kg-1400t-noir.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Vitesse d'Essorage",
+   "value": "1400 tr/min"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Finition",
+   "value": "Noir"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Classe Énergétique",
+   "value": "A+++"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Connectivité",
+   "value": "OUI"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Niveau Sonore (dB)",
+   "value": "77dB"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Tension",
+   "value": "220-240V"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Séchage des vêtements",
+   "value": "OUI"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Poids (KG)",
+   "value": "78Kg"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Garantie",
+   "value": "2 ans"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Fréquence",
+   "value": "50Hz"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:22",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

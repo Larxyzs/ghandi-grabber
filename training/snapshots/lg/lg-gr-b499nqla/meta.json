@@ -1,0 +1,41 @@
+{
+ "id": "lg-gr-b499nqla",
+ "url": "https://www.lg.com/ma/refrigerateurs/combines/gr-b499nqla/",
+ "savedAt": "2026-11-09T17:50:19",
+ "rawStatus": 0,
+ "rawError": "APIRequestContext.get: socket hang up",
+ "rawBytes": 0,
+ "status": 200,
+ "cookies": "",
+ "finalUrl": "https://www.lg.com/ma/refrigerateurs/combines/gr-b499nqla/",
+ "title": "Réfrigérateurs combiné | I 333 L | Door Cooling™ | Compresseur Inverter™ | LG Maroc",
+ "clicked": [
+  "Caractéristiques principales",
+  "Fonctionnalités Caractéristiques Avis FAQ Assistan",
+  "Fonctionnalités",
+  "Caractéristiques",
+  "Conception haut de gamme Design moderne et minimal",
+  "Conception haut de gamme",
+  "Caractéristiques principales",
+  "CAPACITÉ - Total du volume 333",
+  "CAPACITÉ - Total du volume",
+  "DIMENSIONS ET POIDS - Dimensions de l’appareil (L ",
+  "PERFORMANCE - Type de compresseur",
+  "FONCTIONS - InstaView Non",
+  "FONCTIONS - InstaView",
+  "Voir toutes les caractéristiques",
+  "Toutes les caractéristiques",
+  "DIMENSIONS ET POIDS",
+  "Dimensions de l’appareil (L x H x P, mm) 597 x 1 8",
+  "Dimensions de l’appareil (L x H x P, mm)",
+  "FONCTIONS",
+  "PERFORMANCE",
+  "CAPACITÉ"
+ ],
+ "shots": [
+  "top.jpg"
+ ],
+ "hiddenMarked": 457,
+ "xhr": 15,
+ "renderedBytes": 402493
+}

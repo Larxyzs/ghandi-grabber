@@ -1,0 +1,365 @@
+{
+ "id": "haier-hcr3818enmm",
+ "site": "haier",
+ "type": "fridge",
+ "url": "https://www.haier-europe.com/fr_MA/refrigerateurs/34005265/hcr3818enmm/",
+ "finalUrl": "https://www.haier-europe.com/fr_MA/refrigerateurs/34005265/hcr3818enmm/",
+ "name": "Réfrigérateurs Cube 83 Série 3 HCR3818ENMM",
+ "brand": "Haier",
+ "model": "HCR3818ENMM",
+ "pictures": [
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16732618/28_34005265_15_01_f_hcr3818enmm-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16735232/28_34005265_15_02_o_hcr3818enmm-97066-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16735234/28_34005265_15_03_o_hcr3818enmm-98925-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16732620/28_34005265_15_04_l_hcr3818enmm-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16735233/28_34005265_15_05_o_hcr3818enmm-20633-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16732620/28_34005265_15_07_l_hcr3818enmm-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16732618/28_34005265_15_10_l_hcr3818enmm-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16732619/28_34005265_15_11_b_hcr3818enmm-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16732622/28_34005265_15_12_p_hcr3818enmm-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16732621/28_34005265_15_13_p_hcr3818enmm-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16732619/28_34005265_15_14_p_hcr3818enmm-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16732620/28_34005265_15_15_p_hcr3818enmm-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16732621/28_34005265_15_16_p_hcr3818enmm-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16750758/28_34005265_15_18_m_hcr3818enmm-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16750758/28_34005265_15_19_m_hcr3818enmm-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16750761/28_34005265_15_20_m_hcr3818enmm-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16750758/28_34005265_15_21_m_hcr3818enmm-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16750761/28_34005265_15_22_m_hcr3818enmm-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2023/1/16750760/28_34005265_15_23_m_hcr3818enmm-M.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Caractéristiques principales",
+   "label": "Référence commerciale",
+   "value": "HCR3818ENMM"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code EAN",
+   "value": "6901018083198"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Fabricant",
+   "value": "Haier Smart Home Co. Ltd."
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Numéro de portes",
+   "value": "4 portes"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Catégorie de produit",
+   "value": "Multi-portes"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Encastrable / Pose libre",
+   "value": "Pose Libre"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Technologie froid",
+   "value": "No Frost"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Ecran de contrôle",
+   "value": "Oui"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Connectivité",
+   "value": "Aucune"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Application disponible",
+   "value": "Non"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Chat. Dir. 94/2 / CE",
+   "value": "Réfrigerateurs/Congélateurs avec compartiment 4 étoiles"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Condensateur",
+   "value": "Interne"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Processus de dégivrage dans la partie congélateur",
+   "value": "Automatique"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Processus de dégivrage dans la partie réfrigérateur",
+   "value": "Automatique"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Lumière",
+   "value": "Led"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Joint d'étanchéité",
+   "value": "Tirer"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Colonne d'air multiflow",
+   "value": "Oui"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Type de prise",
+   "value": "Schuko"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Fréquence (Hz)",
+   "value": "50"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Nombre de compresseurs",
+   "value": "1"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Ventilateur intérieur dans la partie réfrigérateur",
+   "value": "Oui"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Courant (A)",
+   "value": "1.5"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Tension (V)",
+   "value": "220-240"
+  },
+  {
+   "group": "Ecran",
+   "label": "Ecran de contrôle",
+   "value": "Panneau de contrôle externe"
+  },
+  {
+   "group": "Ecran",
+   "label": "Ecran de contrôle",
+   "value": "Electronique"
+  },
+  {
+   "group": "Ecran",
+   "label": "Voyant de porte ouverte - réfrigérateur",
+   "value": "Sonore"
+  },
+  {
+   "group": "Ecran",
+   "label": "Fonction Super réfrigération",
+   "value": "Oui"
+  },
+  {
+   "group": "Ecran",
+   "label": "Super congélation",
+   "value": "Oui"
+  },
+  {
+   "group": "Ecran",
+   "label": "Température réglable",
+   "value": "Réfrigérateur Congélateur"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur",
+   "value": "New Platinum Inox"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Matériau des balconnets",
+   "value": "Transparent"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Matériau des clayettes",
+   "value": "Verre"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Porte bouteilles",
+   "value": "NC"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre total de balconnets",
+   "value": "6"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Balconnets",
+   "value": "Cadre en argenté"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Finitions clayettes",
+   "value": "Cadre en argenté"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Rails télescopiques",
+   "value": "Pas disponible"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Poignées",
+   "value": "Poignée intégrée confortable"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre de clayettes ajustables dans le réfrigérateur",
+   "value": "2"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre de tiroirs dans la partie congélateur",
+   "value": "4"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre de bac à légumes",
+   "value": "1"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre de porte-oeufs",
+   "value": "NC"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre de bacs à glaçons",
+   "value": "NC"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Système d'installation d'une double porte",
+   "value": "Montage fixe avec trou de charnière"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Charnière de porte",
+   "value": "NC"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Consommation d’énergie (kWh)",
+   "value": "1,07"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Classe d'efficacité énergétique - NOUVEAU (2010/30 / CE)",
+   "value": "A+"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Congélateur volume net (l) ****",
+   "value": "156"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Pouvoir de congélation (kg)",
+   "value": "10"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Réfrigérateur capacité brute (l)",
+   "value": "311"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Réfrigérateur capacité nette (l)",
+   "value": "311"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Nombre d'étoiles",
+   "value": "4"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Autonomie en cas de coupure de courant (h)",
+   "value": "20"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Consommation énergétique annuelle (kWh)",
+   "value": "385"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Capacité totale nette (l)",
+   "value": "467"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Congélateur capacité brute (l)",
+   "value": "156"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Niveau sonore (dB)",
+   "value": "35"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit (mm)",
+   "value": "1815"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit (mm)",
+   "value": "833"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit (mm)",
+   "value": "650"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit emballé (mm)",
+   "value": "1905"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit emballé (mm)",
+   "value": "892"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit emballé (mm)",
+   "value": "709"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids brut (kg)",
+   "value": "95"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids net (kg)",
+   "value": "85"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:19",
+ "auditNotes": [
+  "57 rows come from the site JSON only (not written as text on the page)"
+ ],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

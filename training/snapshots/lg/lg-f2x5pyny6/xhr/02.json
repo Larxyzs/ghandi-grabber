@@ -1,0 +1,4 @@
+{
+ "url": "https://www.lg.com/ncms/api/v1/proxy/GetMemberSignupCount?path=/content/lge/ma/fr/lave-linge-et-seche-linge/lave-linge-a-chargement-frontal/f2x5pyny6",
+ "body": "{\"result\":{\"akeyId\":null,\"countryCode\":null,\"signupDate\":null,\"memberSignupCount\":0},\"code\":200,\"message\":\"success\",\"status\":\"success\"}"
+}

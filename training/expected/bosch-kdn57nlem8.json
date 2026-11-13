@@ -1,0 +1,221 @@
+{
+ "id": "bosch-kdn57nlem8",
+ "site": "bosch",
+ "type": "fridge",
+ "url": "https://www.bosch-home.ma/fr/product/refrigerateurs-et-congelateurs/refrigerateurs-combines/combines-avec-congelateurs-en-haut-pose-libre/KDN57NLEM8",
+ "finalUrl": "https://www.bosch-home.ma/fr/product/KDN57NLEM8",
+ "name": "KDN57NLEM8 Combiné avec congélateur en haut pose-libre 188 x 70 cm Acier Inoxydable Style, Total No Frost",
+ "brand": "Bosch",
+ "model": "KDN57NLEM8",
+ "pictures": [
+  "https://media3.bsh-group.com/Product_Shots/27179066_KDN57NLEM8_STP_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/27179086_KDN57NLEM8_PGA3_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/27179087_KDN57NLEM8_PGA4_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/27179088_KDN57NLEM8_PGA5_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/27179089_KDN57NLEM8_PGA6_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/27179090_KDN57NLEM8_PGA7_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/27179067_KDN57NLEM8_PGA14_def.webp"
+ ],
+ "specs": [
+  {
+   "group": "Général",
+   "label": "Couleur de l'appareil",
+   "value": "Acier Inoxydable Style"
+  },
+  {
+   "group": "Général",
+   "label": "Charnières de porte",
+   "value": "Autre"
+  },
+  {
+   "group": "Général",
+   "label": "Porte habillable",
+   "value": "impossible"
+  },
+  {
+   "group": "Général",
+   "label": "Type de charnière",
+   "value": "charnière plate"
+  },
+  {
+   "group": "Général",
+   "label": "Type d'ouverture de porte",
+   "value": "Poignée verticale intégrée"
+  },
+  {
+   "group": "Général",
+   "label": "Consommation d'énergie - nouveau (2010/30/EC)",
+   "value": "277.00 kWh / an"
+  },
+  {
+   "group": "Général",
+   "label": "Niveau Sonore",
+   "value": "42 dB(A) re 1pW"
+  },
+  {
+   "group": "Général",
+   "label": "Capacité nette totale",
+   "value": "463 l"
+  },
+  {
+   "group": "Général",
+   "label": "Capacité brute totale",
+   "value": "499 l"
+  },
+  {
+   "group": "Général",
+   "label": "Capacité brute du réfrigérateur",
+   "value": "496 l"
+  },
+  {
+   "group": "Général",
+   "label": "Capacité brute du congélateur",
+   "value": "132 l"
+  },
+  {
+   "group": "Général",
+   "label": "Accessoires intégrés",
+   "value": "3 x casier à oeufs , 1 x bac à glaçons"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Dimensions du produit",
+   "value": "1880x700x650 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Dimensions du produit emballé",
+   "value": "1880x700x691 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Hauteur minimum de la niche d'encastrement",
+   "value": "2180 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Hauteur maximum de la niche d'encastrement",
+   "value": "2180 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Largeur minimum de la niche d'encastrement",
+   "value": "1085 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Largeur maximum de la niche d'encastrement",
+   "value": "1085 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Profondeur de la niche d'encastrement",
+   "value": "1252 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Poids net",
+   "value": "71.6 kg"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Longueur du cordon électrique",
+   "value": "220 cm"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "Des appareils extrêmement silencieux",
+   "value": "Non"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "Flex Interior",
+   "value": "Non"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "Porte Flex",
+   "value": "Non"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "Type de Porte-Bouteilles",
+   "value": "Sans"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "Total No Frost",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "Type d'affichage",
+   "value": "Indication LED"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "SuperCooling",
+   "value": "Non"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "superFreezing",
+   "value": "Non"
+  },
+  {
+   "group": "Fonctionnalités spécifiques",
+   "label": "VarioZone",
+   "value": "Non"
+  },
+  {
+   "group": "Réfrigération",
+   "label": "Nombre de clayettes dans le réfrigérateur",
+   "value": "4"
+  },
+  {
+   "group": "Réfrigération",
+   "label": "Nombre de clayettes réglables dans le réfrigérateur",
+   "value": "1"
+  },
+  {
+   "group": "Réfrigération",
+   "label": "Nombre de porte -réfrigérateur",
+   "value": "3"
+  },
+  {
+   "group": "Réfrigération",
+   "label": "Puissance de l'éclairage intérieur en Watt - Réfrigérateur",
+   "value": "DEL"
+  },
+  {
+   "group": "Congélation",
+   "label": "Nombre de tiroirs de congélation",
+   "value": "0"
+  },
+  {
+   "group": "Congélation",
+   "label": "Nombre de compartiments de congélation à volet",
+   "value": "1"
+  },
+  {
+   "group": "Congélation",
+   "label": "Eclairage LED réfrigérateur et congélateur",
+   "value": "Oui"
+  },
+  {
+   "group": "Connectivité",
+   "label": "HomeConnect",
+   "value": "Non"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Caméra",
+   "value": "Non"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:20",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

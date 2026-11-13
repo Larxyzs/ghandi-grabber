@@ -1,0 +1,4 @@
+{
+ "url": "https://www.lg.com/ncms/api/v1/proxy/updateAuthoring?locale=MA",
+ "body": "{\"code\":200,\"status\":null,\"message\":null,\"updateAuthoring\":1}"
+}

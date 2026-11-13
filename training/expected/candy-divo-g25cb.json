@@ -1,0 +1,208 @@
+{
+ "id": "candy-divo-g25cb",
+ "site": "candy",
+ "type": "microwave",
+ "url": "https://www.candy-home.com/fr_MA/fours-micro-ondes/38000906/divo-g25cb/",
+ "finalUrl": "https://www.candy-home.com/fr_MA/fours-micro-ondes/38000906/divo-g25cb/",
+ "name": "DIVO G25CB Micro-ondes Divo",
+ "brand": "Candy",
+ "model": "DIVO G25CB",
+ "pictures": [
+  "https://www.candy-home.com/h-image/haier-product/2024/9/17259731/1_38000906_20_01_f_divog25cb-38608-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2024/9/17259749/1_38000906_20_02_l_divog25cb-49939-M.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Pourcentage de matière recyclée dans le produit",
+   "value": "10"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Recyclabilité du produit",
+   "value": "Non recyclable"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Métaux précieux dans le produit, contient au moins (mg)",
+   "value": "2506"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Terres rares dans le produit, contient au moins (mg)",
+   "value": "0"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Emballage recyclable",
+   "value": "Non"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Pourcentage de matière recyclée dans l’emballage",
+   "value": "76"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Emballage réemployable",
+   "value": "Non"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Pourcentage de matière recyclée dans le papier imprimé",
+   "value": "10"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Présence de substances extrêmement préoccupantes dans le produit",
+   "value": "Lead — Cadmium"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Référence commerciale",
+   "value": "DIVO G25CB"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code produit",
+   "value": "38000906"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code EAN",
+   "value": "8016361998964"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Fabricant",
+   "value": "Candy Hoover Group S.r.l."
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Type de four à micro-ondes",
+   "value": "Micro-ondes gril"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Encastrable / Pose libre",
+   "value": "Pose Libre"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Volume de la cavité (l)",
+   "value": "25"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Connectivité",
+   "value": "None"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Application disponible",
+   "value": "hOn"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Technologie",
+   "value": "Standard"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Type de commande",
+   "value": "Digital"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Puissance du gril (W)",
+   "value": "1000"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Tension (V)",
+   "value": "230"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Fréquence (Hz)",
+   "value": "NC"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Accessoires en option",
+   "value": "Grille"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur du matériau principal",
+   "value": "Noir"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Ouverture de la porte",
+   "value": "Latéral"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Puissance maximum du micro-ondes (W)",
+   "value": "900"
+  },
+  {
+   "group": "Performance",
+   "label": "Consommation électrique en mode veille",
+   "value": "0.8"
+  },
+  {
+   "group": "Performance",
+   "label": "Consommation électrique en veille avec réseau",
+   "value": "20"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit (mm)",
+   "value": "281"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit (mm)",
+   "value": "483"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit (mm)",
+   "value": "425"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit emballé (mm)",
+   "value": "337"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit emballé (mm)",
+   "value": "547"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit emballé (mm)",
+   "value": "473"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids net (kg)",
+   "value": "14,5"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids brut (kg)",
+   "value": "16"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:17",
+ "auditNotes": [
+  "9 rows come from the site JSON only (not written as text on the page)"
+ ],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

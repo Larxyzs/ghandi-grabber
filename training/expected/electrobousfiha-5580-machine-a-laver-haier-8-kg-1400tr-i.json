@@ -1,0 +1,67 @@
+{
+ "id": "electrobousfiha-5580-machine-a-laver-haier-8-kg-1400tr-i",
+ "site": "electrobousfiha",
+ "type": "washer",
+ "url": "https://electrobousfiha.com/machine-a-laver-automatique-/5580-machine-a-laver-haier-8-kg-1400tr-i-pro-serie-3-inox.html",
+ "finalUrl": "https://electrobousfiha.com/machine-a-laver-automatique-/5580-machine-a-laver-haier-8-kg-1400tr-i-pro-serie-3-inox.html",
+ "name": "MACHINE A LAVER HAIER 8 KG 1400TR I-PRO SÉRIE 3 INOX",
+ "brand": "Haier",
+ "model": "HW80-B14939S8-FR",
+ "pictures": [
+  "https://electrobousfiha.com/28337-large_default/machine-a-laver-haier-8-kg-1400tr-i-pro-serie-3-inox.jpg",
+  "https://electrobousfiha.com/28338-large_default/machine-a-laver-haier-8-kg-1400tr-i-pro-serie-3-inox.jpg",
+  "https://electrobousfiha.com/28339-large_default/machine-a-laver-haier-8-kg-1400tr-i-pro-serie-3-inox.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Capacité de Chargement",
+   "value": "8 Kg"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Finition",
+   "value": "Inox"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Connectivité",
+   "value": "Aucune"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Tension",
+   "value": "220-240 v"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Hauteur",
+   "value": "85 cm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Largeur",
+   "value": "60 cm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Profondeur",
+   "value": "46 cm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Poids (KG)",
+   "value": "72 kg"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Matière",
+   "value": "ACIER INOXYDABLE"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:20",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

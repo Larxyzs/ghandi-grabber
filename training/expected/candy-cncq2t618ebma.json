@@ -1,0 +1,318 @@
+{
+ "id": "candy-cncq2t618ebma",
+ "site": "candy",
+ "type": "fridge",
+ "url": "https://www.candy-home.com/fr_MA/refrigerateurs/34005893/cncq2t618ebma/",
+ "finalUrl": "https://www.candy-home.com/fr_MA/refrigerateurs/34005893/cncq2t618ebma/",
+ "name": "CNCQ2T618EBMA Réfrigérateurs Fresco 300",
+ "brand": "Candy",
+ "model": "CNCQ2T618EBMA",
+ "pictures": [
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385865/1_34005893_15_01_f_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385865/1_34005893_15_02_o_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385885/1_34005893_15_04_l_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385874/1_34005893_15_05_o_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385872/1_34005893_15_06_l_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385892/1_34005893_15_07_o_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385891/1_34005893_15_08_p_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385893/1_34005893_15_09_p_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385886/1_34005893_15_10_p_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385861/1_34005893_15_11_p_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385880/1_34005893_15_12_p_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385891/1_34005893_15_16_m_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385886/1_34005893_15_17_m_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385865/1_34005893_15_18_m_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385875/1_34005893_15_19_m_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385886/1_34005893_15_20_m_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385861/1_34005893_15_21_m_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385882/1_34005893_15_22_m_cncq2t618ebma-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2025/2/17385890/1_34005893_15_23_m_cncq2t618ebma-M.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Caractéristiques principales",
+   "label": "Référence commerciale",
+   "value": "CNCQ2T618EBMA"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code produit",
+   "value": "34005893"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code EAN",
+   "value": "8059019104072"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Fabricant",
+   "value": "Candy Hoover Group S.r.l."
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Numéro de portes",
+   "value": "2 portes"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Catégorie de produit",
+   "value": "Congélateur bas"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Encastrable / Pose libre",
+   "value": "Pose Libre"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Technologie froid",
+   "value": "No Frost"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Fresher Tech",
+   "value": "My Zone"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Connectivité",
+   "value": "None"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Application disponible",
+   "value": "hOn"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Condensateur",
+   "value": "Interne"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Processus de dégivrage dans la partie congélateur",
+   "value": "Automatique"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Processus de dégivrage dans la partie réfrigérateur",
+   "value": "Automatique"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Lumière",
+   "value": "Led"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Type de prise",
+   "value": "Schuko"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Fréquence (Hz)",
+   "value": "50"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Nombre de compresseurs",
+   "value": "0"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Courant (A)",
+   "value": "0.9"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Tension (V)",
+   "value": "220-240"
+  },
+  {
+   "group": "Ecran",
+   "label": "Ecran de contrôle",
+   "value": "Panneau de contrôle interne"
+  },
+  {
+   "group": "Ecran",
+   "label": "Ecran de contrôle",
+   "value": "Electronique"
+  },
+  {
+   "group": "Ecran",
+   "label": "Voyant de porte ouverte - réfrigérateur",
+   "value": "NC"
+  },
+  {
+   "group": "Ecran",
+   "label": "Super congélation",
+   "value": "Oui"
+  },
+  {
+   "group": "Ecran",
+   "label": "Température réglable",
+   "value": "Réfrigérateur"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur",
+   "value": "Noir"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Matériau des balconnets",
+   "value": "Transparent"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Matériau des clayettes",
+   "value": "Verre"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre total de balconnets",
+   "value": "4"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Rails télescopiques",
+   "value": "Pas disponible"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Poignées",
+   "value": "Poignée intégrée confortable"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre de clayettes ajustables dans le réfrigérateur",
+   "value": "3+1"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre de tiroirs dans la partie congélateur",
+   "value": "3"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre de bac à légumes",
+   "value": "1"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Porte réversible",
+   "value": "Oui"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Charnière de porte",
+   "value": "Montée à droite"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Consommation d’énergie (kWh)",
+   "value": "0,794"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Classe d'efficacité énergétique - NOUVEAU (2010/30 / CE)",
+   "value": "A+"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Congélateur volume net (l) ****",
+   "value": "96"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Pouvoir de congélation (kg)",
+   "value": "6"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Réfrigérateur capacité brute (l)",
+   "value": "234"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Réfrigérateur capacité nette (l)",
+   "value": "234"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Nombre d'étoiles",
+   "value": "4"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Autonomie en cas de coupure de courant (h)",
+   "value": "11"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Consommation énergétique annuelle (kWh)",
+   "value": "290"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Capacité totale nette (l)",
+   "value": "330"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Congélateur capacité brute (l)",
+   "value": "84"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Niveau sonore (dB)",
+   "value": "39"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit (mm)",
+   "value": "1850"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit (mm)",
+   "value": "595"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit (mm)",
+   "value": "667"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit emballé (mm)",
+   "value": "1944"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit emballé (mm)",
+   "value": "663"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit emballé (mm)",
+   "value": "748"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids brut (kg)",
+   "value": "79"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids net (kg)",
+   "value": "72"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:17",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

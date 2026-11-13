@@ -1,0 +1,45 @@
+{
+ "id": "electrobousfiha-23685-clim-carrier-9000-inverter-r32-cry",
+ "site": "electrobousfiha",
+ "type": "ac",
+ "url": "https://electrobousfiha.com/accueil/23685-clim-carrier-9000-inverter-r32-cryo-wi-fi-int.html",
+ "finalUrl": "https://electrobousfiha.com/accueil/23685-clim-carrier-9000-inverter-r32-cryo-wi-fi-int.html",
+ "name": "CLIMATISEUR CARRIER 9000 INVERTER R32 CRYO WI-FI INT",
+ "brand": "Carrier",
+ "model": "42QCE009D8SE-I",
+ "pictures": [
+  "https://electrobousfiha.com/43789-large_default/clim-carrier-9000-inverter-r32-cryo-wi-fi-int.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Finition",
+   "value": "BLANC"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Puissance",
+   "value": "9000 BTU"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Caractéristique Spéciale",
+   "value": "- technologie-de-climatiseur : Inverter"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Garantie",
+   "value": "1 an"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Type",
+   "value": "SPLIT MURAL"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:21",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

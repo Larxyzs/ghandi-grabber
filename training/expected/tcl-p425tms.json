@@ -1,0 +1,76 @@
+{
+ "id": "tcl-p425tms",
+ "site": "tcl",
+ "type": "fridge",
+ "url": "https://www.tcl.com/ma/fr/refrigerators/p425tms",
+ "finalUrl": "https://www.tcl.com/ma/fr/refrigerators/p425tms",
+ "name": "P425TMS Réfrigérateur monté sur le dessus",
+ "brand": "TCL",
+ "model": "P425TMS",
+ "pictures": [
+  "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/region/north-africa/product/ref/p425tms/P425tms-1.png",
+  "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/region/north-africa/product/ref/p425tms/P425tms-2.png"
+ ],
+ "specs": [
+  {
+   "group": "Basic Information",
+   "label": "Dimensions(W*H*D mm)",
+   "value": "706*1720*686"
+  },
+  {
+   "group": "Basic Information",
+   "label": "Colour",
+   "value": "Stainless"
+  },
+  {
+   "group": "Basic Information",
+   "label": "Product Model",
+   "value": "P425TMS"
+  },
+  {
+   "group": "Basic Information",
+   "label": "Country",
+   "value": "Tunisia"
+  },
+  {
+   "group": "Basic Information",
+   "label": "Door Type",
+   "value": "Top Mounted"
+  },
+  {
+   "group": "Specifications",
+   "label": "Energy Class",
+   "value": "A+"
+  },
+  {
+   "group": "Specifications",
+   "label": "Fridge Capacity(L)",
+   "value": "319"
+  },
+  {
+   "group": "Specifications",
+   "label": "Net Capacity(L)",
+   "value": "420"
+  },
+  {
+   "group": "Specifications",
+   "label": "Freezer Capacity(L)",
+   "value": "101"
+  },
+  {
+   "group": "Specifications",
+   "label": "Climate Style",
+   "value": "N/ST/T"
+  },
+  {
+   "group": "Specifications",
+   "label": "40' HQ:",
+   "value": "67"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:18",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

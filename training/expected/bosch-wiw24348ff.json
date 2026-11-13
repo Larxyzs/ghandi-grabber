@@ -1,0 +1,297 @@
+{
+ "id": "bosch-wiw24348ff",
+ "site": "bosch",
+ "type": "washer",
+ "url": "https://www.bosch-home.ma/fr/product/lave-linge-et-seche-linge/lave-linge/builtin/WIW24348FF",
+ "finalUrl": "https://www.bosch-home.ma/fr/product/WIW24348FF",
+ "name": "Série 6 Lave-linge front 7 kg max. 1200 tr/min",
+ "brand": "Bosch",
+ "model": "WIW24348FF",
+ "pictures": [
+  "https://media3.bsh-group.com/Product_Shots/19828505_WIW24348FF_STP_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/22712512_WIW24348FF_PGA1_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/20082182_WIW24348FF_PGA2_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/20082188_WIW24348FF_PGA3_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/21877443_WIW24348FF_PGA4_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/21032953_Drum_W_WA_grey_white_PGA8_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/25176877_Filter_W-WD_white_PGA11_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/22972652_Sidewall_W-WD_L_fullsize_standard_white_PGA9_def.webp"
+ ],
+ "specs": [
+  {
+   "group": "Aperçu technique",
+   "label": "Vitesse d'essorage max",
+   "value": "1200 rpm"
+  },
+  {
+   "group": "Aperçu technique",
+   "label": "Capacité de chargement",
+   "value": "7.0 kg"
+  },
+  {
+   "group": "Général",
+   "label": "Pose-libre / Intégré",
+   "value": "Encastrable"
+  },
+  {
+   "group": "Général",
+   "label": "Noms des programmes",
+   "value": "Programme Délicat, Programme Blanc/Couleurs, Programme Synthétiques, Progr. Laine lavage à la main"
+  },
+  {
+   "group": "Général",
+   "label": "Optimisation du lavage",
+   "value": "Chemises/Chemisiers, vidange / essorer, Mix, simple rinçage, Express 15 min, Express 30 min, Terminé, Départ/Pause ou Rajout de linge, Express, Essorage variable"
+  },
+  {
+   "group": "Général",
+   "label": "Niveau sonore au lavage",
+   "value": "42 dB(A) re 1pW"
+  },
+  {
+   "group": "Général",
+   "label": "Niveau sonore à l'essorage",
+   "value": "64 dB(A) re 1pW"
+  },
+  {
+   "group": "Général",
+   "label": "Sécurité hydraulique",
+   "value": "Anti-débordement"
+  },
+  {
+   "group": "Général",
+   "label": "Top amovible",
+   "value": "Non"
+  },
+  {
+   "group": "Général",
+   "label": "Classe d’efficacité énergétique (UE 2017/1369)",
+   "value": "C"
+  },
+  {
+   "group": "Général",
+   "label": "Émissions de bruit acoustique dans l'air (UE 2017/1369)",
+   "value": "64 dB(A) re 1pW"
+  },
+  {
+   "group": "Général",
+   "label": "Classe d'émissions de bruit acoustique dans l'air (UE 2017/1369)",
+   "value": "A"
+  },
+  {
+   "group": "Général",
+   "label": "Capacité maximale en kg (UE 2017/1369)",
+   "value": "7.0 kg"
+  },
+  {
+   "group": "Général",
+   "label": "Vitesse d'essorage max. (tr/min)",
+   "value": "1200 rpm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Dimensions du produit",
+   "value": "818x596x544 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Dimensions du produit emballé",
+   "value": "875x640x640 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Profondeur porte ouverte à 90°",
+   "value": "956 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Réglage maximum de la hauteur des pieds",
+   "value": "12 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Poids net",
+   "value": "76.1 kg"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Longueur du cordon électrique",
+   "value": "210 cm"
+  },
+  {
+   "group": "Confort",
+   "label": "Rajout de linge",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Sonde à chargement",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Détection du degré de salissures",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Afficheur digital de temps restant",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Indicateur de déroulement",
+   "value": "Display LED, LED"
+  },
+  {
+   "group": "Confort",
+   "label": "Indicateur de fin de cycle",
+   "value": "Acoustique, Display LED"
+  },
+  {
+   "group": "Confort",
+   "label": "Capteur de rinçage",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Rinçage plus",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Options de départ différé",
+   "value": "continu"
+  },
+  {
+   "group": "Confort",
+   "label": "Ajustement automatique du niveau d'eau",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Eclairage intérieur",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "EcoSilence Drive - efficace et extra silencieux",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Alimentation eau chaude et eau froide",
+   "value": "Non"
+  },
+  {
+   "group": "Options de rapidité",
+   "label": "super15",
+   "value": "Oui"
+  },
+  {
+   "group": "Options de rapidité",
+   "label": "Programme de Vitesse 15/30",
+   "value": "Oui"
+  },
+  {
+   "group": "Options de rapidité",
+   "label": "SpeedPerfect",
+   "value": "Oui"
+  },
+  {
+   "group": "Options de rapidité",
+   "label": "Variateur de vitesse d'essorage",
+   "value": "Réglable"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme \"Allergie plus",
+   "value": "Non"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme d'articles de sport",
+   "value": "Non"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme Chemises / Chemisiers",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme Délicat / soie",
+   "value": "Non"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme Laine",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme Descendant",
+   "value": "Non"
+  },
+  {
+   "group": "Programmes",
+   "label": "Outdoor",
+   "value": "Non"
+  },
+  {
+   "group": "Programmes",
+   "label": "Système automatique antitaches",
+   "value": "Non"
+  },
+  {
+   "group": "Programmes",
+   "label": "Option de lavage à froid",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Prélavage",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme Blanc/Couleurs",
+   "value": "Froid, 40°C, 60°C"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme Synthétiques",
+   "value": "30°C, 40°C"
+  },
+  {
+   "group": "Programmes",
+   "label": "Thermostat réglable",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Sélection de la température",
+   "value": "Programmateur"
+  },
+  {
+   "group": "Connectivité",
+   "label": "HomeConnect",
+   "value": "Non"
+  },
+  {
+   "group": "Sécurité",
+   "label": "Système anti-balourd",
+   "value": "Oui"
+  },
+  {
+   "group": "Sécurité",
+   "label": "Sécurité-enfants",
+   "value": "Oui"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:20",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

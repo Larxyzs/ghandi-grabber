@@ -1,0 +1,158 @@
+{
+ "id": "samsung-rt3000am-top-mount-freezer-twin-cooling-",
+ "site": "samsung",
+ "type": "fridge",
+ "url": "https://www.samsung.com/n_africa/refrigerators/top-mount-freezer/rt3000am-top-mount-freezer-twin-cooling-311l-silver-rt30a3100sa-ma/",
+ "finalUrl": "https://www.samsung.com/n_africa/refrigerators/top-mount-freezer/rt3000am-top-mount-freezer-twin-cooling-311l-silver-rt30a3100sa-ma/",
+ "name": "Réfrigérateur Twin Cooling - 303L Net – RT30A3100SA",
+ "brand": "Samsung",
+ "model": "RT30A3100SA/MA",
+ "pictures": [
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/rt30a3100sa-ma/gallery/n-africa-top-mount-freezer-twin-cooling-461802-rt30a3100sa-ma-536814109",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/rt30a3100sa-ma/gallery/n-africa-top-mount-freezer-twin-cooling-461802-rt30a3100sa-ma-536814098",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/rt30a3100sa-ma/gallery/n-africa-top-mount-freezer-twin-cooling-461802-rt30a3100sa-ma-536814099",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/rt30a3100sa-ma/gallery/n-africa-top-mount-freezer-twin-cooling-461802-rt30a3100sa-ma-536814100",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/rt30a3100sa-ma/gallery/n-africa-top-mount-freezer-twin-cooling-461802-rt30a3100sa-ma-536814101",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/rt30a3100sa-ma/gallery/n-africa-top-mount-freezer-twin-cooling-461802-rt30a3100sa-ma-536814102"
+ ],
+ "specs": [
+  {
+   "group": "Présentation",
+   "label": "Nette totale (Litres)",
+   "value": "303 ℓ"
+  },
+  {
+   "group": "Présentation",
+   "label": "Brut total (Litres)",
+   "value": "311 ℓ"
+  },
+  {
+   "group": "Présentation",
+   "label": "Dimension nette (l x H x P) (mm)",
+   "value": "590×1710×695 mm"
+  },
+  {
+   "group": "Présentation",
+   "label": "Poids (kg)",
+   "value": "61 kg"
+  },
+  {
+   "group": "Capacité",
+   "label": "Net congélateur (Litres)",
+   "value": "68 ℓ"
+  },
+  {
+   "group": "Capacité",
+   "label": "Net réfrigérateur (Litres)",
+   "value": "235 ℓ"
+  },
+  {
+   "group": "Capacité",
+   "label": "Capacité congélateur (Litres)",
+   "value": "75 ℓ"
+  },
+  {
+   "group": "Capacité",
+   "label": "Capacité réfrigérateur (Litres)",
+   "value": "236 ℓ"
+  },
+  {
+   "group": "Spécification physique",
+   "label": "Dimension de l’emballage (l x H x P) (mm)",
+   "value": "660 x 1 776 x 753 mm"
+  },
+  {
+   "group": "Spécification physique",
+   "label": "Poids net avec emballage (kg)",
+   "value": "66 kg"
+  },
+  {
+   "group": "Caractéristiques de refroidissement",
+   "label": "Froid ventilé",
+   "value": "Yes"
+  },
+  {
+   "group": "Caractéristiques du réfrigérateur",
+   "label": "Désodorisant",
+   "value": "No"
+  },
+  {
+   "group": "Caractéristiques du réfrigérateur",
+   "label": "Nombre de clayettes",
+   "value": "4 EA"
+  },
+  {
+   "group": "Caractéristiques du réfrigérateur",
+   "label": "Nombre de tiroirs fruits & légumes",
+   "value": "1 EA"
+  },
+  {
+   "group": "Caractéristiques du réfrigérateur",
+   "label": "Nombre de logement de porte",
+   "value": "3 EA"
+  },
+  {
+   "group": "Caractéristiques du congélateur",
+   "label": "À glaçons amovible",
+   "value": "Tray"
+  },
+  {
+   "group": "Caractéristiques du congélateur",
+   "label": "Nombre de clayettes",
+   "value": "1 EA"
+  },
+  {
+   "group": "Caractéristiques du congélateur",
+   "label": "Type de logement de porte",
+   "value": "2"
+  },
+  {
+   "group": "Caractéristiques générales",
+   "label": "Réfrigérant",
+   "value": "R600a"
+  },
+  {
+   "group": "Caractéristiques générales",
+   "label": "Compresseur",
+   "value": "Digital Inverter Compressor"
+  },
+  {
+   "group": "Caractéristiques externes",
+   "label": "Affichage",
+   "value": "Internal"
+  },
+  {
+   "group": "Caractéristiques externes",
+   "label": "Type de poignée",
+   "value": "Samsung Bar"
+  },
+  {
+   "group": "Caractéristiques externes",
+   "label": "Couleur",
+   "value": "Metal Graphite"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Classe d’efficacité énergétique",
+   "value": "A+"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Classe climatique",
+   "value": "T/SN"
+  },
+  {
+   "group": "Installation",
+   "label": "Autoportant",
+   "value": "Yes"
+  },
+  {
+   "group": "Catégorie",
+   "label": "Refrigerator Type",
+   "value": "TMF"
+  }
+ ],
+ "verified": false,
+ "auditedAt": "2026-11-09T17:52:14",
+ "auditNotes": []
+}

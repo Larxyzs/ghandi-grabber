@@ -1,0 +1,30 @@
+{
+ "id": "haier-h55m80fux",
+ "url": "https://www.haier-europe.com/fr_MA/tv/36200130/h55m80fux/",
+ "savedAt": "2026-11-09T17:32:54",
+ "rawStatus": 200,
+ "rawUrl": "https://www.haier-europe.com/fr_MA/tv/36200130/h55m80fux/",
+ "rawBytes": 921750,
+ "status": 200,
+ "cookies": "",
+ "finalUrl": "https://www.haier-europe.com/fr_MA/tv/36200130/h55m80fux/",
+ "title": "H55M80FUX | Téléviseurs and Smart TVs | | Haier",
+ "clicked": [
+  "Voir toutes les spécifications techniques",
+  "Lire la suite",
+  "Caractéristiques techniques",
+  "Caractéristiques techniques",
+  "Caractéristiques principales",
+  "Caractéristiques techniques",
+  "Son",
+  "Connectivité",
+  "Performance et consommation",
+  "Dimensions"
+ ],
+ "shots": [
+  "top.jpg"
+ ],
+ "hiddenMarked": 154,
+ "xhr": 47,
+ "renderedBytes": 984129
+}

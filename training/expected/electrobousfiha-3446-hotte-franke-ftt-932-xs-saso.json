@@ -1,0 +1,61 @@
+{
+ "id": "electrobousfiha-3446-hotte-franke-ftt-932-xs-saso",
+ "site": "electrobousfiha",
+ "type": "hood",
+ "url": "https://electrobousfiha.com/hotte-aspirante/3446-hotte-franke-ftt-932-xs-saso.html",
+ "finalUrl": "https://electrobousfiha.com/hotte-aspirante/3446-hotte-franke-ftt-932-xs-saso.html",
+ "name": "HOTTE FRANKE FTT 932 XS SASO",
+ "brand": "Franke",
+ "model": "3000553097",
+ "pictures": [
+  "https://electrobousfiha.com/21376-large_default/hotte-franke-ftt-932-xs-saso.jpg",
+  "https://electrobousfiha.com/21375-large_default/hotte-franke-ftt-932-xs-saso.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Classe Énergétique",
+   "value": "E"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Type de Hotte",
+   "value": "Décorative"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Type d'aspiration",
+   "value": "Extraction ou recyclage"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Eclairage",
+   "value": "LED 2 X 4 W"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Niveau sonore",
+   "value": "Min 64 dB(A) - Max 69 dB(A)"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Filtre hotte",
+   "value": "Filtre métallique"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Garantie",
+   "value": "2 ans"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Taille du hotte",
+   "value": "90 cm"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:22",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

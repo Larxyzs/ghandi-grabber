@@ -1,0 +1,60 @@
+{
+ "id": "electrobousfiha-5189-cong-candy-200l-gris",
+ "site": "electrobousfiha",
+ "type": "freezer",
+ "url": "https://electrobousfiha.com/congelateur-/5189-cong-candy-200l-gris.html",
+ "finalUrl": "https://electrobousfiha.com/congelateur-/5189-cong-candy-200l-gris.html",
+ "name": "CONGELATEUR CANDY GRIS",
+ "brand": "Candy",
+ "model": "CMCH150FSM",
+ "pictures": [
+  "https://electrobousfiha.com/26760-large_default/cong-candy-200l-gris.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Finition",
+   "value": "Gris"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Type de Congélateur",
+   "value": "Coffre"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Volume Net (L)",
+   "value": "142 L"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Type de Froid",
+   "value": "Statique"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Hauteur",
+   "value": "82 cm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Largeur",
+   "value": "64 cm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Profondeur",
+   "value": "56 cm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Garantie",
+   "value": "2 ans"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:21",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

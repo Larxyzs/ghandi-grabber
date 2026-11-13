@@ -368,11 +368,18 @@ var GHANDI_SHEETS = (function () {
     return ids.map((id) => ({ id, label: TEMPLATES[id].label, icon: TEMPLATES[id].icon || '' }));
   }
 
+  // how many lines the clean sheet of a type has (for "18/24 Electroplanet lines filled")
+  function lines(typeId) {
+    const t = TEMPLATES[typeId];
+    return t ? t.groups.reduce((n, g) => n + g.fields.length, 0) : 0;
+  }
+
   return {
     register,
     types,
     detect,
     build,
+    lines,
     model: (r, url) => modelOf(r, url),
     tools: { tidy, key, yesOf, numOf, numsOf, fr, colorFr, cap, isEmpty, toArray },
   };

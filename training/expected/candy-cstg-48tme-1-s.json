@@ -1,0 +1,202 @@
+{
+ "id": "candy-cstg-48tme-1-s",
+ "site": "candy",
+ "type": "washer",
+ "url": "https://www.candy-home.com/fr_MA/lave-linge-top/31011180/cstg-48tme-1-s/",
+ "finalUrl": "https://www.candy-home.com/fr_MA/lave-linge-top/31011180/cstg-48tme-1-s/",
+ "name": "CSTG 48TME/1-S Lave-linge Top Smart Inverter",
+ "brand": "Candy",
+ "model": "CSTG 48TME/1-S",
+ "pictures": [
+  "https://www.candy-home.com/h-image/haier-product/2020/7/15943629/1_31011180_09_01_f_cstg%2048tme1-s-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2023/10/16966037/1_31011180_09_03_l_cstg%2048tme%201-s-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2023/10/16966036/1_31011180_09_04_l_cstg%2048tme%201-s-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2023/10/16966036/1_31011180_09_05_p_cstg%2048tme%201-s-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2023/10/16966037/1_31011180_09_06_p_cstg%2048tme%201-s-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2023/10/16966022/1_31011180_09_07_p_cstg%2048tme%201-s-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2023/10/16966024/1_31011180_09_08_p_cstg%2048tme%201-s-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2023/10/16966025/1_31011180_09_09_p_cstg%2048tme%201-s-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2023/10/16966022/1_31011180_09_10_m_cstg%2048tme%201-s-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2023/10/16966022/1_31011180_09_11_m_cstg%2048tme%201-s-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2023/10/16966025/1_31011180_09_12_m_cstg%2048tme%201-s-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2023/10/16966022/1_31011180_09_13_m_cstg%2048tme%201-s-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2023/10/16966025/1_31011180_09_14_m_cstg%2048tme%201-s-M.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Caractéristiques principales",
+   "label": "Référence commerciale",
+   "value": "CSTG 48TME/1-S"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code produit",
+   "value": "31011180"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code EAN",
+   "value": "8059019018867"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Fabricant",
+   "value": "Candy Hoover Group S.r.l."
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Capacité de chargement (kg)",
+   "value": "8"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Vitesse maximum d'essorage (TPM) - NEW (2010/30/EC)",
+   "value": "1400"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Type de chargement",
+   "value": "Chargement Top"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Connectivité",
+   "value": "Contenu supplémentaire et contrôle de proximité (NFC)"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Application disponible",
+   "value": "hOn"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Largeur d'ouverture du tambour",
+   "value": "Gentle Touch"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Matériau du tambour",
+   "value": "ACIER INOXYDABLE"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Volume du tambour (L)",
+   "value": "46"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Moteur",
+   "value": "Inverter BPM"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Electronique",
+   "value": "Touch"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Type de prise",
+   "value": "Schuko"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Tension (V)",
+   "value": "220-240"
+  },
+  {
+   "group": "Programmes et fonctions",
+   "label": "Nombre de programmes",
+   "value": "17"
+  },
+  {
+   "group": "Programmes et fonctions",
+   "label": "Option de fin différée",
+   "value": "Oui (jusqu'à 24h)"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur",
+   "value": "Blanc"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur / Manette de commande",
+   "value": "Violet"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur de la manette",
+   "value": "Blanc"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur / matériau de la poignée",
+   "value": "Blanc"
+  },
+  {
+   "group": "Performance",
+   "label": "Consommation d’énergie en kWh/an",
+   "value": "0,59"
+  },
+  {
+   "group": "Performance",
+   "label": "Classe d'efficacité énergétique - NOUVEAU (2010/30 / CE)",
+   "value": "A+++"
+  },
+  {
+   "group": "Performance",
+   "label": "Niveau sonore mode essorage EN 60704-3",
+   "value": "79"
+  },
+  {
+   "group": "Performance",
+   "label": "Niveau sonore mode lavage EN 60704-4",
+   "value": "52"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit (mm)",
+   "value": "860"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit (mm)",
+   "value": "405"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit (mm)",
+   "value": "600"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit emballé (mm)",
+   "value": "890"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit emballé (mm)",
+   "value": "480"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit emballé (mm)",
+   "value": "650"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids net (kg)",
+   "value": "58"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids brut (kg)",
+   "value": "59,5"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:17",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

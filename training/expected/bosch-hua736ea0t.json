@@ -1,0 +1,176 @@
+{
+ "id": "bosch-hua736ea0t",
+ "site": "bosch",
+ "type": "oven",
+ "url": "https://www.bosch-home.ma/fr/product/cuisson/fours-et-fours-compacts/fours-integrables/HUA736EA0T",
+ "finalUrl": "https://www.bosch-home.ma/fr/product/cuisson/fours-et-fours-compacts/fours-integrables/HUA736EA0T",
+ "name": "Série 4 Four intégrable avec fonction vapeur 60 x 60 cm Noir",
+ "brand": "Bosch",
+ "model": "HUA736EA0T",
+ "pictures": [
+  "https://media3.bsh-group.com/Product_Shots/25497348_HUA736EA0T_STP_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/25868903_HUA716EA0I_PGA5_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/25836899_HUA736EA0T_PGA1_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/25865152_HUA736EN0K_PGA2_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/25931383_FXSA344G_PGA6_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/25984094_HUA736EA0M_PGA3_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/25733729_HQA574BB3_PGA4_def.webp"
+ ],
+ "specs": [
+  {
+   "group": "Aperçu technique",
+   "label": "softClose",
+   "value": "Non"
+  },
+  {
+   "group": "Aperçu technique",
+   "label": "Rails télescopiques",
+   "value": "Oui"
+  },
+  {
+   "group": "Général",
+   "label": "Couleur de l'appareil",
+   "value": "Noir"
+  },
+  {
+   "group": "Général",
+   "label": "Couleur et matériau de la porte",
+   "value": "Noir"
+  },
+  {
+   "group": "Général",
+   "label": "Couleur de panneau de commande",
+   "value": "Noir"
+  },
+  {
+   "group": "Général",
+   "label": "Concept d'affichage",
+   "value": "Écran LCD blanc avec bouton de commande"
+  },
+  {
+   "group": "Général",
+   "label": "Nombre de modes de chauffage et de combinaison",
+   "value": "8"
+  },
+  {
+   "group": "Général",
+   "label": "Mode de cuisson",
+   "value": "Air fry, Gril grande surface, Hotair doux, Chaleur tournante, Convection naturelle, Réglage de la pizza, Chaleur de sole"
+  },
+  {
+   "group": "Général",
+   "label": "Plage de température possible (minimum/maximum)",
+   "value": "50-275 °C"
+  },
+  {
+   "group": "Général",
+   "label": "Technologie de la vapeur",
+   "value": "vapeur d'air chaud - pour de meilleurs résultats de cuisson"
+  },
+  {
+   "group": "Général",
+   "label": "Système de nettoyage intégré",
+   "value": "Programme écolytique, Hydrolyse"
+  },
+  {
+   "group": "Général",
+   "label": "Rail téléscopique",
+   "value": "1 - niveau"
+  },
+  {
+   "group": "Général",
+   "label": "Volume utile (de la cavité) - NOUVEAU (2010/30/CE)",
+   "value": "76 l"
+  },
+  {
+   "group": "Général",
+   "label": "Dispositif de sécurité",
+   "value": "Sécurité enfant"
+  },
+  {
+   "group": "Général",
+   "label": "Accessoires intégrés",
+   "value": "1 x grille, 1 x lèchefrite pour pyrolyse, 1 x Plaque chauffante Air Fry"
+  },
+  {
+   "group": "Général",
+   "label": "Verre de porte amovible",
+   "value": "Oui"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Dimensions du produit",
+   "value": "595x594x548 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Dimensions du produit emballé",
+   "value": "670x665x685 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Hauteur minimum de la niche d'encastrement",
+   "value": "585 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Hauteur maximum de la niche d'encastrement",
+   "value": "595 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Largeur minimum de la niche d'encastrement",
+   "value": "560 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Largeur maximum de la niche d'encastrement",
+   "value": "568 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Profondeur de la niche d'encastrement",
+   "value": "550 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Poids net",
+   "value": "33.6 kg"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Longueur du cordon électrique",
+   "value": "120 cm"
+  },
+  {
+   "group": "Confort",
+   "label": "Nombre de programmes automatiques",
+   "value": "10"
+  },
+  {
+   "group": "Confort",
+   "label": "Préchauffage rapide",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Réglage des pizzas",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Hotair",
+   "value": "3D HotAir"
+  },
+  {
+   "group": "Connectivité",
+   "label": "HomeConnect",
+   "value": "Non"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:20",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

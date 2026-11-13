@@ -1,0 +1,242 @@
+{
+ "id": "tcl-98p8k",
+ "site": "tcl",
+ "type": "tv",
+ "url": "https://www.tcl.com/ma/fr/tvs/98p8k",
+ "finalUrl": "https://www.tcl.com/ma/fr/tvs/98p8k",
+ "name": "TCL P8K QLED TV",
+ "brand": "TCL",
+ "model": "98P8K",
+ "pictures": [
+  "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/product/tv/p/98p8k/id/1.png",
+  "https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/product/tv/p/98p8k/id/2.jpg",
+  "https://aws-obg-image-lb-3.tcl.com/content/dam/brandsite/product/tv/p/98p8k/id/3.jpg",
+  "https://aws-obg-image-lb-5.tcl.com/content/dam/brandsite/product/tv/p/98p8k/id/4.jpg",
+  "https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/product/tv/p/98p8k/id/5.jpg",
+  "https://aws-obg-image-lb-5.tcl.com/content/dam/brandsite/product/tv/p/98p8k/id/6.jpg",
+  "https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/product/tv/p/98p8k/id/7.jpg",
+  "https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/product/tv/p/98p8k/id/8.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Propriétés de base",
+   "label": "Catégorie",
+   "value": "TV"
+  },
+  {
+   "group": "Propriétés de base",
+   "label": "Famille",
+   "value": "P"
+  },
+  {
+   "group": "Propriétés de base",
+   "label": "Séries",
+   "value": "P8K"
+  },
+  {
+   "group": "Propriétés de base",
+   "label": "Modèle client",
+   "value": "98P8K"
+  },
+  {
+   "group": "Propriétés de base",
+   "label": "Pays/Région Principale",
+   "value": "EU"
+  },
+  {
+   "group": "Propriétés de base",
+   "label": "Année",
+   "value": "2025"
+  },
+  {
+   "group": "Type de Produit",
+   "label": "Écran plat / écran incurvé",
+   "value": "Plat"
+  },
+  {
+   "group": "Type de Produit",
+   "label": "Type d'écran",
+   "value": "LCD"
+  },
+  {
+   "group": "Type de Produit",
+   "label": "Type de technologie",
+   "value": "4K UHD"
+  },
+  {
+   "group": "Type de Produit",
+   "label": "Type de panel",
+   "value": "DLED"
+  },
+  {
+   "group": "Informations Générales",
+   "label": "Operation System",
+   "value": "Google TV"
+  },
+  {
+   "group": "Informations Générales",
+   "label": "Commande vocale mains libres",
+   "value": "Oui"
+  },
+  {
+   "group": "Informations Générales",
+   "label": "Assistant Google intégré",
+   "value": "Oui"
+  },
+  {
+   "group": "Audio",
+   "label": "Puissance Audio",
+   "value": "2*10W+20W"
+  },
+  {
+   "group": "Audio",
+   "label": "Dolby Atmos",
+   "value": "Oui"
+  },
+  {
+   "group": "Audio",
+   "label": "DTS Premuim Sound",
+   "value": "DTS Virtual X"
+  },
+  {
+   "group": "Audio",
+   "label": "Canal Audio",
+   "value": "Canaux 2.1"
+  },
+  {
+   "group": "Display",
+   "label": "Gamme de couleurs",
+   "value": "93% DCI-P3"
+  },
+  {
+   "group": "Display",
+   "label": "Résolution",
+   "value": "4K UHD"
+  },
+  {
+   "group": "Display",
+   "label": "Résolution du panel",
+   "value": "3840*2160"
+  },
+  {
+   "group": "Display",
+   "label": "Format d’image",
+   "value": "16:9"
+  },
+  {
+   "group": "Display",
+   "label": "Taux de rafraîchissement natif",
+   "value": "4K 144Hz"
+  },
+  {
+   "group": "Display",
+   "label": "Dolby Vision",
+   "value": "Dolby Vision"
+  },
+  {
+   "group": "Display",
+   "label": "HLG",
+   "value": "Oui"
+  },
+  {
+   "group": "Display",
+   "label": "HDR 10+",
+   "value": "Oui"
+  },
+  {
+   "group": "Display",
+   "label": "Luminosité du système (cd/m²)",
+   "value": "HDR haute luminosité"
+  },
+  {
+   "group": "Smart Service",
+   "label": "Game Master",
+   "value": "Oui"
+  },
+  {
+   "group": "Smart Service",
+   "label": "Miracast (Wireless Display)",
+   "value": "Oui"
+  },
+  {
+   "group": "Smart Service",
+   "label": "Réglages rapides",
+   "value": "Oui"
+  },
+  {
+   "group": "Connectivité",
+   "label": "BlueTooth",
+   "value": "BT5.4"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Wi-Fi",
+   "value": "WiFi 5"
+  },
+  {
+   "group": "Connectivité",
+   "label": "HDMI Version",
+   "value": "HDMI2.1"
+  },
+  {
+   "group": "Connectivité",
+   "label": "HDMI2.1 (eARC&ARC)",
+   "value": "Oui"
+  },
+  {
+   "group": "Connectivité",
+   "label": "HDMI CEC",
+   "value": "Oui"
+  },
+  {
+   "group": "Connectivité",
+   "label": "AMD FreeSync",
+   "value": "Oui"
+  },
+  {
+   "group": "Dimensions & Poids",
+   "label": "Fixation murale VESA (mm)",
+   "value": "600*500 (mm)"
+  },
+  {
+   "group": "Dimensions & Poids",
+   "label": "Dimensions de l’ensemble avec support (WxHxD)",
+   "value": "2178*1285*420"
+  },
+  {
+   "group": "Dimensions & Poids",
+   "label": "Dimensions de l’ensemble sans support(WxHxD)（mm)",
+   "value": "2178*1247*64"
+  },
+  {
+   "group": "Dimensions & Poids",
+   "label": "Support (Basique) (WxD)",
+   "value": "1709*420"
+  },
+  {
+   "group": "Dimensions & Poids",
+   "label": "Dimensions de l'emballage (LxWxH)",
+   "value": "\"2384*215*1430 (Sans palette) 2395*230*1550 (Avec palette)\""
+  },
+  {
+   "group": "Dimensions & Poids",
+   "label": "Poids net sans support（Kg）",
+   "value": "50.8"
+  },
+  {
+   "group": "Dimensions & Poids",
+   "label": "Poids net avec support（Kg）",
+   "value": "51.8"
+  },
+  {
+   "group": "Dimensions & Poids",
+   "label": "Poids brut avec emballage（Kg）",
+   "value": "74.1"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:18",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

@@ -1,0 +1,25 @@
+{
+ "id": "lg-gr-b48fplam",
+ "url": "https://www.lg.com/ma/refrigerateurs/side-by-side/gr-b48fplam/",
+ "savedAt": "2026-11-09T17:55:19",
+ "rawStatus": 0,
+ "rawError": "APIRequestContext.get: socket hang up",
+ "rawBytes": 0,
+ "status": 200,
+ "cookies": "",
+ "finalUrl": "https://www.lg.com/ma/refrigerateurs/side-by-side/gr-b48fplam/",
+ "title": "Réfrigérateur congélateur inférieur 221L - ModelCode | LG Maroc",
+ "clicked": [
+  "Caractéristiques principales",
+  "Fonctionnalités Caractéristiques Avis Assistance O",
+  "Fonctionnalités",
+  "Caractéristiques",
+  "Toutes les caractéristiques"
+ ],
+ "shots": [
+  "top.jpg"
+ ],
+ "hiddenMarked": 422,
+ "xhr": 3,
+ "renderedBytes": 381351
+}

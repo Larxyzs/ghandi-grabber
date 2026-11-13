@@ -1,0 +1,168 @@
+{
+ "id": "bosch-bel7321b1",
+ "site": "bosch",
+ "type": "microwave",
+ "url": "https://www.bosch-home.ma/fr/product/cuisson/micro-ondes/micro-ondes-encastrables/BEL7321B1",
+ "finalUrl": "https://www.bosch-home.ma/fr/product/BEL7321B1",
+ "name": "Série 8 Micro-ondes encastrable avec gril Noir",
+ "brand": "Bosch",
+ "model": "BEL7321B1",
+ "pictures": [
+  "https://media3.bsh-group.com/Product_Shots/19939721_BEL7321B1_STP_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/21477957_BEL7321B1_PGA3_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/21477958_BEL7321B1_PGA2_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/21477956_BEL7321B1_PGA1_def.webp"
+ ],
+ "specs": [
+  {
+   "group": "Aperçu technique",
+   "label": "Nombre de programmes",
+   "value": "10"
+  },
+  {
+   "group": "Aperçu technique",
+   "label": "Nombre de niveaux de puissance",
+   "value": "5"
+  },
+  {
+   "group": "Aperçu technique",
+   "label": "Type d'installation",
+   "value": "Encastrable dans le meuble"
+  },
+  {
+   "group": "Général",
+   "label": "Couleur de l'appareil",
+   "value": "Noir"
+  },
+  {
+   "group": "Général",
+   "label": "Couleur et matériau de la porte",
+   "value": "Noir"
+  },
+  {
+   "group": "Général",
+   "label": "Couleur de panneau de commande",
+   "value": "Noir"
+  },
+  {
+   "group": "Général",
+   "label": "Concept d'affichage",
+   "value": "Écran tactile TFT avec anneau de commande numérique"
+  },
+  {
+   "group": "Général",
+   "label": "Niveau de puissance Max. du micro-onde",
+   "value": "900 W"
+  },
+  {
+   "group": "Général",
+   "label": "Niveaux de puissance des micro-ondes (W)",
+   "value": "90, 180, 360, 600, boost W"
+  },
+  {
+   "group": "Général",
+   "label": "Nombre de modes de chauffage et de combinaison",
+   "value": "2"
+  },
+  {
+   "group": "Général",
+   "label": "Mode de cuisson",
+   "value": "Micro-ondes, Gril grande surface"
+  },
+  {
+   "group": "Général",
+   "label": "Plage de température possible (minimum/maximum)",
+   "value": "GENERAL.N_A °C"
+  },
+  {
+   "group": "Général",
+   "label": "Système de nettoyage intégré",
+   "value": "Hydrolyse"
+  },
+  {
+   "group": "Général",
+   "label": "Capacité de la cavité",
+   "value": "21 l"
+  },
+  {
+   "group": "Général",
+   "label": "Accessoires intégrés",
+   "value": "1 x grille, 1 x Bac en verre"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Dimensions du produit",
+   "value": "382x594x318 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Dimensions du produit emballé",
+   "value": "470x460x670 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Hauteur minimum de la niche d'encastrement",
+   "value": "362 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Hauteur maximum de la niche d'encastrement",
+   "value": "382 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Largeur minimum de la niche d'encastrement",
+   "value": "560 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Largeur maximum de la niche d'encastrement",
+   "value": "568 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Profondeur de la niche d'encastrement",
+   "value": "300 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Poids net",
+   "value": "19.6 kg"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Longueur du cordon électrique",
+   "value": "175 cm"
+  },
+  {
+   "group": "Confort",
+   "label": "Préchauffage rapide",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Réglage des pizzas",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Mémoire pour les réglages individuels (1 réglage)",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Démarrage rapide",
+   "value": "Oui"
+  },
+  {
+   "group": "Connectivité",
+   "label": "HomeConnect",
+   "value": "Non"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:20",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

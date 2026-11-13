@@ -1,0 +1,88 @@
+{
+ "id": "tcl-p606flg",
+ "site": "tcl",
+ "type": "washer",
+ "url": "https://www.tcl.com/ma/fr/washing-machine/p606flg",
+ "finalUrl": "https://www.tcl.com/ma/fr/washing-machine/p606flg",
+ "name": "Laveuse à chargement frontal série Ultra Slim",
+ "brand": "TCL",
+ "model": "P606FLG",
+ "pictures": [
+  "https://aws-obg-image-lb-5.tcl.com/content/dam/brandsite/product/washing-machine/p606flw/id/1.png",
+  "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/washing-machine/p606flw/id/3.png",
+  "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/washing-machine/p606flw/id/4.png",
+  "https://aws-obg-image-lb-3.tcl.com/content/dam/brandsite/product/washing-machine/p606flw/id/5.png",
+  "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/product/washing-machine/p606flw/id/6.png",
+  "https://aws-obg-image-lb-3.tcl.com/content/dam/brandsite/product/washing-machine/p606flw/id/7.png",
+  "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/product/washing-machine/p606flw/id/8.png",
+  "https://aws-obg-image-lb-5.tcl.com/content/dam/brandsite/product/washing-machine/p606flw/id/9.png",
+  "https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/product/washing-machine/p606flw/id/10.png"
+ ],
+ "specs": [
+  {
+   "group": "FEATURES",
+   "label": "Wash Capacity",
+   "value": "6kg"
+  },
+  {
+   "group": "TECHNICAL SPECIFICATION",
+   "label": "Display Type",
+   "value": "LED"
+  },
+  {
+   "group": "TECHNICAL SPECIFICATION",
+   "label": "Motor Type",
+   "value": "BLDC"
+  },
+  {
+   "group": "PHYSICAL PARAMETER",
+   "label": "Net Dimension (WxDxH)",
+   "value": "600*450*850"
+  },
+  {
+   "group": "PROGRAM",
+   "label": "Quick Wash",
+   "value": "√"
+  },
+  {
+   "group": "PROGRAM",
+   "label": "MAGIC Flow",
+   "value": "√"
+  },
+  {
+   "group": "PROGRAM",
+   "label": "EBS",
+   "value": "√"
+  },
+  {
+   "group": "PROGRAM",
+   "label": "Drum Clean",
+   "value": "√"
+  },
+  {
+   "group": "PROGRAM",
+   "label": "Delay End",
+   "value": "√"
+  },
+  {
+   "group": "PROGRAM",
+   "label": "Honeycomb Drum",
+   "value": "√"
+  },
+  {
+   "group": "PROGRAM",
+   "label": "Child Lock",
+   "value": "√"
+  },
+  {
+   "group": "PROGRAM",
+   "label": "Add Garment",
+   "value": "√"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:18",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

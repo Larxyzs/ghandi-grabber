@@ -1,0 +1,55 @@
+{
+ "id": "electrobousfiha-3870-lave-vaisselle-beko-5-prg-13cvrt-si",
+ "site": "electrobousfiha",
+ "type": "dishwasher",
+ "url": "https://electrobousfiha.com/lave-vaisselle-/3870-lave-vaisselle-beko-5-prg-13cvrt-silver.html",
+ "finalUrl": "https://electrobousfiha.com/lave-vaisselle-/3870-lave-vaisselle-beko-5-prg-13cvrt-silver.html",
+ "name": "LAVE VAISSELLE BEKO 5 PROGRAMMES 13 COUVERTS SILVER",
+ "brand": "Beko",
+ "model": "DVN05321S",
+ "pictures": [
+  "https://electrobousfiha.com/25974-large_default/lave-vaisselle-beko-5-prg-13cvrt-silver.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Finition",
+   "value": "Inox"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Classe Énergétique",
+   "value": "F"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Nombre de couverts",
+   "value": "13"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Hauteur",
+   "value": "875 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Largeur",
+   "value": "608 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Poids (KG)",
+   "value": "30 kg"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Nombre de programmes",
+   "value": "5"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:21",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

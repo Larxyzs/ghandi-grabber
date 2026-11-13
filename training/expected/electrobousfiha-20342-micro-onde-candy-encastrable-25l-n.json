@@ -1,0 +1,76 @@
+{
+ "id": "electrobousfiha-20342-micro-onde-candy-encastrable-25l-n",
+ "site": "electrobousfiha",
+ "type": "microwave",
+ "url": "https://electrobousfiha.com/micro-onde/20342-micro-onde-candy-encastrable-25l-noir.html",
+ "finalUrl": "https://electrobousfiha.com/micro-onde/20342-micro-onde-candy-encastrable-25l-noir.html",
+ "name": "MICRO ONDE CANDY ENCASTRABLE 25L NOIR",
+ "brand": "Candy",
+ "model": "CA38FL7N25WXB",
+ "pictures": [
+  "https://electrobousfiha.com/42011-large_default/micro-onde-candy-encastrable-25l-noir.jpg",
+  "https://electrobousfiha.com/42010-large_default/micro-onde-candy-encastrable-25l-noir.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Finition",
+   "value": "NOIR"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Puissance",
+   "value": "850W Puissance du gril (W) :1200"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Capacité en ( L )",
+   "value": "25L"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Caractéristique Spéciale",
+   "value": "-Type de four à micro-ondes :Micro-ondes gril"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Tension",
+   "value": "230"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Hauteur",
+   "value": "385 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Largeur",
+   "value": "595 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Profondeur",
+   "value": "367,5 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Poids (KG)",
+   "value": "18,8 kg"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Garantie",
+   "value": "1 AN"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Controle",
+   "value": "Commande tactile"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:22",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

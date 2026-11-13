@@ -1,0 +1,34 @@
+{
+ "id": "lg-gr-b639nlcm",
+ "url": "https://www.lg.com/ma/refrigerateurs/combines/gr-b639nlcm/",
+ "savedAt": "2026-11-09T18:04:51",
+ "rawStatus": 0,
+ "rawError": "APIRequestContext.get: socket hang up",
+ "rawBytes": 0,
+ "status": 200,
+ "cookies": "",
+ "finalUrl": "https://www.lg.com/ma/refrigerateurs/combines/gr-b639nlcm/",
+ "title": "Réfrigérateur à congélateur en bas 455 L avec Door Cooling+™ - GR-B639NLCM | LG Maroc",
+ "clicked": [
+  "Caractéristiques principales",
+  "Fonctionnalités Caractéristiques Avis FAQ Assistan",
+  "Fonctionnalités",
+  "Caractéristiques",
+  "Caractéristiques principales",
+  "DIMENSIONS ET POIDS - Dimensions de l’appareil (L ",
+  "PERFORMANCE - Type de compresseur",
+  "Voir toutes les caractéristiques",
+  "Toutes les caractéristiques",
+  "DIMENSIONS ET POIDS",
+  "Dimensions de l’appareil (L x H x P, mm) 700 x 1 8",
+  "Dimensions de l’appareil (L x H x P, mm)",
+  "FONCTIONS",
+  "PERFORMANCE"
+ ],
+ "shots": [
+  "top.jpg"
+ ],
+ "hiddenMarked": 432,
+ "xhr": 4,
+ "renderedBytes": 387776
+}

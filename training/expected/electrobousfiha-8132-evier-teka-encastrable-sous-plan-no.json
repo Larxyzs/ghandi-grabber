@@ -1,0 +1,53 @@
+{
+ "id": "electrobousfiha-8132-evier-teka-encastrable-sous-plan-no",
+ "site": "electrobousfiha",
+ "type": "sink",
+ "url": "https://electrobousfiha.com/evier/8132-evier-teka-encastrable-sous-plan-noir.html",
+ "finalUrl": "https://electrobousfiha.com/evier/8132-evier-teka-encastrable-sous-plan-noir.html",
+ "name": "EVIER TEKA ENCASTRABLE SOUS PLAN NOIR",
+ "brand": "Teka",
+ "model": "115230025",
+ "pictures": [
+  "https://electrobousfiha.com/39464-large_default/evier-teka-encastrable-sous-plan-noir.jpg",
+  "https://electrobousfiha.com/39462-large_default/evier-teka-encastrable-sous-plan-noir.jpg",
+  "https://electrobousfiha.com/39463-large_default/evier-teka-encastrable-sous-plan-noir.jpg",
+  "https://electrobousfiha.com/39466-large_default/evier-teka-encastrable-sous-plan-noir.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Finition",
+   "value": "NOIR"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Type d'installation",
+   "value": "Sous plan"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Caractéristique Spéciale",
+   "value": "Meuble sous évier (cm): 50 Type de valve d'evacuation:3½\" Évier / épaisseur du dessus (cadre égouttoir) (mm): 8,0"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Largeur",
+   "value": "440 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Profondeur",
+   "value": "200 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Poids (KG)",
+   "value": "5,4 kg"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:22",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

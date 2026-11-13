@@ -1,0 +1,227 @@
+{
+ "id": "tcl-50s5k",
+ "site": "tcl",
+ "type": "tv",
+ "url": "https://www.tcl.com/ma/fr/tvs/50s5k",
+ "finalUrl": "https://www.tcl.com/ma/fr/tvs/50s5k",
+ "name": "TCL S5K QLED TV",
+ "brand": "TCL",
+ "model": "50S5K",
+ "pictures": [
+  "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/tv/s/s5k/id/50-1-02.png",
+  "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/product/tv/s/s5k/id/50-2-02.png",
+  "https://aws-obg-image-lb-3.tcl.com/content/dam/brandsite/product/tv/s/s5k/id/50-3-02.png",
+  "https://aws-obg-image-lb-5.tcl.com/content/dam/brandsite/product/tv/s/s5k/id/50-4-02.jpg",
+  "https://aws-obg-image-lb-3.tcl.com/content/dam/brandsite/product/tv/s/s5k/id/50-5-02.jpg",
+  "https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/product/tv/s/s5k/id/50-6-02.jpg",
+  "https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/product/tv/s/s5k/id/50-7-02.jpg",
+  "https://aws-obg-image-lb-5.tcl.com/content/dam/brandsite/product/tv/s/s5k/id/50-8-02.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Propriétés de base",
+   "label": "Catégorie",
+   "value": "TV"
+  },
+  {
+   "group": "Propriétés de base",
+   "label": "Famille",
+   "value": "S"
+  },
+  {
+   "group": "Propriétés de base",
+   "label": "Série",
+   "value": "S5K"
+  },
+  {
+   "group": "Propriétés de base",
+   "label": "Modèle de client",
+   "value": "50S5K"
+  },
+  {
+   "group": "Propriétés de base",
+   "label": "Année",
+   "value": "2025"
+  },
+  {
+   "group": "Type de produit",
+   "label": "Plat/Courbé",
+   "value": "Flat"
+  },
+  {
+   "group": "Type de produit",
+   "label": "Type d'écran",
+   "value": "LCD"
+  },
+  {
+   "group": "Type de produit",
+   "label": "Type de technologie",
+   "value": "FHD QLED TV"
+  },
+  {
+   "group": "Type de produit",
+   "label": "Type de Panel",
+   "value": "VA"
+  },
+  {
+   "group": "Informations générales",
+   "label": "Système d'exploitation",
+   "value": "Google TV"
+  },
+  {
+   "group": "Informations générales",
+   "label": "Assistant Google",
+   "value": "Saisie vocale via la télécommande (en option)"
+  },
+  {
+   "group": "Informations générales",
+   "label": "IMAX Amélioré",
+   "value": "No"
+  },
+  {
+   "group": "Audio",
+   "label": "Puissance Audio",
+   "value": "2x10w"
+  },
+  {
+   "group": "Audio",
+   "label": "Dolby Audio",
+   "value": "Oui"
+  },
+  {
+   "group": "Audio",
+   "label": "Son DTS Premium",
+   "value": "No"
+  },
+  {
+   "group": "Audio",
+   "label": "Canal sonore",
+   "value": "2.0CH"
+  },
+  {
+   "group": "Affichage",
+   "label": "Gamme de couleurs",
+   "value": "/"
+  },
+  {
+   "group": "Affichage",
+   "label": "Résolution",
+   "value": "FHD"
+  },
+  {
+   "group": "Affichage",
+   "label": "Résolution du panel",
+   "value": "1920×1080"
+  },
+  {
+   "group": "Affichage",
+   "label": "Rapport d'aspect",
+   "value": "16:9"
+  },
+  {
+   "group": "Affichage",
+   "label": "Taux de rafraîchissement (Hz)",
+   "value": "60"
+  },
+  {
+   "group": "Affichage",
+   "label": "HLG",
+   "value": "Oui"
+  },
+  {
+   "group": "Affichage",
+   "label": "HDR 10+",
+   "value": "Oui"
+  },
+  {
+   "group": "Affichage",
+   "label": "Rapport de contraste",
+   "value": "4000:1(typical)"
+  },
+  {
+   "group": "Connectivité",
+   "label": "BlueTooth",
+   "value": "BT5.4"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Wi-Fi",
+   "value": "WiFi 4"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Version HDMI",
+   "value": "1.4b"
+  },
+  {
+   "group": "Connectivité",
+   "label": "HDMI2.1 (eARC&ARC)",
+   "value": "No"
+  },
+  {
+   "group": "Connectivité",
+   "label": "HDMI CEC",
+   "value": "Oui"
+  },
+  {
+   "group": "Connectivité",
+   "label": "AMD FreeSync",
+   "value": "No"
+  },
+  {
+   "group": "Connectivité",
+   "label": "PVR/Timeshift",
+   "value": "No"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Guide des programmes (EPG)",
+   "value": "Oui(Programme DTV Uniq)"
+  },
+  {
+   "group": "Dimensions & poids",
+   "label": "Montage mural VESA (mm)",
+   "value": "200*200"
+  },
+  {
+   "group": "Dimensions & poids",
+   "label": "Dimensions de l'ensemble avec support (LxHxP)",
+   "value": "1111*254*684"
+  },
+  {
+   "group": "Dimensions & poids",
+   "label": "Dimensions de l'ensemble sans support (LxHxP)",
+   "value": "1111*70*644"
+  },
+  {
+   "group": "Dimensions & poids",
+   "label": "Support (de base) (LxP)",
+   "value": "958*254"
+  },
+  {
+   "group": "Dimensions & poids",
+   "label": "Dimensions de l'emballage (LxPxH)",
+   "value": "1235*115*775"
+  },
+  {
+   "group": "Dimensions & poids",
+   "label": "Poids net sans support (Kg)",
+   "value": "7.3"
+  },
+  {
+   "group": "Dimensions & poids",
+   "label": "Poids net avec support (Kg)",
+   "value": "7.2"
+  },
+  {
+   "group": "Dimensions & poids",
+   "label": "Poids brut avec emballage (Kg)",
+   "value": "10.5"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:18",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

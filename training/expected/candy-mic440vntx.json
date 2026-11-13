@@ -1,0 +1,192 @@
+{
+ "id": "candy-mic440vntx",
+ "site": "candy",
+ "type": "microwave",
+ "url": "https://www.candy-home.com/fr_MA/fours-micro-ondes/38900654/mic440vntx/",
+ "finalUrl": "https://www.candy-home.com/fr_MA/fours-micro-ondes/38900654/mic440vntx/",
+ "name": "MIC440VNTX Micro-ondes Moderna",
+ "brand": "Candy",
+ "model": "MIC440VNTX",
+ "pictures": [
+  "https://www.candy-home.com/h-image/haier-product/2024/7/17211208/1_38900654_20_01_f_mic440vntx-49336-M.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Pourcentage de matière recyclée dans le produit",
+   "value": "0"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Recyclabilité du produit",
+   "value": "Non recyclable"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Métaux précieux dans le produit, contient au moins (mg)",
+   "value": "0"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Terres rares dans le produit, contient au moins (mg)",
+   "value": "0"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Emballage recyclable",
+   "value": "Non"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Pourcentage de matière recyclée dans l’emballage",
+   "value": "40"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Emballage réemployable",
+   "value": "Non"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Pourcentage de matière recyclée dans le papier imprimé",
+   "value": "70"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Référence commerciale",
+   "value": "MIC440VNTX"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code produit",
+   "value": "38900654"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code EAN",
+   "value": "8016361989047"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Fabricant",
+   "value": "Candy Hoover Group S.r.l."
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Type de four à micro-ondes",
+   "value": "Micro-ondes combinés"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Encastrable / Pose libre",
+   "value": "Encastrable"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Volume de la cavité (l)",
+   "value": "44"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Mode de cuisson supplémentaire classique",
+   "value": "Oui"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Connectivité",
+   "value": "None"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Application disponible",
+   "value": "hOn"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Type de commande",
+   "value": "Mécanique"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Puissance du gril (W)",
+   "value": "1750"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Tension (V)",
+   "value": "230"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur du matériau principal",
+   "value": "Noir"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Ouverture de la porte",
+   "value": "Porte abattante"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Puissance maximum du micro-ondes (W)",
+   "value": "900"
+  },
+  {
+   "group": "Performance",
+   "label": "Consommation électrique en mode veille",
+   "value": "0.8"
+  },
+  {
+   "group": "Performance",
+   "label": "Consommation électrique en veille avec réseau",
+   "value": "20"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit (mm)",
+   "value": "454"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit (mm)",
+   "value": "595"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit (mm)",
+   "value": "568"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit emballé (mm)",
+   "value": "550"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit emballé (mm)",
+   "value": "700"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit emballé (mm)",
+   "value": "670"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids net (kg)",
+   "value": "36"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids brut (kg)",
+   "value": "42"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:17",
+ "auditNotes": [
+  "8 rows come from the site JSON only (not written as text on the page)"
+ ],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

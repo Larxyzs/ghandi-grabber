@@ -1,0 +1,252 @@
+{
+ "id": "haier-h43k6fg-15",
+ "site": "haier",
+ "type": "tv",
+ "url": "https://www.haier-europe.com/fr_MA/tv/36200074/h43k6fg-15/",
+ "finalUrl": "https://www.haier-europe.com/fr_MA/tv/36200074/h43k6fg-15/",
+ "name": "Téléviseurs and Smart TVs H43K6FG-15",
+ "brand": "Haier",
+ "model": "H43K6FG-15",
+ "pictures": [
+  "https://www.haier-europe.com/h-image/haier-product/2025/7/17525909/28_36200074_62_01_f_h43k6fg-15-M.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Caractéristiques principales",
+   "label": "Référence commerciale",
+   "value": "H43K6FG-15"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code EAN",
+   "value": "6976454831023"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Fabricant",
+   "value": "Qingdao Haier Optronics Co. Ltd."
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Taille d’écran (pouces)",
+   "value": "43"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Résolution",
+   "value": "1920*1080"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Application disponible",
+   "value": "Non"
+  },
+  {
+   "group": "Ecran",
+   "label": "Type de panneau",
+   "value": "D-LED"
+  },
+  {
+   "group": "Ecran",
+   "label": "Surface d’écran active (pouces)",
+   "value": "43"
+  },
+  {
+   "group": "Ecran",
+   "label": "Taux de rafraîchissement",
+   "value": "60Hz"
+  },
+  {
+   "group": "Ecran",
+   "label": "HDR10",
+   "value": "Oui"
+  },
+  {
+   "group": "Ecran",
+   "label": "Dolby Vision",
+   "value": "Non"
+  },
+  {
+   "group": "Ecran",
+   "label": "Modes d’image multiples",
+   "value": "User"
+  },
+  {
+   "group": "Ecran",
+   "label": "Économie d’énergie",
+   "value": "Oui"
+  },
+  {
+   "group": "Ecran",
+   "label": "MEMC",
+   "value": "Non"
+  },
+  {
+   "group": "Ecran",
+   "label": "Gamme de couleurs",
+   "value": "Normal"
+  },
+  {
+   "group": "TV Connectée",
+   "label": "Smart TV",
+   "value": "Android 11"
+  },
+  {
+   "group": "TV Connectée",
+   "label": "Système",
+   "value": "Android 11"
+  },
+  {
+   "group": "TV Connectée",
+   "label": "Applications - Google Play Store",
+   "value": "Oui"
+  },
+  {
+   "group": "TV Connectée",
+   "label": "Applications - Google Assistant",
+   "value": "Oui"
+  },
+  {
+   "group": "TV Connectée",
+   "label": "Commande vocale en champ lointain",
+   "value": "No"
+  },
+  {
+   "group": "TV Connectée",
+   "label": "Chromecast",
+   "value": "Oui"
+  },
+  {
+   "group": "TV Connectée",
+   "label": "Mode Hôtel",
+   "value": "Non"
+  },
+  {
+   "group": "TV Connectée",
+   "label": "HbbTV",
+   "value": "Yes (function only)"
+  },
+  {
+   "group": "Son",
+   "label": "Son surround (simulation)",
+   "value": "Oui"
+  },
+  {
+   "group": "Son",
+   "label": "dbx-tv",
+   "value": "Oui"
+  },
+  {
+   "group": "Son",
+   "label": "Dolby Atmos",
+   "value": "Non"
+  },
+  {
+   "group": "Son",
+   "label": "Watts/canal (7 % THD)",
+   "value": "8W*2 (THD<7%)@6ohm"
+  },
+  {
+   "group": "Son",
+   "label": "Modes audio multiples",
+   "value": "User"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Entrée HDMI",
+   "value": "HDMI 2.1compliance*4 (ALLM)"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Entrée tuner",
+   "value": "2"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Prise casque",
+   "value": "1"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Ports USB",
+   "value": "2 (USB 2.0)"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Bluetooth",
+   "value": "5.1"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Wi-Fi",
+   "value": "DCT2CM2101/MT7663BUN"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Entrée composite",
+   "value": "1"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Entrée audio partagée",
+   "value": "1(Shared with AV)"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Port Ethernet LAN",
+   "value": "1"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Classe d'efficacité énergétique",
+   "value": "F"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit emballé (mm)",
+   "value": "636"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit emballé (mm)",
+   "value": "1075"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Standard de fixation murale (VESA) [mm]",
+   "value": "200x200"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit (mm)",
+   "value": "599"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit emballé (mm)",
+   "value": "125"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids net (kg)",
+   "value": "6,5"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids net (sans pied)",
+   "value": "6,43"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids brut (kg)",
+   "value": "8,8"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:19",
+ "auditNotes": [
+  "33 rows come from the site JSON only (not written as text on the page)"
+ ],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

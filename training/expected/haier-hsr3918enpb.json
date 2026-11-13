@@ -1,0 +1,367 @@
+{
+ "id": "haier-hsr3918enpb",
+ "site": "haier",
+ "type": "fridge",
+ "url": "https://www.haier-europe.com/fr_MA/refrigerateurs/34004492/hsr3918enpb/",
+ "finalUrl": "https://www.haier-europe.com/fr_MA/refrigerateurs/34004492/hsr3918enpb/",
+ "name": "Réfrigérateurs SBS 90 Série 3 HSR3918ENPB",
+ "brand": "Haier",
+ "model": "HSR3918ENPB",
+ "pictures": [
+  "https://www.haier-europe.com/h-image/haier-product/2020/7/15961823/28_34004492_15_01_f_hsr3918enpb-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2020/7/15961824/28_34004492_15_02_o_hsr3918enpb-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2020/7/15961823/28_34004492_15_03_l_hsr3918enpb-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2020/11/16050199/28_34004492_15_03_o_hsr3918enpb-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2020/7/15961823/28_34004492_15_04_o_hsr3918enpb-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2020/7/15961824/28_34004492_15_05_a_hsr3918enpb-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2020/7/15961824/28_34004492_15_08_p_hsr3918enpb-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2020/7/15961823/28_34004492_15_09_p_hsr3918enpb-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2020/7/15961824/28_34004492_15_10_p_hsr3918enpb-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2021/7/16261674/28_34004492_15_12_p_hsr3918enpb-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2021/7/16261675/28_34004492_15_13_p_hsr3918enpb-M.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Caractéristiques principales",
+   "label": "Référence commerciale",
+   "value": "HSR3918ENPB"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code EAN",
+   "value": "6901018077364"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Fabricant",
+   "value": "Haier Smart Home Co. Ltd."
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Numéro de portes",
+   "value": "Américain"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Catégorie de produit",
+   "value": "Réfrigérateur"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Encastrable / Pose libre",
+   "value": "Pose Libre"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Technologie froid",
+   "value": "No Frost"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Ecran de contrôle",
+   "value": "Oui"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Connectivité",
+   "value": "Aucune"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Application disponible",
+   "value": "Non"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Chat. Dir. 94/2 / CE",
+   "value": "Réfrigerateurs/Congélateurs avec compartiment 4 étoiles"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Condensateur",
+   "value": "Interne"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Processus de dégivrage dans la partie congélateur",
+   "value": "Automatique"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Processus de dégivrage dans la partie réfrigérateur",
+   "value": "Automatique"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Lumière",
+   "value": "Led"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Joint d'étanchéité",
+   "value": "Tirer"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Colonne d'air multiflow",
+   "value": "Oui"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Type de prise",
+   "value": "Schuko"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Fréquence (Hz)",
+   "value": "50"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Nombre de compresseurs",
+   "value": "1"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Ventilateur intérieur dans la partie réfrigérateur",
+   "value": "Oui"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Courant (A)",
+   "value": "1.8"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Tension (V)",
+   "value": "220-240"
+  },
+  {
+   "group": "Ecran",
+   "label": "Ecran de contrôle",
+   "value": "Panneau de contrôle sur porte"
+  },
+  {
+   "group": "Ecran",
+   "label": "Ecran de contrôle",
+   "value": "Electronique"
+  },
+  {
+   "group": "Ecran",
+   "label": "Voyant de porte ouverte - réfrigérateur",
+   "value": "Sonore"
+  },
+  {
+   "group": "Ecran",
+   "label": "Fonction vacances",
+   "value": "Oui"
+  },
+  {
+   "group": "Ecran",
+   "label": "Smart Cool",
+   "value": "Oui"
+  },
+  {
+   "group": "Ecran",
+   "label": "Fonction Super réfrigération",
+   "value": "Oui"
+  },
+  {
+   "group": "Ecran",
+   "label": "Super congélation",
+   "value": "Oui"
+  },
+  {
+   "group": "Ecran",
+   "label": "Température réglable",
+   "value": "Réglages distincts pour réfrigérateur et congélateur"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur",
+   "value": "Noir"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Matériau des balconnets",
+   "value": "Plastique transparent"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Matériau des clayettes",
+   "value": "Verre"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Porte bouteilles",
+   "value": "NC"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre total de balconnets",
+   "value": "6"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Balconnets",
+   "value": "Cadre en argenté"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Finitions clayettes",
+   "value": "Cadre en argenté"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Rails télescopiques",
+   "value": "Pas disponible"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Poignées",
+   "value": "Poignée intégrée confortable"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre de clayettes ajustables dans le réfrigérateur",
+   "value": "2"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre de tiroirs dans la partie congélateur",
+   "value": "2"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre de bac à légumes",
+   "value": "2"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre de porte-oeufs",
+   "value": "2 transparents"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Nombre de bacs à glaçons",
+   "value": "1 blanc"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Système d'installation d'une double porte",
+   "value": "Montage fixe"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Charnière de porte",
+   "value": "NC"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Consommation d’énergie (kWh)",
+   "value": "0,927"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Classe d'efficacité énergétique - NOUVEAU (2010/30 / CE)",
+   "value": "A++"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Congélateur volume net (l) ****",
+   "value": "177"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Pouvoir de congélation (kg)",
+   "value": "10"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Réfrigérateur capacité brute (l)",
+   "value": "347"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Réfrigérateur capacité nette (l)",
+   "value": "337"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Nombre d'étoiles",
+   "value": "4"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Autonomie en cas de coupure de courant (h)",
+   "value": "5"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Consommation énergétique annuelle (kWh)",
+   "value": "338"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Capacité totale nette (l)",
+   "value": "514"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Congélateur capacité brute (l)",
+   "value": "167"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Niveau sonore (dB)",
+   "value": "38"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit (mm)",
+   "value": "1775"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit (mm)",
+   "value": "908"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit (mm)",
+   "value": "647"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit emballé (mm)",
+   "value": "1888"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit emballé (mm)",
+   "value": "980"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit emballé (mm)",
+   "value": "716"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids brut (kg)",
+   "value": "95"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids net (kg)",
+   "value": "85"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:19",
+ "auditNotes": [
+  "57 rows come from the site JSON only (not written as text on the page)"
+ ],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

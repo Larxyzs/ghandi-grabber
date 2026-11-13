@@ -1,0 +1,22 @@
+{
+ "id": "tcl-f166tmw",
+ "site": "tcl",
+ "type": "fridge",
+ "url": "https://www.tcl.com/ma/fr/refrigerators/f166tmw",
+ "finalUrl": "https://www.tcl.com/ma/fr/refrigerators/f166tmw",
+ "name": "F166TMW Réfrigérateur monté sur le dessus",
+ "brand": "TCL",
+ "model": "F166TMW",
+ "pictures": [
+  "https://aws-obg-image-lb-4.tcl.com/content/dam/brandsite/region/north-africa/product/ref/tm/f166tm.png",
+  "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/region/north-africa/product/ref/tm/f166tm-2.png"
+ ],
+ "specs": [],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:18",
+ "auditNotes": [
+  "no product_spec JSON"
+ ],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

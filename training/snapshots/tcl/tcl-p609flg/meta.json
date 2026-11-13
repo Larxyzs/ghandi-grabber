@@ -1,0 +1,24 @@
+{
+ "id": "tcl-p609flg",
+ "url": "https://www.tcl.com/ma/fr/washing-machine/p609flg",
+ "savedAt": "2026-11-09T17:39:00",
+ "rawStatus": 200,
+ "rawUrl": "https://www.tcl.com/ma/fr/washing-machine/p609flg",
+ "rawBytes": 419401,
+ "status": 200,
+ "cookies": "",
+ "finalUrl": "https://www.tcl.com/ma/fr/washing-machine/p609flg",
+ "title": "Washing Machine-P609FLG P609FLG Lave-linge à chargement frontal | TCL TCL Morocco / Français",
+ "clicked": [
+  "Fonction d'arrêt du son",
+  "CARACTÉRISTIQUES",
+  "SPÉCIFICATIONS",
+  "SPÉCIFICATIONS"
+ ],
+ "shots": [
+  "top.jpg"
+ ],
+ "hiddenMarked": 268,
+ "xhr": 2,
+ "renderedBytes": 563402
+}

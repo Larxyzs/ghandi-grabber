@@ -1,0 +1,289 @@
+{
+ "id": "haier-h55m80fux",
+ "site": "haier",
+ "type": "tv",
+ "url": "https://www.haier-europe.com/fr_MA/tv/36200130/h55m80fux/",
+ "finalUrl": "https://www.haier-europe.com/fr_MA/tv/36200130/h55m80fux/",
+ "name": "Téléviseurs and Smart TVs H55M80FUX",
+ "brand": "Haier",
+ "model": "H55M80FUX",
+ "pictures": [
+  "https://www.haier-europe.com/h-image/haier-product/2025/6/17510263/28_36200130_62_01_f_h55m80fux-6188-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2025/6/17510209/28_36200130_62_03_l_h55m80fux-36598-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2025/6/17510269/28_36200130_62_04_l_h55m80fux-90622-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2025/6/17510269/28_36200130_62_05_a_h55m80fux-66739-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2025/6/17510266/28_36200130_62_07_d_h55m80fux-93827-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2025/6/17510208/28_36200130_62_09_b_h55m80fux-22050-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2025/6/17510265/28_36200130_62_10_m_h55m80fux-40055-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2025/6/17510270/28_36200130_62_11_m_h55m80fux-10373-M.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Caractéristiques principales",
+   "label": "Référence commerciale",
+   "value": "H55M80FUX"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code EAN",
+   "value": "6976454833096"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Fabricant",
+   "value": "Qingdao Haier Optronics Co. Ltd."
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Taille d’écran (pouces)",
+   "value": "55"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Technologie de dalle utilisée",
+   "value": "Mini-LED"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Résolution",
+   "value": "3840*2160"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Définition de la dalle",
+   "value": "4K"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Application disponible",
+   "value": "hOn"
+  },
+  {
+   "group": "Ecran",
+   "label": "Type de panneau",
+   "value": "Mini-LED"
+  },
+  {
+   "group": "Ecran",
+   "label": "Surface d’écran active (pouces)",
+   "value": "54,6"
+  },
+  {
+   "group": "Ecran",
+   "label": "Taux de rafraîchissement",
+   "value": "60Hz"
+  },
+  {
+   "group": "Ecran",
+   "label": "HDR10",
+   "value": "Oui"
+  },
+  {
+   "group": "Ecran",
+   "label": "Dolby Vision",
+   "value": "Oui"
+  },
+  {
+   "group": "Ecran",
+   "label": "Modes d’image multiples",
+   "value": "User"
+  },
+  {
+   "group": "Ecran",
+   "label": "Économie d’énergie",
+   "value": "Oui"
+  },
+  {
+   "group": "Ecran",
+   "label": "MEMC",
+   "value": "Oui"
+  },
+  {
+   "group": "Ecran",
+   "label": "Gamme de couleurs",
+   "value": "QLED"
+  },
+  {
+   "group": "Ecran",
+   "label": "Diagonale d’écran (cm)",
+   "value": "139"
+  },
+  {
+   "group": "TV Connectée",
+   "label": "Smart TV",
+   "value": "Google TV"
+  },
+  {
+   "group": "TV Connectée",
+   "label": "Système",
+   "value": "Google TV"
+  },
+  {
+   "group": "TV Connectée",
+   "label": "Applications - Google Play Store",
+   "value": "Oui"
+  },
+  {
+   "group": "TV Connectée",
+   "label": "Applications - Google Assistant",
+   "value": "Oui"
+  },
+  {
+   "group": "TV Connectée",
+   "label": "Commande vocale en champ lointain",
+   "value": "FFGA (Far field with Google Assistant)"
+  },
+  {
+   "group": "TV Connectée",
+   "label": "Chromecast",
+   "value": "Oui"
+  },
+  {
+   "group": "TV Connectée",
+   "label": "Mode Hôtel",
+   "value": "Non"
+  },
+  {
+   "group": "TV Connectée",
+   "label": "HbbTV",
+   "value": "Yes (function only)"
+  },
+  {
+   "group": "Son",
+   "label": "Son surround (simulation)",
+   "value": "Oui"
+  },
+  {
+   "group": "Son",
+   "label": "dbx-tv",
+   "value": "Oui"
+  },
+  {
+   "group": "Son",
+   "label": "Dolby Atmos",
+   "value": "Oui"
+  },
+  {
+   "group": "Son",
+   "label": "Watts/canal (7 % THD)",
+   "value": "13.5W*2+18W (THD<7%)"
+  },
+  {
+   "group": "Son",
+   "label": "Modes audio multiples",
+   "value": "User"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Entrée HDMI",
+   "value": "4 (HDMI 2.1 Compliance ALLM eARC)"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Entrée tuner",
+   "value": "2"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Prise casque",
+   "value": "1"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Ports USB",
+   "value": "2 (USB 2.0)"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Bluetooth",
+   "value": "5.1"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Wi-Fi",
+   "value": "WIFI 5"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Entrée composite",
+   "value": "1"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Entrée audio partagée",
+   "value": "1(Shared with AV)"
+  },
+  {
+   "group": "Connectivité",
+   "label": "Port Ethernet LAN",
+   "value": "1"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Classe d'efficacité énergétique",
+   "value": "D"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Consommation en mode marche SDR (W)",
+   "value": "50"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Classe d’efficacité énergétique en mode HDR (High Dynamic Range)",
+   "value": "F"
+  },
+  {
+   "group": "Performance et consommation",
+   "label": "Consommation en mode marche HDR (W)",
+   "value": "75"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit emballé (mm)",
+   "value": "128"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit emballé (mm)",
+   "value": "1360"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Standard de fixation murale (VESA) [mm]",
+   "value": "600x300"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit (mm)",
+   "value": "742"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit emballé (mm)",
+   "value": "830"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids net (kg)",
+   "value": "12,3"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids net (sans pied)",
+   "value": "12"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids brut (kg)",
+   "value": "16"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:19",
+ "auditNotes": [
+  "37 rows come from the site JSON only (not written as text on the page)"
+ ],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

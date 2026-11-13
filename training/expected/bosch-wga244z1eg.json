@@ -1,0 +1,279 @@
+{
+ "id": "bosch-wga244z1eg",
+ "site": "bosch",
+ "type": "washer",
+ "url": "https://www.bosch-home.ma/fr/product/lave-linge-et-seche-linge/lave-linge/lave-linge-a-chargement-frontal/WGA244Z1EG",
+ "finalUrl": "https://www.bosch-home.ma/fr/product/WGA244Z1EG",
+ "name": "Série 4 lave-linge à chargement frontal 9 kg max. 1400 tr/min, Gris fonte",
+ "brand": "Bosch",
+ "model": "WGA244Z1EG",
+ "pictures": [
+  "https://media3.bsh-group.com/Product_Shots/27942513_WGA244Z1EG_STP_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/28045196_WGA244Z1EG_PGA1_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/28343889_WGA244Z1EG_PGA2_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/28045197_WGA244Z1EG_PGA3_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/28045212_WGA244Z1EG_PGA4_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/27907262_WGA244Z1EG_PGA6_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/28045211_WGA244Z1EG_PGA12_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/25176872_Filter_W-WD_castirongrey_PGA11_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/21030793_Drum_W_WA_anthracite_castirongrey_PGA8_def.webp",
+  "https://media3.bsh-group.com/Product_Shots/22972641_Sidewall_W-WD_L_fullsize_standard_castirongrey_PGA9_def.webp"
+ ],
+ "specs": [
+  {
+   "group": "Aperçu technique",
+   "label": "Vitesse d'essorage max",
+   "value": "1400 rpm"
+  },
+  {
+   "group": "Aperçu technique",
+   "label": "Capacité de chargement",
+   "value": "9.0 kg"
+  },
+  {
+   "group": "Général",
+   "label": "Pose-libre / Intégré",
+   "value": "Pose-libre"
+  },
+  {
+   "group": "Général",
+   "label": "Couleur de l'appareil",
+   "value": "Gris fonte"
+  },
+  {
+   "group": "Général",
+   "label": "Noms des programmes",
+   "value": "Programme Délicat, Programme Blanc/Couleurs, Programme Synthétiques, Progr. Laine lavage à la main"
+  },
+  {
+   "group": "Général",
+   "label": "Optimisation du lavage",
+   "value": "Anti-allergie, Nettoyage tambour, repassage facile assisté à la vapeur, Chemises/Chemisiers, vidange / essorer, Mix, simple rinçage, Edredon, Express 15 min, Express 30 min, Repassage facile, Terminé, Sélection taches, Départ/Pause ou Rajout de linge, Température, Express, Essorage variable"
+  },
+  {
+   "group": "Général",
+   "label": "Niveau sonore au lavage",
+   "value": "54 dB(A) re 1pW"
+  },
+  {
+   "group": "Général",
+   "label": "Niveau sonore à l'essorage",
+   "value": "74 dB(A) re 1pW"
+  },
+  {
+   "group": "Général",
+   "label": "Sécurité hydraulique",
+   "value": "Anti-débordement"
+  },
+  {
+   "group": "Général",
+   "label": "Top amovible",
+   "value": "Non"
+  },
+  {
+   "group": "Général",
+   "label": "Capacité maximale en kg (UE 2017/1369)",
+   "value": "9.0 kg"
+  },
+  {
+   "group": "Général",
+   "label": "Vitesse d'essorage max. (tr/min)",
+   "value": "1351 rpm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Dimensions du produit",
+   "value": "845x598x588 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Dimensions du produit emballé",
+   "value": "870x650x680 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Profondeur porte ouverte à 90°",
+   "value": "1049 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Réglage maximum de la hauteur des pieds",
+   "value": "12 mm"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Poids net",
+   "value": "71.5 kg"
+  },
+  {
+   "group": "Taille et poids",
+   "label": "Longueur du cordon électrique",
+   "value": "160 cm"
+  },
+  {
+   "group": "Confort",
+   "label": "Rajout de linge",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Sonde à chargement",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Détection du degré de salissures",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Afficheur digital de temps restant",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Indicateur de déroulement",
+   "value": "Display LED, LED"
+  },
+  {
+   "group": "Confort",
+   "label": "Indicateur de fin de cycle",
+   "value": "Acoustique, Display LED"
+  },
+  {
+   "group": "Confort",
+   "label": "Capteur de rinçage",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Rinçage plus",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "Options de départ différé",
+   "value": "continu"
+  },
+  {
+   "group": "Confort",
+   "label": "Ajustement automatique du niveau d'eau",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Eclairage intérieur",
+   "value": "Non"
+  },
+  {
+   "group": "Confort",
+   "label": "EcoSilence Drive - efficace et extra silencieux",
+   "value": "Oui"
+  },
+  {
+   "group": "Confort",
+   "label": "Alimentation eau chaude et eau froide",
+   "value": "Non"
+  },
+  {
+   "group": "Options de rapidité",
+   "label": "super15",
+   "value": "Oui"
+  },
+  {
+   "group": "Options de rapidité",
+   "label": "Programme de Vitesse 15/30",
+   "value": "Oui"
+  },
+  {
+   "group": "Options de rapidité",
+   "label": "SpeedPerfect",
+   "value": "Oui"
+  },
+  {
+   "group": "Options de rapidité",
+   "label": "Variateur de vitesse d'essorage",
+   "value": "Réglable"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme \"Allergie plus",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme d'articles de sport",
+   "value": "Non"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme Chemises / Chemisiers",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme Délicat / soie",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme Laine",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme Descendant",
+   "value": "Non"
+  },
+  {
+   "group": "Programmes",
+   "label": "Outdoor",
+   "value": "Non"
+  },
+  {
+   "group": "Programmes",
+   "label": "Système automatique antitaches",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Option de lavage à froid",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme Blanc/Couleurs",
+   "value": "Étiquette énergétique du programme court, Standard froid - 90°C"
+  },
+  {
+   "group": "Programmes",
+   "label": "Programme Synthétiques",
+   "value": "Standard froid - 60°C"
+  },
+  {
+   "group": "Programmes",
+   "label": "Thermostat réglable",
+   "value": "Oui"
+  },
+  {
+   "group": "Connectivité",
+   "label": "HomeConnect",
+   "value": "Non"
+  },
+  {
+   "group": "Sécurité",
+   "label": "Système anti-balourd",
+   "value": "Oui"
+  },
+  {
+   "group": "Sécurité",
+   "label": "Sécurité-enfants",
+   "value": "Oui"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:20",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

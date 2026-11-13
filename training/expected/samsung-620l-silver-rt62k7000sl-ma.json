@@ -1,0 +1,213 @@
+{
+ "id": "samsung-620l-silver-rt62k7000sl-ma",
+ "site": "samsung",
+ "type": "fridge",
+ "url": "https://www.samsung.com/n_africa/refrigerators/top-mount-freezer/620l-silver-rt62k7000sl-ma/",
+ "finalUrl": "https://www.samsung.com/n_africa/refrigerators/top-mount-freezer/620l-silver-rt62k7000sl-ma/",
+ "name": "Réfrigérateur RT7000K avec congélateur en haut et Twin Cooling Plus™, 620 L",
+ "brand": "Samsung",
+ "model": "RT62K7000SL/MA",
+ "pictures": [
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/rt62k7000sl-ma/gallery/n-africa-rt7000k-top-freezer-with--twin-cooling-plus™-620l-rt62k7000sl-ma-530547247",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/rt62k7000sl-ma/gallery/n-africa-rt7000k-top-freezer-with--twin-cooling-plus™-620l-rt62k7000sl-ma-530547248",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/rt62k7000sl-ma/gallery/n-africa-rt7000k-top-freezer-with--twin-cooling-plus™-620l-rt62k7000sl-ma-530547249",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/rt62k7000sl-ma/gallery/n-africa-rt7000k-top-freezer-with--twin-cooling-plus™-620l-rt62k7000sl-ma-530547250",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/rt62k7000sl-ma/gallery/n-africa-rt7000k-top-freezer-with--twin-cooling-plus™-620l-rt62k7000sl-ma-530547251",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/rt62k7000sl-ma/gallery/n-africa-rt7000k-top-freezer-with--twin-cooling-plus™-620l-rt62k7000sl-ma-530547252"
+ ],
+ "specs": [
+  {
+   "group": "Présentation",
+   "label": "Nette totale (Litres)",
+   "value": "620"
+  },
+  {
+   "group": "Présentation",
+   "label": "Brut total (Litres)",
+   "value": "631"
+  },
+  {
+   "group": "Présentation",
+   "label": "Dimension nette (l x H x P) (mm)",
+   "value": "836 x 1862 x 788"
+  },
+  {
+   "group": "Présentation",
+   "label": "Poids (kg)",
+   "value": "98"
+  },
+  {
+   "group": "Présentation",
+   "label": "Caractéristiques de refroidissement",
+   "value": "Oui"
+  },
+  {
+   "group": "Présentation",
+   "label": "Niveau sonore",
+   "value": "41 dBA"
+  },
+  {
+   "group": "Capacité",
+   "label": "Net congélateur (Litres)",
+   "value": "161"
+  },
+  {
+   "group": "Capacité",
+   "label": "Net réfrigérateur (Litres)",
+   "value": "459"
+  },
+  {
+   "group": "Capacité",
+   "label": "Capacité congélateur (Litres)",
+   "value": "170"
+  },
+  {
+   "group": "Capacité",
+   "label": "Capacité réfrigérateur (Litres)",
+   "value": "461"
+  },
+  {
+   "group": "Spécification physique",
+   "label": "Largeur avec emballage (mm)",
+   "value": "892"
+  },
+  {
+   "group": "Spécification physique",
+   "label": "Hauteur avec emballage (mm)",
+   "value": "1980"
+  },
+  {
+   "group": "Spécification physique",
+   "label": "Profondeur avec emballage (mm)",
+   "value": "776"
+  },
+  {
+   "group": "Spécification physique",
+   "label": "Poids net avec emballage (kg)",
+   "value": "105"
+  },
+  {
+   "group": "Spécification physique",
+   "label": "20/40/40 H (contenance)",
+   "value": "18/39/39"
+  },
+  {
+   "group": "Caractéristiques de refroidissement",
+   "label": "Twin Cooling Plus",
+   "value": "Oui"
+  },
+  {
+   "group": "Caractéristiques de refroidissement",
+   "label": "Froid ventilé",
+   "value": "Oui"
+  },
+  {
+   "group": "Caractéristiques de refroidissement",
+   "label": "Multi Flow",
+   "value": "Oui"
+  },
+  {
+   "group": "Caractéristiques du réfrigérateur",
+   "label": "Désodorisant",
+   "value": "Oui"
+  },
+  {
+   "group": "Caractéristiques du réfrigérateur",
+   "label": "Nombre de clayettes",
+   "value": "4 EA"
+  },
+  {
+   "group": "Caractéristiques du réfrigérateur",
+   "label": "Deli Tray",
+   "value": "Non"
+  },
+  {
+   "group": "Caractéristiques du réfrigérateur",
+   "label": "Finition de la clayette",
+   "value": "Verre trempé"
+  },
+  {
+   "group": "Caractéristiques du réfrigérateur",
+   "label": "Nombre de tiroirs fruits & légumes",
+   "value": "2 (demi)"
+  },
+  {
+   "group": "Caractéristiques du réfrigérateur",
+   "label": "Nombre de logement de porte",
+   "value": "5 EA"
+  },
+  {
+   "group": "Caractéristiques du réfrigérateur",
+   "label": "Casier à œufs",
+   "value": "Oui"
+  },
+  {
+   "group": "Caractéristiques du réfrigérateur",
+   "label": "Eclairage intérieur LED",
+   "value": "LED supérieure"
+  },
+  {
+   "group": "Caractéristiques du réfrigérateur",
+   "label": "Grands compartiments",
+   "value": "Oui"
+  },
+  {
+   "group": "Caractéristiques du congélateur",
+   "label": "À glaçons amovible",
+   "value": "Bac"
+  },
+  {
+   "group": "Caractéristiques du congélateur",
+   "label": "Nombre de clayettes",
+   "value": "1 EA"
+  },
+  {
+   "group": "Caractéristiques du congélateur",
+   "label": "Nombre de logement de porte",
+   "value": "2 EA"
+  },
+  {
+   "group": "Caractéristiques générales",
+   "label": "Réfrigérant",
+   "value": "R-600a"
+  },
+  {
+   "group": "Caractéristiques générales",
+   "label": "Compresseur",
+   "value": "Compresseur à onduleur numérique"
+  },
+  {
+   "group": "Caractéristiques externes",
+   "label": "Affichage et contrôle (Réfrigérateur et congélateur",
+   "value": "Externe"
+  },
+  {
+   "group": "Caractéristiques externes",
+   "label": "Type de poignée",
+   "value": "Bar"
+  },
+  {
+   "group": "Caractéristiques externes",
+   "label": "Couleur",
+   "value": "Inox élégant"
+  },
+  {
+   "group": "Caractéristiques externes",
+   "label": "Distributeur d'eau",
+   "value": "Non"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Classe d’efficacité énergétique",
+   "value": "A+"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Consommation d’énergie",
+   "value": "400 kWh/an"
+  }
+ ],
+ "verified": false,
+ "auditedAt": "2026-11-09T17:44:00",
+ "auditNotes": []
+}

@@ -1,0 +1,233 @@
+{
+ "id": "haier-hats6cbs2xwifi",
+ "site": "haier",
+ "type": "hood",
+ "url": "https://www.haier-europe.com/fr_MA/hottes/36901920/hats6cbs2xwifi/",
+ "finalUrl": "https://www.haier-europe.com/fr_MA/hottes/36901920/hats6cbs2xwifi/",
+ "name": "Hottes ID Link HATS6CBS2XWIFI",
+ "brand": "Haier",
+ "model": "HATS6CBS2XWIFI",
+ "pictures": [
+  "https://www.haier-europe.com/h-image/haier-product/2023/12/17018634/28_36901920_19_01_f_hats6cbs2xwifi-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2024/1/17061147/28_36901920_19_03_l_hats6cbs2xwifi-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2024/1/17061142/28_36901920_19_04_l_hats6cbs2xwifi-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2024/4/17132659/28_36901920_19_06_l_hats6cbs2xwifi-18764-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2024/4/17132660/28_36901920_19_08_m_hats6cbs2xwifi-4501-M.jpg",
+  "https://www.haier-europe.com/h-image/haier-product/2024/4/17132659/28_36901920_19_09_m_hats6cbs2xwifi-35701-M.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Pourcentage de matière recyclée dans le produit",
+   "value": "0"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Recyclabilité du produit",
+   "value": "Majoritairement recyclable"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Métaux précieux dans le produit, contient au moins (mg)",
+   "value": "0"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Terres rares dans le produit, contient au moins (mg)",
+   "value": "0"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Emballage recyclable",
+   "value": "Non"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Pourcentage de matière recyclée dans l’emballage",
+   "value": "0"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Emballage réemployable",
+   "value": "Non"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Pourcentage de matière recyclée dans le papier imprimé",
+   "value": "0"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Modèle",
+   "value": "HATS6CBS2XWIFI"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code EAN",
+   "value": "8059019090610"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Fabricant",
+   "value": "Candy Hoover Group S.r.l."
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Installation",
+   "value": "Murale"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Type",
+   "value": "Traditional"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Connectivité",
+   "value": "Contrôle à distance avancé et contenu supplémentaire (Wi-Fi + BLE)"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Fréquence (Hz)",
+   "value": "50 60"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Application disponible",
+   "value": "hOn"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Puissance totale des lampes (W)",
+   "value": "8"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Type de commande",
+   "value": "Touch control"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Nombre de moteurs",
+   "value": "1"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Type de lampes utilisées",
+   "value": "LED"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Tension (V)",
+   "value": "220-240"
+  },
+  {
+   "group": "Programmes et fonctions",
+   "label": "Position turbo",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes et fonctions",
+   "label": "Nombre de vitesse",
+   "value": "4"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur du matériau principal",
+   "value": "Noir"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Matériau de la carrosserie",
+   "value": "Verre noir avec cadre inox"
+  },
+  {
+   "group": "Performance",
+   "label": "Débit d’air en mode intensif ou «boost» (m3/h)",
+   "value": "779"
+  },
+  {
+   "group": "Performance",
+   "label": "Débit d’air à la vitesse min/max en fonctionnement normal, Qmin/Qmax (m3/h)",
+   "value": "596"
+  },
+  {
+   "group": "Performance",
+   "label": "Classe d’efficacité énergétique (2010/30/EC)",
+   "value": "A+"
+  },
+  {
+   "group": "Performance",
+   "label": "Emissions acoustiques de l’air pondérées de la valeur A à la vitesse min/max en fonctionnement normal (dB(A))",
+   "value": "65"
+  },
+  {
+   "group": "Performance",
+   "label": "Puissance (W)",
+   "value": "<1000 W"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit (mm)",
+   "value": "1000"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur de la cheminée (mm)",
+   "value": "0"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit sans cheminée (mm)",
+   "value": "520"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit (mm)",
+   "value": "600"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit (mm)",
+   "value": "500"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit emballé (mm)",
+   "value": "560"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit emballé (mm)",
+   "value": "645"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit emballé (mm)",
+   "value": "380"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Diamètre du réducteur d'évacuation d'air (mm)",
+   "value": "150"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids net (kg)",
+   "value": "15,65"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids brut (kg)",
+   "value": "18,55"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:19",
+ "auditNotes": [
+  "1 technical drawing(s) left out",
+  "28 rows come from the site JSON only (not written as text on the page)"
+ ],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

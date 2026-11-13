@@ -1,0 +1,60 @@
+{
+ "id": "electrobousfiha-7903-lave-vaisselle-midea-encastrable-14",
+ "site": "electrobousfiha",
+ "type": "dishwasher",
+ "url": "https://electrobousfiha.com/lave-vaisselle-/7903-lave-vaisselle-midea-encastrable-14cv-5-prog-dark-gray.html",
+ "finalUrl": "https://electrobousfiha.com/lave-vaisselle-/7903-lave-vaisselle-midea-encastrable-14cv-5-prog-dark-gray.html",
+ "name": "LAVE VAISSELLE MIDEA ENCASTRABLE 14 COUVERTS 5 PROGRAMMES GRIS FONCÉ",
+ "brand": "Midea",
+ "model": "WQP14-W7703L",
+ "pictures": [
+  "https://electrobousfiha.com/41644-large_default/lave-vaisselle-midea-encastrable-14cv-5-prog-dark-gray.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Classe Énergétique",
+   "value": "E"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Couleur du Produit",
+   "value": "Gris foncé"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Connectivité",
+   "value": "Wi-Fi"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Emplacement",
+   "value": "14 CV"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Niveau Sonore (dB)",
+   "value": "49 dBA"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Caractéristique Spéciale",
+   "value": "Séchage supplémentaire Séchage supplémentaire demi-charge"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Garantie",
+   "value": "1 AN"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Nombre de programmes",
+   "value": "5+3 programmes : IntensiveCare+/ ECO/ 90 min/ Rapide/ Verre (IOT : HygieneCare+/ MachineCare+/ Whisper )"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:21",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

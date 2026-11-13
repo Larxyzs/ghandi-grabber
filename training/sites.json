@@ -1,0 +1,314 @@
+{
+ "whirlpool": {
+  "name": "Whirlpool",
+  "brand": "Whirlpool",
+  "match": [
+   "whirlpool"
+  ],
+  "home": "https://www.whirlpool.ma/ma-fr",
+  "delay": 8,
+  "categories": {
+   "fridge": [
+    "https://www.whirlpool.ma/ma-fr/produits/refrigerateurs",
+    "https://www.whirlpool.ma/ma-fr/produits/refrigerateurs-congelateurs"
+   ],
+   "freezer": [
+    "https://www.whirlpool.ma/ma-fr/produits/congelateurs"
+   ],
+   "washer": [
+    "https://www.whirlpool.ma/ma-fr/produits/lave-linge-pose-libre"
+   ],
+   "washer-dryer": [
+    "https://www.whirlpool.ma/ma-fr/produits/lave-linge-sechants-pose-libre"
+   ],
+   "dryer": [
+    "https://www.whirlpool.ma/ma-fr/produits/seche-linge"
+   ],
+   "dishwasher": [
+    "https://www.whirlpool.ma/ma-fr/produits/lave-vaisselle-pose-libre",
+    "https://www.whirlpool.ma/ma-fr/produits/lave-vaisselle-integres"
+   ],
+   "cooker": [
+    "https://www.whirlpool.ma/ma-fr/produits/cuisinieres-pose-libre"
+   ],
+   "oven": [
+    "https://www.whirlpool.ma/ma-fr/produits/fours-encastrables"
+   ],
+   "microwave": [
+    "https://www.whirlpool.ma/ma-fr/produits/micro-ondes-encastres",
+    "https://www.whirlpool.ma/ma-fr/produits/micro-ondes-pose-libre"
+   ],
+   "hob": [
+    "https://www.whirlpool.ma/ma-fr/produits/tables-de-cuisson-encastrees"
+   ],
+   "hood": [
+    "https://www.whirlpool.ma/ma-fr/produits/hottes-encastrees"
+   ]
+  },
+  "notes": "Beko AEM platform. No prices. curl gets 403 (bot wall) but a real browser is fine."
+ },
+ "lg": {
+  "name": "LG",
+  "brand": "LG",
+  "match": [
+   "lg.com"
+  ],
+  "home": "https://www.lg.com/ma/",
+  "delay": 3,
+  "categories": {
+   "fridge": [
+    "https://www.lg.com/ma/refrigerateurs/tous-les-refrigerateurs/"
+   ],
+   "washer": [
+    "https://www.lg.com/ma/lave-linge-et-seche-linge/lave-linge-a-chargement-frontal/"
+   ],
+   "washer-dryer": [
+    "https://www.lg.com/ma/lave-linge-et-seche-linge/lavante-sechante/"
+   ],
+   "dishwasher": [
+    "https://www.lg.com/ma/lave-vaisselle/"
+   ],
+   "ac": [
+    "https://www.lg.com/ma/climatiseurs-residentiels/tous-les-climatiseurs/"
+   ],
+   "tv": [
+    "https://www.lg.com/ma/tv-barres-de-son/tous-les-televiseurs/"
+   ],
+   "soundbar": [
+    "https://www.lg.com/ma/tv-barres-de-son/barres-de-son/"
+   ]
+  },
+  "notes": "Spec list opens with 'Voir toutes les caractéristiques'. Prices on some Morocco pages (ignored)."
+ },
+ "candy": {
+  "name": "Candy",
+  "brand": "Candy",
+  "match": [
+   "candy-home",
+   "candy.fr",
+   "candy.ma"
+  ],
+  "home": "https://www.candy-home.com/fr_MA/",
+  "delay": 2.5,
+  "categories": {
+   "washer": [
+    "https://www.candy-home.com/fr_MA/lave-linge-hublot/",
+    "https://www.candy-home.com/fr_MA/lave-linge-top/"
+   ],
+   "dryer": [
+    "https://www.candy-home.com/fr_MA/seche-linge/"
+   ],
+   "dishwasher": [
+    "https://www.candy-home.com/fr_MA/lave-vaisselle/"
+   ],
+   "fridge": [
+    "https://www.candy-home.com/fr_MA/refrigerateurs/"
+   ],
+   "freezer": [
+    "https://www.candy-home.com/fr_MA/congelateurs/"
+   ],
+   "oven": [
+    "https://www.candy-home.com/fr_MA/fours/"
+   ],
+   "microwave": [
+    "https://www.candy-home.com/fr_MA/fours-micro-ondes/"
+   ],
+   "hood": [
+    "https://www.candy-home.com/fr_MA/hottes/"
+   ],
+   "hob": [
+    "https://www.candy-home.com/fr_MA/tables/"
+   ],
+   "cooker": [
+    "https://www.candy-home.com/fr_MA/cuisinieres/"
+   ]
+  },
+  "notes": "Same platform as Haier Europe. No prices."
+ },
+ "tcl": {
+  "name": "TCL",
+  "brand": "TCL",
+  "match": [
+   "tcl.com"
+  ],
+  "home": "https://www.tcl.com/ma/fr",
+  "delay": 3,
+  "categories": {
+   "tv": [
+    "https://www.tcl.com/ma/fr/tvs"
+   ],
+   "ac": [
+    "https://www.tcl.com/ma/fr/air-conditioners"
+   ],
+   "fridge": [
+    "https://www.tcl.com/ma/fr/refrigerators"
+   ],
+   "washer": [
+    "https://www.tcl.com/ma/fr/washing-machine"
+   ]
+  },
+  "notes": "Specs in the SPÉCIFICATIONS tab, pictures lazy. Filtered lists use ?query words."
+ },
+ "samsung": {
+  "name": "Samsung",
+  "brand": "Samsung",
+  "match": [
+   "samsung.com"
+  ],
+  "home": "https://www.samsung.com/n_africa/",
+  "delay": 3,
+  "categories": {
+   "fridge": [
+    "https://www.samsung.com/n_africa/refrigerators/all-refrigerators/"
+   ],
+   "washer": [
+    "https://www.samsung.com/n_africa/washers-and-dryers/washing-machines/"
+   ],
+   "washer-dryer": [
+    "https://www.samsung.com/n_africa/washers-and-dryers/washer-dryer-combo/"
+   ],
+   "dishwasher": [
+    "https://www.samsung.com/n_africa/dishwashers/all-dishwashers/"
+   ],
+   "ac": [
+    "https://www.samsung.com/n_africa/air-conditioners/all-air-conditioners/"
+   ],
+   "tv": [
+    "https://www.samsung.com/n_africa/tvs/all-tvs/"
+   ],
+   "soundbar": [
+    "https://www.samsung.com/n_africa/audio-devices/all-audio-devices/"
+   ],
+   "oven": [
+    "https://www.samsung.com/n_africa/cooking-appliances/ovens/"
+   ],
+   "microwave": [
+    "https://www.samsung.com/n_africa/microwave-ovens/all-microwave-ovens/"
+   ],
+   "hob": [
+    "https://www.samsung.com/n_africa/cooking-appliances/all-cooking-appliances/?hobs"
+   ],
+   "hood": [
+    "https://www.samsung.com/n_africa/cooking-appliances/hoods/"
+   ]
+  },
+  "notes": "n_africa site (Morocco/Algeria/Tunisia). Fake £/$ prices ignored. Model code at the end of the address."
+ },
+ "haier": {
+  "name": "Haier",
+  "brand": "Haier",
+  "match": [
+   "haier"
+  ],
+  "home": "https://www.haier-europe.com/fr_MA/",
+  "delay": 2.5,
+  "categories": {
+   "fridge": [
+    "https://www.haier-europe.com/fr_MA/refrigerateurs-congelateurs/",
+    "https://www.haier-europe.com/fr_MA/refrigerateurs-congelateurs-multi-portes/",
+    "https://www.haier-europe.com/fr_MA/side-by-side/"
+   ],
+   "washer": [
+    "https://www.haier-europe.com/fr_MA/machines-a-laver-a-chargement-frontal/"
+   ],
+   "washer-dryer": [
+    "https://www.haier-europe.com/fr_MA/lave-linges-sechants/"
+   ],
+   "dishwasher": [
+    "https://www.haier-europe.com/fr_MA/lave-vaisselle/"
+   ],
+   "oven": [
+    "https://www.haier-europe.com/fr_MA/fours/"
+   ],
+   "hob": [
+    "https://www.haier-europe.com/fr_MA/plaques-de-cuisson/"
+   ],
+   "hood": [
+    "https://www.haier-europe.com/fr_MA/hottes/"
+   ],
+   "microwave": [
+    "https://www.haier-europe.com/fr_MA/micro-ondes/"
+   ],
+   "tv": [
+    "https://www.haier-europe.com/fr_MA/tv/"
+   ]
+  },
+  "notes": "Same platform as Candy. No prices."
+ },
+ "bosch": {
+  "name": "Bosch",
+  "brand": "Bosch",
+  "match": [
+   "bosch-home"
+  ],
+  "home": "https://www.bosch-home.ma/fr",
+  "delay": 3,
+  "categories": {
+   "fridge": [
+    "https://www.bosch-home.ma/fr/category-page/refrigerateurs-et-congelateurs"
+   ],
+   "washer": [
+    "https://www.bosch-home.ma/fr/category-page/lave-linge-et-seche-linge"
+   ],
+   "dishwasher": [
+    "https://www.bosch-home.ma/fr/category-page/lave-vaisselle"
+   ],
+   "oven": [
+    "https://www.bosch-home.ma/fr/category-page/cuisson"
+   ]
+  },
+  "notes": "category-page = shop window with 'Voir tous les produits'. Spec boxes are filled only when opened. Prices (ignored)."
+ },
+ "electrobousfiha": {
+  "name": "Electrobousfiha",
+  "brand": "",
+  "shop": true,
+  "match": [
+   "electrobousfiha"
+  ],
+  "home": "https://electrobousfiha.com/",
+  "delay": 2.5,
+  "categories": {
+   "fridge": [
+    "https://electrobousfiha.com/137-refrigerateur-"
+   ],
+   "freezer": [
+    "https://electrobousfiha.com/139-congelateur-"
+   ],
+   "washer": [
+    "https://electrobousfiha.com/319-machine-a-laver-automatique-"
+   ],
+   "washer-dryer": [
+    "https://electrobousfiha.com/135-lavante-sechante-"
+   ],
+   "dishwasher": [
+    "https://electrobousfiha.com/282-lave-vaisselle-"
+   ],
+   "ac": [
+    "https://electrobousfiha.com/212-climatiseur-mural-"
+   ],
+   "tv": [
+    "https://electrobousfiha.com/188-televiseur-"
+   ],
+   "hob": [
+    "https://electrobousfiha.com/323-plaque-de-cuisson"
+   ],
+   "hood": [
+    "https://electrobousfiha.com/324-hotte-aspirante"
+   ],
+   "oven": [
+    "https://electrobousfiha.com/336-four-encastrable-"
+   ],
+   "cooker": [
+    "https://electrobousfiha.com/326-cuisiniere"
+   ],
+   "microwave": [
+    "https://electrobousfiha.com/327-micro-onde"
+   ],
+   "sink": [
+    "https://electrobousfiha.com/338-evier"
+   ]
+  },
+  "notes": "A PrestaShop SHOP selling many brands: the brand is read on each product page."
+ }
+}

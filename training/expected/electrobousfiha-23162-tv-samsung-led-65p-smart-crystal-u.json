@@ -1,0 +1,66 @@
+{
+ "id": "electrobousfiha-23162-tv-samsung-led-65p-smart-crystal-u",
+ "site": "electrobousfiha",
+ "type": "tv",
+ "url": "https://electrobousfiha.com/tv-led-/23162-tv-samsung-led-65p-smart-crystal-uhd.html",
+ "finalUrl": "https://electrobousfiha.com/tv-led-/23162-tv-samsung-led-65p-smart-crystal-uhd.html",
+ "name": "TV SAMSUNG LED 65P SMART UHD",
+ "brand": "Samsung",
+ "model": "UA65U8000HU",
+ "pictures": [
+  "https://electrobousfiha.com/42551-large_default/tv-samsung-led-65p-smart-crystal-uhd.jpg",
+  "https://electrobousfiha.com/42550-large_default/tv-samsung-led-65p-smart-crystal-uhd.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Finition",
+   "value": "NOIR"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Taille d'ecran",
+   "value": "65P"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Type d'ecran",
+   "value": "LED SMART CRYSTAL UHD"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Connectivité",
+   "value": "Bluetooth,Wi-Fi"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Entrée USB",
+   "value": "1 x USB-A"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Entrée HDMI",
+   "value": "3"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Système d'exploitation",
+   "value": "Tizen™ Smart TV"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Dimensions du produit (mm)",
+   "value": "1444.1 x 831.2 x 76.8 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Garantie",
+   "value": "1 AN"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:21",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

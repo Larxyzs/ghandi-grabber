@@ -1,0 +1,61 @@
+{
+ "id": "electrobousfiha-9023-four-bosch-electrique-multifonction",
+ "site": "electrobousfiha",
+ "type": "oven",
+ "url": "https://electrobousfiha.com/four-encastrable-/9023-four-bosch-electrique-multifonction-serie-6-inox.html",
+ "finalUrl": "https://electrobousfiha.com/four-encastrable-/9023-four-bosch-electrique-multifonction-serie-6-inox.html",
+ "name": "FOUR BOSCH ELECTRIQUE MULTIFONCTION SERIE 6 INOX",
+ "brand": "Bosch",
+ "model": "HJG852YS0",
+ "pictures": [
+  "https://electrobousfiha.com/40726-large_default/four-bosch-electrique-multifonction-serie-6-inox.jpg",
+  "https://electrobousfiha.com/40725-large_default/four-bosch-electrique-multifonction-serie-6-inox.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Finition",
+   "value": "INOX"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Volume du four",
+   "value": "76 l"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Mode de cuisson",
+   "value": "8"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Caractéristique Spéciale",
+   "value": "-Système de nettoyage intégré Programme écolytique."
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Dimensions du produit (mm)",
+   "value": "595x594x548 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Poids (KG)",
+   "value": "34,9 kg"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Garantie",
+   "value": "1 AN"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Type d'affichage",
+   "value": "LED blanche, commande tactile"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:22",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

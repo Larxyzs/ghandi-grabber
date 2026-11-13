@@ -1,0 +1,136 @@
+{
+ "id": "tcl-free-standing-fhi",
+ "site": "tcl",
+ "type": "ac",
+ "url": "https://www.tcl.com/ma/fr/air-conditioners/free-standing-fhi",
+ "finalUrl": "https://www.tcl.com/ma/fr/air-conditioners/free-standing-fhi",
+ "name": "Free Standing",
+ "brand": "TCL",
+ "model": "",
+ "pictures": [
+  "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/region/gulf/product/ac/free-standing/fh-1.png",
+  "https://aws-obg-image-lb-3.tcl.com/content/dam/brandsite/region/gulf/product/ac/free-standing/fh-2.png"
+ ],
+ "specs": [
+  {
+   "group": "Basic information",
+   "label": "Name",
+   "value": "TAC-36CHFA/FHI"
+  },
+  {
+   "group": "Basic information",
+   "label": "Type",
+   "value": "Heating & Cool, ON/OFF"
+  },
+  {
+   "group": "Basic information",
+   "label": "Climate type",
+   "value": "T3"
+  },
+  {
+   "group": "Basic information",
+   "label": "Power supply Ph-V-Hz 1Ph",
+   "value": "1Ph-220-240V-50Hz"
+  },
+  {
+   "group": "Basic information",
+   "label": "Voltage Range V",
+   "value": "198-264"
+  },
+  {
+   "group": "Basic information",
+   "label": "Indoor noise level",
+   "value": "52 db(A)"
+  },
+  {
+   "group": "Basic information",
+   "label": "Outdoor noise level",
+   "value": "63 db(A)"
+  },
+  {
+   "group": "Basic information",
+   "label": "Refrigerant",
+   "value": "R410A"
+  },
+  {
+   "group": "Rated Heating&Cooling Performance",
+   "label": "Capacity(T1)Btu/h",
+   "value": "36000"
+  },
+  {
+   "group": "Rated Heating&Cooling Performance",
+   "label": "Capacity(T1)W",
+   "value": "10551"
+  },
+  {
+   "group": "Rated Heating&Cooling Performance",
+   "label": "Rated power input(T1) W",
+   "value": "3000"
+  },
+  {
+   "group": "Rated Heating&Cooling Performance",
+   "label": "Rated current(T1) A",
+   "value": "14.1"
+  },
+  {
+   "group": "Rated Heating&Cooling Performance",
+   "label": "EER(T1) W/W",
+   "value": "3.52"
+  },
+  {
+   "group": "Rated Heating&Cooling Performance",
+   "label": "Capacity(T3)Btu/h",
+   "value": "30600"
+  },
+  {
+   "group": "Rated Heating&Cooling Performance",
+   "label": "Capacity(T3)W",
+   "value": "8968"
+  },
+  {
+   "group": "Rated Heating&Cooling Performance",
+   "label": "Rated power input(T3) W",
+   "value": "3400"
+  },
+  {
+   "group": "Rated Heating&Cooling Performance",
+   "label": "Rated current(T3) A",
+   "value": "15.9"
+  },
+  {
+   "group": "Rated Heating&Cooling Performance",
+   "label": "EER(T3) W/W",
+   "value": "2.64"
+  },
+  {
+   "group": "Rated Heating&Cooling Performance",
+   "label": "Capacity(Heating)Btu/h",
+   "value": "36500"
+  },
+  {
+   "group": "Rated Heating&Cooling Performance",
+   "label": "Capacity(Heating)W",
+   "value": "10698"
+  },
+  {
+   "group": "Rated Heating&Cooling Performance",
+   "label": "Rated power input(Heating) W",
+   "value": "2965"
+  },
+  {
+   "group": "Rated Heating&Cooling Performance",
+   "label": "Rated current(Heating) A",
+   "value": "14.0"
+  },
+  {
+   "group": "Rated Heating&Cooling Performance",
+   "label": "COP(Heating) W/W",
+   "value": "3.61"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:18",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

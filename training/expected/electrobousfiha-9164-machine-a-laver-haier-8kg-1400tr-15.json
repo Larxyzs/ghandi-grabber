@@ -1,0 +1,75 @@
+{
+ "id": "electrobousfiha-9164-machine-a-laver-haier-8kg-1400tr-15",
+ "site": "electrobousfiha",
+ "type": "washer",
+ "url": "https://electrobousfiha.com/machine-a-laver-automatique-/9164-machine-a-laver-haier-8kg-1400tr-15-prg-inox.html",
+ "finalUrl": "https://electrobousfiha.com/machine-a-laver-automatique-/9164-machine-a-laver-haier-8kg-1400tr-15-prg-inox.html",
+ "name": "MACHINE A LAVER HAIER 8KG 1400TR 15 PROGRAMMES INOX",
+ "brand": "Haier",
+ "model": "HW80-BP14929AS",
+ "pictures": [
+  "https://electrobousfiha.com/41118-large_default/machine-a-laver-haier-8kg-1400tr-15-prg-inox.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Fiche technique",
+   "label": "Vitesse d'Essorage",
+   "value": "1400TR"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Finition",
+   "value": "INOX"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Classe Énergétique",
+   "value": "A+++"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Niveau Sonore (dB)",
+   "value": "70 db"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Tension",
+   "value": "220-240 V"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Hauteur",
+   "value": "850 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Largeur",
+   "value": "595 mm"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Poids (KG)",
+   "value": "54 kg 57 kg"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Garantie",
+   "value": "2 ANS"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Nombre de programmes",
+   "value": "15 Programmes"
+  },
+  {
+   "group": "Fiche technique",
+   "label": "Capacité",
+   "value": "8 KG"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:20",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}

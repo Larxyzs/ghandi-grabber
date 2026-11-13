@@ -1,0 +1,225 @@
+{
+ "id": "candy-cft610-4n-1",
+ "site": "candy",
+ "type": "hood",
+ "url": "https://www.candy-home.com/fr_MA/hottes/36901732/cft610-4n-1/",
+ "finalUrl": "https://www.candy-home.com/fr_MA/hottes/36901732/cft610-4n-1/",
+ "name": "CFT610/4N/1 Hottes Encastrable",
+ "brand": "Candy",
+ "model": "CFT610/4N/1",
+ "pictures": [
+  "https://www.candy-home.com/h-image/haier-product/2024/10/17303869/1_36901732_19_01_l_cft6104n1-90022-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2024/10/17289206/1_36901732_19_03_p_cft6104n1-20484-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2024/10/17289197/1_36901732_19_04_m_cft6104n1-55059-M.jpg",
+  "https://www.candy-home.com/h-image/haier-product/2024/10/17289182/1_36901732_19_05_m_cft6104n1-38817-M.jpg"
+ ],
+ "specs": [
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Pourcentage de matière recyclée dans le produit",
+   "value": "0"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Recyclabilité du produit",
+   "value": "Majoritairement recyclable"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Métaux précieux dans le produit, contient au moins (mg)",
+   "value": "0"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Terres rares dans le produit, contient au moins (mg)",
+   "value": "0"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Emballage recyclable",
+   "value": "Non"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Pourcentage de matière recyclée dans l’emballage",
+   "value": "45,06"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Emballage réemployable",
+   "value": "Non"
+  },
+  {
+   "group": "Caractéristiques environnementales",
+   "label": "Pourcentage de matière recyclée dans le papier imprimé",
+   "value": "0"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Modèle",
+   "value": "CFT610/4N/1"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code produit",
+   "value": "36901732"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Code EAN",
+   "value": "8059019043463"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Fabricant",
+   "value": "Candy Hoover Group S.r.l."
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Installation",
+   "value": "Intégrée"
+  },
+  {
+   "group": "Caractéristiques principales",
+   "label": "Type",
+   "value": "Casquette"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Connectivité",
+   "value": "Aucune"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Fréquence (Hz)",
+   "value": "50"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Application disponible",
+   "value": "Non"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Type du filtre à graisse",
+   "value": "Multicouche"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Puissance totale des lampes (W)",
+   "value": "2"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Type de commande",
+   "value": "Mécanique"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Nombre de moteurs",
+   "value": "1"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Type de lampes utilisées",
+   "value": "LED"
+  },
+  {
+   "group": "Caractéristiques techniques",
+   "label": "Tension (V)",
+   "value": "220-240"
+  },
+  {
+   "group": "Programmes et fonctions",
+   "label": "Nombre de vitesse",
+   "value": "3"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Couleur du matériau principal",
+   "value": "Noir"
+  },
+  {
+   "group": "Esthetique",
+   "label": "Matériau de la carrosserie",
+   "value": "Peint noir"
+  },
+  {
+   "group": "Performance",
+   "label": "Débit d’air à la vitesse min/max en fonctionnement normal, Qmin/Qmax (m3/h)",
+   "value": "209"
+  },
+  {
+   "group": "Performance",
+   "label": "Classe d’efficacité énergétique (2010/30/EC)",
+   "value": "C"
+  },
+  {
+   "group": "Performance",
+   "label": "Emissions acoustiques de l’air pondérées de la valeur A à la vitesse min/max en fonctionnement normal (dB(A))",
+   "value": "71"
+  },
+  {
+   "group": "Performance",
+   "label": "Puissance (W)",
+   "value": "<1000 W"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit (mm)",
+   "value": "80"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit sans cheminée (mm)",
+   "value": "80"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit (mm)",
+   "value": "600"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit (mm)",
+   "value": "465"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur du produit emballé (mm)",
+   "value": "520"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur du produit emballé (mm)",
+   "value": "645"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur du produit emballé (mm)",
+   "value": "125"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Diamètre du réducteur d'évacuation d'air (mm)",
+   "value": "120"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids net (kg)",
+   "value": "5,12"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Poids brut (kg)",
+   "value": "6,42"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-09T17:48:18",
+ "auditNotes": [
+  "8 rows come from the site JSON only (not written as text on the page)"
+ ],
+ "verifiedAt": "2026-11-09T17:48:23",
+ "checkNotes": "Pictures checked on the per-site picture sheet (own gallery, main first, drawings left out); specs from the site's own structured data (JSON / data-sheet) cross-checked with the page text."
+}
