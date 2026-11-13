@@ -1,8 +1,8 @@
 {
- "version": "3.7.26",
- "commit": "454b62f3065b6e043310a283ae324dd55669fa45",
+ "version": "3.7.27",
+ "commit": "09b879ea0d3258fdc8b6325925f321a494823e9a",
  "notes": [
-  "Les mises à jour s'installent maintenant toutes seules (plus besoin de cliquer, sauf si Chrome demande la permission)."
+  "Les produits vont directement dans le bon sous-dossier du site (TV OLED, plaque gaz, hotte îlot, sèche-linge pompe à chaleur…). Les mises à jour s'installent toutes seules."
  ],
  "files": [
   {
@@ -37,8 +37,8 @@
   },
   {
    "path": "app/app.js",
-   "size": 82816,
-   "sha256": "ad270628197ef903a358713872f0fbaf8159b57dde6d5a96e8105051615cc490"
+   "size": 85542,
+   "sha256": "a511789eb24b5715b254ec5fd6c5a6b9d790612387a8d3a0db0da6483dc6cceb"
   },
   {
    "path": "app/shim.js",
@@ -73,7 +73,7 @@
   {
    "path": "manifest.json",
    "size": 1251,
-   "sha256": "ceabfcc6d5b736c6c5929492fee1e7236eac7a6f5e49db5706bb66d57ac3ecf8"
+   "sha256": "901264833551512936783bcadc13050aef5a19a4659424ad68119310004a2112"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -152,8 +152,8 @@
   },
   {
    "path": "scraper/recipes/whirlpool.js",
-   "size": 6059,
-   "sha256": "0cdc2886df69306d638ea5e332eb189642d931fb7bb821434792a7c0e3aee4de"
+   "size": 6841,
+   "sha256": "fb68633d6467dcab9fbbcd18aae9a458683f29a0279b517177656a36e9d2016e"
   },
   {
    "path": "sheets/engine.js",
