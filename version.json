@@ -1,9 +1,9 @@
 {
- "version": "3.7.18",
- "commit": "ee59d122bad036e5c08b7df699dc04ead1ddd8dc",
+ "version": "3.7.19",
+ "commit": "1f375440bf1dabafef3212ff6d5de36120f892de",
  "notes": [
-  "Nouveau : Electrobousfiha. C'est un magasin, pas une marque : la marque de chaque produit est trouvée sur sa page (LG, Samsung, Arthur Martin…).",
-  "Find products marche sur leurs listes (toutes les pages) et c'est rapide."
+  "Model codes are now read on Candy, Haier and TCL, and Electrobousfiha products get their real name.",
+  "No more double pictures on Samsung and Candy, and Bosch 'Pas applicable' lines are gone."
  ],
  "files": [
   {
@@ -69,7 +69,7 @@
   {
    "path": "manifest.json",
    "size": 1011,
-   "sha256": "a52eddbd47e44e8a715296d19672b114053e5031c0cefaf4a88f3e63af40f0f5"
+   "sha256": "4943845f2d11581d09a20d4c6c447a78cd202f32f2a171c6b7a3a5b1516d8eea"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -103,23 +103,23 @@
   },
   {
    "path": "scraper/recipes/bosch.js",
-   "size": 3684,
-   "sha256": "31759f6e1f8b37379fae35e110e43d0d315e662227882e0714806f07e019addc"
+   "size": 3844,
+   "sha256": "3ba3d59b3827b6a04eb4f59a82963199309bfed5a65a4752983b0c31c2df8f0c"
   },
   {
    "path": "scraper/recipes/candy.js",
-   "size": 4771,
-   "sha256": "f6948bf18f65d2ce143d53ed52a28c82bbb945bfbc7b424606c309ee339eca59"
+   "size": 5188,
+   "sha256": "883d0ba6c62ea825d56caf8f3d764344ebdc2d5e8d894949acd31221d75d9fa5"
   },
   {
    "path": "scraper/recipes/electrobousfiha.js",
-   "size": 13477,
-   "sha256": "53abbb8779d9283e637627d14c842bb9883553cf003ceffe0b154627013ea2d0"
+   "size": 13993,
+   "sha256": "5b0dc7685a268060221d81b4eaa0ab271b73fff0f805bce632f4be0efaea383a"
   },
   {
    "path": "scraper/recipes/haier.js",
-   "size": 4737,
-   "sha256": "d7c32244fc93ba920f9640e37e5ec294246735e78299cec5f2af71db16a0307d"
+   "size": 5154,
+   "sha256": "a0e9f1932a766e5364d8517196457bdca72c24d753203278157210055f105783"
   },
   {
    "path": "scraper/recipes/lg.js",
@@ -128,13 +128,13 @@
   },
   {
    "path": "scraper/recipes/samsung.js",
-   "size": 5528,
-   "sha256": "5f666342ffd0e76467eed6f101f5f43878694cfa20ce6ea61975144245571ea1"
+   "size": 5659,
+   "sha256": "88ca03cc8a4718b114c39aa182a844e199cc359db5ca35ada14f78cb0273e79b"
   },
   {
    "path": "scraper/recipes/tcl.js",
-   "size": 2576,
-   "sha256": "5acb5c2828d4bf6b9575f0abad7ccebe06f5fda8de46c4903cc7a42d0462bce7"
+   "size": 3370,
+   "sha256": "a2d41f601e7351ef91f70c5654675d037a85c34bfd78d45de5437d38355c65c4"
   },
   {
    "path": "scraper/recipes/whirlpool.js",
@@ -143,8 +143,8 @@
   },
   {
    "path": "sheets/engine.js",
-   "size": 14849,
-   "sha256": "46345313e6313f27cbcf76ff675a10856bee6e0fcb345eec32df8e14aa97fb0f"
+   "size": 15086,
+   "sha256": "8d582e58c271b78a1a74071a4b1fb35d83d237c0ddd29413e74358d654d70573"
   },
   {
    "path": "sheets/templates.js",
