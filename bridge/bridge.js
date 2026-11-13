@@ -3,7 +3,8 @@
   Runs only on ghandihomeelectro.com. The page sends window.postMessage({ghandi:'bridge', id, cmd, args});
   the answer comes back as {ghandi:'bridge-reply', id, ok, data|error}.
   Commands: hello, crawl {url, ptype, category} (only lists of the known shops/brands),
-            add {urls, ptype, category}, retry {ids}, remove {ids}, status {since}, send {ids}, sendResult.
+            add {urls, ptype, category}, retry {ids}, remove {ids}, setCategory {ids, category},
+            setType {ids, ptype}, update, updateResult, status {since}, send {ids}, sendResult.
   The site's secret key never leaves the extension: sending is done by the extension's own page.
 */
 (function () {
@@ -68,6 +69,26 @@
     },
     remove: function (a) {
       return msg({ type: 'remove', ids: (a.ids || []).slice(0, 500) });
+    },
+    setCategory: function (a) {
+      return msg({ type: 'set-category', ids: (a.ids || []).slice(0, 500), category: String(a.category || '') });
+    },
+    setType: function (a) {
+      return msg({ type: 'set-type', ids: (a.ids || []).slice(0, 500), ptype: String(a.ptype || 'auto') });
+    },
+    // install a waiting update without anyone clicking (works when Chrome already allowed the folder)
+    update: async function () {
+      var r = await msg({ type: 'check-update' });
+      var u = r && r.update;
+      if (!u || !u.available) return { current: chrome.runtime.getManifest().version, latest: u && u.latest, nothing: true };
+      await chrome.storage.local.set({ autoUpdateNow: { at: Date.now(), to: u.latest } });
+      await new Promise(function (res) { setTimeout(res, 1500); });
+      var o = await get(['autoUpdateNow']);
+      if (o.autoUpdateNow) await msg({ type: 'open-app' });
+      return { current: chrome.runtime.getManifest().version, latest: u.latest };
+    },
+    updateResult: async function () {
+      return (await get(['autoUpdateResult'])).autoUpdateResult || null;
     },
     status: async function (a) {
       var o = await get(['ids', 'run', 'crawl']);

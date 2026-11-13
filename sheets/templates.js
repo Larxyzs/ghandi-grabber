@@ -523,7 +523,8 @@
     icon: '🫧',
     detect: [/lave[- ]?linge|machines? a laver|lavante|washing|washer|washtower|lave linge sechant/],
     detectSpecs: [/essorage|tambour|programmes de lavage/],
-    notIf: [/lave[- ]?vaisselle|dishwasher/],
+    // a dryer alone ("Sèche-linge pompe à chaleur") is not a washer: no washer sheet for it
+    notIf: [/lave[- ]?vaisselle|dishwasher/, /^(?!.*\blave).*\bseche[- ]?linge\b/, /^(?!.*\bwash).*\bdryer\b/],
     groups: [
       {
         title: 'Caractéristiques',

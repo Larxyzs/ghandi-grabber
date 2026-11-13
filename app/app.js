@@ -1378,6 +1378,24 @@
     $('updVer').textContent = u.latest;
     $('updNotes').innerHTML = (u.notes || []).map((n) => '<li>' + esc(n) + '</li>').join('');
   }
+  // automatic install (no click): when a new version appears while this page is open, or when the owner's
+  // site asks for it (bridge "update"). Needs the folder already allowed; else the blue box stays for a click.
+  let autoUpdTried = '';
+  async function autoUpdate(u, forced) {
+    if (!u || !u.latest || !GHANDI_UPDATER.newer(u.latest, chrome.runtime.getManifest().version)) return;
+    if ((S.settings || {}).autoUpdate === false && !forced) return;
+    if (autoUpdTried === u.latest) return;
+    autoUpdTried = u.latest;
+    const say = (m) => ($('updMsg').textContent = m);
+    try {
+      const r = await GHANDI_UPDATER.installSilently(say);
+      await chrome.storage.local.set({ autoUpdateResult: { at: Date.now(), to: u.latest, ok: !!r.ok, message: r.skipped || '' } });
+    } catch (e) {
+      await chrome.storage.local.set({ autoUpdateResult: { at: Date.now(), to: u.latest, ok: false, message: (e && e.message) || String(e) } });
+    } finally {
+      chrome.storage.local.remove('autoUpdateNow');
+    }
+  }
   async function installUpdate() {
     const say = (m) => ($('updMsg').textContent = m);
     $('updInstall').disabled = true;
@@ -1429,8 +1447,9 @@
     } catch (e) {
       /* fine */
     }
-    const { update, justUpdated } = await chrome.storage.local.get(['update', 'justUpdated']);
+    const { update, justUpdated, autoUpdateNow } = await chrome.storage.local.get(['update', 'justUpdated', 'autoUpdateNow']);
     showUpdate(update);
+    autoUpdate(update, !!autoUpdateNow);
     if (justUpdated && Date.now() - justUpdated.at < 10 * 60 * 1000 && justUpdated.to === chrome.runtime.getManifest().version) {
       toast(justUpdated.undo ? 'Back to version ' + justUpdated.to + '.' : 'Updated to version ' + justUpdated.to + ' ✓');
       chrome.storage.local.remove('justUpdated');
@@ -1747,7 +1766,10 @@
           S.sel.delete(k.slice(3));
         } else S.items.set(k.slice(3), nv);
       } else if (k === 'ids') S.order = nv || [];
-      else if (k === 'update') showUpdate(nv);
+      else if (k === 'update') {
+        showUpdate(nv);
+        autoUpdate(nv);
+      } else if (k === 'autoUpdateNow' && nv) chrome.storage.local.get('update').then((o) => autoUpdate(o.update, true));
       else if (k === 'run') S.run = nv || {};
       else if (k === 'crawl') S.crawl = nv || {};
       else if (k === 'autoSend' && nv) setTimeout(() => autoSend(nv), 300);

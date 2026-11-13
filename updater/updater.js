@@ -237,6 +237,15 @@ var GHANDI_UPDATER = (function () {
   }
 
   // ---------------------------------------------------------------- UNDO the last update
+  // install with nobody clicking: only when the folder is known AND Chrome already allows writing in it
+  async function installSilently(say) {
+    const dir = await savedFolder();
+    if (!dir) return { skipped: 'The extension folder was never chosen: click "Install update" once.' };
+    if ((await dir.queryPermission({ mode: 'readwrite' })) !== 'granted') return { skipped: 'Chrome wants a click to allow the update: click "Install update".' };
+    await install(say);
+    return { ok: true };
+  }
+
   async function hasBackup() {
     const dir = await savedFolder();
     if (!dir) return null;
@@ -267,5 +276,5 @@ var GHANDI_UPDATER = (function () {
     setTimeout(() => chrome.runtime.reload(), 300);
   }
 
-  return { check, install, undo, hasBackup, pickFolder, savedFolder, newer, DEFAULT_BASE };
+  return { check, install, installSilently, undo, hasBackup, pickFolder, savedFolder, newer, DEFAULT_BASE };
 })();
