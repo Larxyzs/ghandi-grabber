@@ -64,3 +64,4 @@ What each session tried, learned and decided. Newest at the bottom.
   (`%E2%84%A2` = `™`). Samsung 88.9 → 98.0, total 80.3 → **83.6**, nothing lost, tests green.
 - Iteration 3: Electrobousfiha lost the model on Teka/Franke (codes made of digits only, refused by
   `looksLikeModel`). The shop recipe now keeps a 6–12 digit "Référence" (never a 13-digit EAN). Shop 98.1 → 99.8.
+- Replay is a bit flaky in window mode under load: tcl-50s5k once failed to open ('Chrome could not open that page') in a full run, then scored the same as before twice alone. Baseline restored to 42.64.
