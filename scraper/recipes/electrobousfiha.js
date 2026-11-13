@@ -119,6 +119,13 @@
     custom: function (ctx) {
       var r = ctx.result;
       var qa = ctx.util.qa;
+      // some brands use a code made only of digits (Teka 10125005, Franke 3000553097): keep it,
+      // but never a 13-digit barcode (EAN)
+      if (!r.model) {
+        var refEl = qa('.product-reference [itemprop="sku"], .product-reference span')[0];
+        var refTxt = refEl ? ctx.util.clean(refEl.textContent).replace(/^:\s*/, '') : '';
+        if (/^\d{6,12}$/.test(refTxt)) r.model = refTxt;
+      }
       var clean = ctx.util.clean;
       var notOther = function (el) {
         return !el.closest('header,footer,nav,#header,#footer,.product-miniature,.product-accessories,.featured-products,#categoryproducts,.categoryproducts,#left-column,#right-column');

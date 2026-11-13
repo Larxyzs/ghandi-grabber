@@ -62,3 +62,5 @@ What each session tried, learned and decided. Newest at the bottom.
 - Iteration 2 (Samsung pictures precision 4/10): the extension took the thumbnail strip too (`...-thumb-548262623`
   files = the same slides again). `samsung.js` imageFilter skips `-thumb-N`. score.py now decodes picture paths
   (`%E2%84%A2` = `™`). Samsung 88.9 → 98.0, total 80.3 → **83.6**, nothing lost, tests green.
+- Iteration 3: Electrobousfiha lost the model on Teka/Franke (codes made of digits only, refused by
+  `looksLikeModel`). The shop recipe now keeps a 6–12 digit "Référence" (never a 13-digit EAN). Shop 98.1 → 99.8.
