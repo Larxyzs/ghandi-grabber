@@ -1,9 +1,8 @@
 {
- "version": "3.7.19",
- "commit": "1f375440bf1dabafef3212ff6d5de36120f892de",
+ "version": "3.7.20",
+ "commit": "2a4a17664de562f9e5c0d4397ebb507cb9d36d78",
  "notes": [
-  "Model codes are now read on Candy, Haier and TCL, and Electrobousfiha products get their real name.",
-  "No more double pictures on Samsung and Candy, and Bosch 'Pas applicable' lines are gone."
+  "Nouveau : Electroplanet. La marque, la référence (code modèle), le nom, toutes les photos et les caractéristiques de chaque produit sont lus, et « Trouver les produits » marche sur leurs listes."
  ],
  "files": [
   {
@@ -69,7 +68,7 @@
   {
    "path": "manifest.json",
    "size": 1011,
-   "sha256": "4943845f2d11581d09a20d4c6c447a78cd202f32f2a171c6b7a3a5b1516d8eea"
+   "sha256": "7f10e372919ea8b193191016d72e97f82109fb0459138f144251b829b945ea8a"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -83,8 +82,13 @@
   },
   {
    "path": "recipe-list.js",
-   "size": 708,
-   "sha256": "a6051ce8e1e3ee8e18b1fb72859c6878e221e0124c37452cb4d332e0ad06f258"
+   "size": 902,
+   "sha256": "da6f9682c8de1ca7f0fac3ecdf4865446687ab560e7613278028ef025d8ec79f"
+  },
+  {
+   "path": "scraper/brands.js",
+   "size": 3436,
+   "sha256": "c6ddb98cb05c9ecc5a15de5e1312961e600584e1d7e542c8c153b084aa2d34cf"
   },
   {
    "path": "scraper/core.js",
@@ -93,8 +97,8 @@
   },
   {
    "path": "scraper/links.js",
-   "size": 20768,
-   "sha256": "7c5d4d99aa910964649d3d8942c2a3071d90c817c31efc88eee4481dd8f7244f"
+   "size": 20845,
+   "sha256": "adb1060548ac229db9a39fe22163e78b43e717f83c0fb394e044045aa64828da"
   },
   {
    "path": "scraper/recipes/_template.js",
@@ -113,8 +117,13 @@
   },
   {
    "path": "scraper/recipes/electrobousfiha.js",
-   "size": 13993,
-   "sha256": "5b0dc7685a268060221d81b4eaa0ab271b73fff0f805bce632f4be0efaea383a"
+   "size": 11263,
+   "sha256": "9471bab1558a61f04c27a61a28a1b1f7878841dd0f587219098af7f8f4363983"
+  },
+  {
+   "path": "scraper/recipes/electroplanet.js",
+   "size": 12467,
+   "sha256": "dac30806b662f74774cfc16b646395f3226622b6c34111ce2e49ad7400095118"
   },
   {
    "path": "scraper/recipes/haier.js",
@@ -148,8 +157,8 @@
   },
   {
    "path": "sheets/templates.js",
-   "size": 74128,
-   "sha256": "9b1239eaa1105a9ce8987671307071787e71d72aa769889d029085e9683f743e"
+   "size": 74147,
+   "sha256": "7fde1238a3975603f19b2043e311aaf8b0336e98f0640c07b18bec1cdaa4c8a9"
   },
   {
    "path": "updater/updater.js",
