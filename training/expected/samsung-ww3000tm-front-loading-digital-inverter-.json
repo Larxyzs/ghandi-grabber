@@ -1,0 +1,158 @@
+{
+ "id": "samsung-ww3000tm-front-loading-digital-inverter-",
+ "site": "samsung",
+ "type": "washer",
+ "url": "https://www.samsung.com/n_africa/washers-and-dryers/washing-machines/ww3000tm-front-loading-digital-inverter-technology-quick-wash-drum-clean-7kg-silver-ww70t3010bs-mf/",
+ "finalUrl": "https://www.samsung.com/n_africa/washers-and-dryers/washing-machines/ww3000tm-front-loading-digital-inverter-technology-quick-wash-drum-clean-7kg-silver-ww70t3010bs-mf/",
+ "name": "Lave-Linge 7Kg - WW70T3010BS",
+ "brand": "Samsung",
+ "model": "WW70T3010BS/MF",
+ "pictures": [
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/ww70t3010bs-mf/gallery/n-africa-front-loading-washer-ww90t3040bwah-ww70t3010bs-mf-386476352",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/ww70t3010bs-mf/gallery/n-africa-front-loading-washer-ww90t3040bwah-ww70t3010bs-mf-386476335",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/ww70t3010bs-mf/gallery/n-africa-front-loading-washer-ww90t3040bwah-ww70t3010bs-mf-386476336",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/ww70t3010bs-mf/gallery/n-africa-front-loading-washer-ww90t3040bwah-ww70t3010bs-mf-386476337",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/ww70t3010bs-mf/gallery/n-africa-front-loading-washer-ww90t3040bwah-ww70t3010bs-mf-386476338",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/ww70t3010bs-mf/gallery/n-africa-front-loading-washer-ww90t3040bwah-ww70t3010bs-mf-386476339",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/ww70t3010bs-mf/gallery/n-africa-front-loading-washer-ww90t3040bwah-ww70t3010bs-mf-386476340",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/ww70t3010bs-mf/gallery/n-africa-front-loading-washer-ww90t3040bwah-ww70t3010bs-mf-386476341",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/ww70t3010bs-mf/gallery/n-africa-front-loading-washer-ww90t3040bwah-ww70t3010bs-mf-386476342"
+ ],
+ "specs": [
+  {
+   "group": "Présentation",
+   "label": "Capacité de lavage (kg)",
+   "value": "7"
+  },
+  {
+   "group": "Présentation",
+   "label": "Porte",
+   "value": "Noir"
+  },
+  {
+   "group": "Présentation",
+   "label": "Dimensions nette (L x H x P, mm)",
+   "value": "595 x 850 x 440"
+  },
+  {
+   "group": "Présentation",
+   "label": "Poids net (kg)",
+   "value": "58"
+  },
+  {
+   "group": "Design",
+   "label": "Couleur principale",
+   "value": "Argent"
+  },
+  {
+   "group": "Design",
+   "label": "Panneau d’affichage",
+   "value": "LED"
+  },
+  {
+   "group": "Fonction",
+   "label": "Sécurité enfant",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "Arrêt différé",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "Fault Check Indicator",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "Entrée d’eau chaude/froide",
+   "value": "Froid"
+  },
+  {
+   "group": "Fonction",
+   "label": "Moteur",
+   "value": "UNI"
+  },
+  {
+   "group": "Fonction",
+   "label": "Vitesse de rotation (t/min)",
+   "value": "1200"
+  },
+  {
+   "group": "Cycle",
+   "label": "+Pre Wash",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Vêtements bébé",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Coton",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Colours",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Lavage quotidien",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Linge délicat",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Drain/Spin",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Drum Clean",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "E Cotton",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Intensif",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Lavage rapide",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Rinçage + Essorage",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Synthétique",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Laine",
+   "value": "Oui"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-13T18:07:54",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-13T18:10:16",
+ "checkNotes": "Pictures: Samsung checked on the picture sheet; LG checked automatically (LG refuses its pictures outside its pages): every picture comes from the product's own gallery folder in the gallery component. Specs from the full spec list (LG \"Toutes les caractéristiques\", Samsung #specs) cross-checked with the page text."
+}

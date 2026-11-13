@@ -1,0 +1,284 @@
+{
+ "id": "samsung-dishwasher-13-place-settings-silver-dw60",
+ "site": "samsung",
+ "type": "dishwasher",
+ "url": "https://www.samsung.com/n_africa/dishwashers/freestanding/dishwasher-13-place-settings-silver-dw60m5050fs-ma/",
+ "finalUrl": "https://www.samsung.com/n_africa/dishwashers/freestanding/dishwasher-13-place-settings-silver-dw60m5050fs-ma/",
+ "name": "DW60M5050FS Lave-vaisselle pose libre de taille standard à 13 couverts",
+ "brand": "Samsung",
+ "model": "DW60M5050FS/MA",
+ "pictures": [
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/dw60m5050fs-ma/gallery/n-africa-dw5500mm-325645-dw60m5050fs-ma-531916924",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/dw60m5050fs-ma/gallery/n-africa-dw5500mm-325645-dw60m5050fs-ma-531916905",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/dw60m5050fs-ma/gallery/n-africa-dw5500mm-325645-dw60m5050fs-ma-531916906",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/dw60m5050fs-ma/gallery/n-africa-dw5500mm-325645-dw60m5050fs-ma-531916907",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/dw60m5050fs-ma/gallery/n-africa-dw5500mm-325645-dw60m5050fs-ma-531916910",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/dw60m5050fs-ma/gallery/n-africa-dw5500mm-325645-dw60m5050fs-ma-531916911",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/dw60m5050fs-ma/gallery/n-africa-dw5500mm-325645-dw60m5050fs-ma-531916912",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/dw60m5050fs-ma/gallery/n-africa-dw5500mm-325645-dw60m5050fs-ma-531916913",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/dw60m5050fs-ma/gallery/n-africa-dw5500mm-325645-dw60m5050fs-ma-531916908",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/dw60m5050fs-ma/gallery/n-africa-dw5500mm-325645-dw60m5050fs-ma-531916909"
+ ],
+ "specs": [
+  {
+   "group": "Présentation",
+   "label": "Type d’installation",
+   "value": "Pose libre"
+  },
+  {
+   "group": "Présentation",
+   "label": "Type de lavage",
+   "value": "Rotatif"
+  },
+  {
+   "group": "Présentation",
+   "label": "Capacité (couverts)",
+   "value": "13 P/S"
+  },
+  {
+   "group": "Présentation",
+   "label": "Nombre d’options",
+   "value": "5"
+  },
+  {
+   "group": "Design",
+   "label": "Taille",
+   "value": "24\""
+  },
+  {
+   "group": "Design",
+   "label": "Type de contrôle",
+   "value": "Bouton avant"
+  },
+  {
+   "group": "Design",
+   "label": "Couleur/Matériau",
+   "value": "STSS"
+  },
+  {
+   "group": "Design",
+   "label": "Couleur de la lumière d’écran",
+   "value": "Bleu glacier"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Classe d’efficacité énergétique",
+   "value": "A+"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Consommation d’énergie annuelle",
+   "value": "295 kWh par an"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Energy Consumption",
+   "value": "1,043 kWh/cycle"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Wash Performance",
+   "value": "A"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Performances de séchage",
+   "value": "A"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Consommation d’eau annuelle",
+   "value": "3360 ℓ"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Water Consumption per Cycle",
+   "value": "12 ℓ"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Noise Level (dB(A))",
+   "value": "48"
+  },
+  {
+   "group": "Programmes",
+   "label": "Number of Programs",
+   "value": "5"
+  },
+  {
+   "group": "Programmes",
+   "label": "Normal",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Intensif",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Auto",
+   "value": "Non"
+  },
+  {
+   "group": "Programmes",
+   "label": "Linge délicat",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Eco",
+   "value": "Oui"
+  },
+  {
+   "group": "Programmes",
+   "label": "Rapide",
+   "value": "Non"
+  },
+  {
+   "group": "Programmes",
+   "label": "Prélavage",
+   "value": "Non"
+  },
+  {
+   "group": "Programmes",
+   "label": "Express 60 min",
+   "value": "Oui"
+  },
+  {
+   "group": "Option",
+   "label": "Départ différé",
+   "value": "Oui"
+  },
+  {
+   "group": "Option",
+   "label": "Demi-charge",
+   "value": "Oui"
+  },
+  {
+   "group": "Option",
+   "label": "Désinfection",
+   "value": "Oui"
+  },
+  {
+   "group": "Option",
+   "label": "Multi-en-1",
+   "value": "Oui"
+  },
+  {
+   "group": "Option",
+   "label": "Sécurité enfant",
+   "value": "Oui"
+  },
+  {
+   "group": "Panier supérieur",
+   "label": "Basket Handle",
+   "value": "Non"
+  },
+  {
+   "group": "Panier supérieur",
+   "label": "Foldable Cup Shelves",
+   "value": "Oui"
+  },
+  {
+   "group": "Panier supérieur",
+   "label": "Ajustable en hauteur",
+   "value": "Oui"
+  },
+  {
+   "group": "Panier supérieur",
+   "label": "Fold Down Tines",
+   "value": "Non"
+  },
+  {
+   "group": "Panier inférieur",
+   "label": "Fold Down Tines",
+   "value": "Oui"
+  },
+  {
+   "group": "Panier à couverts",
+   "label": "Tiroir à couverts",
+   "value": "Non"
+  },
+  {
+   "group": "Panier à couverts",
+   "label": "Panier à couverts",
+   "value": "Oui"
+  },
+  {
+   "group": "Caractéristiques générales",
+   "label": "Aqua Stop",
+   "value": "Oui"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur nette",
+   "value": "598 mm"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur nette",
+   "value": "845 mm"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur nette",
+   "value": "600 mm"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Net Weight (kg)",
+   "value": "49"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Largeur totale",
+   "value": "655 mm"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Hauteur totale",
+   "value": "875 mm"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Profondeur totale",
+   "value": "645 mm"
+  },
+  {
+   "group": "Dimensions",
+   "label": "Gross Weight (kg)",
+   "value": "54"
+  },
+  {
+   "group": "Énergie",
+   "label": "Electrical (Volts/Hertz/Amps)",
+   "value": "220 - 240V/50Hz"
+  },
+  {
+   "group": "Énergie",
+   "label": "Résistance (Watts)",
+   "value": "1800W"
+  },
+  {
+   "group": "Énergie",
+   "label": "Moteur de circulation",
+   "value": "98W"
+  },
+  {
+   "group": "Énergie",
+   "label": "Pompe de vidange",
+   "value": "30 W"
+  },
+  {
+   "group": "Énergie",
+   "label": "Levelling Screws",
+   "value": "0 - 30 mm"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-13T18:07:55",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-13T18:10:16",
+ "checkNotes": "Pictures: Samsung checked on the picture sheet; LG checked automatically (LG refuses its pictures outside its pages): every picture comes from the product's own gallery folder in the gallery component. Specs from the full spec list (LG \"Toutes les caractéristiques\", Samsung #specs) cross-checked with the page text."
+}

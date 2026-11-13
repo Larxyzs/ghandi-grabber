@@ -1,0 +1,148 @@
+{
+ "id": "lg-gr-b639nlcm",
+ "site": "lg",
+ "type": "fridge",
+ "url": "https://www.lg.com/ma/refrigerateurs/combines/gr-b639nlcm/",
+ "finalUrl": "https://www.lg.com/ma/refrigerateurs/combines/gr-b639nlcm/",
+ "name": "Réfrigérateur à congélateur en bas 455 L avec Door Cooling+™",
+ "brand": "LG",
+ "model": "GR-B639NLCM",
+ "pictures": [
+  "https://www.lg.com/content/dam/channel/wcms/ma/images/refrigerateurs/gr-b639nlcm_apzpemc_efmc_ma_c/gallery/DZ-1.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/ma/images/refrigerateurs/gr-b639nlcm_apzpemc_efmc_ma_c/gallery/DZ-2.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/ma/images/refrigerateurs/gr-b639nlcm_apzpemc_efmc_ma_c/gallery/DZ-3.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/ma/images/refrigerateurs/gr-b639nlcm_apzpemc_efmc_ma_c/gallery/DZ-4.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/ma/images/refrigerateurs/gr-b639nlcm_apzpemc_efmc_ma_c/gallery/DZ-5.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/ma/images/refrigerateurs/gr-b639nlcm_apzpemc_efmc_ma_c/gallery/DZ-6.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/ma/images/refrigerateurs/gr-b639nlcm_apzpemc_efmc_ma_c/gallery/DZ-7.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/ma/images/refrigerateurs/gr-b639nlcm_apzpemc_efmc_ma_c/gallery/DZ-8.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/ma/images/refrigerateurs/gr-b639nlcm_apzpemc_efmc_ma_c/gallery/DZ-9.jpg"
+ ],
+ "specs": [
+  {
+   "group": "SPÉCIFICATIONS DE BASE",
+   "label": "Type de produit",
+   "value": "B / Congélateur"
+  },
+  {
+   "group": "DIMENSIONS ET POIDS",
+   "label": "Poids du produit (kg)",
+   "value": "83"
+  },
+  {
+   "group": "DIMENSIONS ET POIDS",
+   "label": "Profondeur sans porte ( mm )",
+   "value": "595"
+  },
+  {
+   "group": "DIMENSIONS ET POIDS",
+   "label": "Dimensions de l’appareil (L x H x P, mm)",
+   "value": "700 x 1 850 x 700"
+  },
+  {
+   "group": "DIMENSIONS ET POIDS",
+   "label": "Profondeur sans poignée (mm)",
+   "value": "700"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Refroidissement de porte+",
+   "value": "Oui"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Refroidissement LINEAR",
+   "value": "Oui"
+  },
+  {
+   "group": "FONCTIONS",
+   "label": "Désodorisant",
+   "value": "Oui"
+  },
+  {
+   "group": "SYSTÈME DE GLACE ET D’EAU",
+   "label": "Distributeur d’eau uniquement",
+   "value": "Non"
+  },
+  {
+   "group": "SYSTÈME DE GLACE ET D’EAU",
+   "label": "Machine à glaçon automatique",
+   "value": "Non"
+  },
+  {
+   "group": "MATÉRIAU ET FINITION",
+   "label": "Finition (porte)",
+   "value": "P/S3"
+  },
+  {
+   "group": "PERFORMANCE",
+   "label": "Type de compresseur",
+   "value": "Compresseur à onduleur Smart Inverter (BLDC)"
+  },
+  {
+   "group": "COMPARTIMENT RÉFRIGÉRATEUR",
+   "label": "Lumière réfrigérateur",
+   "value": "LED supérieur"
+  },
+  {
+   "group": "COMPARTIMENT RÉFRIGÉRATEUR",
+   "label": "Étagère_Verre trempé",
+   "value": "1"
+  },
+  {
+   "group": "COMPARTIMENT RÉFRIGÉRATEUR",
+   "label": "Hygiene Fresh+",
+   "value": "Non"
+  },
+  {
+   "group": "COMPARTIMENT RÉFRIGÉRATEUR",
+   "label": "Bac à légumes",
+   "value": "Oui (2)"
+  },
+  {
+   "group": "COMPARTIMENT RÉFRIGÉRATEUR",
+   "label": "Casier à bouteilles (de vin)",
+   "value": "Non"
+  },
+  {
+   "group": "COMPARTIMENT RÉFRIGÉRATEUR",
+   "label": "Fresh 0 Zone",
+   "value": "Non"
+  },
+  {
+   "group": "COMPARTIMENT RÉFRIGÉRATEUR",
+   "label": "Étagère_Pliable",
+   "value": "Escamotable à 1 étage"
+  },
+  {
+   "group": "COMPARTIMENT RÉFRIGÉRATEUR",
+   "label": "Panier à légumes (Fresh Converter)",
+   "value": "Non"
+  },
+  {
+   "group": "COMPARTIMENT RÉFRIGÉRATEUR",
+   "label": "Casier à œufs/Panier à œufs",
+   "value": "Oui"
+  },
+  {
+   "group": "TECHNOLOGIE INTELLIGENTE",
+   "label": "Smart Diagnosis",
+   "value": "Oui"
+  },
+  {
+   "group": "TECHNOLOGIE INTELLIGENTE",
+   "label": "ThinQ (Wi-Fi)",
+   "value": "Oui"
+  },
+  {
+   "group": "COMPARTIMENT CONGÉLATEUR",
+   "label": "Multi-Air Flow",
+   "value": "Non"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-13T18:07:53",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-13T18:10:16",
+ "checkNotes": "Pictures: Samsung checked on the picture sheet; LG checked automatically (LG refuses its pictures outside its pages): every picture comes from the product's own gallery folder in the gallery component. Specs from the full spec list (LG \"Toutes les caractéristiques\", Samsung #specs) cross-checked with the page text."
+}

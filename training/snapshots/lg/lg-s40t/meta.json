@@ -1,0 +1,26 @@
+{
+ "id": "lg-s40t",
+ "url": "https://www.lg.com/ma/tv-barres-de-son/barres-de-son/s40t/",
+ "savedAt": "2026-11-13T18:11:10",
+ "rawStatus": 0,
+ "rawError": "APIRequestContext.get: socket hang up",
+ "rawBytes": 0,
+ "status": 200,
+ "cookies": "",
+ "finalUrl": "https://www.lg.com/ma/tv-barres-de-son/barres-de-son/s40t/",
+ "title": "LG Soundbar pour téléviseur 2.1 canaux S40T - S40T | LG Maroc",
+ "clicked": [
+  "Caractéristiques principales",
+  "Fonctionnalités Caractéristiques Avis Assistance O",
+  "Fonctionnalités",
+  "Caractéristiques",
+  "Son Ultime 2.1ch",
+  "Toutes les caractéristiques"
+ ],
+ "shots": [
+  "top.jpg"
+ ],
+ "hiddenMarked": 410,
+ "xhr": 3,
+ "renderedBytes": 408882
+}

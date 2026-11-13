@@ -59,7 +59,7 @@ def pic_key(site, url):
     if not u:
         return ''
     p = urlparse(u if '//' in u else 'https://' + u)
-    path = p.path
+    path = unquote(p.path)
     low = (p.netloc + path).lower()
     if site == 'lg':
         low = re.sub(r'/jcr:content/renditions/.*$', '', low)

@@ -1,0 +1,26 @@
+{
+ "id": "lg-snc4r",
+ "url": "https://www.lg.com/ma/tv-barres-de-son/barres-de-son/snc4r/",
+ "savedAt": "2026-11-13T18:12:18",
+ "rawStatus": 0,
+ "rawError": "APIRequestContext.get: socket hang up",
+ "rawBytes": 0,
+ "status": 200,
+ "cookies": "",
+ "finalUrl": "https://www.lg.com/ma/tv-barres-de-son/barres-de-son/snc4r/",
+ "title": "Barre de son LG pour TV équipée du mode de diffusion en continu par Bluetooth et de haut-parleurs pour un son ambiophonique - SNC4R | LG Maroc",
+ "clicked": [
+  "Caractéristiques principales",
+  "Fonctionnalités Caractéristiques Avis Assistance O",
+  "Fonctionnalités",
+  "Caractéristiques",
+  "Connectivité polyvalente",
+  "Toutes les caractéristiques"
+ ],
+ "shots": [
+  "top.jpg"
+ ],
+ "hiddenMarked": 397,
+ "xhr": 3,
+ "renderedBytes": 340865
+}

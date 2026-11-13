@@ -1,0 +1,330 @@
+{
+ "id": "samsung-wd6500t-front-loading-ai-control-air-was",
+ "site": "samsung",
+ "type": "washer-dryer",
+ "url": "https://www.samsung.com/n_africa/washers-and-dryers/washer-dryer-combo/wd6500t-front-loading-ai-control-air-wash-bubble-soak-9kg-plus-6kg-platinum-silver-wd90t654dbn-mf/",
+ "finalUrl": "https://www.samsung.com/n_africa/washers-and-dryers/washer-dryer-combo/wd6500t-front-loading-ai-control-air-wash-bubble-soak-9kg-plus-6kg-platinum-silver-wd90t654dbn-mf/",
+ "name": "Lavante-séchante addwash 9+6 kg - WD90T654DBN",
+ "brand": "Samsung",
+ "model": "WD90T654DBN/MF",
+ "pictures": [
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/wd90t654dbn-mf/gallery/n-africa-combo-wd10t654dbhs1-379533-wd90t654dbn-mf-550322682",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/wd90t654dbn-mf/gallery/n-africa-combo-wd10t654dbhs1-379533-wd90t654dbn-mf-403410833",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/wd90t654dbn-mf/gallery/n-africa-combo-wd10t654dbhs1-379533-wd90t654dbn-mf-403410834",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/wd90t654dbn-mf/gallery/n-africa-combo-wd10t654dbhs1-379533-wd90t654dbn-mf-403410835",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/wd90t654dbn-mf/gallery/n-africa-combo-wd10t654dbhs1-379533-wd90t654dbn-mf-403410836",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/wd90t654dbn-mf/gallery/n-africa-combo-wd10t654dbhs1-379533-wd90t654dbn-mf-403410837",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/wd90t654dbn-mf/gallery/n-africa-combo-wd10t654dbhs1-379533-wd90t654dbn-mf-403410838",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/wd90t654dbn-mf/gallery/n-africa-combo-wd10t654dbhs1-379533-wd90t654dbn-mf-403410839",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/wd90t654dbn-mf/gallery/n-africa-combo-wd10t654dbhs1-379533-wd90t654dbn-mf-403410840",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/wd90t654dbn-mf/gallery/n-africa-combo-wd10t654dbhs1-379533-wd90t654dbn-mf-403410841",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/wd90t654dbn-mf/gallery/n-africa-combo-wd10t654dbhs1-379533-wd90t654dbn-mf-403410842"
+ ],
+ "specs": [
+  {
+   "group": "Présentation",
+   "label": "Capacité de lavage (kg)",
+   "value": "9‎"
+  },
+  {
+   "group": "Présentation",
+   "label": "Type de tambour",
+   "value": "1st Diamond"
+  },
+  {
+   "group": "Présentation",
+   "label": "Dimensions nette (L x H x P, mm)",
+   "value": "600 x 850 x 650‎"
+  },
+  {
+   "group": "Présentation",
+   "label": "Poids net (kg)",
+   "value": "68‎"
+  },
+  {
+   "group": "Capacité de séchage",
+   "label": "Capacité de séchage (kg)",
+   "value": "6‎"
+  },
+  {
+   "group": "Design",
+   "label": "Couleur principale",
+   "value": "Inoxydable / Inox"
+  },
+  {
+   "group": "Design",
+   "label": "Porte",
+   "value": "Tint Door + Black Deco"
+  },
+  {
+   "group": "Design",
+   "label": "Panneau d’affichage",
+   "value": "AI Control"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Classe d’efficacité énergétique",
+   "value": "B"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Consommation d’énergie (par cycle)",
+   "value": "7.29 kWh"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Consommation d’eau (cycle)",
+   "value": "110 L"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Efficacité de l’essorage",
+   "value": "A"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Lavage",
+   "value": "A"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Niveau sonore (lavage)",
+   "value": "54 dB"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Niveau sonore (essorage)",
+   "value": "73 dB"
+  },
+  {
+   "group": "Puissance maximale",
+   "label": "Noise Level (Dry)",
+   "value": "59 dB"
+  },
+  {
+   "group": "Fonction",
+   "label": "AI Control",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "AddWash",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "Air Wash",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "Vitesse de rotation (t/min)",
+   "value": "1400 rpm"
+  },
+  {
+   "group": "Fonction",
+   "label": "Bubble Soak",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "Technologie à bulles",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "Moteur",
+   "value": "DIT"
+  },
+  {
+   "group": "Fonction",
+   "label": "Configuration de la langue",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "SmartThings",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "Sécurité enfant",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "Arrêt différé",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "Drum Clean+",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "Intensif",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "Mon cycle",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "Prélavage",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "Tiroir StayClean",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "Vapeur",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "Super rapide",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonction",
+   "label": "Time Dry",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Cycle supplémentaire",
+   "value": "e-Cotton"
+  },
+  {
+   "group": "Cycle",
+   "label": "Active Wear",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Literie",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Cloudy Day",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Colors",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Coton",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Linge délicat",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Drain/Spin",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Outdoor",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Rinçage + Essorage",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Shirts",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Silent Wash",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Programme Super Eco",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Synthétique",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Towels",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Wash+Dry",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Laine",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Séchage coton",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Séchage synthétique",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Lavage rapide 15 minutes",
+   "value": "Oui"
+  },
+  {
+   "group": "Cycle",
+   "label": "Assainissant vapeur",
+   "value": "Oui"
+  },
+  {
+   "group": "Spécification physique",
+   "label": "Dimensions brutes (L x H x P, mm)",
+   "value": "666 x 890 x 747‎"
+  },
+  {
+   "group": "Spécification physique",
+   "label": "Poids brut (kg)",
+   "value": "70‎"
+  },
+  {
+   "group": "Intelligent",
+   "label": "WiFi Intégré",
+   "value": "Oui"
+  },
+  {
+   "group": "Connectivité application",
+   "label": "Prise en charge de l’application SmartThings",
+   "value": "Oui"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-13T18:07:55",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-13T18:10:16",
+ "checkNotes": "Pictures: Samsung checked on the picture sheet; LG checked automatically (LG refuses its pictures outside its pages): every picture comes from the product's own gallery folder in the gallery component. Specs from the full spec list (LG \"Toutes les caractéristiques\", Samsung #specs) cross-checked with the page text."
+}

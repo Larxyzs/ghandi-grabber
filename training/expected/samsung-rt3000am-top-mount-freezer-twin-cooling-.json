@@ -152,7 +152,9 @@
    "value": "TMF"
   }
  ],
- "verified": false,
- "auditedAt": "2026-11-09T17:52:14",
- "auditNotes": []
+ "verified": true,
+ "auditedAt": "2026-11-13T18:07:54",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-13T18:10:16",
+ "checkNotes": "Pictures: Samsung checked on the picture sheet; LG checked automatically (LG refuses its pictures outside its pages): every picture comes from the product's own gallery folder in the gallery component. Specs from the full spec list (LG \"Toutes les caractéristiques\", Samsung #specs) cross-checked with the page text."
 }

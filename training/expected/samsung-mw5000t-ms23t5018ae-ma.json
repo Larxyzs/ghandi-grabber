@@ -1,0 +1,261 @@
+{
+ "id": "samsung-mw5000t-ms23t5018ae-ma",
+ "site": "samsung",
+ "type": "microwave",
+ "url": "https://www.samsung.com/n_africa/microwave-ovens/solo/mw5000t-ms23t5018ae-ma/",
+ "finalUrl": "https://www.samsung.com/n_africa/microwave-ovens/solo/mw5000t-ms23t5018ae-ma/",
+ "name": "Micro-ondes – Couleur Porcelaine – 23L",
+ "brand": "Samsung",
+ "model": "MS23T5018AE/MA",
+ "pictures": [
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/ms23t5018ae-ma/gallery/n-africa-mw5000t-ms23t5018ae-ma-534556759",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/ms23t5018ae-ma/gallery/n-africa-mw5000t-ms23t5018ae-ma-534556746",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/ms23t5018ae-ma/gallery/n-africa-mw5000t-ms23t5018ae-ma-534556747",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/ms23t5018ae-ma/gallery/n-africa-mw5000t-ms23t5018ae-ma-534556748",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/ms23t5018ae-ma/gallery/n-africa-mw5000t-ms23t5018ae-ma-534556749",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/ms23t5018ae-ma/gallery/n-africa-mw5000t-ms23t5018ae-ma-534556750",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/ms23t5018ae-ma/gallery/n-africa-mw5000t-ms23t5018ae-ma-534556751"
+ ],
+ "specs": [
+  {
+   "group": "Présentation",
+   "label": "Type",
+   "value": "Solo"
+  },
+  {
+   "group": "Présentation",
+   "label": "Capacité",
+   "value": "23L"
+  },
+  {
+   "group": "Présentation",
+   "label": "Power Consumption (Microwave)",
+   "value": "1150 W"
+  },
+  {
+   "group": "Présentation",
+   "label": "Outside (WxHxD)",
+   "value": "489 x 275 x 363 mm"
+  },
+  {
+   "group": "Type de brûleurs",
+   "label": "Type de produit",
+   "value": "Solo"
+  },
+  {
+   "group": "Type de brûleurs",
+   "label": "Installation Type",
+   "value": "Pose libre"
+  },
+  {
+   "group": "Capacité",
+   "label": "Oven Capacity",
+   "value": "23L"
+  },
+  {
+   "group": "Matériaux/Finitions",
+   "label": "Couleur",
+   "value": "Clean Porcelain"
+  },
+  {
+   "group": "Matériaux/Finitions",
+   "label": "Color(Cabinet)",
+   "value": "Nonir"
+  },
+  {
+   "group": "Matériaux/Finitions",
+   "label": "Méthode de contrôle",
+   "value": "Tactile"
+  },
+  {
+   "group": "Matériaux/Finitions",
+   "label": "Type de porte",
+   "value": "Ouverture latérale avec poignée"
+  },
+  {
+   "group": "Matériaux/Finitions",
+   "label": "Cavité",
+   "value": "Émail céramique"
+  },
+  {
+   "group": "Matériaux/Finitions",
+   "label": "Turntable Size",
+   "value": "288 mm"
+  },
+  {
+   "group": "Matériaux/Finitions",
+   "label": "Affichage",
+   "value": "LED (blanc)"
+  },
+  {
+   "group": "Énergie",
+   "label": "Power Source",
+   "value": "230V / 50Hz"
+  },
+  {
+   "group": "Énergie",
+   "label": "Output Power (Microwave)",
+   "value": "800 W"
+  },
+  {
+   "group": "Énergie",
+   "label": "Power Level",
+   "value": "6"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Horloge",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "30 sec. Plus",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Eco Mode",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Defrost (Auto / Power / Sensor)",
+   "value": "Quick"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Sensor Cook",
+   "value": "Non"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Steam Cook",
+   "value": "Non"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Auto Steam Cook",
+   "value": "Non"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Auto Programs",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Auto Cook",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Home Dessert",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Keep Warm",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Steam Clean",
+   "value": "Non"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Turntable On/Off",
+   "value": "Non"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Désodorisation",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Child Safety Lock",
+   "value": "Non"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Kitchen Timer",
+   "value": "Non"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Mémoire",
+   "value": "Non"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Sound on/off",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Language Option",
+   "value": "Non"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Others",
+   "value": "Non"
+  },
+  {
+   "group": "Accessories",
+   "label": "Quick Guide Label",
+   "value": "Oui"
+  },
+  {
+   "group": "Poids/Dimensions",
+   "label": "Cavity (WxHxD)",
+   "value": "330 x 211 x 324 mm"
+  },
+  {
+   "group": "Poids/Dimensions",
+   "label": "Net",
+   "value": "489 x 275 x 363 mm"
+  },
+  {
+   "group": "Poids/Dimensions",
+   "label": "Emballage",
+   "value": "552 x 326 x 423 mm"
+  },
+  {
+   "group": "Poids/Dimensions",
+   "label": "Poids (net)",
+   "value": "12,0 kg"
+  },
+  {
+   "group": "Poids/Dimensions",
+   "label": "Weight (Shipping)",
+   "value": "13,5 kg"
+  },
+  {
+   "group": "Smart",
+   "label": "WiFi Embedded",
+   "value": "Non"
+  },
+  {
+   "group": "Basic Information",
+   "label": "Manufacturer / Importer",
+   "value": "Samsung Electronics Co.,Ltd."
+  },
+  {
+   "group": "Basic Information",
+   "label": "Product Origin",
+   "value": "Malaisie"
+  },
+  {
+   "group": "Basic Information",
+   "label": "Packing Case",
+   "value": "Éco (image)"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-13T18:07:56",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-13T18:10:16",
+ "checkNotes": "Pictures: Samsung checked on the picture sheet; LG checked automatically (LG refuses its pictures outside its pages): every picture comes from the product's own gallery folder in the gallery component. Specs from the full spec list (LG \"Toutes les caractéristiques\", Samsung #specs) cross-checked with the page text."
+}

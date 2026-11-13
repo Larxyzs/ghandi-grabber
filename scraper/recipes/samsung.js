@@ -81,7 +81,8 @@ GHANDI.register({
     '[class*="gallery" i] img',
   ],
   imageFilter: function (url) {
-    return /samsung\.com/i.test(url) && /\/gallery\//i.test(url);
+    // the thumbnail strip has its own files ("...-thumb-548262623"): the same slides again -> skipped
+    return /samsung\.com/i.test(url) && /\/gallery\//i.test(url) && !/-thumb-\d+/i.test(url);
   },
   // the same picture comes in many sizes: ask for the big one seen on the real site
   imageUpgrade: function (url) {

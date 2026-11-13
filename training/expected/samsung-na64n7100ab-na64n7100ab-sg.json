@@ -1,0 +1,119 @@
+{
+ "id": "samsung-na64n7100ab-na64n7100ab-sg",
+ "site": "samsung",
+ "type": "hob",
+ "url": "https://www.samsung.com/n_africa/cooking-appliances/hobs/na64n7100ab-na64n7100ab-sg/",
+ "finalUrl": "https://www.samsung.com/n_africa/cooking-appliances/hobs/na64n7100ab-na64n7100ab-sg/",
+ "name": "Plaque de cuisson à gaz NA3000H – Noir",
+ "brand": "Samsung",
+ "model": "NA64N7100AB/SG",
+ "pictures": [
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/na64n7100ab-sg/gallery/n-africa-na3000h-na64n7100ab-sg-542436384",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/na64n7100ab-sg/gallery/n-africa-na3000h-na64n7100ab-sg-542436376",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/na64n7100ab-sg/gallery/n-africa-na3000h-na64n7100ab-sg-542436375",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/na64n7100ab-sg/gallery/n-africa-na3000h-na64n7100ab-sg-542436377",
+  "https://images.samsung.com/is/image/samsung/p6pim/n_africa/na64n7100ab-sg/gallery/n-africa-na3000h-na64n7100ab-sg-542436378"
+ ],
+ "specs": [
+  {
+   "group": "Présentation",
+   "label": "Méthode de contrôle",
+   "value": "Mécanique"
+  },
+  {
+   "group": "Présentation",
+   "label": "Puissance totale (gaz)",
+   "value": "7.25 kW"
+  },
+  {
+   "group": "Présentation",
+   "label": "Nombre de foyers",
+   "value": "4 EA"
+  },
+  {
+   "group": "Présentation",
+   "label": "Dimensions (L x H x P)",
+   "value": "590 x 57 x 520 mm"
+  },
+  {
+   "group": "Matériaux/Finitions",
+   "label": "Installation",
+   "value": "Encastrable"
+  },
+  {
+   "group": "Matériaux/Finitions",
+   "label": "Couleur",
+   "value": "Verre noir"
+  },
+  {
+   "group": "Énergie",
+   "label": "Rapide",
+   "value": "2.9 kW"
+  },
+  {
+   "group": "Énergie",
+   "label": "Semi-rapide",
+   "value": "1.7 kW"
+  },
+  {
+   "group": "Énergie",
+   "label": "Auxiliaire",
+   "value": "0.95 kW"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Grille",
+   "value": "Fonte (Noir mat)"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Thermocouple",
+   "value": "Oui"
+  },
+  {
+   "group": "Fonctionnalités",
+   "label": "Type (gaz)",
+   "value": "LP"
+  },
+  {
+   "group": "Plaques de cuisson",
+   "label": "Nombre de brûleurs",
+   "value": "4 EA"
+  },
+  {
+   "group": "Plaques de cuisson",
+   "label": "Type de brûleurs",
+   "value": "Rapide (1), Semi-rapide (2), Auxiliaire (1)"
+  },
+  {
+   "group": "Accessories",
+   "label": "Grille WOK",
+   "value": "Non"
+  },
+  {
+   "group": "Poids/Dimensions",
+   "label": "Emballage (l x H x P)",
+   "value": "655 x 165 x 630 mm"
+  },
+  {
+   "group": "Poids/Dimensions",
+   "label": "Niche d’encastrement (WxD)",
+   "value": "560 x 490 mm"
+  },
+  {
+   "group": "Poids/Dimensions",
+   "label": "Poids (brut)",
+   "value": "9.2 kg"
+  },
+  {
+   "group": "Poids/Dimensions",
+   "label": "Poids (net)",
+   "value": "7.8 kg"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-13T18:07:56",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-13T18:10:16",
+ "checkNotes": "Pictures: Samsung checked on the picture sheet; LG checked automatically (LG refuses its pictures outside its pages): every picture comes from the product's own gallery folder in the gallery component. Specs from the full spec list (LG \"Toutes les caractéristiques\", Samsung #specs) cross-checked with the page text."
+}

@@ -59,3 +59,6 @@ What each session tried, learned and decided. Newest at the bottom.
   data when it names the exact model of a series page (`/tvs/c755` → 55C755, test kept); Candy/Haier `imageKey` = file
   name without size prefix / date folder / letter; Electrobousfiha title selector first; Bosch drops "Pas applicable".
   Replay 73.6 → **80.3**, no product lost points; `tests/run_all.py` green.
+- Iteration 2 (Samsung pictures precision 4/10): the extension took the thumbnail strip too (`...-thumb-548262623`
+  files = the same slides again). `samsung.js` imageFilter skips `-thumb-N`. score.py now decodes picture paths
+  (`%E2%84%A2` = `™`). Samsung 88.9 → 98.0, total 80.3 → **83.6**, nothing lost, tests green.

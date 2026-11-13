@@ -1,0 +1,413 @@
+{
+ "id": "lg-oled65g66lw",
+ "site": "lg",
+ "type": "tv",
+ "url": "https://www.lg.com/ma/tv-barres-de-son/oled-evo/oled65g66lw/",
+ "finalUrl": "https://www.lg.com/ma/tv-barres-de-son/oled-evo/oled65g66lw/",
+ "name": "Smart TV LG OLED evo AI 4K G6 2026 65 pouces",
+ "brand": "LG",
+ "model": "OLED65G66LW",
+ "pictures": [
+  "https://www.lg.com/content/dam/channel/wcms/1-channel/ma/ms/lgcom/2026/tv-audio-video/tv/oled-evo/g6/gp1/gallery/65-g6/gallery/lg-oled-evo-g6-2026-65-gallery-01-product-front-main.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/1-channel/ma/ms/lgcom/2026/tv-audio-video/tv/oled-evo/g6/gp1/gallery/65-g6/gallery/lg-oled-evo-g6-2026-65-gallery-02-dimension.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/1-channel/ma/ms/lgcom/2026/tv-audio-video/tv/oled-evo/g6/gp1/gallery/65-g6/gallery/lg-oled-evo-g6-2026-65-gallery-03-hyper-radiant-color-tech.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/1-channel/ma/ms/lgcom/2026/tv-audio-video/tv/oled-evo/g6/gp1/gallery/65-g6/gallery/lg-oled-evo-g6-2026-65-gallery-04-brightness-booster-ultra.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/1-channel/ma/ms/lgcom/2026/tv-audio-video/tv/oled-evo/g6/gp1/gallery/65-g6/psd/lg-oled-evo-g6-2026-65-gallery-05-perfect-black-color.psd",
+  "https://www.lg.com/content/dam/channel/wcms/1-channel/ma/ms/lgcom/2026/tv-audio-video/tv/oled-evo/g6/gp1/gallery/65-g6/gallery/lg-oled-evo-g6-2026-65-gallery-06-reflection-free-premium.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/1-channel/ma/ms/lgcom/2026/tv-audio-video/tv/oled-evo/g6/gp1/gallery/65-g6/gallery/lg-oled-evo-g6-2026-65-gallery-07-ai-processor.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/1-channel/ma/ms/lgcom/2026/tv-audio-video/tv/oled-evo/g6/gp1/gallery/65-g6/gallery/lg-oled-evo-g6-2026-65-gallery-08-multi-webos.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/1-channel/ma/ms/lgcom/2026/tv-audio-video/tv/oled-evo/g6/gp1/gallery/65-g6/gallery/lg-oled-evo-g6-2026-65-gallery-09-ai-hub-ga.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/1-channel/ma/ms/lgcom/2026/tv-audio-video/tv/oled-evo/g6/gp1/gallery/65-g6/gallery/lg-oled-evo-g6-2026-65-gallery-10-lg-shield.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/1-channel/ma/ms/lgcom/2026/tv-audio-video/tv/oled-evo/g6/gp1/gallery/65-g6/gallery/lg-oled-evo-g6-2026-65-gallery-11-gaming.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/1-channel/ma/ms/lgcom/2026/tv-audio-video/tv/oled-evo/g6/gp1/gallery/65-g6/gallery/lg-oled-evo-g6-2026-65-gallery-12-flush-fit-gallery-design.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/1-channel/ma/ms/lgcom/2026/tv-audio-video/tv/oled-evo/g6/gp1/gallery/65-g6/gallery/lg-oled-evo-g6-2026-65-gallery-13-lifestyle.jpg",
+  "https://www.lg.com/content/dam/channel/wcms/1-channel/ma/ms/lgcom/2026/tv-audio-video/tv/oled-evo/g6/gp1/gallery/65-g6/gallery/lg-oled-evo-g6-2026-65-gallery-14-lifestyle.jpg"
+ ],
+ "specs": [
+  {
+   "group": "PICTURE (DISPLAY)",
+   "label": "Technologie écran",
+   "value": "4K OLED"
+  },
+  {
+   "group": "PICTURE (DISPLAY)",
+   "label": "Résolution écran",
+   "value": "4K Ultra HD (3840 x 2160)"
+  },
+  {
+   "group": "PICTURE (DISPLAY)",
+   "label": "Taux de rafraichissement",
+   "value": "120Hz Native (VRR 165Hz)"
+  },
+  {
+   "group": "PICTURE (DISPLAY)",
+   "label": "Wide Color Gamut",
+   "value": "Couleurs parfaites"
+  },
+  {
+   "group": "IMAGE (TRAITEMENT)",
+   "label": "Processeur",
+   "value": "Processeur Alpha 11 AI 4K Gen3 avec Moteur AI double"
+  },
+  {
+   "group": "IMAGE (TRAITEMENT)",
+   "label": "AI Genre Selection",
+   "value": "Oui (SDR/HDR)"
+  },
+  {
+   "group": "IMAGE (TRAITEMENT)",
+   "label": "AI Picture Pro",
+   "value": "OUI"
+  },
+  {
+   "group": "IMAGE (TRAITEMENT)",
+   "label": "AI Upscaling",
+   "value": "Alpha 11 AI Super Upscaling 4K"
+  },
+  {
+   "group": "IMAGE (TRAITEMENT)",
+   "label": "Calibrage automatique",
+   "value": "OUI"
+  },
+  {
+   "group": "IMAGE (TRAITEMENT)",
+   "label": "Dimming Technology",
+   "value": "Pixel Dimming"
+  },
+  {
+   "group": "IMAGE (TRAITEMENT)",
+   "label": "Dynamic Tone Mapping",
+   "value": "Oui (Dynamic Tone Mapping Ultra)"
+  },
+  {
+   "group": "IMAGE (TRAITEMENT)",
+   "label": "FILMMAKER MODE™",
+   "value": "OUI"
+  },
+  {
+   "group": "IMAGE (TRAITEMENT)",
+   "label": "HDR (High Dynamic Range)",
+   "value": "Dolby Vision / HDR10 / HLG"
+  },
+  {
+   "group": "IMAGE (TRAITEMENT)",
+   "label": "HFR (High Frame Rate)",
+   "value": "4K 120i/s (HDMI, USB)"
+  },
+  {
+   "group": "IMAGE (TRAITEMENT)",
+   "label": "Modes d'image",
+   "value": "9 modes"
+  },
+  {
+   "group": "IMAGE (TRAITEMENT)",
+   "label": "Motion",
+   "value": "OLED Motion"
+  },
+  {
+   "group": "IMAGE (TRAITEMENT)",
+   "label": "QMS (changement multimédia rapide)",
+   "value": "OUI"
+  },
+  {
+   "group": "IMAGE (TRAITEMENT)",
+   "label": "Transfert rapide d'images",
+   "value": "OUI"
+  },
+  {
+   "group": "GAMING",
+   "label": "Compatibilité G-Sync (Nvidia)",
+   "value": "OUI"
+  },
+  {
+   "group": "GAMING",
+   "label": "ALLM (Auto Low Latency Mode)",
+   "value": "OUI"
+  },
+  {
+   "group": "GAMING",
+   "label": "Dolby Vision pour les jeux (4K 120 Hz)",
+   "value": "OUI"
+  },
+  {
+   "group": "GAMING",
+   "label": "Compatibilité FreeSync (AMD)",
+   "value": "OUI"
+  },
+  {
+   "group": "GAMING",
+   "label": "Optimiseur de Jeu",
+   "value": "Oui (Tableau de Bord)"
+  },
+  {
+   "group": "GAMING",
+   "label": "HGIG Mode",
+   "value": "OUI"
+  },
+  {
+   "group": "GAMING",
+   "label": "Temps de réponse",
+   "value": "Moins de 0,1 ms"
+  },
+  {
+   "group": "GAMING",
+   "label": "VRR (Variable Refresh Rate)",
+   "value": "Oui (jusqu'à 165Hz)"
+  },
+  {
+   "group": "SMART TV",
+   "label": "Interface TV (OS)",
+   "value": "webOS 26"
+  },
+  {
+   "group": "SMART TV",
+   "label": "Application Smartphone",
+   "value": "Oui (LG ThinQ)"
+  },
+  {
+   "group": "SMART TV",
+   "label": "Compatible camera USB",
+   "value": "OUI"
+  },
+  {
+   "group": "SMART TV",
+   "label": "Compatible avec Apple Airplay",
+   "value": "OUI"
+  },
+  {
+   "group": "SMART TV",
+   "label": "Multi View",
+   "value": "OUI"
+  },
+  {
+   "group": "SMART TV",
+   "label": "Reconnaissance vocale intelligente",
+   "value": "OUI"
+  },
+  {
+   "group": "SMART TV",
+   "label": "Home Hub",
+   "value": "Oui (Google Home, LG ThinQ)"
+  },
+  {
+   "group": "SMART TV",
+   "label": "Contrôle vocal main libre",
+   "value": "OUI"
+  },
+  {
+   "group": "SMART TV",
+   "label": "Google Cast",
+   "value": "OUI"
+  },
+  {
+   "group": "SMART TV",
+   "label": "Navigateur Internet",
+   "value": "OUI"
+  },
+  {
+   "group": "SMART TV",
+   "label": "Toujours prêt (Always Ready)",
+   "value": "OUI"
+  },
+  {
+   "group": "SMART TV",
+   "label": "Compatible avec Apple Home",
+   "value": "OUI"
+  },
+  {
+   "group": "SMART TV",
+   "label": "AI Chatbot",
+   "value": "OUI"
+  },
+  {
+   "group": "AUDIO",
+   "label": "Sortie Audio",
+   "value": "60W"
+  },
+  {
+   "group": "AUDIO",
+   "label": "Sound Mode Share",
+   "value": "OUI"
+  },
+  {
+   "group": "AUDIO",
+   "label": "AI Sound",
+   "value": "Alpha 11 AI Sound Pro (Virtual 11.1.2 Up-mix)"
+  },
+  {
+   "group": "AUDIO",
+   "label": "Audio Codec",
+   "value": "AC4, AC3(Dolby Digital), EAC3, HE-AAC, AAC, MP2, MP3, PCM, apt-X (Se référer au manuel)"
+  },
+  {
+   "group": "AUDIO",
+   "label": "Clear Voice Pro",
+   "value": "OUI"
+  },
+  {
+   "group": "AUDIO",
+   "label": "Dolby Atmos",
+   "value": "OUI"
+  },
+  {
+   "group": "AUDIO",
+   "label": "LG Sound Sync",
+   "value": "OUI"
+  },
+  {
+   "group": "AUDIO",
+   "label": "Sortie audio simultanée",
+   "value": "OUI"
+  },
+  {
+   "group": "AUDIO",
+   "label": "Direction haut-parleurs",
+   "value": "Diffusion vers le bas"
+  },
+  {
+   "group": "AUDIO",
+   "label": "Diffusion haut-parleurs",
+   "value": "4.2 canaux"
+  },
+  {
+   "group": "AUDIO",
+   "label": "WOW Orchestra",
+   "value": "OUI"
+  },
+  {
+   "group": "CONNECTIVITE",
+   "label": "Port HDMI",
+   "value": "4 unités (compatible 4K 120 Hz, eARC, VRR, ALLM, QMS, QFT)"
+  },
+  {
+   "group": "CONNECTIVITE",
+   "label": "Port USB",
+   "value": "3 (USB 2.0)"
+  },
+  {
+   "group": "CONNECTIVITE",
+   "label": "Wi-Fi",
+   "value": "Oui (Wi-Fi 6)"
+  },
+  {
+   "group": "CONNECTIVITE",
+   "label": "Sortie audio numérique optique",
+   "value": "1"
+  },
+  {
+   "group": "CONNECTIVITE",
+   "label": "Simplink (HDMI CEC)",
+   "value": "OUI"
+  },
+  {
+   "group": "CONNECTIVITE",
+   "label": "Prise antenne",
+   "value": "2"
+  },
+  {
+   "group": "CONNECTIVITE",
+   "label": "Bluetooth",
+   "value": "Oui (v 5.3)"
+  },
+  {
+   "group": "CONNECTIVITE",
+   "label": "Port Ethernet",
+   "value": "1"
+  },
+  {
+   "group": "CONNECTIVITE",
+   "label": "HDMI Audio Return Channel",
+   "value": "eARC (HDMI 2)"
+  },
+  {
+   "group": "ACCESSIBILITE",
+   "label": "Contrastes élevés",
+   "value": "OUI"
+  },
+  {
+   "group": "ACCESSIBILITE",
+   "label": "Echelle de gris",
+   "value": "OUI"
+  },
+  {
+   "group": "ACCESSIBILITE",
+   "label": "Couleurs inversées",
+   "value": "OUI"
+  },
+  {
+   "group": "DIMENSIONS ET POIDS",
+   "label": "Dimensions TV sans pied (L×l×H mm)",
+   "value": "1 441 x 826 x 24,3"
+  },
+  {
+   "group": "DIMENSIONS ET POIDS",
+   "label": "Poids TV avec pied (kg)",
+   "value": "27,3"
+  },
+  {
+   "group": "DIMENSIONS ET POIDS",
+   "label": "Suppoort VESA (LxH mm)",
+   "value": "300 x 300"
+  },
+  {
+   "group": "DIMENSIONS ET POIDS",
+   "label": "Pied TV (Lxl mm)",
+   "value": "485 x 263"
+  },
+  {
+   "group": "DIMENSIONS ET POIDS",
+   "label": "Dimensions TV avec pied (LxlxH mm)",
+   "value": "1 441 x 865/910 x 263"
+  },
+  {
+   "group": "DIMENSIONS ET POIDS",
+   "label": "Poids carton (kg)",
+   "value": "34,1"
+  },
+  {
+   "group": "DIMENSIONS ET POIDS",
+   "label": "Dimensions du carton (LxlxH mm)",
+   "value": "1 600 x 970 x 172"
+  },
+  {
+   "group": "DIMENSIONS ET POIDS",
+   "label": "Poids TV sans pied (kg)",
+   "value": "22"
+  },
+  {
+   "group": "POWER",
+   "label": "Alimentation (Voltage, Hz)",
+   "value": "C.A. 100 ~ 240 V 50-60 Hz"
+  },
+  {
+   "group": "POWER",
+   "label": "Consommation en veille",
+   "value": "Moins de 0.5W"
+  },
+  {
+   "group": "ACCESSOIRES INCLUS",
+   "label": "Télécommande",
+   "value": "Télécommande AI Magic Remote MR26"
+  },
+  {
+   "group": "ACCESSOIRES INCLUS",
+   "label": "Cable d'alimentaion",
+   "value": "Oui (Attaché)"
+  },
+  {
+   "group": "DIFFUSION",
+   "label": "Réception TV numérique",
+   "value": "DVB-T2/T (terrestre), DVB-C (câble), DVB-S2/S (satellite)"
+  },
+  {
+   "group": "DIFFUSION",
+   "label": "Réception Analogue TV",
+   "value": "OUI"
+  }
+ ],
+ "verified": true,
+ "auditedAt": "2026-11-13T18:07:53",
+ "auditNotes": [],
+ "verifiedAt": "2026-11-13T18:10:16",
+ "checkNotes": "Pictures: Samsung checked on the picture sheet; LG checked automatically (LG refuses its pictures outside its pages): every picture comes from the product's own gallery folder in the gallery component. Specs from the full spec list (LG \"Toutes les caractéristiques\", Samsung #specs) cross-checked with the page text."
+}

@@ -1,21 +1,21 @@
-# Training report (replay, 2026-11-13 18:22)
+# Training report (replay, 2026-11-13 18:28)
 
-Run `20261113-182232-replay` (replay), 102 products grabbed in 144 s.
+Run `20261113-182845-replay` (replay), 102 products grabbed in 144 s.
 
-**Total: 80.3 / 100** on 102 products (101 verified expected files).
+**Total: 83.6 / 100** on 102 products (101 verified expected files).
 
 ## Points lost per field (all products)
 | Field | Max | Average | Points lost (sum) |
 |---|---|---|---|
 | spec_recall | 20 | 15.71 | 438 |
-| pic_precision | 10 | 6.56 | 351 |
-| pic_recall | 10 | 7.04 | 302 |
 | spec_precision | 10 | 7.87 | 217 |
+| pic_precision | 10 | 7.90 | 214 |
+| pic_recall | 10 | 8.02 | 202 |
 | model | 15 | 13.24 | 180 |
-| pic_main | 5 | 3.53 | 150 |
-| pic_order | 5 | 3.82 | 120 |
+| pic_main | 5 | 3.97 | 105 |
 | brand | 10 | 9.22 | 80 |
 | sheet | 5 | 4.25 | 77 |
+| pic_order | 5 | 4.31 | 70 |
 | type | 5 | 4.46 | 55 |
 | name | 5 | 4.61 | 40 |
 
@@ -23,11 +23,11 @@ Run `20261113-182232-replay` (replay), 102 products grabbed in 144 s.
 | Site | N | Total | model | brand | name | type | pic rec | pic prec | main | order | spec rec | spec prec | sheet | sec | quick |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | bosch | 11 | **98.5** | 15.0 | 10.0 | 5.0 | 4.5 | 10.0 | 10.0 | 5.0 | 5.0 | 19.0 | 10.0 | 4.9 | 2.1 | 0/11 |
-| candy | 17 | **87.1** | 15.0 | 10.0 | 5.0 | 4.4 | 6.5 | 6.5 | 3.2 | 3.2 | 18.8 | 9.7 | 4.7 | 1.8 | 14/17 |
+| candy | 17 | **97.4** | 15.0 | 10.0 | 5.0 | 4.4 | 10.0 | 9.7 | 5.0 | 5.0 | 18.8 | 9.7 | 4.7 | 1.8 | 14/17 |
 | electrobousfiha | 27 | **98.1** | 13.3 | 10.0 | 5.0 | 5.0 | 9.8 | 10.0 | 5.0 | 5.0 | 20.0 | 10.0 | 5.0 | 0.2 | 27/27 |
-| haier | 14 | **94.7** | 15.0 | 10.0 | 5.0 | 5.0 | 8.6 | 8.2 | 4.3 | 4.3 | 19.5 | 9.8 | 5.0 | 0.6 | 13/14 |
+| haier | 14 | **98.8** | 15.0 | 10.0 | 5.0 | 5.0 | 10.0 | 9.5 | 5.0 | 5.0 | 19.5 | 9.8 | 5.0 | 0.6 | 13/14 |
 | lg | 9 | **10.4** | 1.7 | 1.1 | 0.6 | 0.6 | 1.1 | 0.4 | 0.6 | 0.6 | 2.2 | 1.1 | 0.6 | 0.3 | 1/9 |
-| samsung | 11 | **88.9** | 13.6 | 10.0 | 5.0 | 5.0 | 8.2 | 4.0 | 4.1 | 4.1 | 19.9 | 10.0 | 5.0 | 0.7 | 11/11 |
+| samsung | 11 | **98.0** | 13.6 | 10.0 | 5.0 | 5.0 | 10.0 | 9.9 | 4.5 | 5.0 | 19.9 | 10.0 | 5.0 | 0.5 | 11/11 |
 | tcl | 13 | **44.7** | 15.0 | 10.0 | 5.0 | 5.0 | 1.1 | 1.3 | 0.4 | 2.7 | 1.5 | 0.0 | 2.6 | 4.0 | 0/13 |
 
 ## Score per product type
@@ -35,19 +35,19 @@ Run `20261113-182232-replay` (replay), 102 products grabbed in 144 s.
 |---|---|---|---|---|---|---|---|---|---|
 | ac | 6 | **71.3** | 15.0 | 4.7 | 6.7 | 10.0 | 5.0 | 3.3 | 5.0 |
 | cooker | 2 | **99.5** | 15.0 | 10.0 | 10.0 | 20.0 | 9.5 | 5.0 | 5.0 |
-| dishwasher | 6 | **84.1** | 15.0 | 5.0 | 4.2 | 20.0 | 9.9 | 5.0 | 5.0 |
-| dryer | 2 | **79.6** | 15.0 | 5.0 | 5.0 | 19.6 | 10.0 | 5.0 | 0.0 |
+| dishwasher | 6 | **99.6** | 15.0 | 10.0 | 9.7 | 20.0 | 9.9 | 5.0 | 5.0 |
+| dryer | 2 | **93.6** | 15.0 | 10.0 | 9.0 | 19.6 | 10.0 | 5.0 | 0.0 |
 | freezer | 3 | **96.7** | 15.0 | 10.0 | 10.0 | 20.0 | 10.0 | 3.3 | 3.3 |
-| fridge | 20 | **75.0** | 12.8 | 6.5 | 6.0 | 15.0 | 7.0 | 4.2 | 4.2 |
-| hob | 6 | **98.7** | 15.0 | 10.0 | 9.2 | 19.8 | 9.7 | 5.0 | 5.0 |
+| fridge | 20 | **76.6** | 12.8 | 7.0 | 6.9 | 15.0 | 7.0 | 4.2 | 4.2 |
+| hob | 6 | **99.6** | 15.0 | 10.0 | 10.0 | 19.8 | 9.7 | 5.0 | 5.0 |
 | hood | 3 | **91.7** | 10.0 | 10.0 | 9.5 | 17.2 | 10.0 | 5.0 | 5.0 |
-| microwave | 8 | **97.3** | 15.0 | 10.0 | 9.2 | 18.4 | 9.7 | 5.0 | 5.0 |
-| oven | 10 | **86.5** | 15.0 | 6.0 | 5.9 | 18.9 | 9.8 | 4.9 | 5.0 |
+| microwave | 8 | **97.9** | 15.0 | 10.0 | 9.8 | 18.4 | 9.7 | 5.0 | 5.0 |
+| oven | 10 | **98.1** | 15.0 | 10.0 | 9.5 | 18.9 | 9.8 | 4.9 | 5.0 |
 | sink | 2 | **85.0** | 0.0 | 10.0 | 10.0 | 20.0 | 10.0 | 5.0 | 5.0 |
-| soundbar | 1 | **79.2** | 0.0 | 10.0 | 4.9 | 19.3 | 10.0 | 5.0 | 5.0 |
+| soundbar | 1 | **84.3** | 0.0 | 10.0 | 10.0 | 19.3 | 10.0 | 5.0 | 5.0 |
 | tv | 11 | **60.4** | 12.3 | 4.9 | 4.7 | 9.1 | 4.5 | 2.6 | 4.1 |
-| washer | 18 | **77.4** | 13.3 | 7.0 | 5.9 | 14.3 | 7.2 | 4.2 | 4.4 |
-| washer-dryer | 4 | **73.6** | 11.2 | 7.5 | 6.1 | 15.0 | 7.5 | 3.8 | 3.8 |
+| washer | 18 | **79.6** | 13.3 | 7.6 | 7.1 | 14.3 | 7.2 | 4.2 | 4.4 |
+| washer-dryer | 4 | **75.0** | 11.2 | 7.5 | 7.5 | 15.0 | 7.5 | 3.8 | 3.8 |
 
 ## Weakest products
 | Product | Total | Lost on | Notes |
@@ -73,7 +73,7 @@ Run `20261113-182232-replay` (replay), 102 products grabbed in 144 s.
 | tcl-p609flg | 49 | spec_recall -20, spec_precision -10, pic_precision -9, pic_recall -8, pic_main -5 |  missing 9 specs (e.g. Series) 8 foreign pics |
 | tcl-f166tmw | 60 | spec_precision -10, pic_recall -10, pic_precision -10, pic_order -5, pic_main -5 |  7 foreign pics |
 | tcl-free-standing-fhi | 61 | spec_recall -20, spec_precision -10, pic_recall -5, sheet -4 | Slideshow mode: this page has no « Caractéristiques » box, so I took no details. missing 23 specs (e.g. Name) |
-| candy-f-cid-x100 | 64 | pic_recall -10, pic_precision -10, pic_order -5, pic_main -5, spec_recall -5 |  missing 11 specs (e.g. Pourcentage de matière recyclée dans le produit) 10 foreign pics |
-| candy-cse-c10drgr-47 | 65 | pic_recall -10, pic_precision -10, type -5, pic_order -5, pic_main -5 |  missing 1 specs (e.g. Présence de substances extrêmement préoccupantes dans le produit) 5 foreign pics |
-| candy-f-idcp-x625-l | 68 | pic_recall -10, pic_precision -10, pic_order -5, pic_main -5, spec_recall -1 |  missing 2 specs (e.g. Emballage recyclable) 11 foreign pics |
-| candy-ci-3e53l0w | 70 | pic_recall -10, pic_precision -10, pic_order -5, pic_main -5 |  12 foreign pics |
+| samsung-q930f-black-hw-q930f-mv | 84 | model -15 |  missing 2 specs (e.g. Télécommande) |
+| electrobousfiha-8022-evier-teka-be-sous-plan-un-bac-inox | 85 | model -15 |  |
+| electrobousfiha-8132-evier-teka-encastrable-sous-plan-no | 85 | model -15 |  |
+| electrobousfiha-3446-hotte-franke-ftt-932-xs-saso | 85 | model -15 |  |

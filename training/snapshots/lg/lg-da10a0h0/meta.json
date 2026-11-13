@@ -1,0 +1,25 @@
+{
+ "id": "lg-da10a0h0",
+ "url": "https://www.lg.com/ma/climatiseurs-residentiels/climatiseurs-inverter/da10a0h0/",
+ "savedAt": "2026-11-13T18:08:56",
+ "rawStatus": 0,
+ "rawError": "APIRequestContext.get: socket hang up",
+ "rawBytes": 0,
+ "status": 200,
+ "cookies": "",
+ "finalUrl": "https://www.lg.com/ma/climatiseurs-residentiels/climatiseurs-inverter/da10a0h0/",
+ "title": "Climatiseur monosplit DUALCOOL AI Air Special 9kW - DA10A0H0.SW0 | LG Maroc",
+ "clicked": [
+  "Caractéristiques principales",
+  "Fonctionnalités Caractéristiques Avis FAQ Assistan",
+  "Fonctionnalités",
+  "Caractéristiques",
+  "Toutes les caractéristiques"
+ ],
+ "shots": [
+  "top.jpg"
+ ],
+ "hiddenMarked": 557,
+ "xhr": 3,
+ "renderedBytes": 512687
+}
