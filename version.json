@@ -1,8 +1,8 @@
 {
- "version": "3.7.25",
- "commit": "8de9960128a017955c70eef46eade65c6c56be58",
+ "version": "3.7.26",
+ "commit": "454b62f3065b6e043310a283ae324dd55669fa45",
  "notes": [
-  "TCL : toutes les caractéristiques (tous les onglets) et la référence sur les pages « série »."
+  "Les mises à jour s'installent maintenant toutes seules (plus besoin de cliquer, sauf si Chrome demande la permission)."
  ],
  "files": [
   {
@@ -37,8 +37,8 @@
   },
   {
    "path": "app/app.js",
-   "size": 81560,
-   "sha256": "790738b78758c8addcf984c4db97ab6df7f1149e657606c1d71e2cd7c249be3e"
+   "size": 82816,
+   "sha256": "ad270628197ef903a358713872f0fbaf8159b57dde6d5a96e8105051615cc490"
   },
   {
    "path": "app/shim.js",
@@ -52,8 +52,8 @@
   },
   {
    "path": "bridge/bridge.js",
-   "size": 4870,
-   "sha256": "a5bc7888f64e98c026e2f04aff3298ff2333bbb845226c702f82226765e6b501"
+   "size": 6062,
+   "sha256": "9ff943d51495c0347de69f416fa5a8f3f5ab0bdcf28653064aa112d0ce09f291"
   },
   {
    "path": "icons/icon128.png",
@@ -73,7 +73,7 @@
   {
    "path": "manifest.json",
    "size": 1251,
-   "sha256": "90f0f7e9ad7c7e84788fed9c3a1b603b7caa1a58715d78c51a04fe123c4572d6"
+   "sha256": "ceabfcc6d5b736c6c5929492fee1e7236eac7a6f5e49db5706bb66d57ac3ecf8"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -162,13 +162,13 @@
   },
   {
    "path": "sheets/templates.js",
-   "size": 74147,
-   "sha256": "7fde1238a3975603f19b2043e311aaf8b0336e98f0640c07b18bec1cdaa4c8a9"
+   "size": 74308,
+   "sha256": "8b26d484c612b3db425abc896022508e427e6cfebe9281feccecff9371e008f6"
   },
   {
    "path": "updater/updater.js",
-   "size": 11294,
-   "sha256": "6d94f623c6b7fd907190d501a4560f74e30d98704a16e30489a139dee5bf0684"
+   "size": 11815,
+   "sha256": "de58fc547ebb2ff17457c74858e09252c889bd87837e261468a496b0e3bca787"
   }
  ],
  "remove": []
