@@ -28,7 +28,7 @@
   var COLOR = /^(INOX|INOXX|SLV|SILVER|BLC|BLANC|NOIR|BLACK|GRIS|GREY|T\.GREY|BK|DG|XS|ARGENT|WHITE|BEIGE|ROUGE|BLEU|BLA)$/i;
   // the words that start a name, to remove when the category already says it
   var NAME_KIND =
-    /^(REF|REFRIG|COMB|SBS|CONG|VERT|VER|HORIZ|COFFRE|MAL|L\.S|LS|SL|LV|LAVE|VAISSELLE|ENCASTRABLE|ENC|CLIM|CUIS|PLAQUE|TC|ELECT|VITRO|HOTTE|T|FOUR|MICRO|ONDE|MO|MINI|BAR|TABLE|DE|CUISSON|VENTILATEUR|BARRE|SON|CHAUFFE|EAU)$/;
+    /^(REF|REFRIG|COMB|SBS|CONG|VERT|VER|HORIZ|COFFRE|MAL|L\.S|LS|SL|LV|LAVE|VAISSELLE|ENCASTRABLE|ENC|CLIM|CUIS|PLAQUE|TC|ELECT|VITRO|HOTTE|T|FOUR|MICRO|ONDE|MO|MINI|BAR|TABLE|DE|CUISSON|VENTILATEUR|BARRE|SON|CHAUFFE|EAU|EVIER|ENCA|ENCAS)$/;
 
   var clean = function (s) {
     return String(s || '').replace(/\s+/g, ' ').trim();
@@ -158,6 +158,8 @@
       var model = modelFrom(find(/^code produit$/i), ref, brand) || modelFrom(find(/^r[ée]f[ée]rence fournisseur$/i), '', brand);
       r.brand = brand;
       if (model) r.model = model;
+      // sinks sit in "Accessoires cuisines": call them what they are
+      if (/^EVIER\b/i.test(ref) && (!category || /accessoire/i.test(category))) category = 'Évier';
       if (ref) r.name = niceName(ref, category, brand);
       r.debug.brandFrom = brand || 'not found';
       r.debug.modelFrom = model ? 'electroplanet: ' + model : r.debug.modelFrom;
