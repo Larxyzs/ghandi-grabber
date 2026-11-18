@@ -1,8 +1,8 @@
 {
- "version": "3.7.29",
- "commit": "9e0df2b4a090ddd76cadc2c9b03f5ba6308a7ee0",
+ "version": "3.7.30",
+ "commit": "1e3cc8ace9677ebf1f9b3f7872448e737923fd60",
  "notes": [
-  "Sinks from Electroplanet now get a clear name (Évier Franke ...)."
+  "Whirlpool freezers now get their real model code, and Bosch fridge-freezers go in the right fridge section."
  ],
  "files": [
   {
@@ -37,8 +37,8 @@
   },
   {
    "path": "app/app.js",
-   "size": 85542,
-   "sha256": "a511789eb24b5715b254ec5fd6c5a6b9d790612387a8d3a0db0da6483dc6cceb"
+   "size": 85768,
+   "sha256": "8b332f75049cfd2fdd8e03fd62760cb58f85829ffbdb42c4d8cd8a4d08988fa5"
   },
   {
    "path": "app/shim.js",
@@ -73,7 +73,7 @@
   {
    "path": "manifest.json",
    "size": 1330,
-   "sha256": "9a36b83da8a315a8cae878cf62171577d33c1fd50762b02f2a9f768dc59e8e77"
+   "sha256": "e7008c3b8e9757f9bcc3e222fcb775cf84f5d98b72e8b65d5e3d4a4b41824aa9"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -152,8 +152,8 @@
   },
   {
    "path": "scraper/recipes/whirlpool.js",
-   "size": 6841,
-   "sha256": "fb68633d6467dcab9fbbcd18aae9a458683f29a0279b517177656a36e9d2016e"
+   "size": 7281,
+   "sha256": "4f6f7f29936489099221c350dcf71f95f772db6e478da9c7cfafae660f1968f8"
   },
   {
    "path": "sheets/engine.js",
