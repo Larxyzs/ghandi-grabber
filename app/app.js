@@ -336,7 +336,7 @@
     const all = name + ' ' + type + ' ' + foldText(((it.result && it.result.specs) || []).map((r) => r.label + ' ' + r.value).join(' ')).slice(0, 3000);
     const model = foldText((it.sheet && it.sheet.model) || '');
     // a freezer alone (not a fridge-freezer)
-    if (/congelateur/.test(name) && !/refrigerateur/.test(name)) {
+    if (/congelateur/.test(name) && !/refrigerateur|combine|avec congelateur|congelateur en (bas|haut)/.test(name)) {
       if (/\b(droit|vertical|armoire|upright)\b/.test(all)) return ['congelateur armoire', 'congelateurs vertical', 'congelateur', 'congelateurs'];
       if (/\b(coffre|poitrine|horizontal|bahut|chest)\b/.test(all) || /^(wcf|cf\d|cmch)/.test(model.replace(/ /g, ''))) return ['congelateur coffre', 'congelateurs horizontal', 'congelateur', 'congelateurs'];
       return ['congelateur', 'congelateurs'];
@@ -344,6 +344,7 @@
     const k = type + ' ' + name;
     if (/side by side|americain|\bsbs\b/.test(k)) return ['refrigerateur americain side by side', 'refrigerateurs side by side', 'refrigerateur', 'refrigerateur congelateur'];
     if (/multi portes|[34] portes|[34] door|french door|cross door|multi door|\bcube\b|quatre portes|quatres portes|trois portes/.test(k)) return ['refrigerateur multi portes', 'refrigerateurs multi portes', 'refrigerateur', 'refrigerateur congelateur'];
+    if (/congelateur en haut|top freezer/.test(k)) return ['refrigerateur avec congelateur en haut', 'refrigerateurs 2 portes', 'refrigerateur', 'refrigerateur congelateur'];
     if (/combine|congelateur en bas|congelateur inferieur|bottom/.test(k)) return ['refrigerateur avec congelateur en bas', 'refrigerateurs combines', 'refrigerateur', 'refrigerateur congelateur'];
     if (/congelateur en haut|double porte|double door|2 portes|deux portes|top freezer|top mount|monte sur le dessus/.test(k)) return ['refrigerateur avec congelateur en haut', 'refrigerateurs 2 portes', 'refrigerateur', 'refrigerateur congelateur'];
     if (/table top|sous plan|top table|mini bar/.test(k)) return ['mini bar et table top', 'refrigerateurs table top', 'refrigerateur'];

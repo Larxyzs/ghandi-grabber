@@ -42,6 +42,10 @@ GHANDI.register({
   model: function (ctx) {
     var t = String(document.title || '').split('|')[0].trim();
     if (t.length <= 26 && /^[A-Z0-9][A-Z0-9 \/.-]{3,}$/.test(t) && ctx.looksLikeModel(t)) return t;
+    // the product name starts with it: "WCF 350 DA+ SNA: Congélateur (Coffre…)"
+    var h1 = document.querySelector('h1[class*="ProductInfo__title"], [class*="productNameContainer"], h1');
+    var pre = String((h1 && h1.textContent) || '').split(':')[0].replace(/\s+/g, ' ').trim();
+    if (pre && pre.length <= 26 && /^[A-Z0-9][A-Z0-9 \/.+-]{3,}$/.test(pre) && /\d/.test(pre) && ctx.looksLikeModel(pre.replace(/\+/g, ''))) return pre;
     var last = decodeURIComponent(String(ctx.url).split('?')[0].split('/').filter(Boolean).pop() || '');
     var m = last.match(/-(?:l|cm|rpm|kg|tr-min|litres?)-((?:[a-z0-9]+-){1,5}[a-z0-9]+)$/i);
     if (m) {

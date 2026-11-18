@@ -27,6 +27,8 @@ const cases=[['fridge','Réfrigérateur combiné 340L congélateur en bas','Réf
 ['fridge','Réfrigérateur side by side 617L','Réfrigérateur américain side by side',null],
 ['fridge','Congélateur armoire 7 tiroirs','Congélateur armoire','Congélateurs Vertical'],
 ['fridge','Congélateur coffre 300L','Congélateur coffre','Congélateurs'],
+['fridge','Série 4 Combiné avec congélateur en bas pose-libre 203 x 60 cm','Réfrigérateur avec congélateur en bas','Réfrigérateurs Combinés'],
+['fridge','Combiné avec congélateur en haut pose-libre 186 x 70 cm','Réfrigérateur avec congélateur en haut','Réfrigérateurs 2 portes'],
 ['fridge','Réfrigérateur','Réfrigérateur','Réfrigérateurs'],
 ['washer','Lave-linge 9 kg','Machine à laver à hublot','Lave-linge'],
 ['washer','Lave-linge séchant 10/6 kg','Machine à laver séchante','Lave-linge séchants'],
