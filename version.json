@@ -1,8 +1,8 @@
 {
- "version": "3.7.27",
- "commit": "09b879ea0d3258fdc8b6325925f321a494823e9a",
+ "version": "3.7.28",
+ "commit": "32064e6eef44842e7110767247190d0ea81feafa",
  "notes": [
-  "Les produits vont directement dans le bon sous-dossier du site (TV OLED, plaque gaz, hotte îlot, sèche-linge pompe à chaleur…). Les mises à jour s'installent toutes seules."
+  "Préparation du nouveau site (nouvelle adresse Cloudflare)."
  ],
  "files": [
   {
@@ -72,8 +72,8 @@
   },
   {
    "path": "manifest.json",
-   "size": 1251,
-   "sha256": "901264833551512936783bcadc13050aef5a19a4659424ad68119310004a2112"
+   "size": 1330,
+   "sha256": "13e85860b37e4c32781e5e7734f0b588fd8cd601187b1f6abcb7b4ca1f6c327d"
   },
   {
    "path": "offscreen/offscreen.html",
