@@ -1,8 +1,8 @@
 {
- "version": "3.7.28",
- "commit": "32064e6eef44842e7110767247190d0ea81feafa",
+ "version": "3.7.29",
+ "commit": "9e0df2b4a090ddd76cadc2c9b03f5ba6308a7ee0",
  "notes": [
-  "Préparation du nouveau site (nouvelle adresse Cloudflare)."
+  "Sinks from Electroplanet now get a clear name (Évier Franke ...)."
  ],
  "files": [
   {
@@ -73,7 +73,7 @@
   {
    "path": "manifest.json",
    "size": 1330,
-   "sha256": "13e85860b37e4c32781e5e7734f0b588fd8cd601187b1f6abcb7b4ca1f6c327d"
+   "sha256": "9a36b83da8a315a8cae878cf62171577d33c1fd50762b02f2a9f768dc59e8e77"
   },
   {
    "path": "offscreen/offscreen.html",
@@ -127,8 +127,8 @@
   },
   {
    "path": "scraper/recipes/electroplanet.js",
-   "size": 12467,
-   "sha256": "dac30806b662f74774cfc16b646395f3226622b6c34111ce2e49ad7400095118"
+   "size": 12655,
+   "sha256": "e3d9f61748bd8853998a010d12ef5f031f8c781417ff3399d6f4285dfc1c700e"
   },
   {
    "path": "scraper/recipes/haier.js",
