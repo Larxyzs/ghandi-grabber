@@ -112,3 +112,14 @@ Read this whole file before doing anything. It is the memory of months of work.
 See `.claude/skills/train/SKILL.md` (`/train <hours>`) and `training/README.md`. The training loop measures the
 scanners on real pages against carefully audited "expected" results, fixes the weakest spots, proves nothing got
 worse (offline replay of saved pages + tests), commits, and repeats until the time is up.
+
+## Shop on free hosting + the owner's brand rules (18 Nov 2026)
+- The site now runs on Cloudflare Workers (free) + free Supabase, on ghandihomeelectro.com (nameservers moved to Cloudflare).
+  Free plan = 10 ms CPU and 50 outside calls per request: the import endpoint uses a batched fast path; pages are drawn
+  in the browser. Lovable's asset host is gone (logo = favicon.png; banners/showroom photo must be re-uploaded by the owner).
+- The owner's choices (do NOT add these back): no speakers/soundbars, no bundle packs, no TV supports, no cuisinières.
+  Hottes: only Whirlpool + Bosch. Lave-vaisselle: only Bosch, Samsung, LG. Plaques + fours: only Bosch + Whirlpool.
+  Micro-ondes: only Samsung, Whirlpool, Bosch. Sèche-linge: only TCL (TCL Morocco sells none yet; LG WashTower kept).
+  Sinks: Franke from Electroplanet, site section « Évier ».
+- LG list crawls still add junk ("En savoir plus sur…", "Enregistrer un produit", "Demande de réparation", "Support produit"):
+  remove them before sending. LG lists paginate with ?firstResult=8,16…
